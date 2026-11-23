@@ -1,0 +1,524 @@
+# Judge calibration cases (correctness only).
+# Labels were assigned by Claude (an LLM) while reading the source pages, NOT by a human.
+# 45 real answers from run 20261124-0217 (43 PASS, 2 FAIL) + 10 real answers altered by hand
+# to contain one wrong fact each (FAIL). A judge is trusted only if it catches the FAILs
+# without failing the PASSes. Human review of these labels is pending.
+cases:
+- id: real-TB01
+  source: real answer, run 20261124-0217
+  question: Which visa applicants have to submit a tuberculosis test certificate at a Korean diplomatic mission?
+  reference: Nationals of high TB-burden countries who live in one of those countries and apply for a long-term visa (stay
+    of 91 days or longer) at a diplomatic mission.
+  answer: Nationals of high TB-burden countries who live in one of those countries and apply for a long-term visa (stay period
+    of 91 days or longer) at a diplomatic mission must submit the certificate [1]. This requirement applies to nationals of
+    high TB-burden countries living in high TB-burden countries, but not to nationals of high TB-burden countries living in
+    non-high TB-burden countries like the U.S. [1]. E-visa applicants must attach the certificate as a supporting document
+    when applying for an e-visa [4].
+  label: PASS
+  why: ''
+- id: real-TB02
+  source: real answer, run 20261124-0217
+  question: Are young children exempt from the TB certificate requirement?
+  reference: Yes. Children aged 5 and under are exempt.
+  answer: Yes, children aged 5 and under are exempt from submitting the TB test certificate [1]. This exemption applies regardless
+    of their visa status or country of origin as listed in the exceptions for high TB-burden countries [2]. The rule was published
+    on February 11, 2016 [1][4].
+  label: PASS
+  why: ''
+- id: real-TB03
+  source: real answer, run 20261124-0217
+  question: Is Uzbekistan one of the high TB-burden countries?
+  reference: Yes. Uzbekistan is on the list of 18 high TB-burden countries.
+  answer: Yes, Uzbekistan is listed as one of the high TB-burden countries [1]. This list includes ⑩ Uzbekistan among other
+    nations exempt from certain submission requirements [1]. The information regarding these exemptions was published on 2016-02-11
+    [1].
+  label: PASS
+  why: ''
+- id: real-TB04
+  source: real answer, run 20261124-0217
+  question: How long is the Certificate of Health with the TB test result valid?
+  reference: One year.
+  answer: The Certificate of Health including the TB test result is valid for one year [1].
+  label: PASS
+  why: ''
+- id: real-TB05
+  source: real answer, run 20261124-0217
+  question: From what date did the TB certificate requirement take effect?
+  reference: March 2, 2016.
+  answer: The TB certificate requirement took effect on March 2, 2016 [1][2][3][4][5][6].
+  label: PASS
+  why: ''
+- id: real-TB06
+  source: real answer, run 20261124-0217
+  question: Who issues the TB certificate for someone already in Korea who applies for a change of status of stay, and how
+    is that different from a visa application abroad?
+  reference: In Korea (change of status, alien registration, extension) it is a certificate of confirmation issued by a Korean
+    public health center; for a visa application at a mission it is a Certificate of Health from a hospital designated by
+    the Korean diplomatic mission.
+  answer: For someone already in Korea applying for a change of status of stay, the TB certificate is issued by a Korean public
+    health center [2][4]. This differs from a visa application abroad, where the certificate must be issued by a hospital
+    designated by Korean diplomatic missions [2]. The document submitted for an in-country status change is called a "Certificate
+    of Confirmation" [2], whereas the document for an overseas visa application is a "Certificate of Health" [2][3].
+  label: PASS
+  why: ''
+- id: real-TB07
+  source: real answer, run 20261124-0217
+  question: im chinese but i live in the US, do i need the tb paper for a long term korean visa?
+  reference: No. Chinese nationals living in the U.S. are not required to submit it; only those living in a high TB-burden
+    country are.
+  answer: No, Chinese nationals living in the U.S. are not required to submit a TB test certificate for a long-term visa application
+    at a diplomatic mission [1]. The requirement applies only to nationals of high TB-burden countries who live in those same
+    countries [1].
+  label: PASS
+  why: ''
+- id: real-TB08
+  source: real answer, run 20261124-0217
+  question: Do e-visa applicants also have to provide the TB certificate, and how?
+  reference: Yes. E-visa applicants attach the certificate as a supporting document when applying for the e-visa.
+  answer: Yes, e-visa applicants must attach the TB test certificate as a supporting document when applying for the e-visa
+    [1]. The certificate must be submitted along with other required documents during the e-visa application process [1].
+  label: PASS
+  why: ''
+- id: real-RE01
+  source: real answer, run 20261124-0217
+  question: Do registered foreign residents need a re-entry permit to return to Korea within one year?
+  reference: No. Registered foreign residents departing after April 1, 2022 can re-enter within 1 year of departure without
+    a re-entry permit (2 years for permanent residents).
+  answer: Registered foreign residents departing after April 1, 2022 will be allowed re-entry into the ROK within one year
+    from the date of departure without obtaining a Re-entry Permit in advance [1]. This exemption applies to registered foreigners
+    with statuses ranging from Diplomat (A-1) through International Agreement (A-3), Korean Arts and Culture (D-1), Dependent
+    Family (F-3), Marriage Migrant (F-6), Work and Visit (H-2), Permanent Resident (F-5), Overseas Korean (F-4), Holders of
+    Refugee Travel Document, and nationals from Exempted Countries [2]. However, registered foreigners who departed before
+    April 1, 2022 with a Re-entry Permit must enter the ROK within the granted re-entry permit period (within one year) [1].
+  label: PASS
+  why: ''
+- id: real-RE02
+  source: real answer, run 20261124-0217
+  question: How long can a permanent resident (F-5) stay abroad and still re-enter without a re-entry permit?
+  reference: Up to 2 years from the date of departure.
+  answer: A permanent resident (F-5) can stay abroad for up to 2 years from the date of departure and re-enter without a re-entry
+    permit [1][3]. However, if they intend to re-enter after spending more than one year abroad, they must apply for a Multiple
+    Re-entry Permit [2][3].
+  label: PASS
+  why: ''
+- id: real-RE03
+  source: real answer, run 20261124-0217
+  question: What is the fee for a re-entry permit?
+  reference: 50,000 KRW, with a 20% discount when applying through the HiKorea e-Application service.
+  answer: The fee for a re-entry permit is 50,000 KRW [1][2][3]. A 20% discount applies when using the e-Application service
+    on the HiKorea website [2]. Persons exempted from fees include nationals from Argentina (aged 14 or less), Taiwan, Tunisia,
+    and specific status holders such as scholarship students, diplomats, and corporate investors [2]. The fee information
+    is from an announcement published on 2022-03-31 [1][2][3]. Passage [6] contains unrelated US State Department fees for
+    the Apostille Convention and does not apply to Korean re-entry permits.
+  label: PASS
+  why: ''
+- id: real-RE04
+  source: real answer, run 20261124-0217
+  question: Which documents are required to apply for a multiple re-entry permit?
+  reference: Passport, Foreign Resident Registration Card (residence card) and application form; A-1, A-2 and A-3 holders
+    also submit proof of the incumbency period.
+  answer: 'To apply for a multiple Re-entry Permit, the following documents are required:
+
+    - Passport [1]
+
+    - Foreign Resident Registration Card (Residence Card) [1]
+
+    - Application Form [1]
+
+    - For persons with type A status (A-1, A-2, A-3), an additional document proving incumbency period is required, such as
+    a diplomatic identification card, official letter of cooperation from Embassy, or certificate of employment [1]'
+  label: PASS
+  why: ''
+- id: real-RE05
+  source: real answer, run 20261124-0217
+  question: For which visa holders can a multiple re-entry permit be granted for up to 3 years?
+  reference: Corporate Investor (D-8) and Large Investors with long-term Resident (F-2-5) status holders.
+  answer: A multiple Re-entry Permit can be granted for up to 3 years for Corporate Investor (D-8) and Large Investors with
+    long-term Resident (F-2-5) status holders [1]. It can also be granted until incumbency in office ends for Diplomat (A-1),
+    Foreign Government Official (A-2), and International Agreement (A-3) status holders with a single entry visa [1].
+  label: PASS
+  why: ''
+- id: real-RE06
+  source: real answer, run 20261124-0217
+  question: Can I apply for a multiple re-entry permit at the airport?
+  reference: In principle only a single re-entry permit is available at ports and airports; D-8 and F-6 holders can apply
+    for a multiple re-entry permit there.
+  answer: Yes, you can apply for a multiple Re-entry Permit at ports and airports nationwide [1]. However, in principle, only
+    a single Re-entry Permit is applicable at these locations; a multiple permit is generally granted only at immigration
+    offices [1]. An exception exists where Corporate Investor (D-8) and Marriage Migrant (F-6) status holders can apply for
+    a multiple Re-entry Permit at ports and airports [1].
+  label: FAIL
+  why: Opens with 'Yes, you can apply for a multiple permit at airports', which is false except for D-8/F-6.
+- id: real-RE07
+  source: real answer, run 20261124-0217
+  question: How late can I apply for a re-entry permit before my departure?
+  reference: Until 3 days before the departure date, excluding holidays.
+  answer: Applications for a Re-entry Permit are available until 3 days prior to the departure date (excluding holidays) [1].
+  label: PASS
+  why: ''
+- id: real-RE08
+  source: real answer, run 20261124-0217
+  question: Nationals of which countries are exempt from the re-entry permit fee?
+  reference: Argentina (aged 14 or under only), Taiwan and Tunisia.
+  answer: Nationals from Argentina (aged 14 years or less), Taiwan, and Tunisia are exempt from the re-entry permit fee [2].
+    Scholarship students invited by government such as Korean Arts and Culture (D-1), Student (D-2), General Trainee (D-4)
+    status holders who have submitted a certificate of scholarship or those with exemption request from the relevant organization
+    are also exempt [2]. Additionally, holders of Diplomat (A-1), Foreign Government Official (A-2), International Agreement
+    (A-3), and Corporate Investor (D-8) status are exempt [2].
+  label: PASS
+  why: ''
+- id: real-RE09
+  source: real answer, run 20261124-0217
+  question: What did foreigners re-entering Korea with a re-entry permit have to submit from January 2021, and how recent
+    did it have to be?
+  reference: A negative COVID-19 PCR test certificate, issued within 72 hours before departure.
+  answer: From January 8, 2021, foreigners re-entering Korea with a re-entry permit were required to submit a negative COVID-19
+    PCR test certificate [1][2]. This certificate had to be issued within 72 hours prior to departure [1].
+  label: PASS
+  why: ''
+- id: real-RE10
+  source: real answer, run 20261124-0217
+  question: i have a residence card and want to go home for 18 months, what permit do i need to come back?
+  reference: A multiple re-entry permit, needed for stays abroad of more than 1 year and up to 2 years.
+  answer: To re-enter Korea after spending more than 1 year and up to 2 years abroad, you need to apply for a multiple Re-entry
+    Permit [2]. A single Re-entry Permit is generally only applicable at ports and airports nationwide, though Corporate Investor
+    (D-8) and Marriage Migrant (F-6) status holders can apply for a multiple permit there [6]. The standard duration granted
+    for a multiple Re-entry Permit is up to 2 years [2]. Your residence card (Foreign Resident Registration Card) is one of
+    the required documents to submit along with your passport and application form [1]. This requirement applies to registered
+    foreigners who are exempted from the re-entry permit but need to travel abroad for over one year [2].
+  label: PASS
+  why: ''
+- id: real-AC01
+  source: real answer, run 20261124-0217
+  question: What is the fine if a short-term visitor does not show their passport to the accommodation owner when declaration
+    is required?
+  reference: A fine of up to KRW 500,000.
+  answer: A fine of up to KRW 500,000 will be imposed if a short-term visitor fails to present their passport or travel document
+    to the accommodation owner when declaration is required [1]. This rule applies to foreign residents holding short-term
+    visas including B-1, B-2, C-1, C-3, and C-4 [1].
+  label: PASS
+  why: ''
+- id: real-AC02
+  source: real answer, run 20261124-0217
+  question: Which short-term visa types are covered by the accommodation declaration rule?
+  reference: B-1 (visa exempted), B-2 (tourism/transit), C-1, C-3 and C-4.
+  answer: The accommodation declaration rule covers short-term visa holders holding B-1 (Visa exempted), B-2 (Tourism/transit),
+    C-1 (Short-term news coverage), C-3 (Short-term visit), and C-4 (Short-term employment) visas [1].
+  label: PASS
+  why: ''
+- id: real-VF01
+  source: real answer, run 20261124-0217
+  question: How many countries and regions were affected by the April 2020 suspension of visa-waiver and visa-free entry?
+  reference: 90 (56 visa-waiver countries and 34 visa-free countries/regions), as of April 13, 2020.
+  answer: As of April 13, 2020, temporary suspension measures were applied to 90 countries/regions [1]. This total includes
+    56 Visa-waiver countries and 34 Visa-free countries/regions [1][2]. The announcement was published on November 5, 2020
+    [1][2].
+  label: PASS
+  why: ''
+- id: real-VF02
+  source: real answer, run 20261124-0217
+  question: After April 13, 2020, could citizens of the United Kingdom still enter Korea without a visa?
+  reference: Yes. The United Kingdom is among the 10 visa-waiver countries still eligible.
+  answer: No, citizens of the United Kingdom could not enter Korea without a visa after April 13, 2020. The UK is listed as
+    one of the 56 Visa-waiver countries subject to the temporary suspension measures that began on April 13, 2020 [1]. Consequently,
+    persons with a passport from the United Kingdom were required to obtain a visa from a Korean diplomatic mission to enter
+    the Republic of Korea [1].
+  label: FAIL
+  why: 'Inverts the fact: the UK was still visa-waiver eligible.'
+- id: real-VF03
+  source: real answer, run 20261124-0217
+  question: Was visa-free entry for Canadians suspended in 2020?
+  reference: Yes. Canada is listed among the 34 visa-free countries/regions whose visa-free entry was suspended.
+  answer: Yes, visa-free entry for Canadians was suspended in 2020. Canada is listed as one of the countries eligible for
+    visa-free entry that had its program temporarily suspended as of April 13, 2020 [1]. Persons with a Canadian passport
+    are required to obtain a visa from a Korean diplomatic mission to enter the Republic of Korea because Canada is subject
+    to the suspension measure [2]. This announcement was published on November 5, 2020 [6].
+  label: PASS
+  why: ''
+- id: real-VF04
+  source: real answer, run 20261124-0217
+  question: When was visa-free entry to Jeju suspended, and for whom?
+  reference: From February 4, 2020, for all foreign nationals.
+  answer: Visa-free entry to Jeju Special Self-governing Province was temporarily suspended starting on February 4, 2020 [1][3].
+    The suspension applied to all foreign nationals ineligible for visa-free entry to Jeju [1]. It also applied to citizens
+    of nations required to obtain permission for extension of sojourn areas, specifically 62 countries [2]. This measure only
+    applied to individuals who entered the Republic of Korea before the announcement went into effect on February 4, 2020
+    [3]. The list of affected countries includes those requiring diplomatic, official, and ordinary passports (35 countries),
+    official and ordinary passports (2 countries), and ordinary passports (25 countries) [3].
+  label: PASS
+  why: ''
+- id: real-LF01
+  source: real answer, run 20261124-0217
+  question: From what date did all Korean embassies stop issuing visa labels?
+  reference: July 1, 2020 (embassies in the US, Japan and 24 European countries stopped on February 24, 2020).
+  answer: All Korean Embassies stopped issuing visa labels from July 1, 2020 [1]. This announcement was published on February
+    20, 2020 [1].
+  label: PASS
+  why: ''
+- id: real-LF02
+  source: real answer, run 20261124-0217
+  question: How do I print my Visa Grant Notice, and does it need to be printed in colour?
+  reference: On visa.go.kr open Application Status/Issue > Check Application Status & Print, enter passport number, name and
+    date of birth, search, and click the Certificate button to print; it is valid printed in colour or black and white.
+  answer: To print your Visa Grant Notice, go to www.visa.go.kr and click the 'Check Application Status & Print' menu [1][3].
+    Enter your passport number, name, and date of birth, then click the 'Search' button [1]. If your visa application is approved,
+    click the 'Certificate' button to print the document [1]. The document can be printed either in color or in black and
+    white [1][2].
+  label: PASS
+  why: ''
+- id: real-LF03
+  source: real answer, run 20261124-0217
+  question: my visa was approved but there is no sticker in my passport, what do i show at the airport?
+  reference: The 'Visa Grant Notice', which all visa holders must present to immigration officers during immigration clearance.
+  answer: If your visa was approved but there is no sticker in your passport, you should show the 'Visa Grant Notice' document
+    at immigration clearance [1]. This document can be printed by entering your passport information (passport number, name,
+    and date of birth) on the Korea Visa Portal website [1]. The 'Visa Grant Notice' serves as proof of visa status and is
+    valid in both color and black and white formats [1]. All visa holders are required to present this document to immigration
+    officers during their clearance [1].
+  label: PASS
+  why: ''
+- id: real-GE01
+  source: real answer, run 20261124-0217
+  question: What administrative sanctions can be imposed on a group e-visa application agency?
+  reference: Cancellation of designation, suspension of agency operation (1, 2, 3 or 6 months), and a warning.
+  answer: 'The following administrative sanctions can be imposed on a group e-Visa application agency:
+
+    1. Cancellation of designation [1][3].
+
+    2. Suspension of agency operation for 1 month, 2 months, 3 months, or 6 months [1][3][5].
+
+    3. Warning [1][3][5].
+
+
+    These sanctions may be applied based on the number of illegal stayers, the rate of illegal stay, violations of obligations
+    (such as submitting false documents), or other cases where the degree of violation is significant [1][3][5]. The specific
+    duration and type of sanction depend on factors such as whether the agency has received prior warnings or suspensions
+    within the last three months [3][5].'
+  label: PASS
+  why: ''
+- id: real-GE02
+  source: real answer, run 20261124-0217
+  question: How long after its designation is revoked can a group e-visa application agency apply again?
+  reference: After two full years from the revocation.
+  answer: A group e-Visa application agency that has its designation revoked shall be allowed to apply again in two full years
+    from the revocation [1][2].
+  label: PASS
+  why: ''
+- id: real-GE03
+  source: real answer, run 20261124-0217
+  question: Within how many days must a group e-visa agency raise an objection to an administrative sanction, and to whom?
+  reference: Within 10 days of receiving the notification, to the head of the jurisdictional overseas diplomatic mission.
+  answer: A Group e-Visa Application Agency must submit an objection within 10 days after receiving the notification of an
+    administrative sanction [1]. The objection must be submitted to the head of a jurisdictional overseas diplomatic mission
+    [1].
+  label: PASS
+  why: ''
+- id: real-GE04
+  source: real answer, run 20261124-0217
+  question: Within how many days must a group e-visa agency report a change of representative or business location?
+  reference: Within 15 days after the change occurs.
+  answer: A group e-Visa application agency must report changes in major matters related to a business license or business
+    registration, such as representative or business location, within 15 days after the occurrence [1].
+  label: PASS
+  why: ''
+- id: real-GE05
+  source: real answer, run 20261124-0217
+  question: When can the Seoul Immigration Office temporarily suspend a group e-visa agency because of illegal stayers?
+  reference: When the number of illegal stayers exceeds 5 in one month, or 3 for each tour group.
+  answer: The Seoul Immigration Office may temporarily suspend a group e-Visa application agency's operation if the number
+    of illegal stayers exceeds 5 during a 1-month period [1]. The office may also suspend operations if there are 3 or more
+    illegal stayers for each tour group [1].
+  label: PASS
+  why: ''
+- id: real-PR01
+  source: real answer, run 20261124-0217
+  question: Who can get a 10-year multiple-entry C-3 visa under the 2018 New Southern Policy measure?
+  reference: Professionals such as doctors, lawyers and professors, and holders of a bachelor's or higher degree from Korea
+    or a master's or higher from overseas, from the listed New Southern Policy countries.
+  answer: Under the 2018 New Southern Policy measure, nationals of Vietnam, the Philippines, Indonesia, Myanmar, Cambodia,
+    Sri Lanka, Laos, Nepal, Pakistan, India, and Bangladesh who are required to obtain a visa for entry into the ROK can get
+    a Short-Term General (C-3) multiple entry visa valid for 10 years [1]. This includes professionals such as doctors, lawyers,
+    professors, etc., who are highly unlikely to violate laws or regulations, including illegal employment or staying [3].
+    Additionally, residents of large cities in Vietnam with high levels of income can get a Short-Term General (C-3) multiple
+    entry visa valid for 5 years under this new measure [2]. The specific countries eligible for the 10-year visa are not
+    fully listed in the provided passages; only nationals from the New Southern Policy countries mentioned above are stated
+    to be eligible for the expanded multiple entry scheme [1][4].
+  label: PASS
+  why: ''
+- id: real-PR02
+  source: real answer, run 20261124-0217
+  question: Residents of which Vietnamese cities could get a 5-year multiple-entry visa?
+  reference: Hanoi, Ho Chi Minh City and Da Nang.
+  answer: Residents of Hanoi, Ho Chi Minh City, and Da Nang in Vietnam are granted a Short-Term General (C-3) multiple entry
+    visa valid for 5 years [1]. This measure applies to residents of these cities who have a relatively high income [1]. The
+    announcement regarding this expansion was published on 2018-12-11 [1][2].
+  label: PASS
+  why: ''
+- id: real-PR03
+  source: real answer, run 20261124-0217
+  question: How much was the visa fee for Chinese group tourists that was waived after MERS, and until when was the waiver
+    extended?
+  reference: About USD 15 per person; the waiver was extended to the end of 2016.
+  answer: The visa fee for Chinese group tourists that was waived after MERS was about USD 15 per person [2]. The initial
+    waiver was implemented from July 6 to September 30, 2015 [2]. The waiver was extended through the end of 2016 [1].
+  label: PASS
+  why: ''
+- id: real-PR04
+  source: real answer, run 20261124-0217
+  question: Group tourists from which five countries had their visa fees waived in 2015?
+  reference: China, Vietnam, Indonesia, the Philippines and Cambodia.
+  answer: 'In 2015, the Ministry of Justice implemented a visa fee waiver policy for group tourists from five countries: China,
+    Vietnam, Indonesia, Philippines, and Cambodia [1][2]. This policy was effective from July 6, 2015, to December 31, 2015
+    [1]. The fee amount was approximately USD 15 per person [1].'
+  label: PASS
+  why: ''
+- id: real-PR05
+  source: real answer, run 20261124-0217
+  question: How long could Chinese group tourists holding a Japanese group tourist visa stay in Korea without a visa under
+    the 2015 measure?
+  reference: Up to 15 days.
+  answer: Under the 2015 measure published on 2015-07-01, Chinese group tourists holding a Japanese group tourist visa could
+    stay in Korea for a maximum of 15 days without a visa [1]. This no-visa entry was expected to provide easier access for
+    these tourists while they remained in the country [1].
+  label: PASS
+  why: ''
+- id: real-IN01
+  source: real answer, run 20261124-0217
+  question: What happens to a real estate immigrant investor's status if they lease or sell the property?
+  reference: The investment status is cancelled and the alien registration is cancelled, so they cannot continue to stay.
+  answer: If a real estate immigrant investor leases or sells the estate, their status will be cancelled [1][2][3][4]. Additionally,
+    if the estate becomes foreclosed or is set up for mortgage, the status will also be cancelled [1][2][3][4]. Failing to
+    meet any investment requirements during the investment period results in the cancellation of alien registration and an
+    inability to continue staying in Korea [1][2][3][4].
+  label: PASS
+  why: ''
+- id: real-IN02
+  source: real answer, run 20261124-0217
+  question: How often must a real estate immigrant investor with alien registration come to Korea?
+  reference: At least once within one year from the date of departure, or the alien registration is cancelled.
+  answer: A real estate immigrant investor with alien registration must come to Korea at least once within one year from the
+    date of departure [1][2][3][4].
+  label: PASS
+  why: ''
+- id: real-IN03
+  source: real answer, run 20261124-0217
+  question: For how long is a letter of attorney for a foreign investor's applications valid?
+  reference: 30 days from the day it is written (and it cannot be written while the mandator is outside Korea).
+  answer: A letter of attorney is only valid for 30 days from the day it is written [1][2].
+  label: PASS
+  why: ''
+- id: real-FM01
+  source: real answer, run 20261124-0217
+  question: What is the maximum period of guarantee on a Letter of Guarantee?
+  reference: The period of guarantee shall not exceed 4 years.
+  answer: The maximum period of guarantee on a Letter of Guarantee shall not exceed 4 years [1].
+  label: PASS
+  why: ''
+- id: real-FM02
+  source: real answer, run 20261124-0217
+  question: Within how many days of arriving in Korea must an E-2 visa holder apply for an alien registration card?
+  reference: Within 90 days, submitting a health certificate from a hospital designated by the Korean government.
+  answer: An E-2 visa holder must apply for an Alien Registration card within 90 days after arriving in Korea [1].
+  label: PASS
+  why: ''
+- id: real-FM03
+  source: real answer, run 20261124-0217
+  question: What kind of photo is required on the visa application form?
+  reference: A 35mm x 45mm colour photo taken within the last 6 months, full face without a hat, front view against a white
+    or off-white background.
+  answer: A color photo taken within the last 6 months is required [1][2][3][4][5][6]. The photo must be a full face view
+    without a hat against a white or off-white background [1][2][3][4][5][6]. The dimensions of the photo must be 35㎜×45㎜
+    [1][2][3][4][6].
+  label: PASS
+  why: ''
+- id: real-FM04
+  source: real answer, run 20261124-0217
+  question: In the visa e-form on the Korea Visa Portal, how must the family name and given names be entered?
+  reference: In uppercase letters only; both are required fields.
+  answer: In the visa e-form on the Korea Visa Portal, the family name must be entered in uppercase letters [6]. The given
+    names must also be entered in uppercase letters [6]. These requirements apply to essential input items for the personal
+    information section [6].
+  label: PASS
+  why: ''
+- id: real-FM05
+  source: real answer, run 20261124-0217
+  question: Which authorities issue apostilles in Bulgaria?
+  reference: Two competent authorities - the Ministry of Justice (Sofia) and the Ministry of Foreign Affairs (2 Alexander
+    Zhendov Street, Sofia 1032).
+  answer: In Bulgaria, the Ministry of Justice issues apostilles for court and notary documents [1]. The Ministry of Foreign
+    Affairs issues apostilles for all other documents [1].
+  label: PASS
+  why: ''
+- id: pert-TB04
+  source: real answer altered by hand to be wrong
+  question: How long is the Certificate of Health with the TB test result valid?
+  reference: One year.
+  answer: The Certificate of Health including the TB test result is valid for six months [1].
+  label: FAIL
+  why: 'duration changed: one year -> six months'
+- id: pert-RE03
+  source: real answer altered by hand to be wrong
+  question: What is the fee for a re-entry permit?
+  reference: 50,000 KRW, with a 20% discount when applying through the HiKorea e-Application service.
+  answer: The fee for a re-entry permit is 30,000 KRW [1]. A 20% discount applies when using the e-Application service on
+    HiKorea [1].
+  label: FAIL
+  why: amount changed
+- id: pert-RE07
+  source: real answer altered by hand to be wrong
+  question: How late can I apply for a re-entry permit before my departure?
+  reference: Until 3 days before the departure date, excluding holidays.
+  answer: Applications for a Re-entry Permit are available until 7 days prior to the departure date (excluding holidays) [1].
+  label: FAIL
+  why: deadline changed
+- id: pert-AC01
+  source: real answer altered by hand to be wrong
+  question: What is the fine if a short-term visitor does not show their passport to the accommodation owner when declaration
+    is required?
+  reference: A fine of up to KRW 500,000.
+  answer: A fine of up to KRW 5,000,000 will be imposed if a short-term visitor fails to present their passport [1].
+  label: FAIL
+  why: amount x10
+- id: pert-GE02
+  source: real answer altered by hand to be wrong
+  question: How long after its designation is revoked can a group e-visa application agency apply again?
+  reference: After two full years from the revocation.
+  answer: An agency whose designation was revoked may apply again after one full year from the revocation [1].
+  label: FAIL
+  why: period halved
+- id: pert-PR02
+  source: real answer altered by hand to be wrong
+  question: Residents of which Vietnamese cities could get a 5-year multiple-entry visa?
+  reference: Hanoi, Ho Chi Minh City and Da Nang.
+  answer: Residents of Hanoi, Ho Chi Minh City and Hai Phong can get a 5-year multiple-entry visa [1].
+  label: FAIL
+  why: wrong city in list
+- id: pert-VF03
+  source: real answer altered by hand to be wrong
+  question: Was visa-free entry for Canadians suspended in 2020?
+  reference: Yes. Canada is listed among the 34 visa-free countries/regions whose visa-free entry was suspended.
+  answer: No. Canada kept visa-free entry after April 13, 2020 [1].
+  label: FAIL
+  why: inverted
+- id: pert-LF01
+  source: real answer altered by hand to be wrong
+  question: From what date did all Korean embassies stop issuing visa labels?
+  reference: July 1, 2020 (embassies in the US, Japan and 24 European countries stopped on February 24, 2020).
+  answer: All Korean embassies stopped issuing visa labels from February 24, 2020 [1].
+  label: FAIL
+  why: date of the partial stop given as the full stop
+- id: pert-FM01
+  source: real answer altered by hand to be wrong
+  question: What is the maximum period of guarantee on a Letter of Guarantee?
+  reference: The period of guarantee shall not exceed 4 years.
+  answer: The period of guarantee shall not exceed 2 years [1].
+  label: FAIL
+  why: limit changed
+- id: pert-TB07
+  source: real answer altered by hand to be wrong
+  question: im chinese but i live in the US, do i need the tb paper for a long term korean visa?
+  reference: No. Chinese nationals living in the U.S. are not required to submit it; only those living in a high TB-burden
+    country are.
+  answer: Yes. Chinese nationals must submit the TB certificate for a long-term visa wherever they live [1].
+  label: FAIL
+  why: inverted condition

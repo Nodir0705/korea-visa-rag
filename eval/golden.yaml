@@ -1,0 +1,295 @@
+# Golden set for visa-rag (English questions over the visa.go.kr PDF corpus)
+#
+# PROVENANCE - read before trusting any score computed from this file.
+#   Written by Claude (an LLM) on 2026-11-24, NOT by a human. Each question was
+#   written while reading the exact page cited in `gold`, and each reference
+#   answer is copied or closely paraphrased from that page. Nobody has reviewed
+#   it yet. An LLM writing the questions biases them toward wording an LLM finds
+#   natural; a human review pass is the top open item (see README).
+#
+# Types:
+#   lookup     - one fact on one page
+#   multi_hop  - needs two pages or two documents
+#   table      - answer sits in a table or list
+#   paraphrase - informal wording that shares few words with the page
+#   no_answer  - the corpus does not answer it; the system must refuse.
+#                Several carry a deliberate distractor (a page that looks related).
+#
+# gold: list of {doc: <sha12 of the PDF>, pages: [page numbers]}. A retrieved chunk
+# counts as relevant if it comes from a listed doc and covers one listed page.
+# Where the same text exists in several PDFs (the visa application form is
+# published four times), every copy is listed.
+
+questions:
+  # --- Tuberculosis certificate notice (336de610abfb, 2016) -------------------
+  - id: TB01
+    type: lookup
+    question: Which visa applicants have to submit a tuberculosis test certificate at a Korean diplomatic mission?
+    answer: Nationals of high TB-burden countries who live in one of those countries and apply for a long-term visa (stay of 91 days or longer) at a diplomatic mission.
+    gold: [{doc: 336de610abfb, pages: [1]}]
+  - id: TB02
+    type: lookup
+    question: Are young children exempt from the TB certificate requirement?
+    answer: Yes. Children aged 5 and under are exempt.
+    gold: [{doc: 336de610abfb, pages: [2]}]
+  - id: TB03
+    type: table
+    question: Is Uzbekistan one of the high TB-burden countries?
+    answer: Yes. Uzbekistan is on the list of 18 high TB-burden countries.
+    gold: [{doc: 336de610abfb, pages: [2]}]
+  - id: TB04
+    type: lookup
+    question: How long is the Certificate of Health with the TB test result valid?
+    answer: One year.
+    gold: [{doc: 336de610abfb, pages: [2]}]
+  - id: TB05
+    type: lookup
+    question: From what date did the TB certificate requirement take effect?
+    answer: March 2, 2016.
+    gold: [{doc: 336de610abfb, pages: [3]}]
+  - id: TB06
+    type: multi_hop
+    question: Who issues the TB certificate for someone already in Korea who applies for a change of status of stay, and how is that different from a visa application abroad?
+    answer: In Korea (change of status, alien registration, extension) it is a certificate of confirmation issued by a Korean public health center; for a visa application at a mission it is a Certificate of Health from a hospital designated by the Korean diplomatic mission.
+    gold: [{doc: 336de610abfb, pages: [2, 6]}]
+  - id: TB07
+    type: paraphrase
+    question: im chinese but i live in the US, do i need the tb paper for a long term korean visa?
+    answer: No. Chinese nationals living in the U.S. are not required to submit it; only those living in a high TB-burden country are.
+    gold: [{doc: 336de610abfb, pages: [1]}]
+  - id: TB08
+    type: lookup
+    question: Do e-visa applicants also have to provide the TB certificate, and how?
+    answer: Yes. E-visa applicants attach the certificate as a supporting document when applying for the e-visa.
+    gold: [{doc: 336de610abfb, pages: [3]}]
+
+  # --- Re-entry permit notice (a0ab242b1eec, 2022) ----------------------------
+  - id: RE01
+    type: lookup
+    question: Do registered foreign residents need a re-entry permit to return to Korea within one year?
+    answer: No. Registered foreign residents departing after April 1, 2022 can re-enter within 1 year of departure without a re-entry permit (2 years for permanent residents).
+    gold: [{doc: a0ab242b1eec, pages: [1]}]
+  - id: RE02
+    type: lookup
+    question: How long can a permanent resident (F-5) stay abroad and still re-enter without a re-entry permit?
+    answer: Up to 2 years from the date of departure.
+    gold: [{doc: a0ab242b1eec, pages: [1, 2]}]
+  - id: RE03
+    type: lookup
+    question: What is the fee for a re-entry permit?
+    answer: 50,000 KRW, with a 20% discount when applying through the HiKorea e-Application service.
+    gold: [{doc: a0ab242b1eec, pages: [3]}]
+  - id: RE04
+    type: lookup
+    question: Which documents are required to apply for a multiple re-entry permit?
+    answer: Passport, Foreign Resident Registration Card (residence card) and application form; A-1, A-2 and A-3 holders also submit proof of the incumbency period.
+    gold: [{doc: a0ab242b1eec, pages: [3]}]
+  - id: RE05
+    type: lookup
+    question: For which visa holders can a multiple re-entry permit be granted for up to 3 years?
+    answer: Corporate Investor (D-8) and Large Investors with long-term Resident (F-2-5) status holders.
+    gold: [{doc: a0ab242b1eec, pages: [2, 3]}]
+  - id: RE06
+    type: lookup
+    question: Can I apply for a multiple re-entry permit at the airport?
+    answer: In principle only a single re-entry permit is available at ports and airports; D-8 and F-6 holders can apply for a multiple re-entry permit there.
+    gold: [{doc: a0ab242b1eec, pages: [4]}]
+  - id: RE07
+    type: lookup
+    question: How late can I apply for a re-entry permit before my departure?
+    answer: Until 3 days before the departure date, excluding holidays.
+    gold: [{doc: a0ab242b1eec, pages: [3]}]
+  - id: RE08
+    type: table
+    question: Nationals of which countries are exempt from the re-entry permit fee?
+    answer: Argentina (aged 14 or under only), Taiwan and Tunisia.
+    gold: [{doc: a0ab242b1eec, pages: [3]}]
+  - id: RE09
+    type: multi_hop
+    question: What did foreigners re-entering Korea with a re-entry permit have to submit from January 2021, and how recent did it have to be?
+    answer: A negative COVID-19 PCR test certificate, issued within 72 hours before departure.
+    gold: [{doc: 6bc97a64a6e3, pages: [1]}]
+  - id: RE10
+    type: paraphrase
+    question: i have a residence card and want to go home for 18 months, what permit do i need to come back?
+    answer: A multiple re-entry permit, needed for stays abroad of more than 1 year and up to 2 years.
+    gold: [{doc: a0ab242b1eec, pages: [1, 2]}]
+
+  # --- Accommodation declaration (bb553b933f21, 2022) -------------------------
+  - id: AC01
+    type: lookup
+    question: What is the fine if a short-term visitor does not show their passport to the accommodation owner when declaration is required?
+    answer: A fine of up to KRW 500,000.
+    gold: [{doc: bb553b933f21, pages: [1]}]
+  - id: AC02
+    type: table
+    question: Which short-term visa types are covered by the accommodation declaration rule?
+    answer: B-1 (visa exempted), B-2 (tourism/transit), C-1, C-3 and C-4.
+    gold: [{doc: bb553b933f21, pages: [1]}]
+
+  # --- Suspension of visa-free entry (b48153dede7c, 1ebf85caa52b, 2020) ------
+  - id: VF01
+    type: lookup
+    question: How many countries and regions were affected by the April 2020 suspension of visa-waiver and visa-free entry?
+    answer: 90 (56 visa-waiver countries and 34 visa-free countries/regions), as of April 13, 2020.
+    gold: [{doc: b48153dede7c, pages: [1]}]
+  - id: VF02
+    type: table
+    question: After April 13, 2020, could citizens of the United Kingdom still enter Korea without a visa?
+    answer: Yes. The United Kingdom is among the 10 visa-waiver countries still eligible.
+    gold: [{doc: b48153dede7c, pages: [2]}]
+  - id: VF03
+    type: table
+    question: Was visa-free entry for Canadians suspended in 2020?
+    answer: Yes. Canada is listed among the 34 visa-free countries/regions whose visa-free entry was suspended.
+    gold: [{doc: b48153dede7c, pages: [2]}]
+  - id: VF04
+    type: lookup
+    question: When was visa-free entry to Jeju suspended, and for whom?
+    answer: From February 4, 2020, for all foreign nationals.
+    gold: [{doc: 1ebf85caa52b, pages: [1]}]
+
+  # --- Label-free visa (378ca86d6953, 48ed2e3d214a, 2020) ---------------------
+  - id: LF01
+    type: lookup
+    question: From what date did all Korean embassies stop issuing visa labels?
+    answer: July 1, 2020 (embassies in the US, Japan and 24 European countries stopped on February 24, 2020).
+    gold: [{doc: 378ca86d6953, pages: [1]}]
+  - id: LF02
+    type: multi_hop
+    question: How do I print my Visa Grant Notice, and does it need to be printed in colour?
+    answer: On visa.go.kr open Application Status/Issue > Check Application Status & Print, enter passport number, name and date of birth, search, and click the Certificate button to print; it is valid printed in colour or black and white.
+    gold: [{doc: 378ca86d6953, pages: [1]}, {doc: 48ed2e3d214a, pages: [1, 3]}]
+  - id: LF03
+    type: paraphrase
+    question: my visa was approved but there is no sticker in my passport, what do i show at the airport?
+    answer: The 'Visa Grant Notice', which all visa holders must present to immigration officers during immigration clearance.
+    gold: [{doc: 378ca86d6953, pages: [1]}, {doc: 48ed2e3d214a, pages: [3]}]
+
+  # --- Group e-visa agency regulation (8b0fb6d60b72, 2019) --------------------
+  - id: GE01
+    type: table
+    question: What administrative sanctions can be imposed on a group e-visa application agency?
+    answer: Cancellation of designation, suspension of agency operation (1, 2, 3 or 6 months), and a warning.
+    gold: [{doc: 8b0fb6d60b72, pages: [8]}]
+  - id: GE02
+    type: lookup
+    question: How long after its designation is revoked can a group e-visa application agency apply again?
+    answer: After two full years from the revocation.
+    gold: [{doc: 8b0fb6d60b72, pages: [3]}]
+  - id: GE03
+    type: lookup
+    question: Within how many days must a group e-visa agency raise an objection to an administrative sanction, and to whom?
+    answer: Within 10 days of receiving the notification, to the head of the jurisdictional overseas diplomatic mission.
+    gold: [{doc: 8b0fb6d60b72, pages: [9]}]
+  - id: GE04
+    type: lookup
+    question: Within how many days must a group e-visa agency report a change of representative or business location?
+    answer: Within 15 days after the change occurs.
+    gold: [{doc: 8b0fb6d60b72, pages: [6]}]
+  - id: GE05
+    type: multi_hop
+    question: When can the Seoul Immigration Office temporarily suspend a group e-visa agency because of illegal stayers?
+    answer: When the number of illegal stayers exceeds 5 in one month, or 3 for each tour group.
+    gold: [{doc: 8b0fb6d60b72, pages: [8, 9]}]
+
+  # --- Press releases (02997dfa266b 2018, dddce4b86792 2015, 1f9dd47d0d65 2015)
+  - id: PR01
+    type: lookup
+    question: Who can get a 10-year multiple-entry C-3 visa under the 2018 New Southern Policy measure?
+    answer: Professionals such as doctors, lawyers and professors, and holders of a bachelor's or higher degree from Korea or a master's or higher from overseas, from the listed New Southern Policy countries.
+    gold: [{doc: 02997dfa266b, pages: [1, 2]}]
+  - id: PR02
+    type: table
+    question: Residents of which Vietnamese cities could get a 5-year multiple-entry visa?
+    answer: Hanoi, Ho Chi Minh City and Da Nang.
+    gold: [{doc: 02997dfa266b, pages: [2]}]
+  - id: PR03
+    type: multi_hop
+    question: How much was the visa fee for Chinese group tourists that was waived after MERS, and until when was the waiver extended?
+    answer: About USD 15 per person; the waiver was extended to the end of 2016.
+    gold: [{doc: dddce4b86792, pages: [1]}, {doc: 1f9dd47d0d65, pages: [1]}]
+  - id: PR04
+    type: table
+    question: Group tourists from which five countries had their visa fees waived in 2015?
+    answer: China, Vietnam, Indonesia, the Philippines and Cambodia.
+    gold: [{doc: dddce4b86792, pages: [1]}, {doc: 1f9dd47d0d65, pages: [1, 2]}]
+  - id: PR05
+    type: lookup
+    question: How long could Chinese group tourists holding a Japanese group tourist visa stay in Korea without a visa under the 2015 measure?
+    answer: Up to 15 days.
+    gold: [{doc: 1f9dd47d0d65, pages: [2]}]
+
+  # --- Real-estate investor guide (fa7181cf50ef, 2a10808b261b, dceb1a06e238) --
+  - id: IN01
+    type: lookup
+    question: What happens to a real estate immigrant investor's status if they lease or sell the property?
+    answer: The investment status is cancelled and the alien registration is cancelled, so they cannot continue to stay.
+    gold: [{doc: fa7181cf50ef, pages: [1]}, {doc: 2a10808b261b, pages: [3]}, {doc: dceb1a06e238}, {doc: ad0a425b80f0}]
+  - id: IN02
+    type: lookup
+    question: How often must a real estate immigrant investor with alien registration come to Korea?
+    answer: At least once within one year from the date of departure, or the alien registration is cancelled.
+    gold: [{doc: fa7181cf50ef, pages: [1]}, {doc: 2a10808b261b, pages: [3]}, {doc: dceb1a06e238}, {doc: ad0a425b80f0}]
+  - id: IN03
+    type: lookup
+    question: For how long is a letter of attorney for a foreign investor's applications valid?
+    answer: 30 days from the day it is written (and it cannot be written while the mandator is outside Korea).
+    gold: [{doc: dceb1a06e238}, {doc: ad0a425b80f0}]
+
+  # --- Forms and manuals -------------------------------------------------------
+  - id: FM01
+    type: lookup
+    question: What is the maximum period of guarantee on a Letter of Guarantee?
+    answer: The period of guarantee shall not exceed 4 years.
+    gold: [{doc: a5f053a8415e, pages: [1]}]
+  - id: FM02
+    type: lookup
+    question: Within how many days of arriving in Korea must an E-2 visa holder apply for an alien registration card?
+    answer: Within 90 days, submitting a health certificate from a hospital designated by the Korean government.
+    gold: [{doc: d624741b2dc8, pages: [1]}, {doc: 06a10683e48f, pages: [1]}]
+  - id: FM03
+    type: lookup
+    question: What kind of photo is required on the visa application form?
+    answer: A 35mm x 45mm colour photo taken within the last 6 months, full face without a hat, front view against a white or off-white background.
+    gold: [{doc: 78db7641ce7e, pages: [1]}, {doc: ca5d41233806, pages: [1]}, {doc: e9f46990f50d, pages: [1]}, {doc: 5a8fdb852846, pages: [1]}, {doc: 99cee8cbaa53, pages: [1]}]
+  - id: FM04
+    type: lookup
+    question: In the visa e-form on the Korea Visa Portal, how must the family name and given names be entered?
+    answer: In uppercase letters only; both are required fields.
+    gold: [{doc: 45ad877e4898, pages: [7]}]
+  - id: FM05
+    type: table
+    question: Which authorities issue apostilles in Bulgaria?
+    answer: Two competent authorities - the Ministry of Justice (Sofia) and the Ministry of Foreign Affairs (2 Alexander Zhendov Street, Sofia 1032).
+    gold: [{doc: b133ad72454c, pages: [7, 8]}]
+
+  # --- Not answerable from the corpus (must refuse) ---------------------------
+  - id: NA01
+    type: no_answer
+    question: How much does a D-2 student visa cost?
+    answer: Not in the corpus. (Distractor - the re-entry permit fee of 50,000 KRW and a D-2 fee exemption appear on the same page.)
+  - id: NA02
+    type: no_answer
+    question: What is the minimum annual salary required for an E-7 visa?
+    answer: Not in the corpus.
+  - id: NA03
+    type: no_answer
+    question: How many points are needed for the F-2-7 points-based residence visa?
+    answer: Not in the corpus.
+  - id: NA04
+    type: no_answer
+    question: What is the capital of France?
+    answer: Out of domain.
+  - id: NA05
+    type: no_answer
+    question: How long is a K-ETA valid after it is approved?
+    answer: Not in the corpus. (Distractor - the accommodation notice links to k-eta.go.kr.)
+  - id: NA06
+    type: no_answer
+    question: How long does it take to process a D-10 job seeker visa?
+    answer: Not in the corpus. (Distractor - the Plan for Seeking Employment form.)
+  - id: NA07
+    type: no_answer
+    question: What is the current visa fee for a single-entry tourist visa in 2026?
+    answer: Not in the corpus. (Distractor - 2015 press releases mention about USD 15 for group tourists.)

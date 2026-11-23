@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Korea Visa Portal RAG</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --ink:#1d1d1b; --muted:#6b6b66; --line:#e3e3de; --accent:#1f5fbf; --warn:#a15c00; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141414; --card:#1d1d1d; --ink:#ececea; --muted:#9a9a94; --line:#2e2e2c; --accent:#7aa7ff; --warn:#e0a050; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.4rem; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 24px; font-size:.95rem; }
+  form { display:flex; gap:8px; }
+  input[type=text] { flex:1; padding:12px 14px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--ink); font-size:1rem; }
+  button { padding:12px 18px; border:0; border-radius:8px; background:var(--accent); color:#fff; font-weight:600; cursor:pointer; }
+  button:disabled { opacity:.6; cursor:default; }
+  .opts { margin:10px 0 0; color:var(--muted); font-size:.85rem; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .examples button { background:transparent; color:var(--accent); border:1px solid var(--line); padding:4px 10px; font-weight:500; font-size:.85rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px 20px; margin-top:20px; }
+  .answer { white-space:pre-wrap; }
+  .answer a.cite { color:var(--accent); text-decoration:none; font-weight:600; font-size:.85em; vertical-align:super; }
+  .refused { border-color:var(--warn); }
+  .meta { color:var(--muted); font-size:.8rem; margin-top:12px; display:flex; gap:14px; flex-wrap:wrap; }
+  h2 { font-size:1rem; margin:24px 0 8px; }
+  .src { border-top:1px solid var(--line); padding:10px 0; }
+  .src:first-of-type { border-top:0; }
+  .src .t { font-weight:600; }
+  .src .t a { color:var(--ink); }
+  .src .s { color:var(--muted); font-size:.88rem; margin-top:4px; max-height:5.6em; overflow:hidden; }
+  .badge { display:inline-block; font-size:.72rem; padding:1px 7px; border-radius:99px; border:1px solid var(--line); color:var(--muted); margin-left:6px; }
+  .cited { border-color:var(--accent); color:var(--accent); }
+  .flag { color:var(--warn); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Korea Visa Portal RAG</h1>
+  <p class="sub">English answers drawn only from the PDFs published on visa.go.kr. Every claim links to the page it came from.</p>
+  <form id="f">
+    <input id="q" type="text" placeholder="Ask about Korean visas…" autocomplete="off" required minlength="3">
+    <button id="go" type="submit">Ask</button>
+  </form>
+  <div class="opts">
+    <label>Retrieval
+      <select id="mode">
+        <option value="hybrid+rerank" selected>hybrid + rerank</option>
+        <option value="hybrid">hybrid (no rerank)</option>
+        <option value="dense">dense only</option>
+        <option value="sparse">BM25 only</option>
+      </select>
+    </label>
+    <span class="examples" id="ex"></span>
+  </div>
+  <div id="out"></div>
+</main>
+<script>
+const EXAMPLES = [
+  "Who must submit a tuberculosis test certificate?",
+  "How long is a re-entry permit exemption valid?",
+  "What is the label-free visa policy?",
+];
+const $ = (id) => document.getElementById(id);
+const esc = (s) => s.replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+EXAMPLES.forEach((e) => { const b = document.createElement("button"); b.type = "button"; b.textContent = e; b.onclick = () => { $("q").value = e; ask(); }; $("ex").appendChild(b); });
+
+function render(a) {
+  const byN = Object.fromEntries(a.passages.map((p) => [p.n, p]));
+  const cited = new Set(a.citations.map((c) => c.n));
+  const body = esc(a.answer).replace(/\[(\d+)\]/g, (m, n) => byN[n] ? `<a class="cite" href="${byN[n].pdf_url}" target="_blank" title="${esc(byN[n].title)} — p. ${byN[n].page}">[${n}]</a>` : m);
+  const t = a.timings;
+  const meta = [
+    `total ${t.total_s}s`, t.retrieve_s != null ? `retrieval ${t.retrieve_s.toFixed(2)}s` : "",
+    t.generate_s != null ? `generation ${t.generate_s}s` : "", `model ${a.model}`,
+    a.confidence.citation_coverage != null ? `cited sentences ${(a.confidence.citation_coverage*100).toFixed(0)}%` : "",
+  ].filter(Boolean).map((x) => `<span>${x}</span>`).join("");
+  const flags = a.flags.length ? `<span class="flag">${a.flags.join(", ")}</span>` : "";
+  const srcs = a.passages.map((p) => `
+    <div class="src"><div class="t">[${p.n}] <a href="${p.pdf_url}" target="_blank">${esc(p.title)}</a>
+      <span class="badge">p. ${p.page}</span>${p.post_date ? `<span class="badge">${p.post_date}</span>` : ""}
+      ${cited.has(p.n) ? '<span class="badge cited">cited</span>' : ""}<span class="badge">score ${p.score}</span></div>
+      <div class="s">${esc(p.snippet)}</div></div>`).join("");
+  $("out").innerHTML = `
+    <div class="card ${a.refused ? "refused" : ""}"><div class="answer">${body}</div><div class="meta">${meta}${flags}</div></div>
+    <h2>Retrieved passages</h2><div class="card">${srcs || "<em>none</em>"}</div>`;
+}
+
+async function ask(ev) {
+  if (ev) ev.preventDefault();
+  const q = $("q").value.trim(); if (q.length < 3) return;
+  $("go").disabled = true; $("out").innerHTML = '<div class="card">Searching the visa.go.kr documents…</div>';
+  try {
+    const r = await fetch("/v1/ask", { method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({question: q, mode: $("mode").value}) });
+    if (!r.ok) throw new Error(`${r.status} ${await r.text()}`);
+    render(await r.json());
+  } catch (e) { $("out").innerHTML = `<div class="card refused">Error: ${esc(String(e))}</div>`; }
+  finally { $("go").disabled = false; }
+}
+$("f").addEventListener("submit", ask);
+</script>
+</body>
+</html>

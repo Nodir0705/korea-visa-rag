@@ -1,0 +1,337 @@
+{
+  "mistral-nemo": {
+    "cases": 55,
+    "caught_wrong_answers": "9/12",
+    "kept_correct_answers": "38/43",
+    "accuracy": 0.855,
+    "cohen_kappa": 0.598,
+    "seconds": 249.8,
+    "disagreements": [
+      {
+        "id": "real-RE06",
+        "label": "FAIL",
+        "judge": "PASS"
+      },
+      {
+        "id": "real-LF01",
+        "label": "PASS",
+        "judge": "FAIL"
+      },
+      {
+        "id": "real-PR02",
+        "label": "PASS",
+        "judge": "FAIL"
+      },
+      {
+        "id": "real-PR04",
+        "label": "PASS",
+        "judge": "FAIL"
+      },
+      {
+        "id": "real-IN01",
+        "label": "PASS",
+        "judge": "FAIL"
+      },
+      {
+        "id": "real-FM02",
+        "label": "PASS",
+        "judge": "FAIL"
+      },
+      {
+        "id": "pert-RE03",
+        "label": "FAIL",
+        "judge": "PASS"
+      },
+      {
+        "id": "pert-VF03",
+        "label": "FAIL",
+        "judge": "PASS"
+      }
+    ]
+  },
+  "qwen3.5:9b": {
+    "cases": 55,
+    "caught_wrong_answers": "0/12",
+    "kept_correct_answers": "0/43",
+    "accuracy": 0.0,
+    "cohen_kappa": -0.279,
+    "seconds": 281.9,
+    "disagreements": [
+      {
+        "id": "real-TB01",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-TB02",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-TB03",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-TB04",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-TB05",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-TB06",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-TB07",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-TB08",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-RE01",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-RE02",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-RE03",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-RE04",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-RE05",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-RE06",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-RE07",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-RE08",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-RE09",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-RE10",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-AC01",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-AC02",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-VF01",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-VF02",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-VF03",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-VF04",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-LF01",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-LF02",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-LF03",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-GE01",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-GE02",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-GE03",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-GE04",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-GE05",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-PR01",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-PR02",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-PR03",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-PR04",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-PR05",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-IN01",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-IN02",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-IN03",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-FM01",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-FM02",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-FM03",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-FM04",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "real-FM05",
+        "label": "PASS",
+        "judge": "ERROR"
+      },
+      {
+        "id": "pert-TB04",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "pert-RE03",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "pert-RE07",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "pert-AC01",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "pert-GE02",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "pert-PR02",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "pert-VF03",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "pert-LF01",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "pert-FM01",
+        "label": "FAIL",
+        "judge": "ERROR"
+      },
+      {
+        "id": "pert-TB07",
+        "label": "FAIL",
+        "judge": "ERROR"
+      }
+    ]
+  }
+}

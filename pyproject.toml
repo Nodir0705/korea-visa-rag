@@ -1,0 +1,40 @@
+[project]
+name = "visa-rag"
+version = "0.1.0"
+description = "English question answering over every PDF published on the Korea Visa Portal (visa.go.kr), with cited pages"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "httpx>=0.27",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.4",
+    "torch==2.10.0",            # pinned to the build already in the local uv cache (disk is tight)
+    "docling>=2.50",
+    "lancedb>=0.25",
+    "pyarrow>=17",
+    "sentence-transformers>=5.1",
+    "transformers>=4.56",
+    "langdetect>=1.0.9",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pyyaml>=6.0",
+    "tiktoken>=0.7",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/visarag"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

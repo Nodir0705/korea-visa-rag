@@ -1,0 +1,13 @@
+{
+  "generator": "qwen3.5:4b",
+  "questions": 52,
+  "answered_when_answerable": 1.0,
+  "refused_when_unanswerable": 1.0,
+  "answers_citing_a_gold_page": 0.978,
+  "citation_precision_gold_page": 0.772,
+  "invalid_citation_flags": 0,
+  "latency_p50_s": 2.29,
+  "latency_p95_s": 3.94,
+  "generation_p50_s": 1.98,
+  "mean_prompt_tokens": 1945
+}

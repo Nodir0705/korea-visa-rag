@@ -1,0 +1,32 @@
+{
+  "qwen3.5:9b": {
+    "cases": 55,
+    "caught_wrong_answers": "11/12",
+    "kept_correct_answers": "40/43",
+    "accuracy": 0.927,
+    "cohen_kappa": 0.799,
+    "seconds": 279.2,
+    "disagreements": [
+      {
+        "id": "real-RE06",
+        "label": "FAIL",
+        "judge": "PASS"
+      },
+      {
+        "id": "real-VF01",
+        "label": "PASS",
+        "judge": "FAIL"
+      },
+      {
+        "id": "real-VF04",
+        "label": "PASS",
+        "judge": "FAIL"
+      },
+      {
+        "id": "real-PR01",
+        "label": "PASS",
+        "judge": "FAIL"
+      }
+    ]
+  }
+}

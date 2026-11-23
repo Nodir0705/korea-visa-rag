@@ -1,0 +1,11 @@
+{
+  "judge": "qwen3.5:9b",
+  "answerable": 45,
+  "correct_over_answerable": 0.978,
+  "supported_over_answered": 0.956,
+  "judge_errors": 0,
+  "failed_correctness": [
+    "VF02"
+  ],
+  "file": "results/20261124-0248-answers-qwen35-4b-v2.judged-qwen3.5_9b.jsonl"
+}
