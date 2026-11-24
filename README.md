@@ -1,6 +1,6 @@
 # Korea Visa Portal RAG
 
-English question answering over the Korea Visa Portal (**visa.go.kr**). It uses two sources: the site's **English PDFs** (40 of the 107 PDFs it publishes) and its **110 English per-visa guide pages** (eligibility, required documents, visa validity and period of stay for each visa code). Every claim is cited, either to a PDF page or to a visa guide page. It runs fully locally on one 8 GB GPU and answers in **about 2 s**. Overall accuracy is **98.6%** on the 70-question development set, and **94–96%** on 50 held-out questions that were never tuned on (judge score and manual review, respectively).
+English question answering over the Korea Visa Portal (**visa.go.kr**). It uses two sources: the site's **English PDFs** (40 of the 107 PDFs it publishes) and its **110 English per-visa guide pages** (eligibility, required documents, visa validity and period of stay for each visa code). Every claim is cited, either to a PDF page or to a visa guide page. It runs fully locally on one 8 GB GPU and answers in **about 2 s**. Overall accuracy is **98.6%** on the 70-question development set, and **94–96%** on 50 held-out questions (judge score and manual review). Those held-out figures come after fixes found on the held-out sets; on first scoring they were 88% and 92%, as explained below.
 
 ## Results
 
