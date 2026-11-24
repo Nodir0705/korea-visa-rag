@@ -1,0 +1,130 @@
+{
+  "questions": 22,
+  "embed_model": "st:BAAI/bge-m3",
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "table": {
+    "hybrid+rerank": {
+      "page_recall@1": 0.909,
+      "page_recall@3": 0.909,
+      "page_recall@5": 1.0,
+      "page_recall@10": 1.0,
+      "doc_recall@5": 1.0,
+      "mrr@10": 0.93,
+      "ndcg@10": 0.895,
+      "p50_ms": 329,
+      "p95_ms": 406
+    }
+  },
+  "per_question": [
+    {
+      "mode": "hybrid+rerank",
+      "id": "H01",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H02",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H03",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H04",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H05",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H06",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H07",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H08",
+      "first_relevant_rank": 4
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H09",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H10",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H11",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H12",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H13",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H14",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H15",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H16",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H17",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H18",
+      "first_relevant_rank": 5
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H19",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H20",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H21",
+      "first_relevant_rank": 1
+    },
+    {
+      "mode": "hybrid+rerank",
+      "id": "H22",
+      "first_relevant_rank": 1
+    }
+  ]
+}

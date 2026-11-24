@@ -182,3 +182,13 @@ def test_number_grounding_drops_numbers_from_another_page():
     assert flags == ["number_not_in_sources"] and text.startswith("The visa.go.kr documents I have do not state this")
     ok_text, flags = amount_guard("What is needed for D-4-1?", "At least a high school diploma [1].", [d41])
     assert flags == [] and ok_text == "At least a high school diploma [1]."
+
+
+def test_number_grounding_allows_numbers_from_the_question_and_dates():
+    from visarag.answer import amount_guard
+
+    form = Hit("f", "80df", "Health Condition Report Form", "f.pdf", 1, [1], "",
+               "Please list all cities you have stayed within 30 days prior to application.", "", "u", "p", "2020-02-24")
+    text, flags = amount_guard("On the 2020 Health Condition Report Form, which places must applicants list?",
+                               "On the 2020 form, applicants list all cities stayed in within 30 days [1].", [form])
+    assert flags == []

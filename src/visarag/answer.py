@@ -180,7 +180,8 @@ def amount_guard(question: str, text: str, hits: list[Hit]) -> tuple[str, list[s
         #    copied from a neighbouring visa page (TOPIK "50 out of 200" from D-3 given for D-4-1).
         if not problem:
             bare = MARKER.sub(" ", VISA_CODE.sub(" ", s))
-            sources = " ".join(f"{h.body}\n{h.text}" for h in cited)
+            # Numbers repeated from the question, or from a passage's title or date, are not new claims.
+            sources = " ".join([question, *(f"{h.body}\n{h.text}\n{h.title} {h.post_date}" for h in cited)])
             if any(n.rstrip(".,") not in sources for n in NUMBER.findall(bare)):
                 problem = "number_not_in_sources"
         if problem:

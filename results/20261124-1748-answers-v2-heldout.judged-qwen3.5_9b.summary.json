@@ -1,0 +1,11 @@
+{
+  "judge": "qwen3.5:9b",
+  "answerable": 22,
+  "correct_over_answerable": 0.909,
+  "supported_over_answered": 0.905,
+  "judge_errors": 0,
+  "failed_correctness": [
+    "H04"
+  ],
+  "file": "results/20261124-1748-answers-v2-heldout.judged-qwen3.5_9b.jsonl"
+}
