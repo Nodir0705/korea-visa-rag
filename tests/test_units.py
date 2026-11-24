@@ -189,6 +189,6 @@ def test_number_grounding_allows_numbers_from_the_question_and_dates():
 
     form = Hit("f", "80df", "Health Condition Report Form", "f.pdf", 1, [1], "",
                "Please list all cities you have stayed within 30 days prior to application.", "", "u", "p", "2020-02-24")
-    text, flags = amount_guard("On the 2020 Health Condition Report Form, which places must applicants list?",
+    _, flags = amount_guard("On the 2020 Health Condition Report Form, which places must applicants list?",
                                "On the 2020 form, applicants list all cities stayed in within 30 days [1].", [form])
     assert flags == []

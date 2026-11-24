@@ -1,6 +1,6 @@
 # Korea Visa Portal RAG
 
-English question answering over the Korea Visa Portal (**visa.go.kr**). It uses two sources: the site's **English PDFs** (40 of the 107 PDFs it publishes) and its **110 English per-visa guide pages** (eligibility, required documents, visa validity and period of stay for each visa code). Every claim is cited, either to a PDF page or to a visa guide page. It runs fully locally on one 8 GB GPU. The correct source is ranked first for **88.5%** of evaluation questions and is in the top 5 for **96.7%**. Answers take **2.2 s** at the median.
+English question answering over the Korea Visa Portal (**visa.go.kr**). It uses two sources: the site's **English PDFs** (40 of the 107 PDFs it publishes) and its **110 English per-visa guide pages** (eligibility, required documents, visa validity and period of stay for each visa code). Every claim is cited, either to a PDF page or to a visa guide page. It runs fully locally on one 8 GB GPU and answers in **about 2 s**. Overall accuracy is **98.6%** on the 70-question development set, and **94–96%** on 50 held-out questions that were never tuned on (judge score and manual review, respectively).
 
 ## Results
 
@@ -15,25 +15,38 @@ All numbers come from `eval/run.py` on `eval/golden.yaml`: 61 answerable questio
 | Hybrid (RRF) | 0.787 | 0.984 | 0.984 | 0.873 | 94 ms |
 | **Hybrid + cross-encoder rerank** | **0.885** | **0.967** | **0.984** | **0.920** | 336 ms |
 
-**Answers** (`results/20261124-1419-answers-qwen35-4b-pages-v3*`)
+**Answers.** Overall accuracy counts correct answers to answerable questions plus unanswerable questions that are refused or answered "the documents do not state this". The final system has small-to-big page context and number grounding; files are `results/*answers-v2-*` and `results/*answers-v3-heldout2*`.
 
-| Metric | qwen3.5:4b |
-|---|---:|
-| Answered, of 61 answerable | 61 |
-| Unanswerable (9): refused, or answered "the documents do not state this" | **9** (7 refused, 2 said not stated) |
-| Unanswerable answered with an invented fact | **0** |
-| Correct, LLM judge (κ = 0.80 against labels assigned by Claude) | **0.934** (57/61) |
-| Every claim stated in the cited passage, LLM judge (**not calibrated**) | 0.836 |
-| Answers citing at least one gold source | 0.951 |
-| Citation precision (cited passages that are on a gold page) | 0.832 |
-| Invented citations (marker pointing to no passage) | 0 |
-| End-to-end latency p50 / p95 | **2.17 s / 3.67 s** |
+| Set | Questions | Correct, LLM judge | Unanswerable handled | **Overall (judge)** | Overall (manual review) | p50 / p95 |
+|---|---:|---:|---:|---:|---:|---:|
+| Development (`golden.yaml`) | 61 + 9 | 60/61 | 9/9 | **98.6%** | 96–97% ¹ | 2.20 s / 3.74 s |
+| Held-out 1 (`heldout.yaml`) | 22 + 3 | 20/22 | 3/3 | **92%** | 96% ² | 1.92 s / 3.16 s |
+| Held-out 2 (`heldout2.yaml`) | 21 + 4 | 20/21 | 4/4 | **96%** | 96% | 1.86 s / 3.44 s |
+| Both held-out sets | 50 | | | **94%** | **96%** | |
 
-All 16 visa-page questions are judged correct. The four failures are PDF questions:
-- **VF02 (wrong).** The PDF lays out its country tables in two columns, and Docling attaches the caption "still eligible" to the wrong table. The model then says the UK lost visa-free entry. This is a known open failure.
-- **RE02, PR01 and VF04.** The central fact is right, but the model adds a wrong extra detail: it applies the multiple-permit rule to permanent residents, makes all nationals eligible instead of only professionals, or misreads a country list.
+Other measures:
+- **Invented citations:** 0 in every run.
+- **Unanswerable questions answered with an invented fact:** 0 in the final runs.
+- **"Every claim stated in the cited passage"** (judge, not calibrated): 0.87 / 0.91 / 0.86 on the three sets.
 
-The judge is qwen3.5:9b, chosen by calibration (below).
+¹ The judge passed FM04 (it gives the paper form's "block letters" rule instead of the e-form's "uppercase only" rule), and PR01 is borderline. Both are counted as wrong in the manual column.
+² The judge failed H04, whose answer (valid 3 years, first stay up to 1 year) is correct; it only omits the words "multiple-entry".
+
+**How the held-out sets were used.** Each set was committed before the system it measures was run on it (git history: `36a96d1`, `fffe16c`), so first scores are not tuned. The first scoring of each one exposed failure classes that were then fixed:
+- **Held-out 1, first scored at 88% (judge):**
+  - The model quoted a minimum investment from memory, and number grounding was added.
+  - Whole-page context hurt the 89-page apostille directory, so small-to-big is now limited to documents of 20 pages or fewer.
+  - One label was wrong: H22 does have an answer in the source (`b3df5e2`).
+- **Held-out 2, first scored at 92% (judge):**
+  - K24 applied a D-3 TOPIK rule to D-4-1. Number grounding, added after held-out 1, already fixes it.
+  - Then a false catch had to be fixed: a year repeated from the question.
+
+So the honest figure for unseen questions is **about 92–96%**. The numbers in the table come after those fixes.
+
+**Remaining errors.**
+- **K05:** the model picks the wrong case on the E-3 page.
+- **VF04:** the model misreads which countries a notice covers.
+- **H18:** the Macao entry of the apostille directory has no country name in its chunk, so the model refuses.
 
 **Generator choice** (PDF-only index, 45 questions, `results/20261124-0248-*-4b-v2*` vs `results/20261124-0228-*-9b-v2*`): qwen3.5:4b scored 0.978 correct, 2.25 s p50. qwen3.5:9b scored 0.956 correct, 20.9 s p50, because the reranker had to run on the CPU (the 9B model needs 8.9 GB).
 
@@ -92,6 +105,7 @@ flowchart LR
 **What is not indexed.** 67 non-English PDFs (Korean, plus Vietnamese, Russian, Thai and Chinese versions of notices) and 235 non-PDF attachments (98 HWP, 79 XLSX, 31 DOC, 23 images, 4 other) are downloaded and listed in the manifest but not indexed, because the system is English-only by design. Several of them, such as the Korean visa manuals, hold substantive rules that are missing from the English side of the portal.
 
 ## What did not work
+- **A self-verification pass.** After answering, the same 4B model checked each sentence against its cited passages and dropped the unsupported ones. This dropped correct content too: 56/61 correct with it, against 58/61 without. It is kept as an option (`VISARAG_VERIFY=true`) and is off by default. The two changes that did help are deterministic: small-to-big page context, which fixed the scrambled-table and wrapped-line errors, and number grounding, under which every number in a sentence must appear in the passages it cites.
 - **Prompt rules against borrowing a number from another document.** With the visa pages added, "How much does a D-2 visa cost?" retrieved D-2 pages that list "fee" as a required item but give no amount. The 4B model filled the gap with the 50,000 KRW re-entry permit fee from a notice that mentions D-2 only in its exemption list. A stronger prompt rule did not stop it, and it made another answer worse (FM04) and lowered citation precision (0.832 → 0.777), so it was reverted. What works is a check in code (`amount_guard`). When the question names a visa code, every money amount must come from a cited passage about that code: its title or section names the code, or the amount appears on the same line as the code. Otherwise the answer becomes "the documents do not state this amount for D-2". On the evaluation it fired once, on that question, and never on an answerable one.
 
 - **JSON-schema output with thinking off.** Ollama 0.17.7 with qwen3.5 *ignores* `format` (constrained decoding) when `think: false`. The model returned `{"message": "Hello!"}` for a schema that required `ok` and `text`. With thinking on, it follows the schema but spends 800–3,400 thinking tokens first. So answers are plain text with `[n]` markers and a `NOT_FOUND` sentinel, and citations are validated in code. The same issue first made qwen3.5:9b look like a useless judge: it answered `{"is_correct": true}` instead of the schema's `verdict`, so every verdict parsed as an error until the parser accepted that shape.
