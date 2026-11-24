@@ -97,6 +97,7 @@ def build_chunks() -> list[dict]:
             pieces.append((ch.meta.doc_items, _heading_trail(headers, first, ch.meta.headings), ch.text.strip()))
         pieces += _orphans(doc, order, headers, covered)
         pieces.sort(key=lambda p: min((order.get(it.self_ref, 0) for it in p[0]), default=0))
+        pieces = _attach_table_captions(pieces, order)
         for i, (items, headings, body) in enumerate(pieces):
             if len(body) < 20 or _not_english(body):
                 continue  # Korean/Chinese half of a bilingual form: not indexed in the English system
@@ -139,19 +140,51 @@ def _reading_order(doc) -> tuple[dict[str, int], list[tuple[int, str]]]:
 
 
 def _heading_trail(headers: list[tuple[int, str]], pos: int, own: list[str] | None) -> list[str]:
-    """The chunk's own headings plus the heading before them.
+    """The chunk's headings, plus the subject heading when the nearest one is only a field label.
 
     Many of these PDFs have flat heading levels, so Docling keeps only the nearest
-    heading ("Contact details:") and drops the one that names the subject
-    ("Bulgaria - Competent Authority"). Carrying the previous heading restores it.
+    heading. When that heading is a field label ending in a colon ("Contact details:"),
+    the subject ("Bulgaria - Competent Authority") is lost, so the last heading that is
+    not a label is put in front of it. Headings that name a subject are left alone:
+    carrying the previous heading unconditionally put the TB country list under
+    "[Note] Exceptions (... exempt from submission)", and the model then read the
+    countries as exempt.
     """
+    own = list(own or [])
     before = [t for p, t in headers if p < pos]
-    trail = before[-2:] if before else []
-    out: list[str] = []
-    for h in trail + list(own or []):
-        if h not in out:
-            out.append(h)
-    return out[-3:]
+    if not own and before:
+        own = [before[-1]]
+    if own and own[-1].rstrip().endswith(":"):
+        subject = next((t for t in reversed(before) if not t.rstrip().endswith(":") and t not in own), None)
+        if subject:
+            own = [subject, *own]
+    return own[-3:]
+
+
+def _is_table(item) -> bool:
+    return str(getattr(item, "label", "")).split(".")[-1].lower() == "table"
+
+
+def _attach_table_captions(pieces: list[tuple[list, list[str], str]], order: dict[str, int]) -> list:
+    """Move a short lead-in line ("The countries still eligible ... are as follows.") from the
+    end of one chunk to the start of the next when the next chunk starts with a table.
+    Without this, the table's chunk has no caption, and the caption sits in the
+    previous chunk, attached to the wrong list."""
+    out = [list(p) for p in pieces]
+    for i in range(len(out) - 1):
+        items, _, body = out[i]
+        nxt_items = out[i + 1][0]
+        if not items or not nxt_items:
+            continue
+        first_next = min(nxt_items, key=lambda it: order.get(it.self_ref, 0))
+        last = max(items, key=lambda it: order.get(it.self_ref, 0))
+        text = (getattr(last, "text", "") or "").strip()
+        if _is_table(first_next) and not _is_table(last) and 0 < len(text) <= 200 and body.rstrip().endswith(text):
+            out[i][2] = body.rstrip()[: -len(text)].rstrip()
+            out[i][0] = [it for it in items if it is not last]
+            out[i + 1][2] = f"{text}\n{out[i + 1][2]}"
+            out[i + 1][0] = [last, *nxt_items]
+    return [tuple(p) for p in out]
 
 
 def _orphans(doc, order, headers, covered) -> list[tuple[list, list[str], str]]:

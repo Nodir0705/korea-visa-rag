@@ -1,36 +1,36 @@
 # Korea Visa Portal RAG
 
-English question answering over **every PDF published on visa.go.kr**, with a citation to the exact page for each claim. Runs fully locally on one 8 GB GPU. The correct page is ranked first for **87%** of evaluation questions and is in the top 5 for **98%**. Answers take **2.3 s** at the median.
+English question answering over the **English-language PDFs published on visa.go.kr**. All 107 PDFs on the site are downloaded, and the 40 in English are indexed. Answers come with a citation to the exact page for each claim. Runs fully locally on one 8 GB GPU. The correct page is ranked first for **87%** of evaluation questions and is in the top 5 for **98%**. Answers take **2.3 s** at the median.
 
 ## Results
 
 All numbers come from `eval/run.py` on `eval/golden.yaml`: 45 answerable questions and 7 the system must refuse. They were measured on an RTX 4060 8 GB.
 
-**Retrieval** (`results/*-retrieval-bge-m3-v2.json`). A hit is a retrieved chunk from the right document that covers the right page.
+**Retrieval** (`results/*-retrieval-bge-m3-v3.json`). A hit is a retrieved chunk from the right document that covers the right page.
 
 | Mode | Correct page ranked 1st | Correct page in top 5 | Correct page in top 10 | MRR@10 | nDCG@10 | p50 latency |
 |---|---:|---:|---:|---:|---:|---:|
-| Dense (bge-m3) | 0.733 | 0.933 | 0.956 | 0.819 | 0.808 | 93 ms |
-| Sparse (BM25) | 0.756 | 0.978 | 0.978 | 0.848 | 0.840 | 3 ms |
-| Hybrid (RRF) | 0.778 | 0.956 | 0.978 | 0.863 | 0.842 | 94 ms |
-| **Hybrid + cross-encoder rerank** | **0.867** | **0.978** | **1.000** | **0.926** | **0.893** | 349 ms |
+| Dense (bge-m3) | 0.711 | 0.956 | 0.956 | 0.808 | — | 94 ms |
+| Sparse (BM25) | 0.733 | 0.956 | 0.978 | 0.825 | — | 3 ms |
+| Hybrid (RRF) | 0.778 | 1.000 | 1.000 | 0.872 | — | 96 ms |
+| **Hybrid + cross-encoder rerank** | **0.867** | **0.978** | **0.978** | **0.922** | — | 342 ms |
 
-**Answers** (`results/20261124-0248-answers-qwen35-4b-v2*`, `results/20261124-0228-answers-qwen35-9b-v2*`)
+**Answers** (`results/20261124-0405-answers-qwen35-4b-v3*` (final index); the 4B-vs-9B comparison is `results/20261124-0248-*-4b-v2*` vs `results/20261124-0228-*-9b-v2*` on the previous index)
 
 | Metric | **qwen3.5:4b** (default) | qwen3.5:9b |
 |---|---:|---:|
 | Answered, of 45 answerable | 45 | 45 |
 | Refused, of 7 unanswerable | 7 | 7 |
-| Correct, LLM judge (κ = 0.80 against reference labels) | **0.978** (44/45) | 0.956 (43/45) |
-| Every claim stated in the cited passage, LLM judge | **0.956** | 0.844 |
-| Answers citing at least one gold page | 0.956 | 0.978 |
-| Citation precision (cited passages that are on a gold page) | **0.855** | 0.848 |
+| Correct, LLM judge (κ = 0.80 against labels assigned by Claude) | **0.978** (44/45) | 0.956 (43/45) |
+| Every claim stated in the cited passage, LLM judge (**not calibrated**) | 0.889 | 0.844 |
+| Answers citing at least one gold page | 0.933 | 0.978 |
+| Citation precision (cited passages that are on a gold page) | 0.845 | 0.848 |
 | Invented citations (marker pointing to no passage) | 0 | 0 |
-| End-to-end latency p50 / p95 | **2.25 s / 3.30 s** | 20.9 s / 27.8 s ¹ |
+| End-to-end latency p50 / p95 | **2.25 s / 3.21 s** | 20.9 s / 27.8 s ¹ |
 
 ¹ At a 6k context, qwen3.5:9b needs 8.9 GB, so it cannot share the 8 GB GPU with the cross-encoder. In this run the reranker ran on the CPU (about 16 s), and 28% of the model still spilled to the CPU.
 
-The judge is qwen3.5:9b, chosen by calibration (below). Reading every answer by hand gave the same verdict for the 4B run: 44/45, and the one wrong answer is VF02. It reads a two-table country list backwards (it says the UK lost visa-free entry; the source lists the UK as still eligible), even though the correct passage is ranked 2nd in its context. For the 9B run, the manual check found 42/45: the judge missed PR01, which gives Vietnamese city residents a 10-year visa instead of 5 years.
+The judge is qwen3.5:9b, chosen by calibration (below). Claude also read every answer. In the earlier v2 run it found 43/45 correct (VF02 and TB03). TB03 was a chunking bug: a heading trail put the TB country list under "Exceptions… exempt". It is fixed in v3. The remaining wrong answer, VF02, comes from the PDF's two-column layout of country tables: Docling attaches the caption "still eligible" to the wrong table, and the model says the UK lost visa-free entry. This is a known open failure. For the 9B run, the manual check found 42/45: the judge missed PR01, which gives Vietnamese city residents a 10-year visa instead of 5 years.
 
 **Corpus**
 
@@ -42,7 +42,7 @@ The judge is qwen3.5:9b, chosen by calibration (below). Reading every answer by 
 | Indexed chunks (English text only, about 137 tokens on average) | 814 |
 | Unit and data tests | `uv run pytest`: 13 passed |
 
-> **Caveat: read before trusting the answer scores.** The 52 golden questions and the judge-calibration labels were written by an LLM (Claude) while it read the cited pages. A human did not write them, and no human has reviewed them yet. Retrieval scores use page labels that can be checked mechanically against the PDFs. Answer-correctness scores depend on those LLM-written reference answers.
+> **Caveat: read before trusting the answer scores.** The chunking fixes, the prompt rewrite and one reference-answer correction (FM05) were all made after looking at these same 45 questions, so every number here is in-sample. A fresh held-out set has not been scored yet. The 52 golden questions and the judge-calibration labels were written by an LLM (Claude) while it read the cited pages. A human did not write them, and no human has reviewed them yet. Retrieval scores use page labels that can be checked mechanically against the PDFs. Answer-correctness scores depend on those LLM-written reference answers.
 
 ## How it works
 
@@ -66,7 +66,7 @@ flowchart LR
    - **Heading trail.** Many of these PDFs have flat heading levels, so a chunk kept only *"Contact details:"* and lost *"Bulgaria – Competent Authority"*. Each chunk now carries the heading before its own.
 
    Korean and Chinese halves of bilingual forms are dropped at chunk level. Documents posted only with Korean titles get a short English title written once by the local LLM.
-4. **Retrieve.** Dense retrieval (bge-m3, run in-process) and BM25 (LanceDB native full-text search) each take the top 30, fused by reciprocal rank fusion. Then the bge-reranker-v2-m3 cross-encoder re-scores the fused list. If even the best passage scores below 0.02, the system refuses without calling the LLM: 5 of the 7 unanswerable questions are refused in about 0.3 s this way.
+4. **Retrieve.** Dense retrieval (bge-m3, run in-process) and BM25 (LanceDB native full-text search) each take the top 30, fused by reciprocal rank fusion. Then the bge-reranker-v2-m3 cross-encoder re-scores the fused list. If even the best passage scores below 0.02, the system refuses without calling the LLM: 4 of the 7 unanswerable questions are refused in about 0.3 s this way. The LLM itself refuses the other 3.
 5. **Generate.** qwen3.5:4b gets 6 numbered passages, each with title, page and date. It must put a `[n]` after every factual sentence, or reply exactly `NOT_FOUND`. Code then checks every marker. A marker outside `1..k` is an invented citation, so the answer is regenerated once, and any invalid marker still left is removed and flagged. The response reports citation coverage, a flag for sources older than 3 years, and per-stage timings.
 
 ## Design decisions
@@ -79,7 +79,9 @@ flowchart LR
 
 **Plain-text citations, not JSON.** See "What did not work".
 
-**What is not indexed.** Korean-only PDFs (66) and 235 HWP/DOCX/XLSX attachments are downloaded and listed in the manifest but not indexed, because the system is English-only by design. Several of them, such as the Korean visa manuals, hold substantive rules that are missing from the English side of the portal.
+**Embedder and reranker models.** bge-m3 and bge-reranker-v2-m3 were chosen because they were already on the machine, and the disk had only a few GB free. Newer models (Qwen3-Embedding-0.6B, Qwen3-Reranker-0.6B, which their model cards report as stronger) were not A/B tested. That is the next retrieval experiment.
+
+**What is not indexed.** 67 non-English PDFs (Korean, plus Vietnamese, Russian, Thai and Chinese versions of notices) and 235 non-PDF attachments (98 HWP, 79 XLSX, 31 DOC, 23 images, 4 other) are downloaded and listed in the manifest but not indexed, because the system is English-only by design. Several of them, such as the Korean visa manuals, hold substantive rules that are missing from the English side of the portal.
 
 ## What did not work
 

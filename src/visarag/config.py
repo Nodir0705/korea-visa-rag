@@ -26,6 +26,8 @@ class Settings(BaseSettings):
 
     # Models (all local, via Ollama, except the cross-encoder reranker which runs in-process)
     ollama_url: str = "http://localhost:11434"
+    host: str = "127.0.0.1"  # API bind address; no auth, so keep it off public interfaces
+    port: int = 8000
     embed_model: str = "st:BAAI/bge-m3"  # "st:<hf model>" in-process, or "ollama:<tag>"
     embed_tokenizer: str = "BAAI/bge-m3"  # HF tokenizer used to size chunks
     index_device: str = "cuda"

@@ -93,3 +93,12 @@ def test_parse_verdict_handles_schema_and_model_invented_shapes():
     assert parse_verdict('{"is_correct": false, "reasoning": "x"}') == "FAIL"
     assert parse_verdict("Claim 1 is stated. Claim 2 is not.\nVerdict: FAIL") == "FAIL"
     assert parse_verdict("no verdict here") == "ERROR"
+
+
+def test_heading_trail_adds_subject_only_for_field_labels():
+    from visarag.index import _heading_trail
+
+    headers = [(1, "Bulgaria - Competent Authority (Art. 6)"), (5, "Contact details:")]
+    assert _heading_trail(headers, 6, ["Contact details:"]) == ["Bulgaria - Competent Authority (Art. 6)", "Contact details:"]
+    tb = [(1, "[Note] Exceptions (the following persons are exempt from submission)"), (5, "(High TB-burden countries)")]
+    assert _heading_trail(tb, 6, ["(High TB-burden countries)"]) == ["(High TB-burden countries)"]

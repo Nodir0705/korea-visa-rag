@@ -91,7 +91,7 @@ def index() -> str:
 def main() -> None:
     import uvicorn
 
-    uvicorn.run("visarag.api:app", host="0.0.0.0", port=8000, workers=1)
+    uvicorn.run("visarag.api:app", host=settings.host, port=settings.port, workers=1)
 
 
 if __name__ == "__main__":
