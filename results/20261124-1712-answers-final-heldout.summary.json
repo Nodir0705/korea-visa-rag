@@ -1,0 +1,17 @@
+{
+  "generator": "qwen3.5:4b",
+  "questions": 25,
+  "answered_when_answerable": 0.952,
+  "refused_when_unanswerable": 0.5,
+  "refused_or_said_not_stated_when_unanswerable": 0.75,
+  "unanswerable_answered_with_claims": [
+    "H22"
+  ],
+  "answers_citing_a_gold_page": 1.0,
+  "citation_precision_gold_page": 0.893,
+  "invalid_citation_flags": 0,
+  "latency_p50_s": 1.9,
+  "latency_p95_s": 3.1,
+  "generation_p50_s": 1.5,
+  "mean_prompt_tokens": 1778
+}

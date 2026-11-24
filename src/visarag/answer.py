@@ -18,12 +18,15 @@ Flow for one question:
 """
 from __future__ import annotations
 
+import dataclasses
+import functools
 import json
 import re
 import time
 from dataclasses import asdict, dataclass, field
 
 from visarag.config import settings
+from visarag.index import _not_english
 from visarag.ollama import Ollama
 from visarag.retrieve import Hit, Retriever
 
@@ -38,7 +41,8 @@ per-visa guide pages (eligibility, required documents, visa validity and period 
 
 Rules:
 - Start with the direct answer. If the question is yes/no, the first word is Yes or No.
-- Be brief: 1-4 sentences, or a short list when the answer is a list. Answer only what was asked.
+- Be brief: 1-4 sentences, or a short list when the answer is a list. Answer only what was asked:
+  do not add related rules, exceptions, conditions or background the question did not ask about.
 - End every sentence that states a fact with the number of the passage that states it, like [2].
   Cite only passages that actually state that fact.
 - Use only facts written in the passages. No outside knowledge, no guessing, no filling gaps.
@@ -55,9 +59,15 @@ Rules:
 
 NOT_FOUND = "NOT_FOUND"
 VISA_CODE = re.compile(r"\b([A-H])-(\d{1,2})(?:-(\d{1,2}))?\b")
-AMOUNT = re.compile(r"(?:KRW|USD|BGN|won|₩|\$|€)\s?\d[\d,.]*|\d[\d,.]*\s?(?:KRW|USD|BGN|won|€|dollars?)", re.IGNORECASE)
+AMOUNT = re.compile(
+    r"(?:KRW|USD|BGN|won|₩|\$|€)\s?\d[\d,.]*(?:\s(?:million|billion))?"
+    r"|\d[\d,.]*(?:\s(?:million|billion))?\s?(?:KRW|USD|BGN|won|€|dollars?)",
+    re.IGNORECASE,
+)
+NUMBER = re.compile(r"\d[\d,]*(?:\.\d+)?")
+AMOUNT_CORE = re.compile(r"\d[\d,.]*(?:\s(?:million|billion))?", re.IGNORECASE)
 NOT_STATED = re.compile(
-    r"\b(not (specified|stated|listed|mentioned|given|provided)|do(es)? not (specify|state|list|mention|say|give)"
+    r"\b(not (specified|stated|listed|mentioned|given|provided)|do(es)? not (specify|state|list|mention|say|give|contain|include)"
     r"|no (specific|minimum|explicit|exact) .{0,80}?\b(is|are) (listed|stated|specified|given|mentioned))\b",
     re.IGNORECASE,
 )
@@ -152,19 +162,33 @@ def amount_guard(question: str, text: str, hits: list[Hit]) -> tuple[str, list[s
     answer; a failing later sentence is removed.
     """
     codes = _codes(question)
-    if not codes:
-        return text, []
     sentences = [s for s in SENTENCE.split(text) if s.strip()]
     kept, flags = [], []
     for i, s in enumerate(sentences):
         amounts = [m.group(0) for m in AMOUNT.finditer(s)]
-        cited = [hits[int(n) - 1] for n in MARKER.findall(s) if 1 <= int(n) <= len(hits)]
-        grounded = all(any(_about_code(h, codes, re.sub(r"[^\d,.]", "", a)) for h in cited) for a in amounts)
-        if amounts and not grounded:
-            flags.append("amount_subject_mismatch")
+        cited = [hits[int(n) - 1] for n in MARKER.findall(s) if 1 <= int(n) <= len(hits)] or hits
+        problem = ""
+        for a in amounts:
+            core = AMOUNT_CORE.search(a).group(0).lower()
+            # 1. The amount must be written in a cited passage at all (catches amounts from model memory).
+            if not any(core in f"{h.body}\n{h.text}".lower() for h in cited):
+                problem = "amount_not_in_sources"
+            # 2. When the question names a visa code, the passage must be about that code.
+            elif codes and not any(_about_code(h, codes, re.sub(r"[^\d,.]", "", core)) for h in cited):
+                problem = "amount_subject_mismatch"
+        # 3. Every number in the sentence must be written in the passages it cites. Catches a rule
+        #    copied from a neighbouring visa page (TOPIK "50 out of 200" from D-3 given for D-4-1).
+        if not problem:
+            bare = MARKER.sub(" ", VISA_CODE.sub(" ", s))
+            sources = " ".join(f"{h.body}\n{h.text}" for h in cited)
+            if any(n.rstrip(".,") not in sources for n in NUMBER.findall(bare)):
+                problem = "number_not_in_sources"
+        if problem:
+            flags.append(problem)
             if i == 0:
-                code = min(codes)
-                return (f"The visa.go.kr documents I have do not state this amount for {code}.", flags)
+                subject = f" for {min(codes)}" if codes else ""
+                what = "this amount" if problem.startswith("amount") else "this"
+                return (f"The visa.go.kr documents I have do not state {what}{subject}.", flags)
             continue
         kept.append(s)
     return " ".join(kept), flags
@@ -177,6 +201,60 @@ def check_citations(text: str, k: int) -> tuple[set[int], set[int], float]:
     sentences = [s for s in SENTENCE.split(text) if len(re.sub(r"\W", "", s)) > 15]
     cited = sum(bool(MARKER.search(s)) for s in sentences)
     return valid, found - valid, (cited / len(sentences)) if sentences else 0.0
+
+
+VERIFY_PROMPT = """Question: {question}
+
+Passages:
+{passages}
+
+Answer to check, one sentence per line:
+{sentences}
+
+For each numbered sentence decide KEEP or DROP.
+DROP a sentence if any of these is true:
+- what it states is not written in the passage(s) it cites;
+- it applies a rule, number or list to a different visa, person, case or country than the passage does;
+- it adds information the question did not ask for.
+Otherwise KEEP. Reply with one line per sentence, exactly like "1: KEEP" or "2: DROP", and nothing else."""
+VERDICT_LINE = re.compile(r"^\s*(\d+)\s*[:.)-]\s*(KEEP|DROP)", re.IGNORECASE | re.MULTILINE)
+
+
+@functools.lru_cache(maxsize=1)
+def _page_texts() -> dict:
+    path = settings.index_dir / "page_text.json"
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+
+
+def expand_to_pages(hits: list[Hit]) -> list[Hit]:
+    """Small-to-big: replace a PDF chunk by its whole page when the page is short and English.
+
+    Several hits on the same page become one passage (best score kept). Visa-guide
+    chunks, multi-page chunks, long pages and non-English pages stay as chunks.
+    """
+    texts = _page_texts()
+    out: list[Hit] = []
+    seen: dict[tuple[str, int], Hit] = {}
+    for h in hits:
+        short_doc = len(texts.get(h.doc_id, {})) <= settings.page_expand_max_doc_pages
+        pages = h.pages if h.source == "pdf" and short_doc and 1 <= len(h.pages) <= 2 else []
+        page = "\n".join(texts.get(h.doc_id, {}).get(str(p), "") for p in pages).strip()
+        if page and len(page) <= settings.page_expand_max_chars * len(pages) and not _not_english(page):
+            key = (h.doc_id, tuple(pages))
+            if key in seen:
+                seen[key].score = max(seen[key].score, h.score)
+                continue
+            seen[key] = dataclasses.replace(h, body=page, headings="", ranks=dict(h.ranks))
+            out.append(seen[key])
+        else:
+            out.append(h)
+    total, kept = 0, []
+    for h in out:  # keep the context inside num_ctx; hits are in rank order
+        total += len(h.body)
+        if kept and total > settings.context_max_chars:
+            break
+        kept.append(h)
+    return kept
 
 
 class Answerer:
@@ -200,9 +278,34 @@ class Answerer:
         )
         return data["message"]["content"].strip(), data
 
+    def _verify(self, question: str, text: str, hits: list[Hit]) -> tuple[str, list[str], float]:
+        """Second pass over the answer: keep only sentences their cited passages state."""
+        sentences = [s.strip() for s in SENTENCE.split(text) if s.strip()]
+        if len(sentences) < 2:
+            return text, [], 0.0
+        cited = sorted({int(n) for n in MARKER.findall(text) if 1 <= int(n) <= len(hits)})
+        passages = "\n\n".join(f"[{n}] {hits[n - 1].title}\n{hits[n - 1].body}" for n in cited)
+        numbered = "\n".join(f"{i}. {s}" for i, s in enumerate(sentences, 1))
+        data = self.llm.chat(
+            self.model,
+            [{"role": "user", "content": VERIFY_PROMPT.format(question=question, passages=passages, sentences=numbered)}],
+            num_predict=10 * len(sentences) + 20,
+        )
+        verdicts = {int(n): v.upper() for n, v in VERDICT_LINE.findall(data["message"]["content"])}
+        kept = [s for i, s in enumerate(sentences, 1) if verdicts.get(i, "KEEP") == "KEEP"]
+        dropped = len(sentences) - len(kept)
+        if not kept:  # never answer with nothing; fall back to the original answer, flagged
+            return text, ["verify_dropped_all"], data.get("_latency_s", 0.0)
+        flags = [f"verify_dropped_{dropped}"] if dropped else []
+        return "\n".join(kept) if any(s.startswith(("-", "*", "•")) for s in kept) else " ".join(kept), flags, data.get(
+            "_latency_s", 0.0
+        )
+
     def ask(self, question: str, mode: str = "hybrid+rerank") -> Answer:
         t0 = time.perf_counter()
         hits = self.retriever.search(question, mode=mode)
+        if settings.expand_pages and hits:
+            hits = expand_to_pages(hits)
         timings = {k: round(v, 3) for k, v in self.retriever.timings.items()}
         passages = [_citation(i, h) for i, h in enumerate(hits, 1)]
         top = max((h.score for h in hits), default=0.0)
@@ -238,10 +341,15 @@ class Answerer:
         if text.startswith(NOT_FOUND) or not text or (NOT_FOUND in text and not valid):
             return Answer(question, REFUSAL, True, [], passages, confidence, timings, flags + ["model_refused"], self.model)
         text = text.replace(NOT_FOUND, "").strip()
+        if settings.verify:
+            text, vflags, vlat = self._verify(question, text, hits)
+            flags += vflags
+            timings["verify_s"] = round(vlat, 3)
+            timings["total_s"] = round(time.perf_counter() - t0, 3)
         text, guard_flags = amount_guard(question, text, hits)
         flags += guard_flags
         valid, _, coverage = check_citations(text, len(hits))
-        if not valid and "amount_subject_mismatch" not in flags:
+        if not valid and not any(f.startswith("amount_") for f in flags):
             flags.append("no_citations")
         citations = [passages[n - 1] for n in sorted(valid)]
         oldest = min((c.post_date for c in citations if c.post_date), default="")
@@ -250,7 +358,7 @@ class Answerer:
         confidence["citation_coverage"] = round(coverage, 3)
         confidence["cited_top_score"] = round(max((c.score for c in citations), default=0.0), 4)
         first = SENTENCE.split(text)[0] if text else ""
-        if NOT_STATED.search(first) or (not citations and "amount_subject_mismatch" in flags):
+        if NOT_STATED.search(first) or (not citations and any(f.startswith("amount_") for f in flags)):
             flags.append("states_not_covered")  # answered by saying the documents do not state it
         return Answer(question, text, False, citations, passages, confidence, timings, flags, self.model)
 

@@ -1,53 +1,60 @@
 # Korea Visa Portal RAG
 
-English question answering over the **English-language PDFs published on visa.go.kr**. All 107 PDFs on the site are downloaded, and the 40 in English are indexed. Answers come with a citation to the exact page for each claim. Runs fully locally on one 8 GB GPU. The correct page is ranked first for **87%** of evaluation questions and is in the top 5 for **98%**. Answers take **2.3 s** at the median.
+English question answering over the Korea Visa Portal (**visa.go.kr**). It uses two sources: the site's **English PDFs** (40 of the 107 PDFs it publishes) and its **110 English per-visa guide pages** (eligibility, required documents, visa validity and period of stay for each visa code). Every claim is cited, either to a PDF page or to a visa guide page. It runs fully locally on one 8 GB GPU. The correct source is ranked first for **88.5%** of evaluation questions and is in the top 5 for **96.7%**. Answers take **2.2 s** at the median.
 
 ## Results
 
-All numbers come from `eval/run.py` on `eval/golden.yaml`: 45 answerable questions and 7 the system must refuse. They were measured on an RTX 4060 8 GB.
+All numbers come from `eval/run.py` on `eval/golden.yaml`: 61 answerable questions (45 on PDFs, 16 on visa pages, 2 of them combining both) and 9 the system must refuse. They were measured on an RTX 4060 8 GB.
 
-**Retrieval** (`results/*-retrieval-bge-m3-v3.json`). A hit is a retrieved chunk from the right document that covers the right page.
+**Retrieval** (`results/*-retrieval-pages.json`). A hit is a retrieved chunk from the right document that covers the right page (for visa pages: the right visa code).
 
-| Mode | Correct page ranked 1st | Correct page in top 5 | Correct page in top 10 | MRR@10 | nDCG@10 | p50 latency |
-|---|---:|---:|---:|---:|---:|---:|
-| Dense (bge-m3) | 0.711 | 0.956 | 0.956 | 0.808 | — | 94 ms |
-| Sparse (BM25) | 0.733 | 0.956 | 0.978 | 0.825 | — | 3 ms |
-| Hybrid (RRF) | 0.778 | 1.000 | 1.000 | 0.872 | — | 96 ms |
-| **Hybrid + cross-encoder rerank** | **0.867** | **0.978** | **0.978** | **0.922** | — | 342 ms |
+| Mode | Correct source ranked 1st | In top 5 | In top 10 | MRR@10 | p50 latency |
+|---|---:|---:|---:|---:|---:|
+| Dense (bge-m3) | 0.754 | 0.951 | 0.967 | 0.836 | 94 ms |
+| Sparse (BM25) | 0.738 | 0.951 | 0.967 | 0.828 | 3 ms |
+| Hybrid (RRF) | 0.787 | 0.984 | 0.984 | 0.873 | 94 ms |
+| **Hybrid + cross-encoder rerank** | **0.885** | **0.967** | **0.984** | **0.920** | 336 ms |
 
-**Answers** (`results/20261124-0405-answers-qwen35-4b-v3*` (final index); the 4B-vs-9B comparison is `results/20261124-0248-*-4b-v2*` vs `results/20261124-0228-*-9b-v2*` on the previous index)
+**Answers** (`results/20261124-1419-answers-qwen35-4b-pages-v3*`)
 
-| Metric | **qwen3.5:4b** (default) | qwen3.5:9b |
-|---|---:|---:|
-| Answered, of 45 answerable | 45 | 45 |
-| Refused, of 7 unanswerable | 7 | 7 |
-| Correct, LLM judge (κ = 0.80 against labels assigned by Claude) | **0.978** (44/45) | 0.956 (43/45) |
-| Every claim stated in the cited passage, LLM judge (**not calibrated**) | 0.889 | 0.844 |
-| Answers citing at least one gold page | 0.933 | 0.978 |
-| Citation precision (cited passages that are on a gold page) | 0.845 | 0.848 |
-| Invented citations (marker pointing to no passage) | 0 | 0 |
-| End-to-end latency p50 / p95 | **2.25 s / 3.21 s** | 20.9 s / 27.8 s ¹ |
+| Metric | qwen3.5:4b |
+|---|---:|
+| Answered, of 61 answerable | 61 |
+| Unanswerable (9): refused, or answered "the documents do not state this" | **9** (7 refused, 2 said not stated) |
+| Unanswerable answered with an invented fact | **0** |
+| Correct, LLM judge (κ = 0.80 against labels assigned by Claude) | **0.934** (57/61) |
+| Every claim stated in the cited passage, LLM judge (**not calibrated**) | 0.836 |
+| Answers citing at least one gold source | 0.951 |
+| Citation precision (cited passages that are on a gold page) | 0.832 |
+| Invented citations (marker pointing to no passage) | 0 |
+| End-to-end latency p50 / p95 | **2.17 s / 3.67 s** |
 
-¹ At a 6k context, qwen3.5:9b needs 8.9 GB, so it cannot share the 8 GB GPU with the cross-encoder. In this run the reranker ran on the CPU (about 16 s), and 28% of the model still spilled to the CPU.
+All 16 visa-page questions are judged correct. The four failures are PDF questions:
+- **VF02 (wrong).** The PDF lays out its country tables in two columns, and Docling attaches the caption "still eligible" to the wrong table. The model then says the UK lost visa-free entry. This is a known open failure.
+- **RE02, PR01 and VF04.** The central fact is right, but the model adds a wrong extra detail: it applies the multiple-permit rule to permanent residents, makes all nationals eligible instead of only professionals, or misreads a country list.
 
-The judge is qwen3.5:9b, chosen by calibration (below). Claude also read every answer. In the earlier v2 run it found 43/45 correct (VF02 and TB03). TB03 was a chunking bug: a heading trail put the TB country list under "Exceptions… exempt". It is fixed in v3. The remaining wrong answer, VF02, comes from the PDF's two-column layout of country tables: Docling attaches the caption "still eligible" to the wrong table, and the model says the UK lost visa-free entry. This is a known open failure. For the 9B run, the manual check found 42/45: the judge missed PR01, which gives Vietnamese city residents a 10-year visa instead of 5 years.
+The judge is qwen3.5:9b, chosen by calibration (below).
+
+**Generator choice** (PDF-only index, 45 questions, `results/20261124-0248-*-4b-v2*` vs `results/20261124-0228-*-9b-v2*`): qwen3.5:4b scored 0.978 correct, 2.25 s p50. qwen3.5:9b scored 0.956 correct, 20.9 s p50, because the reranker had to run on the CPU (the 9B model needs 8.9 GB).
 
 **Corpus**
 
 | | |
 |---|---:|
 | Attachment links found on visa.go.kr (English and Korean sides, 3 boards and 34 static menus) | 536 |
-| Unique PDFs downloaded (the rest are HWP, DOCX or XLSX) | 107 |
-| PDFs whose text is English, so they are indexed | 40 (253 pages) |
-| Indexed chunks (English text only, about 137 tokens on average) | 814 |
-| Unit and data tests | `uv run pytest`: 13 passed |
+| Unique PDFs downloaded (the other 235 links are HWP, XLSX, DOC, images and archives) | 107 |
+| English PDFs, indexed | 40 (253 pages, 810 chunks) |
+| English per-visa guide pages, indexed | 110 visa codes (731 chunks) |
+| Unit and data tests | `uv run pytest`: 17 passed |
 
-> **Caveat: read before trusting the answer scores.** The chunking fixes, the prompt rewrite and one reference-answer correction (FM05) were all made after looking at these same 45 questions, so every number here is in-sample. A fresh held-out set has not been scored yet. The 52 golden questions and the judge-calibration labels were written by an LLM (Claude) while it read the cited pages. A human did not write them, and no human has reviewed them yet. Retrieval scores use page labels that can be checked mechanically against the PDFs. Answer-correctness scores depend on those LLM-written reference answers.
+> **Caveat: read before trusting the answer scores.** The golden questions and the judge-calibration labels were written by an LLM (Claude) while it read the cited sources. A human did not write them, and no human has reviewed them yet. The chunking fixes, the prompt rewrite, the amount guard and one reference-answer correction (FM05) were all made after looking at these questions, so every number is in-sample. A fresh held-out set has not been scored yet. The visa guide pages show requirements as the portal displays them for one nationality, mostly US applicants. Every page chunk says so, and the answers carry that note.
 
 ## How it works
 
 ```mermaid
 flowchart LR
+    P["visa_pages.py<br/>per-visa guide pages<br/>110 visa codes (EN)"] --> PC["pages.py<br/>leaf sections, full heading path,<br/>nationality note"]
+    PC --> D
     A["crawl.py<br/>visa.go.kr boards + menus<br/>EN and KO sides, 1 req/s"] --> B["parse.py<br/>Docling layout + TableFormer<br/>OCR only for scanned pages<br/>language tagging"]
     B --> C["index.py<br/>HybridChunker (384 tokens)<br/>heading trail + orphan recovery<br/>bge-m3 embeddings"]
     C --> D[("LanceDB<br/>vectors + BM25 FTS")]
@@ -55,7 +62,7 @@ flowchart LR
     D --> R
     R -->|"top score < 0.02"| X["Refuse without calling the LLM"]
     R --> G["answer.py<br/>qwen3.5:4b on Ollama<br/>numbered passages, [n] after each claim<br/>NOT_FOUND contract"]
-    G --> V["Citation check in code<br/>invalid [n] → regenerate once<br/>coverage, old-source flag"]
+    G --> V["Checks in code<br/>invalid [n] → regenerate once<br/>amount guard, old-source flag"]
     V --> API["FastAPI /v1/ask + web UI<br/>citations open the PDF at the page"]
 ```
 
@@ -67,7 +74,8 @@ flowchart LR
 
    Korean and Chinese halves of bilingual forms are dropped at chunk level. Documents posted only with Korean titles get a short English title written once by the local LLM.
 4. **Retrieve.** Dense retrieval (bge-m3, run in-process) and BM25 (LanceDB native full-text search) each take the top 30, fused by reciprocal rank fusion. Then the bge-reranker-v2-m3 cross-encoder re-scores the fused list. If even the best passage scores below 0.02, the system refuses without calling the LLM: 4 of the 7 unanswerable questions are refused in about 0.3 s this way. The LLM itself refuses the other 3.
-5. **Generate.** qwen3.5:4b gets 6 numbered passages, each with title, page and date. It must put a `[n]` after every factual sentence, or reply exactly `NOT_FOUND`. Code then checks every marker. A marker outside `1..k` is an invented citation, so the answer is regenerated once, and any invalid marker still left is removed and flagged. The response reports citation coverage, a flag for sources older than 3 years, and per-stage timings.
+5. **Visa guide pages.** `visa_pages.py` (ported from the author's earlier project) collects the portal's per-visa pages through its visa-wizard endpoints. `pages.py` turns each leaf section ("Required documents", "Visa validity…") into a chunk. Each chunk carries its full heading path, such as *Embassy visa application — Case 2 > Required documents*, the visa code and title, and a note on which nationality the page was shown for.
+6. **Generate.** qwen3.5:4b gets 6 numbered passages, each with title, page and date. It must put a `[n]` after every factual sentence, or reply exactly `NOT_FOUND`. Code then checks every marker. A marker outside `1..k` is an invented citation, so the answer is regenerated once, and any invalid marker still left is removed and flagged. The response reports citation coverage, a flag for sources older than 3 years, and per-stage timings.
 
 ## Design decisions
 
@@ -84,6 +92,7 @@ flowchart LR
 **What is not indexed.** 67 non-English PDFs (Korean, plus Vietnamese, Russian, Thai and Chinese versions of notices) and 235 non-PDF attachments (98 HWP, 79 XLSX, 31 DOC, 23 images, 4 other) are downloaded and listed in the manifest but not indexed, because the system is English-only by design. Several of them, such as the Korean visa manuals, hold substantive rules that are missing from the English side of the portal.
 
 ## What did not work
+- **Prompt rules against borrowing a number from another document.** With the visa pages added, "How much does a D-2 visa cost?" retrieved D-2 pages that list "fee" as a required item but give no amount. The 4B model filled the gap with the 50,000 KRW re-entry permit fee from a notice that mentions D-2 only in its exemption list. A stronger prompt rule did not stop it, and it made another answer worse (FM04) and lowered citation precision (0.832 → 0.777), so it was reverted. What works is a check in code (`amount_guard`). When the question names a visa code, every money amount must come from a cited passage about that code: its title or section names the code, or the amount appears on the same line as the code. Otherwise the answer becomes "the documents do not state this amount for D-2". On the evaluation it fired once, on that question, and never on an answerable one.
 
 - **JSON-schema output with thinking off.** Ollama 0.17.7 with qwen3.5 *ignores* `format` (constrained decoding) when `think: false`. The model returned `{"message": "Hello!"}` for a schema that required `ok` and `text`. With thinking on, it follows the schema but spends 800–3,400 thinking tokens first. So answers are plain text with `[n]` markers and a `NOT_FOUND` sentinel, and citations are validated in code. The same issue first made qwen3.5:9b look like a useless judge: it answered `{"is_correct": true}` instead of the schema's `verdict`, so every verdict parsed as an error until the parser accepted that shape.
 - **An uncalibrated local judge.** mistral-nemo marked **45/45** answers correct, including one that reversed a fact (it said UK citizens could *not* enter visa-free, while the source lists the UK as still eligible). See `eval/judge_cases.yaml` and `eval/calibrate.py`: on 55 labelled cases (45 real answers plus 10 answers altered by hand to contain one wrong number, date, list entry or yes/no reversal), mistral-nemo with a step-by-step prompt caught 9/12 wrong answers and kept 38/43 correct ones (κ = 0.598). **qwen3.5:9b caught 11/12 and kept 40/43 (κ = 0.799)**, so it is the judge. It belongs to the same family as the generator, which risks self-preference bias. The calibration measures that risk directly on real 4B answers.
@@ -99,7 +108,8 @@ uv sync
 ollama pull qwen3.5:4b
 make crawl     # ~10 min at 1 request/s -> data/raw/pdf + manifest.jsonl
 make parse     # Docling -> data/parsed + catalog.jsonl
-make index     # chunks + bge-m3 + LanceDB (vector + BM25)
+uv run python -m visarag.visa_pages   # per-visa guide pages -> data/pages/en (cached raw responses are reused)
+make index     # chunks (PDFs + visa pages) + bge-m3 + LanceDB (vector + BM25)
 make serve     # http://localhost:8000  (API docs at /docs)
 ```
 
@@ -121,8 +131,8 @@ uv run python eval/run.py judge results/<run>-answers.jsonl --judge-model qwen3.
 ## Layout
 
 ```
-src/visarag/   crawl, parse, index, embed, retrieve, answer, ollama, api, config, static/index.html
-eval/          golden.yaml (52 Q), run.py, judge_cases.yaml (55 cases), calibrate.py
+src/visarag/   crawl, parse, visa_pages, pages, index, embed, retrieve, answer, ollama, api, config, static/index.html
+eval/          golden.yaml (70 Q), run.py, judge_cases.yaml (55 cases), calibrate.py, resummarize.py
 results/       every measured run, as JSON/JSONL
 tests/         unit tests (parsers, language tagging, citations, RRF) + golden-set integrity
 ```

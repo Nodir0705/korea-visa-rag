@@ -133,3 +133,52 @@ def test_not_stated_detector():
     assert NOT_STATED.search("No specific minimum TOPIK level is listed as a requirement for the F-6-1 visa.")
     assert NOT_STATED.search("The documents do not state the age limit.")
     assert not NOT_STATED.search("The period of stay is up to 2 years [1].")
+
+
+def test_expand_to_pages_merges_hits_on_one_short_page(monkeypatch):
+    from visarag import answer
+
+    text = "The countries still eligible for visa-free entry after April 13, 2020 are as follows. Malta, Ireland, United Kingdom"
+    monkeypatch.setattr(answer, "_page_texts", lambda: {"b481": {"2": text}})
+    h1 = Hit("c1", "b481", "Suspension notice", "s.pdf", 2, [2], "", "Malta, Ireland", "", "u", "p", "2020-11-05", score=0.9)
+    h2 = Hit("c2", "b481", "Suspension notice", "s.pdf", 2, [2], "", "<10 Visa-waiver>", "", "u", "p", "2020-11-05", score=0.95)
+    h3 = Hit("c3", "page-H-1", "Visa guide: H-1", "H-1.md", 0, [], "Fees", "Fee exempted", "", "u", "", "", source="page")
+    out = answer.expand_to_pages([h1, h2, h3])
+    assert [h.chunk_id for h in out] == ["c1", "c3"]
+    assert out[0].body == text and out[0].score == 0.95
+
+
+def test_verify_verdict_lines_parse():
+    from visarag.answer import VERDICT_LINE
+
+    assert VERDICT_LINE.findall("1: KEEP\n2: DROP\n3. keep") == [("1", "KEEP"), ("2", "DROP"), ("3", "keep")]
+
+
+def test_unwrap_joins_wrapped_names_but_keeps_items():
+    from visarag.index import unwrap
+
+    raw = "entry for residents of Hanoi, Ho Chi Minh City, Da \r\nNang in Vietnam.\r\n○ Next item\r\n(Fees) 50,000 KRW\r\n※ Persons exempted"
+    assert unwrap(raw) == "entry for residents of Hanoi, Ho Chi Minh City, Da Nang in Vietnam.\n○ Next item\n(Fees) 50,000 KRW\n※ Persons exempted"
+
+
+def test_amount_guard_rejects_amount_missing_from_sources():
+    from visarag.answer import amount_guard
+
+    d81 = Hit("d", "page-D-8-1", "Visa guide: D-8-1 Incorporated Enterprise", "D-8-1.md", 0, [], "Required documents",
+              "Additional documents for private investors who has invested less than 300 million KRW", "", "u", "", "",
+              source="page")
+    text, flags = amount_guard("What is the minimum investment for a D-8-1 visa?", "The minimum is 100 million KRW [1].", [d81])
+    assert flags == ["amount_not_in_sources"] and "do not state this amount for D-8-1" in text
+    _, flags = amount_guard("Which D-8-1 investors need extra documents?", "Those who invested less than 300 million KRW [1].", [d81])
+    assert flags == []
+
+
+def test_number_grounding_drops_numbers_from_another_page():
+    from visarag.answer import amount_guard
+
+    d41 = Hit("d", "page-D-4-1", "Visa guide: D-4-1 Korean Language Trainee", "D-4-1.md", 0, [], "Eligibility",
+              "A person with at least high school diploma", "", "u", "", "", source="page")
+    text, flags = amount_guard("What TOPIK level is needed for D-4-1?", "The required TOPIK score is 50 out of 200 [1].", [d41])
+    assert flags == ["number_not_in_sources"] and text.startswith("The visa.go.kr documents I have do not state this")
+    ok_text, flags = amount_guard("What is needed for D-4-1?", "At least a high school diploma [1].", [d41])
+    assert flags == [] and ok_text == "At least a high school diploma [1]."

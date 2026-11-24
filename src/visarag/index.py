@@ -309,7 +309,48 @@ def build(model: str | None = None) -> dict:
         "embed_seconds": round(t_embed, 1),
     }
     (settings.index_dir / f"{name}.stats.json").write_text(json.dumps(stats, indent=2))
+    write_page_texts()
     return stats
+
+
+ITEM_START = re.compile(r"^\s*([○□■◎❍※•\-\*<|]|[①-⑳]|\(?\d{1,2}[.)]|\([A-Za-z][^)]{0,30}\)|[A-Za-z][.)]\s|Article\s+\d)")
+
+
+def unwrap(text: str) -> str:
+    """Join the hard line wraps of a PDF text layer ("Ho Chi Minh City, Da" / "Nang") while
+    keeping real breaks: a line break stays when the next line starts a list item or
+    the current line ends a sentence or a label."""
+    lines = [re.sub(r"[ \t]+", " ", ln).strip() for ln in text.replace("\r\n", "\n").replace("\r", "\n").split("\n")]
+    out: list[str] = []
+    for ln in lines:
+        if not ln:
+            continue
+        if out and not ITEM_START.match(ln) and not re.search(r"[.:;!?)\]>]$", out[-1]):
+            out[-1] = f"{out[-1]} {ln}"
+        else:
+            out.append(ln)
+    return "\n".join(out)
+
+
+def write_page_texts() -> None:
+    """Text layer of every page of every indexed PDF, in the PDF's own reading order.
+
+    Used for small-to-big context (answer.py): Docling's layout model sometimes
+    reorders a page (on one notice it attached the caption "still eligible" to the
+    wrong country table), while the text layer of these born-digital PDFs keeps
+    the order the author wrote. Scanned pages have an empty text layer and fall
+    back to the chunk.
+    """
+    import pypdfium2 as pdfium
+
+    out: dict[str, dict[int, str]] = {}
+    for d in english_docs():
+        pdf = pdfium.PdfDocument(settings.raw_dir / "pdf" / f"{d['sha12']}.pdf")
+        try:
+            out[d["sha12"]] = {i + 1: unwrap(page.get_textpage().get_text_range()) for i, page in enumerate(pdf)}
+        finally:
+            pdf.close()
+    (settings.index_dir / "page_text.json").write_text(json.dumps(out, ensure_ascii=False))
 
 
 def main() -> None:

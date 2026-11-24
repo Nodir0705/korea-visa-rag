@@ -1,0 +1,13 @@
+{
+  "judge": "qwen3.5:9b",
+  "answerable": 61,
+  "correct_over_answerable": 0.951,
+  "supported_over_answered": 0.934,
+  "judge_errors": 1,
+  "failed_correctness": [
+    "TB07",
+    "PR01",
+    "PR02"
+  ],
+  "file": "results/20261124-1554-answers-A-expand.judged-qwen3.5_9b.jsonl"
+}

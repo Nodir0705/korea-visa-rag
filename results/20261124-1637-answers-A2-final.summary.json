@@ -1,0 +1,15 @@
+{
+  "generator": "qwen3.5:4b",
+  "questions": 70,
+  "answered_when_answerable": 1.0,
+  "refused_when_unanswerable": 0.778,
+  "refused_or_said_not_stated_when_unanswerable": 1.0,
+  "unanswerable_answered_with_claims": [],
+  "answers_citing_a_gold_page": 0.984,
+  "citation_precision_gold_page": 0.882,
+  "invalid_citation_flags": 0,
+  "latency_p50_s": 2.21,
+  "latency_p95_s": 3.74,
+  "generation_p50_s": 1.89,
+  "mean_prompt_tokens": 2282
+}

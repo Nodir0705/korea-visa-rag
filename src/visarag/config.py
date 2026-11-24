@@ -49,6 +49,13 @@ class Settings(BaseSettings):
     context_k: int = 6  # chunks given to the generator
     min_rerank_score: float = 0.02  # below this for every chunk -> refuse without calling the LLM
 
+    # Generation
+    expand_pages: bool = True  # small-to-big: give the model the whole (short) PDF page around a hit
+    page_expand_max_chars: int = 3000  # only pages up to this size are expanded
+    page_expand_max_doc_pages: int = 20  # long reference lists (e.g. the 89-page apostille directory) stay chunked
+    context_max_chars: int = 16000  # cap on all passages together (num_ctx is 6144 tokens)
+    verify: bool = False  # second pass that drops unsupported sentences; measured worse (56/61 vs 58/61), so off
+
     @property
     def raw_dir(self) -> Path:
         return self.data_dir / "raw"
