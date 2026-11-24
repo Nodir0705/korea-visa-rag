@@ -76,7 +76,14 @@ function render(a) {
     t.generate_s != null ? `generation ${t.generate_s}s` : "", `model ${a.model}`,
     a.confidence.citation_coverage != null ? `cited sentences ${(a.confidence.citation_coverage*100).toFixed(0)}%` : "",
   ].filter(Boolean).map((x) => `<span>${x}</span>`).join("");
-  const flags = a.flags.length ? `<span class="flag">${a.flags.join(", ")}</span>` : "";
+  const notes = a.flags.map((f) => {
+    const d = f.match(/^source_dated_(.+)$/);
+    if (d) return `Source dated ${d[1]}; check for newer rules`;
+    if (f.startsWith("amount_") || f === "number_not_in_sources") return "A figure not stated in the sources was withheld";
+    if (f === "context_possibly_truncated") return "Context was truncated";
+    return "";
+  }).filter(Boolean);
+  const flags = notes.length ? `<span class="flag">${esc(notes.join(" · "))}</span>` : "";
   const srcs = a.passages.map((p) => `
     <div class="src"><div class="t">[${p.n}] <a href="${p.pdf_url}" target="_blank">${esc(p.title)}</a>
       ${p.source === "page" ? '<span class="badge">visa guide page</span>' : `<span class="badge">PDF p. ${p.page}</span>`}${p.post_date ? `<span class="badge">${p.post_date}</span>` : ""}
@@ -99,6 +106,9 @@ async function ask(ev) {
   finally { $("go").disabled = false; }
 }
 $("f").addEventListener("submit", ask);
+// A link like /?q=... opens with that question asked (used for demos and the README screenshot).
+const preset = new URLSearchParams(location.search).get("q");
+if (preset) { $("q").value = preset.slice(0, 500); ask(); }
 </script>
 </body>
 </html>
