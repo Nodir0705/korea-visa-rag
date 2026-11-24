@@ -1,0 +1,127 @@
+# Held-out set for visa-rag. Written 2026-11-24 BEFORE the accuracy work that followed the
+# 57/61 run, and committed before any change was tested. It is scored once, at the end;
+# nothing is tuned on it. Same provenance as golden.yaml: written by Claude (an LLM) while
+# reading the cited source, not reviewed by a human. Same format and types as golden.yaml.
+
+questions:
+  - id: H01
+    type: lookup
+    question: Which documents are needed for an E-9-1 manufacturing worker's Confirmation of Visa Issuance application?
+    answer: Application form for Confirmation of Visa Issuance (Form No. 21), a copy of the passport and a standard photo; a copy of the Business Registration Certificate; copies of the Employment Permit and the Standard Labor Contract; and a report of workplace assessment.
+    gold: [{doc: page-E-9-1}]
+  - id: H02
+    type: lookup
+    question: How long is the period of stay for an E-9-1 manufacturing worker?
+    answer: Up to 1 year; the visa is single-entry and valid for 3 months.
+    gold: [{doc: page-E-9-1}]
+  - id: H03
+    type: lookup
+    question: What is the minimum age for the H-2-1 work and visit visa?
+    answer: 25 or older (overseas Koreans with foreign nationality).
+    gold: [{doc: page-H-2-1}]
+  - id: H04
+    type: lookup
+    question: For an H-2-1 applicant who was Korean at birth, how long is the visa valid and how long is the first period of stay?
+    answer: A multiple-entry visa valid for 3 years; the period of stay is initially up to 1 year.
+    gold: [{doc: page-H-2-1}]
+  - id: H05
+    type: lookup
+    question: How long is the F-4-11 overseas Korean visa valid, and what is the initial period of stay?
+    answer: Multiple-entry, valid for 5 years; the period of stay is initially up to 2 years.
+    gold: [{doc: page-F-4-11}]
+  - id: H06
+    type: lookup
+    question: Besides the application form, passport, photo and fee, what must an F-4-11 applicant submit?
+    answer: Records proving they once had Korean nationality (e.g. certificate of family registry or removal from it, closed register) and documents showing the reason for and exact date of obtaining foreign citizenship.
+    gold: [{doc: page-F-4-11}]
+  - id: H07
+    type: table
+    question: What additional documents must a D-8-1 private investor who invested less than 300 million KRW submit?
+    answer: Documents showing the initial capital (receipts for purchased goods, office interior costs, bank statement), documents verifying the business exists (office lease, photos of the office front and inside, company sign), and documents proving work or entrepreneurial experience in the home country.
+    gold: [{doc: page-D-8-1}]
+  - id: H08
+    type: lookup
+    question: For a C-4 short-term employee working in an advanced-technology field at a Korean company, how long can they stay?
+    answer: Up to 90 days per stay, on a multiple-entry visa valid for 1 year.
+    gold: [{doc: page-C-4}]
+  - id: H09
+    type: lookup
+    question: Does manual labor qualify for a C-4 short-term employee visa?
+    answer: No. Manual labor does not qualify for a C-4 visa.
+    gold: [{doc: page-C-4}]
+  - id: H10
+    type: lookup
+    question: Which recommendation letter does an E-6-2 hotel or entertainment performer need?
+    answer: A performance recommendation letter from the Korea Media Rating Board.
+    gold: [{doc: page-E-6-2}]
+  - id: H11
+    type: lookup
+    question: When a marriage immigrant invites a parent on an F-1-5 visa to help raise a child, what guarantee period must the letter of guarantee cover?
+    answer: 3 years from the date of entry.
+    gold: [{doc: page-F-1-5}]
+  - id: H12
+    type: lookup
+    question: How long can a marriage immigrant's family member stay on an F-1-5 visa?
+    answer: Up to 90 days; the visa is single-entry and valid for 3 months.
+    gold: [{doc: page-F-1-5}]
+  - id: H13
+    type: lookup
+    question: What must a D-6 religious worker show about their living expenses?
+    answer: Documents demonstrating that the organization supports the applicant's living expenses in Korea.
+    gold: [{doc: page-D-6}]
+  - id: H14
+    type: paraphrase
+    question: im 30, chinese citizen, my grandfather was korean. can i get the H-2-1 work and visit visa?
+    answer: Yes, the H-2-1 visa covers overseas Koreans aged 25 or older whose parent or grandparent once had Korean nationality.
+    gold: [{doc: page-H-2-1}]
+  - id: H15
+    type: lookup
+    question: How must a group e-visa application agency enter the passport details of group members?
+    answer: Accurately, as shown on the passport, either with an MRP (machine readable passport) reader or by typing them in; when typed in, a scanned passport photo and passport copy of the leader and every member must be registered on the Visa Portal.
+    gold: [{doc: 8b0fb6d60b72, pages: [6, 7]}]
+  - id: H16
+    type: lookup
+    question: Besides a medical examination certificate, what must E-9, E-10 and H-2 visa holders complete for alien registration?
+    answer: The basic training program on law and order set by the government.
+    gold: [{doc: 06a10683e48f, pages: [1]}]
+  - id: H17
+    type: lookup
+    question: In the visa e-form, what do you enter if your inviting company is not a member of the Korea Visa Portal?
+    answer: The name of the inviting company and its representative, the corporate registration number, and your relationship with the company.
+    gold: [{doc: 45ad877e4898, pages: [5]}]
+  - id: H18
+    type: table
+    question: How much does an apostille cost in Macao?
+    answer: It is free of charge.
+    gold: [{doc: b133ad72454c, pages: [8, 9]}]
+  - id: H19
+    type: lookup
+    question: Who may issue the Visa Grant Notice on behalf of a Korean embassy?
+    answer: A Visa Application Center.
+    gold: [{doc: 378ca86d6953, pages: [1]}]
+  - id: H20
+    type: lookup
+    question: Where can short-term visitors find more information about the declaration of accommodation?
+    answer: On the Hi Korea website (www.hikorea.go.kr) or the dedicated site www.k-eta.go.kr/trds.
+    gold: [{doc: bb553b933f21, pages: [1]}]
+  - id: H21
+    type: lookup
+    question: Is the result of a pre-investigation for a foreign real estate investor a final decision on their stay?
+    answer: No. A pre-investigation only checks the possibilities in advance; it is not an actual decision, and the final decision can differ if conditions change.
+    gold: [{doc: dceb1a06e238}, {doc: ad0a425b80f0}]
+  - id: H22
+    type: no_answer
+    question: What is the minimum investment amount required for a D-8-1 visa?
+    answer: Not in the corpus. (Distractor - the D-8-1 page mentions 300 million KRW only as the threshold for extra documents.)
+  - id: H23
+    type: no_answer
+    question: How many hours per week may a D-2 student work part-time?
+    answer: Not in the corpus.
+  - id: H24
+    type: no_answer
+    question: How many days does an E-9 Confirmation of Visa Issuance take to process?
+    answer: Not in the corpus.
+  - id: H25
+    type: no_answer
+    question: How many E-9 workers can one manufacturing company hire?
+    answer: Not in the corpus. (Distractor - the E-9-1 page mentions companies with fewer than 300 full-time workers.)
