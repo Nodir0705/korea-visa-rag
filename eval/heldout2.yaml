@@ -1,0 +1,128 @@
+# Second held-out set. Written 2026-11-24 after the first held-out set had been scored and
+# used to find two failure classes (an amount from model memory; whole-page context on the
+# 89-page apostille directory). Committed before the fixed system was run on it, and scored
+# once. Same provenance caveat as golden.yaml: written by Claude while reading the source,
+# not reviewed by a human.
+
+questions:
+  - id: K01
+    type: lookup
+    question: What annual trade turnover with Korea must a trader have to apply for a D-9-1 visa?
+    answer: US $500,000 or more.
+    gold: [{doc: page-D-9-1}]
+  - id: K02
+    type: lookup
+    question: Does a D-9-1 international trade visa applicant need a tax payment certificate?
+    answer: Yes, a certificate of annual tax payment.
+    gold: [{doc: page-D-9-1}]
+  - id: K03
+    type: lookup
+    question: Which documents does a professor hired under the KAIST law submit for an E-1 visa at an embassy?
+    answer: Visa application form (No. 17), passport, photo and fee; a certificate of employment history or degree; and the employment contract or confirmation of appointment as a professor.
+    gold: [{doc: page-E-1}]
+  - id: K04
+    type: lookup
+    question: For an E-1 professor applying at an embassy, how long is the visa valid and how long is the first period of stay?
+    answer: A multiple-entry visa valid for 1 year; the period of stay is initially up to 1 year.
+    gold: [{doc: page-E-1}]
+  - id: K05
+    type: lookup
+    question: What does a scientist at a government-funded research institute submit for an E-3 researcher visa at an embassy?
+    answer: Visa application form (No. 17), passport, photo and fee; documents on the establishment of the inviting institution; degree or proof of professional experience; and the employment contract.
+    gold: [{doc: page-E-3}]
+  - id: K06
+    type: lookup
+    question: Which certificate about the licensing agreement must an E-4 technical instructor applicant submit?
+    answer: A Certificate of Report on Licensing Agreement.
+    gold: [{doc: page-E-4}]
+  - id: K07
+    type: lookup
+    question: Can the family of a D-3 industrial trainee get an F-3 dependent family visa?
+    answer: No. Family of a person with Industrial Trainee (D-3) status is excluded.
+    gold: [{doc: page-F-3-1}]
+  - id: K08
+    type: lookup
+    question: For an F-3-1 dependent family visa, which family relation documents can Chinese applicants submit?
+    answer: A resident card, a marriage certificate, or the household register booklet (hukou).
+    gold: [{doc: page-F-3-1}]
+  - id: K09
+    type: lookup
+    question: For the G-1-10 medical treatment visa applied for at an embassy, how long is the visa valid and how long is the first period of stay?
+    answer: A single-entry visa valid for 3 months; the period of stay is initially up to 6 months.
+    gold: [{doc: page-G-1-10}]
+  - id: K10
+    type: table
+    question: Which documents does a foreign patient need for a G-1-10 treatment and recuperation visa at an embassy?
+    answer: Visa application form (No. 17), passport, photo and fee; proof of the medical issue (diagnosis, doctor's notes); proof of a reservation or appointment at a Korean hospital or nursing home; proof of financial ability for treatment and living costs; and documents on any accompanying family member or caregiver.
+    gold: [{doc: page-G-1-10}]
+  - id: K11
+    type: lookup
+    question: How long must someone have worked for a foreign company to qualify as a D-7-1 intra-company transferee?
+    answer: At least 1 year.
+    gold: [{doc: page-D-7-1}]
+  - id: K12
+    type: lookup
+    question: What does a pilot hired by a Korean airline submit for an E-5 visa?
+    answer: Visa application form (No. 17), passport, photo and fee; degree certificate and a copy of the pilot license; a recommendation letter from the head of the responsible government department; and the employment contract.
+    gold: [{doc: page-E-5}]
+  - id: K13
+    type: lookup
+    question: How long is the first period of stay for an airline pilot on an E-5 visa?
+    answer: Up to 1 year initially; the visa is single-entry and valid for 3 months.
+    gold: [{doc: page-E-5}]
+  - id: K14
+    type: lookup
+    question: Who is eligible for the H-2-2 visa?
+    answer: A parent or spouse (an overseas Korean with foreign nationality, aged 25 or older) of an international student on a D-2 visa who is enrolled for at least a semester.
+    gold: [{doc: page-H-2-2}]
+  - id: K15
+    type: lookup
+    question: How long is the H-2-2 visa valid and how long can its holder stay?
+    answer: A multiple-entry visa valid for 1 year; periods of stay up to 1 year.
+    gold: [{doc: page-H-2-2}]
+  - id: K16
+    type: paraphrase
+    question: my daughter studies in korea on a D-2 visa, im ethnic korean with US citizenship, what papers do i need for the H-2-2?
+    answer: Application form for Confirmation of Visa Issuance (No. 21), a copy of the passport and a photo; an official document of your country verifying you are an overseas Korean with foreign nationality; a certificate of enrollment; and a document proving your family relationship with the student.
+    gold: [{doc: page-H-2-2}]
+  - id: K17
+    type: lookup
+    question: Can a health subcenter issue the TB certificate of confirmation needed inside Korea?
+    answer: No. It must be issued by a Korean public health center; health subcenters cannot issue it.
+    gold: [{doc: 336de610abfb, pages: [6]}]
+  - id: K18
+    type: lookup
+    question: Whose cooperation may the Minister of Justice request in managing group e-visa application agencies?
+    answer: The head of an overseas diplomatic mission.
+    gold: [{doc: 8b0fb6d60b72, pages: [11]}]
+  - id: K19
+    type: lookup
+    question: On the visa e-form, what must you enter if you were granted a Visa Issuance Confirmation?
+    answer: The Confirmation number, its issue date, and the passport number and passport expiration date shown on the Confirmation.
+    gold: [{doc: 45ad877e4898, pages: [9]}]
+  - id: K20
+    type: lookup
+    question: What can happen if an applicant leaves out a necessary answer on the F-2-3 marriage statement?
+    answer: The evaluation of the application may be delayed or disapproved.
+    gold: [{doc: 0648afd6fef6, pages: [1]}, {doc: a5e253b34643}]
+  - id: K21
+    type: lookup
+    question: On the 2020 Health Condition Report Form, which places must applicants list?
+    answer: All cities they stayed in within 30 days before the application.
+    gold: [{doc: 80df70fc488a, pages: [1]}]
+  - id: K22
+    type: no_answer
+    question: What is the minimum salary for an E-1 professor?
+    answer: Not in the corpus.
+  - id: K23
+    type: no_answer
+    question: How much is the visa fee for a G-1-10 medical treatment visa?
+    answer: Not in the corpus. (Distractor - the page lists "fee" without an amount.)
+  - id: K24
+    type: no_answer
+    question: What TOPIK level is required for a D-4-1 Korean language trainee visa?
+    answer: Not in the corpus.
+  - id: K25
+    type: no_answer
+    question: What is the maximum age for an H-2-2 visa applicant?
+    answer: Not in the corpus. (Distractor - the page states only a minimum age of 25.)
