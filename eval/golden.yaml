@@ -15,6 +15,10 @@
 #   no_answer  - the corpus does not answer it; the system must refuse.
 #                Several carry a deliberate distractor (a page that looks related).
 #
+# Sources: PDFs (doc = sha12 of the file) and, since 2026-11-24, the per-visa guide pages
+# (doc = page-<visa code>, no page numbers). The PG questions were written the same way,
+# by Claude, from the page text.
+#
 # gold: list of {doc: <sha12 of the PDF>, pages: [page numbers]}. A retrieved chunk
 # counts as relevant if it comes from a listed doc and covers one listed page.
 # Where the same text exists in several PDFs (the visa application form is
@@ -293,3 +297,93 @@ questions:
     type: no_answer
     question: What is the current visa fee for a single-entry tourist visa in 2026?
     answer: Not in the corpus. (Distractor - 2015 press releases mention about USD 15 for group tourists.)
+
+  # --- Per-visa guide pages (second source) ----------------------------------
+  - id: PG01
+    type: lookup
+    question: What documents are required for a D-2-1 associate degree student visa at an embassy?
+    answer: Visa application form (No. 17), passport, standard photo and fee; a copy of the school's business registration certificate; a Standard Acceptance Letter; the original document showing your final level of education; and original proof of funds for one year of tuition and living expenses.
+    gold: [{doc: page-D-2-1}]
+  - id: PG02
+    type: lookup
+    question: How long is the initial period of stay on a D-2-1 student visa?
+    answer: Up to 2 years initially; the visa itself is a single-entry visa valid for 3 months.
+    gold: [{doc: page-D-2-1}]
+  - id: PG03
+    type: table
+    question: Who is eligible for the D-10-1 job seeker visa?
+    answer: Former employees (over 1 year in the last 3 years) of a Fortune Global 500 company; graduates in the last 3 years of a university in the Times Higher World University Rankings; graduates in the last 3 years of a Korean community college or higher; bachelor's holders who completed a research program at a Korean research institution in the last 3 years; and others specially acknowledged by the head of the diplomatic mission.
+    gold: [{doc: page-D-10-1}]
+  - id: PG04
+    type: lookup
+    question: For how long is the period of stay granted on a D-10-1 job seeker visa initially?
+    answer: Up to 6 months.
+    gold: [{doc: page-D-10-1}]
+  - id: PG05
+    type: multi_hop
+    question: Which plan does every D-10-1 job seeker applicant have to submit, and within how many days must a change of training company be reported according to that form?
+    answer: A plan for seeking employment; the form states that a change of training company must be reported to immigration within 14 days.
+    gold: [{doc: page-D-10-1}, {doc: bf96aac2845d, pages: [1]}]
+  - id: PG06
+    type: lookup
+    question: Citizens of which countries are exempt from the working holiday (H-1) visa fee?
+    answer: France and Chile.
+    gold: [{doc: page-H-1}]
+  - id: PG07
+    type: table
+    question: Applicants from which countries must submit criminal records for an H-1 working holiday visa?
+    answer: Italy, Israel, Belgium, Taiwan, New Zealand, France, Ireland, Czech Republic, Hungary and the Netherlands.
+    gold: [{doc: page-H-1}]
+  - id: PG08
+    type: lookup
+    question: Is the H-1 working holiday visa single or multiple entry, and how long is it valid?
+    answer: Multiple-entry, valid for 1 year; the period of stay is initially up to 1 year.
+    gold: [{doc: page-H-1}]
+  - id: PG09
+    type: paraphrase
+    question: im australian doing a working holiday in korea, do i need to show medical insurance?
+    answer: No. The medical insurance document is exempted for Australia and the United Kingdom.
+    gold: [{doc: page-H-1}]
+  - id: PG10
+    type: table
+    question: Which documents can an F-6-1 marriage migrant submit to prove they can communicate in Korean?
+    answer: One of - a TOPIK report card, a designated educational organization certificate, a certificate of a degree in Korean language, documents proving you are an overseas Korean with foreign nationality, or documents proving you lived in Korea for one year or more.
+    gold: [{doc: page-F-6-1}]
+  - id: PG11
+    type: lookup
+    question: How many photos does an applicant for the F-6-1 spouse of a Korean national visa need?
+    answer: 2 photos in a standard format.
+    gold: [{doc: page-F-6-1}]
+  - id: PG12
+    type: lookup
+    question: How recent must the criminal record be for an E-2-1 foreign language instructor application?
+    answer: Issued within 6 months of the application date, covering the whole country and authenticated (apostille or consul).
+    gold: [{doc: page-E-2-1}]
+  - id: PG13
+    type: lookup
+    question: Is the E-2-1 foreign language instructor visa single or multiple entry, and for how long?
+    answer: Multiple-entry, valid for 2 years; periods of stay up to 2 years.
+    gold: [{doc: page-E-2-1}]
+  - id: PG14
+    type: lookup
+    question: Can the minor child of a permanent resident get an F-2-3 visa, and what must they submit?
+    answer: Yes (Case 2). Visa application form (No. 17), passport, photo and fee; an invitation letter; and documents proving the applicant is a minor child of the permanent-resident sponsor.
+    gold: [{doc: page-F-2-3}]
+  - id: PG15
+    type: lookup
+    question: What is the minimum education level for a D-4-1 Korean language trainee visa?
+    answer: At least a high school diploma or the equivalent.
+    gold: [{doc: page-D-4-1}]
+  - id: PG16
+    type: multi_hop
+    question: An F-6-1 applicant needs a letter of guarantee from the inviter. What is the longest guarantee period that letter can cover?
+    answer: The F-6-1 page lists a letter of guarantee from the inviter; the Letter of Guarantee form states the period of guarantee shall not exceed 4 years.
+    gold: [{doc: page-F-6-1}, {doc: a5f053a8415e, pages: [1]}]
+  - id: NA08
+    type: no_answer
+    question: What minimum TOPIK level is required for an F-6-1 marriage visa?
+    answer: Not in the corpus. (Distractor - the F-6-1 page lists a TOPIK report card but no level.)
+  - id: NA09
+    type: no_answer
+    question: What is the age limit for the H-1 working holiday visa?
+    answer: Not in the corpus. (Distractor - the H-1 page lists requirements but no age range.)

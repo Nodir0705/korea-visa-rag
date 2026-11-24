@@ -37,6 +37,8 @@ class Hit:
     post_date: str
     score: float = 0.0
     ranks: dict[str, int] = field(default_factory=dict)
+    source: str = "pdf"  # "pdf" or "page" (visa.go.kr per-visa guide page)
+    note: str = ""
 
 
 @functools.lru_cache(maxsize=4)
@@ -67,6 +69,8 @@ def _to_hit(row: dict) -> Hit:
         source_url=row["source_url"],
         pdf_path=row["pdf_path"],
         post_date=row["post_date"],
+        source=row.get("source", "pdf"),
+        note=row.get("note", ""),
     )
 
 

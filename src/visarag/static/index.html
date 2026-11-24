@@ -37,7 +37,7 @@
 <body>
 <main>
   <h1>Korea Visa Portal RAG</h1>
-  <p class="sub">English answers drawn only from the PDFs published on visa.go.kr. Every claim links to the page it came from.</p>
+  <p class="sub">English answers drawn only from visa.go.kr: its English PDFs and its per-visa guide pages. Every claim links to its source.</p>
   <form id="f">
     <input id="q" type="text" placeholder="Ask about Korean visas…" autocomplete="off" required minlength="3">
     <button id="go" type="submit">Ask</button>
@@ -60,6 +60,7 @@ const EXAMPLES = [
   "Who must submit a tuberculosis test certificate?",
   "How long is a re-entry permit exemption valid?",
   "What is the label-free visa policy?",
+  "What documents do I need for a D-10 job seeker visa?",
 ];
 const $ = (id) => document.getElementById(id);
 const esc = (s) => s.replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -78,7 +79,7 @@ function render(a) {
   const flags = a.flags.length ? `<span class="flag">${a.flags.join(", ")}</span>` : "";
   const srcs = a.passages.map((p) => `
     <div class="src"><div class="t">[${p.n}] <a href="${p.pdf_url}" target="_blank">${esc(p.title)}</a>
-      <span class="badge">p. ${p.page}</span>${p.post_date ? `<span class="badge">${p.post_date}</span>` : ""}
+      ${p.source === "page" ? '<span class="badge">visa guide page</span>' : `<span class="badge">PDF p. ${p.page}</span>`}${p.post_date ? `<span class="badge">${p.post_date}</span>` : ""}
       ${cited.has(p.n) ? '<span class="badge cited">cited</span>' : ""}<span class="badge">score ${p.score}</span></div>
       <div class="s">${esc(p.snippet)}</div></div>`).join("");
   $("out").innerHTML = `

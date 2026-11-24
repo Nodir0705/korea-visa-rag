@@ -118,8 +118,14 @@ def build_chunks() -> list[dict]:
                     "text": context,  # what is embedded and BM25-indexed
                     "body": body,  # what is shown and cited
                     "n_tokens": chunker.tokenizer.count_tokens(context),
+                    "source": "pdf",
+                    "note": "",
                 }
             )
+    if settings.include_pages:
+        from visarag.pages import page_chunks
+
+        chunks += page_chunks(chunker.tokenizer.count_tokens)
     return chunks
 
 
@@ -292,7 +298,10 @@ def build(model: str | None = None) -> dict:
         "table": name,
         "embed_model": model,
         "documents": len({c["doc_id"] for c in chunks}),
+        "pdf_documents": len({c["doc_id"] for c in chunks if c["source"] == "pdf"}),
+        "visa_pages": len({c["doc_id"] for c in chunks if c["source"] == "page"}),
         "chunks": len(chunks),
+        "pdf_chunks": sum(c["source"] == "pdf" for c in chunks),
         "dim": len(vecs[0]) if vecs else 0,
         "mean_tokens": round(sum(c["n_tokens"] for c in chunks) / max(len(chunks), 1), 1),
         "max_tokens": max((c["n_tokens"] for c in chunks), default=0),

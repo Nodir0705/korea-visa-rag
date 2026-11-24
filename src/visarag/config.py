@@ -40,6 +40,7 @@ class Settings(BaseSettings):
 
     # Chunking
     chunk_max_tokens: int = 384
+    include_pages: bool = True  # also index the per-visa guide pages (data/pages/en)
 
     # Retrieval
     candidates: int = 30  # per arm, before fusion

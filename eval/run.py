@@ -135,7 +135,7 @@ def answers(golden: list[dict], gen_model: str | None, out: Path) -> dict:
 
 
 def _relevant_c(c, gold: list[dict]) -> bool:
-    doc = c.pdf_url.split("/pdf/")[1][:12]
+    doc = c.doc_id
     return any(doc == g["doc"] and (not g.get("pages") or set(c.pages) & set(g["pages"])) for g in gold)
 
 
@@ -150,6 +150,12 @@ def summarize_answers(rows: list[dict], model: str) -> dict:
         "questions": len(rows),
         "answered_when_answerable": round(sum(not r["refused"] for r in ans) / max(len(ans), 1), 3),
         "refused_when_unanswerable": round(sum(r["refused"] for r in noans) / max(len(noans), 1), 3),
+        "refused_or_said_not_stated_when_unanswerable": round(
+            sum(r["refused"] or "states_not_covered" in r["flags"] for r in noans) / max(len(noans), 1), 3
+        ),
+        "unanswerable_answered_with_claims": [
+            r["id"] for r in noans if not r["refused"] and "states_not_covered" not in r["flags"]
+        ],
         "answers_citing_a_gold_page": round(sum(r["cited_on_gold_page"] > 0 for r in cited) / max(len(cited), 1), 3),
         "citation_precision_gold_page": round(
             sum(r["cited_on_gold_page"] for r in cited) / max(sum(r["n_citations"] for r in cited), 1), 3

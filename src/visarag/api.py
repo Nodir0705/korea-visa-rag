@@ -35,8 +35,8 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="Korea Visa Portal RAG",
-    version="1.0.0",
-    description="English answers with page-level citations over the PDFs published on visa.go.kr.",
+    version="1.1.0",
+    description="English answers with citations over visa.go.kr: its English PDFs and per-visa guide pages.",
     lifespan=lifespan,
 )
 

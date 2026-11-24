@@ -29,6 +29,7 @@ def test_gold_documents_are_indexed_english_documents():
     if not catalog.exists():
         pytest.skip("corpus not built")
     english = {json.loads(x)["sha12"] for x in catalog.open() if json.loads(x)["english"]}
+    pages = {f"page-{p.stem}" for p in (ROOT / "data" / "pages" / "en").glob("*.md")}
     for q in GOLDEN:
         for g in q.get("gold") or []:
-            assert g["doc"] in english, (q["id"], g["doc"])
+            assert g["doc"] in english | pages, (q["id"], g["doc"])

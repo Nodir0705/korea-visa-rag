@@ -102,3 +102,34 @@ def test_heading_trail_adds_subject_only_for_field_labels():
     assert _heading_trail(headers, 6, ["Contact details:"]) == ["Bulgaria - Competent Authority (Art. 6)", "Contact details:"]
     tb = [(1, "[Note] Exceptions (the following persons are exempt from submission)"), (5, "(High TB-burden countries)")]
     assert _heading_trail(tb, 6, ["(High TB-burden countries)"]) == ["(High TB-burden countries)"]
+
+
+def test_page_sections_keep_full_heading_path_and_pack_long_lists():
+    from visarag.pages import pack, sections
+
+    body = "# E-7-1 Professionals\n## Embassy visa application\n### Case 1\n#### Required documents\n① form\n② contract\n#### Visa validity\nsingle-entry, 3 months\n"
+    secs = sections(body)
+    assert secs[0] == (["Embassy visa application", "Case 1", "Required documents"], ["① form", "② contract"])
+    assert secs[1][0][-1] == "Visa validity"
+    assert pack(["a b", "c d", "e f"], lambda t: len(t.split()), 4) == ["a b\nc d", "e f"]
+
+
+def test_amount_guard_rejects_fee_from_another_procedure():
+    from visarag.answer import amount_guard
+
+    reentry = Hit("r", "a0ab", "Announcement Regarding Re-Entry Permit", "r.pdf", 3, [3], "Fees",
+                  "(Fees) 50,000 KRW\nPersons exempted: Student (D-2) scholarship holders", "", "u", "p", "2022-03-31")
+    d21 = Hit("g", "page-D-2-1", "Visa guide: D-2-1 Associate Degree", "D-2-1.md", 0, [], "Required documents",
+              "Visa Application Form, passport, photo, fee", "", "u", "", "", source="page")
+    text, flags = amount_guard("How much does a D-2 visa cost?", "The fee for a D-2 visa is 50,000 KRW [1]. You also need a passport [2].", [reentry, d21])
+    assert flags == ["amount_subject_mismatch"] and "do not state this amount for D-2" in text
+    same, flags = amount_guard("What is the re-entry permit fee?", "It is 50,000 KRW [1].", [reentry])
+    assert flags == [] and same == "It is 50,000 KRW [1]."
+
+
+def test_not_stated_detector():
+    from visarag.answer import NOT_STATED
+
+    assert NOT_STATED.search("No specific minimum TOPIK level is listed as a requirement for the F-6-1 visa.")
+    assert NOT_STATED.search("The documents do not state the age limit.")
+    assert not NOT_STATED.search("The period of stay is up to 2 years [1].")
