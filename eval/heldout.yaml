@@ -110,9 +110,12 @@ questions:
     answer: No. A pre-investigation only checks the possibilities in advance; it is not an actual decision, and the final decision can differ if conditions change.
     gold: [{doc: dceb1a06e238}, {doc: ad0a425b80f0}]
   - id: H22
-    type: no_answer
+    type: lookup
     question: What is the minimum investment amount required for a D-8-1 visa?
-    answer: Not in the corpus. (Distractor - the D-8-1 page mentions 300 million KRW only as the threshold for extra documents.)
+    # Label corrected after the first scoring: it was written as no_answer from the top of the
+    # page only; the D-8-1 page does state the minimum further down. The system had it right.
+    answer: At least 100 million KRW (with at least 10 percent of the company's total capital stock and voting rights, per the Foreign Investment Promotion Act).
+    gold: [{doc: page-D-8-1}]
   - id: H23
     type: no_answer
     question: How many hours per week may a D-2 student work part-time?
