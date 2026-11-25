@@ -70,7 +70,7 @@ So the honest figure for unseen questions is **about 92–96%**. The numbers in 
 | Unique PDFs downloaded (the other 235 links are HWP, XLSX, DOC, images and archives) | 107 |
 | English PDFs, indexed | 40 (253 pages, 810 chunks) |
 | English per-visa guide pages, indexed | 110 visa codes (731 chunks) |
-| Unit and data tests | `uv run pytest`: 23 passed |
+| Unit, service and data tests | `uv run pytest`: 30 passed |
 
 > **About the evaluation data.** All 120 questions, their reference answers and the 55 judge-calibration labels were drafted by an LLM (Claude) while it read the cited sources. A review by the author is in progress, and this note will change when it is done. The development-set figures are in-sample: the chunking, prompt and guard changes were made while looking at those questions. The visa guide pages show requirements as the portal displays them for one nationality, mostly US applicants. Every page chunk says so, and the answers carry that note.
 
@@ -161,15 +161,32 @@ uv run python eval/calibrate.py --models mistral-nemo qwen3.5:9b
 uv run python eval/run.py judge results/<run>-answers.jsonl --judge-model qwen3.5:9b
 ```
 
+## Running it as a service
+
+The service is built for one machine with one GPU. What is in place:
+
+- **Logs.** One JSON line per request: request id (also returned as `X-Request-ID`), status, latency, client, and for `/v1/ask` the outcome (refused, citations, flags) and per-stage timings. Question text is not logged unless `VISARAG_LOG_QUESTIONS=true`, because people ask about their own immigration situation; by default the log has its length and a short hash.
+- **Access.** `VISARAG_API_KEY` makes `/v1/*` require the `X-API-Key` header (compared in constant time); the web UI asks for the key once. The default bind address is `127.0.0.1`, and the server warns at startup if it is bound elsewhere without a key.
+- **Load.** One generator on one GPU, so requests run one at a time. A per-client limit (`VISARAG_RATE_LIMIT_PER_MINUTE`, default 20) answers 429, and a bounded queue (`VISARAG_MAX_QUEUE`, default 4) answers 503, both with `Retry-After`, instead of letting threads pile up.
+- **Health.** `/health` checks the index table, Ollama and the generator model, and answers 503 with the failing check.
+- **Corpus refresh.** `make refresh` fetches the portal into a staging folder and reports added, removed and changed PDFs and guide pages; it never touches the live corpus (a full check takes about 25 minutes at one request per second). `make refresh-apply` swaps the new files in, parses only new PDFs and re-embeds only new text, and refuses if a download failed or the number of PDFs or pages fell by more than 10%. Read the report before applying: a guide page that loaded only partly shows up as "changed". The apply step was tested on a copy of the data with one PDF and one page removed. After a refresh the evaluation must be re-run: the numbers above belong to the 2026-11-24 snapshot.
+- **Deployment files.** `Dockerfile` and `docker-compose.yml` (API + Ollama, GPU, `data/` mounted, port published on localhost only), and systemd units in `deploy/` (the API with restart on failure, and a weekly dry-run refresh timer). The image builds and its tests pass inside it; the full compose stack has not been run on a GPU host yet. The demo machine runs the API directly with uv.
+- **CI.** GitHub Actions runs ruff and the tests on every push. They need no GPU, Ollama or corpus.
+
+Not covered: more than one GPU worker, TLS (put a reverse proxy in front), shared rate limits across processes, and metrics dashboards.
+
 ## Layout
 
 ```
-src/visarag/   crawl, parse, visa_pages, pages, index, embed, retrieve, answer, ollama, api, config, static/index.html
+src/visarag/   crawl, parse, visa_pages, pages, index, embed, retrieve, answer, ollama, api, refresh, config,
+               static/index.html
 eval/          golden.yaml (70 Q), heldout.yaml + heldout2.yaml (25 Q each), judge_cases.yaml (55 cases),
                run.py, calibrate.py, resummarize.py
 results/       every measured run, as JSON/JSONL; results/README.md maps runs to the claims above
 docs/          screenshots
-tests/         unit tests (parsers, language tagging, citations, RRF) + golden-set integrity
+tests/         unit tests (parsers, language tagging, citations, RRF), service tests (key, rate limit, queue,
+               health, refresh diff) + golden-set integrity
+deploy/        systemd units for the API and the weekly refresh check
 ```
 
 ## Open items

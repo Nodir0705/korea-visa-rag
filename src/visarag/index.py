@@ -309,6 +309,8 @@ def build(model: str | None = None) -> dict:
         "embed_seconds": round(t_embed, 1),
     }
     (settings.index_dir / f"{name}.stats.json").write_text(json.dumps(stats, indent=2))
+    built_at = time.strftime("%Y-%m-%dT%H:%M:%S%z")
+    (settings.index_dir / "build.json").write_text(json.dumps({"built_at": built_at, **stats}, indent=2))
     write_page_texts()
     return stats
 

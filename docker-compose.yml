@@ -1,0 +1,35 @@
+# docker compose up -d
+# docker compose exec ollama ollama pull qwen3.5:4b   (once)
+# The API is published on localhost only. To expose it, set VISARAG_API_KEY and put it
+# behind a TLS reverse proxy.
+services:
+  ollama:
+    image: ollama/ollama:0.17.7
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices: [{ driver: nvidia, count: all, capabilities: [gpu] }]
+
+  api:
+    build: .
+    depends_on: [ollama]
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./data:/app/data
+      - hf-models:/models
+    environment:
+      VISARAG_API_KEY: ${VISARAG_API_KEY:-}
+      VISARAG_RATE_LIMIT_PER_MINUTE: ${VISARAG_RATE_LIMIT_PER_MINUTE:-20}
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices: [{ driver: nvidia, count: all, capabilities: [gpu] }]
+
+volumes:
+  ollama:
+  hf-models:

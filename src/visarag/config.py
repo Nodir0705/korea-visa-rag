@@ -26,8 +26,14 @@ class Settings(BaseSettings):
 
     # Models (all local, via Ollama, except the cross-encoder reranker which runs in-process)
     ollama_url: str = "http://localhost:11434"
-    host: str = "127.0.0.1"  # API bind address; no auth, so keep it off public interfaces
+    host: str = "127.0.0.1"  # API bind address; set api_key before binding anything but loopback
     port: int = 8000
+
+    # Service limits and logging (api.py)
+    api_key: str = ""  # if set, /v1/* requires the header X-API-Key
+    rate_limit_per_minute: int = 20  # /v1/ask requests per client per minute; 0 = off
+    max_queue: int = 4  # /v1/ask requests waiting for the single GPU; beyond this -> 503
+    log_questions: bool = False  # question text can be personal; by default only its length and hash are logged
     embed_model: str = "st:BAAI/bge-m3"  # "st:<hf model>" in-process, or "ollama:<tag>"
     embed_tokenizer: str = "BAAI/bge-m3"  # HF tokenizer used to size chunks
     index_device: str = "cuda"

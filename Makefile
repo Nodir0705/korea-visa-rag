@@ -1,4 +1,4 @@
-.PHONY: crawl parse index all serve test eval-retrieval eval-answers lint
+.PHONY: crawl parse index all serve test eval-retrieval eval-answers lint refresh refresh-apply docker
 
 UV := uv run
 
@@ -12,6 +12,15 @@ index:            ## chunk, embed, build LanceDB vector + BM25 index
 	$(UV) python -m visarag.index
 
 all: crawl parse index
+
+refresh:          ## check the portal for new/changed documents (dry run, report only)
+	$(UV) python -m visarag.refresh
+
+refresh-apply:    ## fetch, then parse and re-index only if something changed and the crawl is healthy
+	$(UV) python -m visarag.refresh --apply
+
+docker:           ## build the API image (data/ is mounted, not baked in)
+	docker build -t korea-visa-rag .
 
 serve:            ## API + web UI on http://localhost:8000
 	$(UV) python -m visarag.api

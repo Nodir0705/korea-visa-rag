@@ -1,0 +1,15 @@
+# systemd user unit for the API on a single machine.
+#   cp deploy/visarag.service ~/.config/systemd/user/ && systemctl --user enable --now visarag
+#   loginctl enable-linger $USER   # keep it running after logout and across reboots
+[Unit]
+Description=Korea Visa Portal RAG API
+After=network-online.target ollama.service
+
+[Service]
+WorkingDirectory=%h/visa-rag
+ExecStart=%h/visa-rag/.venv/bin/python -m visarag.api
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

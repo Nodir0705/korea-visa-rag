@@ -1,0 +1,11 @@
+# Checks visa.go.kr for new or changed documents and writes data/refresh/last_report.json.
+# Dry run: it never changes the live corpus. Apply by hand after reading the report:
+#   python -m visarag.refresh --apply && systemctl --user restart visarag
+[Unit]
+Description=Korea Visa Portal RAG: check the portal for changes
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/visa-rag
+ExecStart=%h/visa-rag/.venv/bin/python -m visarag.refresh
+SuccessExitStatus=1
