@@ -5,6 +5,7 @@
 Description=Korea Visa Portal RAG: check the portal for changes
 
 [Service]
+# Set these paths to your clone (git clone gives ~/korea-visa-rag).
 Type=oneshot
 WorkingDirectory=%h/visa-rag
 ExecStart=%h/visa-rag/.venv/bin/python -m visarag.refresh

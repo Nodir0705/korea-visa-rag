@@ -1,7 +1,7 @@
 [project]
 name = "visa-rag"
 version = "0.1.0"
-description = "English question answering over every PDF published on the Korea Visa Portal (visa.go.kr), with cited pages"
+description = "English question answering over the Korea Visa Portal (visa.go.kr): its English PDFs and per-visa guide pages, with citations"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "httpx>=0.27",

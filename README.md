@@ -5,7 +5,7 @@
 English question answering over the Korea Visa Portal (**visa.go.kr**), with a citation for every claim. It reads two sources: the site's **English PDFs** (40 of the 107 PDFs it publishes) and its **110 English per-visa guide pages** (eligibility, required documents, visa validity and period of stay). It runs fully locally on one 8 GB GPU and answers in **about 2 s**.
 
 - **Retrieval:** hybrid (bge-m3 + BM25 in LanceDB), fused by reciprocal rank fusion, then a cross-encoder reranker. The right source is ranked first for **88.5%** of questions.
-- **Accuracy:** on 50 held-out questions the core answer is right **96%** of the time, and **78%** of answers are fully right, with no wrong or missing detail. Both figures come from checking every answer against the source text. The automated judge gives 94% on the same questions. See *Results* for what each figure counts.
+- **Accuracy:** on 50 held-out questions the core answer is right **96%** of the time, and up to **78%** of answers are fully right, with no wrong or missing detail. Both figures come from checking every answer against the source text. The automated judge gives 94% on the same questions. See *Results* for what each figure counts.
 - **Guarding answers:** code checks every citation and every number against the cited passage. Questions the documents do not answer are declined.
 
 ![An answer with page citations, retrieved passages and timings](docs/demo-pdf.png)
@@ -32,11 +32,11 @@ All numbers come from `eval/run.py` and were measured on an RTX 4060 8 GB. The d
 **Answers.** Unanswerable questions count as correct when the system declines or says the documents do not state the answer. The final system has small-to-big page context and number grounding; the answer files are `results/*answers-v2-*` and `results/*answers-v3-heldout2*`. Two ways of scoring the same answers:
 
 - **LLM judge** (qwen3.5:9b, calibrated on 55 labelled cases): pass or fail on whether the answer matches the reference.
-- **Source check** (`results/20261125-source-check.json`): every question, reference answer and system answer was read against the full text of the corpus, with an evidence quote for each verdict. It was done by LLM reviewers (Claude) working separately from the judge, then read a second time; three verdicts changed on that reading, and the file records why. *Core right* means the main answer is correct. *Fully right* also requires no wrong or unsupported extra claim and no important omission.
+- **Source check** (`results/20261125-source-check.json`): every question, reference answer and system answer was read against the full text of the corpus, with an evidence quote for each verdict. It was done by four LLM reviewers (Claude), separately from the judge. The answers they did not rate fully right, plus two borderline ones, were read a second time; four verdicts changed, and the file records why. Answers rated fully right were not re-read, so the *fully right* figures are an upper bound. *Core right* means the main answer is correct. *Fully right* also requires no wrong or unsupported extra claim and no important omission.
 
 | Set | Questions | Judge | Source check: core right | Source check: fully right | p50 / p95 |
 |---|---:|---:|---:|---:|---:|
-| Development (`golden.yaml`) | 61 + 9 unanswerable | 98.6% | 97.1% (68/70) | 80.0% (56/70) | 2.20 s / 3.74 s |
+| Development (`golden.yaml`) | 61 + 9 unanswerable | 98.6% | 97.1% (68/70) | 78.6% (55/70) | 2.20 s / 3.74 s |
 | Held-out 1 (`heldout.yaml`) | 22 + 3 | 92% | 96% (24/25) | 80% (20/25) | 1.92 s / 3.16 s |
 | Held-out 2 (`heldout2.yaml`) | 21 + 4 | 96% | 96% (24/25) | 76% (19/25) | 1.86 s / 3.44 s |
 | **Both held-out sets** | 50 | 94% | **96% (48/50)** | **78% (39/50)** | |
@@ -56,7 +56,7 @@ Other measures:
   - K24 applied a D-3 TOPIK rule to D-4-1. Number grounding, added after held-out 1, already fixes it.
   - Then a false catch had to be fixed: a year repeated from the question.
 
-The table shows scores after those fixes. Since the source check, both held-out sets have also been read item by item, so they no longer count as unseen: measuring a further change needs a new set. The source check also made four reference answers more precise (RE07, RE10, H22, K13). The judge scores above were computed against the earlier wording; the source check judges against the corpus itself.
+The table shows scores after those fixes. Since the source check, both held-out sets have also been read item by item, so they no longer count as unseen: measuring a further change needs a new set. The source check also made four reference answers more precise (RE07, RE10, H22, K13); the gold pages used by the retrieval metrics did not change. The judge scores above were computed against the earlier wording; the source check judges against the corpus itself.
 
 **Remaining errors** (source check).
 - **Wrong (4):**
@@ -64,10 +64,10 @@ The table shows scores after those fixes. Since the source check, both held-out 
   - **VF04:** the model limits a notice that covers all foreigners to two country lists.
   - **PG09:** the answer opens "yes" and then cites Australia's exemption.
   - **H18:** the Macao entry of the apostille directory has no country name in its chunk, so the model refuses.
-- **Core right, detail wrong or missing (21):**
+- **Core right, detail wrong or missing (22):**
   - **A detail borrowed from a neighbouring visa case or section:** FM04, H07, H10, K13, K18, K19, PR01.
   - **A required item left out:** FM03, PG10, PG14, K14.
-  - **An added claim that is wrong or looser than the source:** TB01, RE05, RE07, RE08, AC02, VF03, GE01, H14, H25, K16.
+  - **An added claim, or an opening, that is wrong, misleading or looser than the source:** TB01, RE05, RE06, RE07, RE08, AC02, VF03, GE01, H14, H25, K16.
 
 **Generator choice** (PDF-only index, 45 questions, `results/20261124-0248-*-4b-v2*` vs `results/20261124-0228-*-9b-v2*`): qwen3.5:4b scored 0.978 correct, 2.25 s p50. qwen3.5:9b scored 0.956 correct, 20.9 s p50, because the reranker had to run on the CPU (the 9B model needs 8.9 GB).
 
@@ -159,6 +159,8 @@ make serve     # http://localhost:8000  (API docs at /docs)
 curl -s localhost:8000/v1/ask -H 'content-type: application/json' \
   -d '{"question": "Who must submit a tuberculosis test certificate?"}' | jq .answer
 ```
+
+Guide pages are shown per nationality, and discovery picks one nationality per visa code (recorded in `data/raw/visa_pages/_codes.json`). A fresh crawl can therefore get another nationality's version of some pages than the one evaluated here.
 
 Evaluation:
 

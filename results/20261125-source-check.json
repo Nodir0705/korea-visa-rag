@@ -1,5 +1,5 @@
 {
- "what": "Item-by-item check of every question, reference answer and system answer against the full corpus text, with an evidence quote per item. Done by LLM reviewers (Claude) reading the corpus, independently of the judge model; it is not the author's review. Three answer verdicts were changed on a second reading (field second_reading); answer_ok_final holds the verdicts used in the README.",
+ "what": "Item-by-item check of every question, reference answer and system answer against the full corpus text, with an evidence quote per item. Done by four LLM reviewers (Claude), 30 items each, independently of the judge model; it is not the author's review. The answers not rated fully right, plus two that a reviewer called borderline (GE01, RE06), were then read a second time; four verdicts changed (field second_reading). The answers rated fully right in the first reading were not re-read, so the fully-right share is an upper bound. answer_ok_final holds the verdicts used in the README.",
  "answers_checked": "20261124-1745-answers-v2-golden, 20261124-1748-answers-v2-heldout, 20261124-2012-answers-v3-heldout2",
  "verdicts": {
   "answer_ok": {
@@ -11,10 +11,10 @@
  "summary": {
   "golden": {
    "n": 70,
-   "yes": 56,
-   "partly": 12,
+   "yes": 55,
+   "partly": 13,
    "no": 2,
-   "fully_correct": 0.8,
+   "fully_correct": 0.786,
    "core_correct": 0.971
   },
   "heldout": {
@@ -195,7 +195,8 @@
    "answer_ok": "yes",
    "note": "",
    "evidence": "DOC a0ab242b1eec (Re-Entry Permit 2022) p.4: \"(At ports and airports nationwide) Only a single Re-entry Permit is applicable at ports and airports in principle. Yet, Corporate Investor (D-8) and Marriage Migrant (F-6) status holders can apply for a multiple Re-entry Permit.\"",
-   "answer_ok_final": "yes"
+   "answer_ok_final": "partly",
+   "second_reading": "Second reading: the question asks about a multiple permit and the answer opens 'Yes' (about a single permit) before giving the D-8/F-6 rule; a misleading opening, so counted as partly."
   },
   {
    "set": "golden",

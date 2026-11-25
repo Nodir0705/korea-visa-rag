@@ -6,6 +6,7 @@ Description=Korea Visa Portal RAG API
 After=network-online.target ollama.service
 
 [Service]
+# Set these paths to your clone (git clone gives ~/korea-visa-rag).
 WorkingDirectory=%h/visa-rag
 ExecStart=%h/visa-rag/.venv/bin/python -m visarag.api
 Restart=on-failure

@@ -102,7 +102,7 @@ questions:
     type: lookup
     question: How late can I apply for a re-entry permit before my departure?
     answer: Online (HiKorea) applications are accepted until 3 days before the departure date, excluding holidays. A single re-entry permit can also be obtained at ports and airports.
-    gold: [{doc: a0ab242b1eec, pages: [3, 4]}]
+    gold: [{doc: a0ab242b1eec, pages: [3]}]
   - id: RE08
     type: table
     question: Nationals of which countries are exempt from the re-entry permit fee?
