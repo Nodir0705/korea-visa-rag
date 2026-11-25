@@ -1,5 +1,7 @@
 # Korea Visa Portal RAG
 
+[![CI](https://github.com/Nodir0705/korea-visa-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/Nodir0705/korea-visa-rag/actions/workflows/ci.yml)
+
 English question answering over the Korea Visa Portal (**visa.go.kr**), with a citation for every claim. It reads two sources: the site's **English PDFs** (40 of the 107 PDFs it publishes) and its **110 English per-visa guide pages** (eligibility, required documents, visa validity and period of stay). It runs fully locally on one 8 GB GPU and answers in **about 2 s**.
 
 - **Retrieval:** hybrid (bge-m3 + BM25 in LanceDB), fused by reciprocal rank fusion, then a cross-encoder reranker. The right source is ranked first for **88.5%** of questions.
