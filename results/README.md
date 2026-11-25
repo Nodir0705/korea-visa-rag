@@ -14,6 +14,7 @@ File names are `YYYYMMDD-HHMM-<what>-<tag>`.
 | Held-out 2, answers + judge | `20261124-2012-answers-v3-heldout2*` |
 | Retrieval, development set (four retrieval modes) | `20261124-1342-retrieval-pages.json` |
 | Retrieval, held-out sets (hybrid + rerank) | `20261124-1745-retrieval-v2-heldout.json`, `20261124-1713-retrieval-final-heldout2.json` |
+| Source check of all 120 answers against the corpus (LLM reviewers, evidence per item) | `20261125-source-check.json` |
 | Judge calibration (qwen3.5:9b vs mistral-nemo) | `judge-calibration-20261124-0329.json` (qwen3.5:9b) and `-0259.json` (mistral-nemo row) |
 
 ## First scoring of the held-out sets (before the fixes they exposed)

@@ -68,7 +68,7 @@ questions:
   - id: K13
     type: lookup
     question: How long is the first period of stay for an airline pilot on an E-5 visa?
-    answer: Up to 1 year initially; the visa is single-entry and valid for 3 months.
+    answer: Up to 1 year initially, in both pilot cases. The visa itself is either single-entry and valid for 3 months (Case 1) or multiple-entry and valid for 1 year (Case 2).
     gold: [{doc: page-E-5}]
   - id: K14
     type: lookup

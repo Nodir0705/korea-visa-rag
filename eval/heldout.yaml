@@ -114,7 +114,7 @@ questions:
     question: What is the minimum investment amount required for a D-8-1 visa?
     # Label corrected after the first scoring: it was written as no_answer from the top of the
     # page only; the D-8-1 page does state the minimum further down. The system had it right.
-    answer: At least 100 million KRW (with at least 10 percent of the company's total capital stock and voting rights, per the Foreign Investment Promotion Act).
+    answer: At least 100 million KRW, together with either at least 10 percent of the company's voting stock or a contract to dispatch or appoint executives.
     gold: [{doc: page-D-8-1}]
   - id: H23
     type: no_answer

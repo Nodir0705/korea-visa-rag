@@ -101,8 +101,8 @@ questions:
   - id: RE07
     type: lookup
     question: How late can I apply for a re-entry permit before my departure?
-    answer: Until 3 days before the departure date, excluding holidays.
-    gold: [{doc: a0ab242b1eec, pages: [3]}]
+    answer: Online (HiKorea) applications are accepted until 3 days before the departure date, excluding holidays. A single re-entry permit can also be obtained at ports and airports.
+    gold: [{doc: a0ab242b1eec, pages: [3, 4]}]
   - id: RE08
     type: table
     question: Nationals of which countries are exempt from the re-entry permit fee?
@@ -116,7 +116,7 @@ questions:
   - id: RE10
     type: paraphrase
     question: i have a residence card and want to go home for 18 months, what permit do i need to come back?
-    answer: A multiple re-entry permit, needed for stays abroad of more than 1 year and up to 2 years.
+    answer: A multiple re-entry permit, needed for stays abroad of more than 1 year and up to 2 years. (Permanent residents, F-5, need no permit to return within 2 years.)
     gold: [{doc: a0ab242b1eec, pages: [1, 2]}]
 
   # --- Accommodation declaration (bb553b933f21, 2022) -------------------------

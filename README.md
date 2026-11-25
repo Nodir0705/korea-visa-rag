@@ -3,7 +3,7 @@
 English question answering over the Korea Visa Portal (**visa.go.kr**), with a citation for every claim. It reads two sources: the site's **English PDFs** (40 of the 107 PDFs it publishes) and its **110 English per-visa guide pages** (eligibility, required documents, visa validity and period of stay). It runs fully locally on one 8 GB GPU and answers in **about 2 s**.
 
 - **Retrieval:** hybrid (bge-m3 + BM25 in LanceDB), fused by reciprocal rank fusion, then a cross-encoder reranker. The right source is ranked first for **88.5%** of questions.
-- **Accuracy:** **98.6%** on the 70-question development set and **94–96%** on 50 held-out questions. Read *How the held-out sets were used* for what those figures mean.
+- **Accuracy:** on 50 held-out questions the core answer is right **96%** of the time, and **78%** of answers are fully right, with no wrong or missing detail. Both figures come from checking every answer against the source text. The automated judge gives 94% on the same questions. See *Results* for what each figure counts.
 - **Guarding answers:** code checks every citation and every number against the cited passage. Questions the documents do not answer are declined.
 
 ![An answer with page citations, retrieved passages and timings](docs/demo-pdf.png)
@@ -27,22 +27,23 @@ All numbers come from `eval/run.py` and were measured on an RTX 4060 8 GB. The d
 | Hybrid (RRF) | 0.787 | 0.984 | 0.984 | 0.873 | 94 ms |
 | **Hybrid + cross-encoder rerank** | **0.885** | **0.967** | **0.984** | **0.920** | 336 ms |
 
-**Answers.** Overall accuracy counts correct answers to answerable questions plus unanswerable questions that are refused or answered "the documents do not state this". The final system has small-to-big page context and number grounding; files are `results/*answers-v2-*` and `results/*answers-v3-heldout2*`.
+**Answers.** Unanswerable questions count as correct when the system declines or says the documents do not state the answer. The final system has small-to-big page context and number grounding; the answer files are `results/*answers-v2-*` and `results/*answers-v3-heldout2*`. Two ways of scoring the same answers:
 
-| Set | Questions | Correct, LLM judge | Unanswerable handled | **Overall (judge)** | Overall (manual review) | p50 / p95 |
-|---|---:|---:|---:|---:|---:|---:|
-| Development (`golden.yaml`) | 61 + 9 | 60/61 | 9/9 | **98.6%** | 96–97% ¹ | 2.20 s / 3.74 s |
-| Held-out 1 (`heldout.yaml`) | 22 + 3 | 20/22 | 3/3 | **92%** | 96% ² | 1.92 s / 3.16 s |
-| Held-out 2 (`heldout2.yaml`) | 21 + 4 | 20/21 | 4/4 | **96%** | 96% | 1.86 s / 3.44 s |
-| Both held-out sets | 50 | | | **94%** | **96%** | |
+- **LLM judge** (qwen3.5:9b, calibrated on 55 labelled cases): pass or fail on whether the answer matches the reference.
+- **Source check** (`results/20261125-source-check.json`): every question, reference answer and system answer was read against the full text of the corpus, with an evidence quote for each verdict. It was done by LLM reviewers (Claude) working separately from the judge, then read a second time; three verdicts changed on that reading, and the file records why. *Core right* means the main answer is correct. *Fully right* also requires no wrong or unsupported extra claim and no important omission.
+
+| Set | Questions | Judge | Source check: core right | Source check: fully right | p50 / p95 |
+|---|---:|---:|---:|---:|---:|
+| Development (`golden.yaml`) | 61 + 9 unanswerable | 98.6% | 97.1% (68/70) | 80.0% (56/70) | 2.20 s / 3.74 s |
+| Held-out 1 (`heldout.yaml`) | 22 + 3 | 92% | 96% (24/25) | 80% (20/25) | 1.92 s / 3.16 s |
+| Held-out 2 (`heldout2.yaml`) | 21 + 4 | 96% | 96% (24/25) | 76% (19/25) | 1.86 s / 3.44 s |
+| **Both held-out sets** | 50 | 94% | **96% (48/50)** | **78% (39/50)** | |
+
+The gap between the two columns is the main weakness: about one answer in five gets the core right but adds a detail that is wrong or leaves out a required item. The judge, which compares against a short reference, passes most of those.
 
 Other measures:
 - **Invented citations:** 0 in every run.
-- **Unanswerable questions answered with an invented fact:** 0 in the final runs.
-- **"Every claim stated in the cited passage"** (judge, not calibrated): 0.87 / 0.91 / 0.86 on the three sets.
-
-¹ The judge passed FM04 (it gives the paper form's "block letters" rule instead of the e-form's "uppercase only" rule), and PR01 is borderline. Both are counted as wrong in the manual column.
-² The judge failed H04, whose answer (valid 3 years, first stay up to 1 year) is correct; it only omits the words "multiple-entry".
+- **Unanswerable questions answered with an invented fact:** 0 in the final runs. All 16 unanswerable questions were confirmed absent from the corpus by the source check.
 
 **How the held-out sets were used.** Each set was committed before the system it measures was run on it (see the commits that add `eval/heldout.yaml` and `eval/heldout2.yaml`), so first scores are not tuned. The first scoring of each one exposed failure classes that were then fixed:
 - **Held-out 1, first scored at 88% (judge):**
@@ -53,12 +54,18 @@ Other measures:
   - K24 applied a D-3 TOPIK rule to D-4-1. Number grounding, added after held-out 1, already fixes it.
   - Then a false catch had to be fixed: a year repeated from the question.
 
-So the honest figure for unseen questions is **about 92–96%**. The numbers in the table come after those fixes.
+The table shows scores after those fixes. Since the source check, both held-out sets have also been read item by item, so they no longer count as unseen: measuring a further change needs a new set. The source check also made four reference answers more precise (RE07, RE10, H22, K13). The judge scores above were computed against the earlier wording; the source check judges against the corpus itself.
 
-**Remaining errors.**
-- **K05:** the model picks the wrong case on the E-3 page.
-- **VF04:** the model misreads which countries a notice covers.
-- **H18:** the Macao entry of the apostille directory has no country name in its chunk, so the model refuses.
+**Remaining errors** (source check).
+- **Wrong (4):**
+  - **K05:** the model picks the wrong case on the E-3 page.
+  - **VF04:** the model limits a notice that covers all foreigners to two country lists.
+  - **PG09:** the answer opens "yes" and then cites Australia's exemption.
+  - **H18:** the Macao entry of the apostille directory has no country name in its chunk, so the model refuses.
+- **Core right, detail wrong or missing (21):**
+  - **A detail borrowed from a neighbouring visa case or section:** FM04, H07, H10, K13, K18, K19, PR01.
+  - **A required item left out:** FM03, PG10, PG14, K14.
+  - **An added claim that is wrong or looser than the source:** TB01, RE05, RE07, RE08, AC02, VF03, GE01, H14, H25, K16.
 
 **Generator choice** (PDF-only index, 45 questions, `results/20261124-0248-*-4b-v2*` vs `results/20261124-0228-*-9b-v2*`): qwen3.5:4b scored 0.978 correct, 2.25 s p50. qwen3.5:9b scored 0.956 correct, 20.9 s p50, because the reranker had to run on the CPU (the 9B model needs 8.9 GB).
 
@@ -72,7 +79,7 @@ So the honest figure for unseen questions is **about 92–96%**. The numbers in 
 | English per-visa guide pages, indexed | 110 visa codes (731 chunks) |
 | Unit, service and data tests | `uv run pytest`: 30 passed |
 
-> **About the evaluation data.** All 120 questions, their reference answers and the 55 judge-calibration labels were drafted by an LLM (Claude) while it read the cited sources. A review by the author is in progress, and this note will change when it is done. The development-set figures are in-sample: the chunking, prompt and guard changes were made while looking at those questions. The visa guide pages show requirements as the portal displays them for one nationality, mostly US applicants. Every page chunk says so, and the answers carry that note.
+> **About the evaluation data.** All 120 questions, their reference answers and the 55 judge-calibration labels were drafted by an LLM (Claude) while it read the cited sources. The source check above was also done by LLMs; no human has reviewed the labels yet. The development-set figures are in-sample: the chunking, prompt and guard changes were made while looking at those questions. The visa guide pages show requirements as the portal displays them for one nationality, mostly US applicants. Every page chunk says so, and the answers carry that note.
 
 ## How it works
 
@@ -191,7 +198,7 @@ deploy/        systemd units for the API and the weekly refresh check
 
 ## Open items
 
-1. **The author's review of the evaluation data** (`eval/*.yaml`) is in progress.
+1. **Precision of details.** The two main causes of partly right answers are borrowing from a neighbouring visa case and dropping a list item. Both are in the answer step, not retrieval. Fixing them needs a fresh question set to measure on, and a human review of the labels.
 2. **Newer retrieval models.** Qwen3-Embedding-0.6B and Qwen3-Reranker-0.6B have not been A/B tested against bge-m3 and bge-reranker-v2-m3 yet.
 3. **Korean-only documents.** The richest rules (visa manuals) are Korean PDFs and HWP files. Indexing them needs cross-lingual retrieval and translation, which this English-only version leaves out by design.
 4. **The corpus is old.** Most English notices are from 2014 to 2022. Every answer shows its source date, and the API flags sources older than three years.
