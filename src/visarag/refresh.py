@@ -65,10 +65,19 @@ def diff(old: dict[str, str], new: dict[str, str]) -> dict[str, list[str]]:
     }
 
 
-def fetch_to_staging(staging: Path) -> list[crawl.Attachment]:
-    """Run both crawlers with every output path pointed at ``staging``."""
+def fetch_to_staging(staging: Path, rediscover: bool = False) -> list[crawl.Attachment]:
+    """Run both crawlers with every output path pointed at ``staging``.
+
+    Guide pages are shown per nationality, and discovery picks one nationality per visa
+    code. Unless ``rediscover`` is set, the live code list is reused so each page is
+    fetched for the same nationality as before and only real edits show up as changes.
+    """
     live_data = settings.data_dir
     saved = (visa_pages.RAW_DIR, visa_pages.CORPUS_DIR)
+    codes = saved[0] / "_codes.json"
+    if codes.exists() and not rediscover:
+        (staging / "raw" / "visa_pages").mkdir(parents=True, exist_ok=True)
+        shutil.copy2(codes, staging / "raw" / "visa_pages" / "_codes.json")
     settings.data_dir = staging
     visa_pages.RAW_DIR, visa_pages.CORPUS_DIR = staging / "raw" / "visa_pages", staging / "pages"
     try:
@@ -128,6 +137,9 @@ def main() -> None:
     ap.add_argument("--max-drop", type=float, default=0.10, help="largest allowed drop in PDFs or pages")
     ap.add_argument("--index-device", default="cpu",
                     help="device for embedding new chunks (cpu leaves the GPU to the running API)")
+    ap.add_argument("--rediscover", action="store_true",
+                    help="rediscover visa codes instead of reusing the saved list (finds new codes, but a "
+                         "page may then be fetched for another nationality and show up as changed)")
     ap.add_argument("--keep-staging", action="store_true")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -139,7 +151,7 @@ def main() -> None:
     staging.mkdir(parents=True)
 
     t0 = time.perf_counter()
-    atts = fetch_to_staging(staging)
+    atts = fetch_to_staging(staging, args.rediscover)
     old_pdfs, new_pdfs = pdf_set(live / "raw" / "manifest.jsonl"), pdf_set(staging / "raw" / "manifest.jsonl")
     old_pages, new_pages = page_set(live / "pages" / "en"), page_set(staging / "pages" / "en")
     report = {
