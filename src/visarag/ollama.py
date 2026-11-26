@@ -48,8 +48,9 @@ class Ollama:
         num_ctx: int | None = None,
         temperature: float = 0.0,
         num_predict: int | None = None,
+        think: bool = False,
     ) -> dict[str, Any]:
-        body = self._body(model, messages, schema, num_ctx, temperature, num_predict, stream=False)
+        body = self._body(model, messages, schema, num_ctx, temperature, num_predict, stream=False, think=think)
         t0 = time.perf_counter()
         r = self.client.post("/api/chat", json=body)
         if r.status_code != 200:
@@ -75,7 +76,7 @@ class Ollama:
                 if line:
                     yield json.loads(line)
 
-    def _body(self, model, messages, schema, num_ctx, temperature, num_predict, stream) -> dict[str, Any]:
+    def _body(self, model, messages, schema, num_ctx, temperature, num_predict, stream, think=False) -> dict[str, Any]:
         options: dict[str, Any] = {"temperature": temperature, "num_ctx": num_ctx or settings.num_ctx, "seed": 7}
         if num_predict:
             options["num_predict"] = num_predict
@@ -83,7 +84,7 @@ class Ollama:
             "model": model,
             "messages": messages,
             "stream": stream,
-            "think": False,
+            "think": think,
             "keep_alive": settings.keep_alive,
             "options": options,
         }

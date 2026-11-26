@@ -192,3 +192,85 @@ def test_number_grounding_allows_numbers_from_the_question_and_dates():
     _, flags = amount_guard("On the 2020 Health Condition Report Form, which places must applicants list?",
                                "On the 2020 form, applicants list all cities stayed in within 30 days [1].", [form])
     assert flags == []
+
+
+def _page(code: str, headings: str = "") -> Hit:
+    return Hit(chunk_id=f"page-{code}#1", doc_id=f"page-{code}", title=f"Visa guide: {code}", file_name="",
+               page=0, pages=[], headings=headings, body="b", text="t", source_url="", pdf_path="",
+               post_date="", source="page")
+
+
+def test_scope_filter_drops_other_visa_codes_and_routes_but_keeps_pdfs():
+    from visarag.answer import scope_filter
+
+    hits = [_page("D-8-1", "Embassy visa application — Case 1 > Required documents"),
+            _page("D-8-3", "Embassy visa application — Case 1 > Required documents"),
+            _hit("pdf1")]
+    kept, flags = scope_filter("What must a D-8-1 investor submit?", hits)
+    assert [h.doc_id for h in kept] == ["page-D-8-1", hits[2].doc_id] and flags == ["scoped_to_visa_code"]
+
+    hits = [_page("E-3", "Embassy visa application — Case 1 > Required documents"),
+            _page("E-3", "Visa Issuance Confirmation (CCVI) application — Case 3 > Required documents"),
+            _page("E-3", "Overview (eligible applicants / activities)")]
+    kept, flags = scope_filter("What does a researcher submit for an E-3 visa at an embassy?", hits)
+    assert [h.headings.split()[0] for h in kept] == ["Embassy", "Overview"] and flags == ["scoped_to_route"]
+
+
+def test_scope_filter_keeps_everything_without_a_match_and_accepts_sub_types():
+    from visarag.answer import scope_filter
+
+    hits = [_page("C-3-9"), _page("B-1")]
+    assert scope_filter("What is the D-2 work limit?", hits)[0] == hits  # no D-2 page retrieved
+    assert scope_filter("Who needs a visa?", hits)[0] == hits  # no code or route named
+    assert [h.doc_id for h in scope_filter("What does a C-3 visa allow?", hits)[0]] == ["page-C-3-9"]  # sub-type
+
+
+def test_expand_guide_pages_gives_overview_and_the_named_route(tmp_path, monkeypatch):
+    from visarag import answer
+    from visarag.config import settings
+
+    (tmp_path / "pages" / "en").mkdir(parents=True)
+    (tmp_path / "pages" / "en" / "E-3.md").write_text(
+        "---\nnat_cd: 275\n---\n\n# E-3 Researcher\n\n## Overview (eligible applicants / activities)\nAged 25 or older.\n\n"
+        "## Embassy visa application\n### Embassy visa application — Case 1\nDegree certificate.\n\n"
+        "## Visa Issuance Confirmation (CCVI) application\n### Visa Issuance Confirmation (CCVI) application — Case 3\n"
+        "Recommendation letter.\n", encoding="utf-8")
+    monkeypatch.setattr(settings, "data_dir", tmp_path)
+    answer._guide_sections.cache_clear()
+    hits = [_page("E-3", "Embassy visa application — Case 1 > Required documents"),
+            _page("E-3", "Overview (eligible applicants / activities)")]
+    out = answer.expand_guide_pages("What does an E-3 applicant submit at an embassy?", hits)
+    assert len(out) == 1  # one passage per page
+    assert "Aged 25" in out[0].body and "Degree certificate" in out[0].body and "Recommendation" not in out[0].body
+    out = answer.expand_guide_pages("Who can get an E-3 visa?", hits[:1])
+    assert "Recommendation letter" in out[0].body  # short page: given whole
+    answer._guide_sections.cache_clear()
+
+
+def test_is_yes_no():
+    from visarag.answer import is_yes_no
+
+    assert is_yes_no("Can I apply for a multiple re-entry permit at the airport?")
+    assert is_yes_no("im australian doing a working holiday in korea, do i need to show medical insurance?")
+    assert not is_yes_no("Which short-term visa types are covered by the accommodation declaration rule?")
+    assert not is_yes_no("How much does an apostille cost in Macao?")
+    assert not is_yes_no("Is the H-1 working holiday visa single or multiple entry, and how long is it valid?")
+    assert is_yes_no("Can the minor child of a permanent resident get an F-2-3 visa, and what must they submit?")
+
+
+def test_expand_guide_pages_keeps_only_the_case_for_long_pages(tmp_path, monkeypatch):
+    from visarag import answer
+    from visarag.config import settings
+
+    (tmp_path / "pages" / "en").mkdir(parents=True)
+    filler = "x" * 5000
+    (tmp_path / "pages" / "en" / "B-2-1.md").write_text(
+        "# B-2-1\n\n## Overview (eligible applicants / activities)\nTourists.\n\n## Visa-free entry\n"
+        f"### APEC Business Travel Card Holders (ABTC)\nABTC rule.\n\n### Visa Free Entry to the Jeju Area\n{filler}\n\n"
+        f"### Re-Entry Permit Holders\n{filler}\n", encoding="utf-8")
+    monkeypatch.setattr(settings, "data_dir", tmp_path)
+    answer._guide_sections.cache_clear()
+    hit = _page("B-2-1", "APEC Business Travel Card Holders (ABTC) > Eligibility")
+    body = answer.expand_guide_pages("Can ABTC holders enter without a visa?", [hit])[0].body
+    assert "Tourists." in body and "ABTC rule." in body and filler not in body
+    answer._guide_sections.cache_clear()

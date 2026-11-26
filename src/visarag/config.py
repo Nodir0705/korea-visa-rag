@@ -60,6 +60,10 @@ class Settings(BaseSettings):
     page_expand_max_chars: int = 3000  # only pages up to this size are expanded
     page_expand_max_doc_pages: int = 20  # long reference lists (e.g. the 89-page apostille directory) stay chunked
     context_max_chars: int = 16000  # cap on all passages together (num_ctx is 6144 tokens)
+    expand_guide_pages: bool = True  # small-to-big for guide pages: overview + the whole route
+    guide_expand_max_chars: int = 8000  # guide pages up to this size are given whole
+    scope_filter: bool = True  # drop guide passages for other visa codes / routes than the question names
+    think: bool = False  # let the generator reason before answering (slower)
     verify: bool = False  # second pass that drops unsupported sentences; measured worse (56/61 vs 58/61), so off
 
     @property

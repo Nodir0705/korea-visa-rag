@@ -40,9 +40,13 @@ The passages come from the Korea Visa Portal (visa.go.kr): official PDF document
 per-visa guide pages (eligibility, required documents, visa validity and period of stay for each visa code).
 
 Rules:
-- Start with the direct answer. If the question is yes/no, the first word is Yes or No.
-- Be brief: 1-4 sentences, or a short list when the answer is a list. Answer only what was asked:
-  do not add related rules, exceptions, conditions or background the question did not ask about.
+- Start with the direct answer.
+- When the answer is a list (documents, countries, conditions, options, fields), give every item the
+  passage lists for the case asked, in the passage's wording. Never give a selection of the items.
+- When the question asks who is eligible, include every condition the passage states (status,
+  nationality, age, relationship, period).
+- Otherwise be brief: 1-4 sentences. Answer only what was asked: do not add related rules,
+  exceptions, conditions or background the question did not ask about.
 - End every sentence that states a fact with the number of the passage that states it, like [2].
   Cite only passages that actually state that fact.
 - Use only facts written in the passages. No outside knowledge, no guessing, no filling gaps.
@@ -58,6 +62,25 @@ Rules:
 - Do not mention publication dates, passage numbers outside the [n] markers, or the passages themselves."""
 
 NOT_FOUND = "NOT_FOUND"
+YES_NO = re.compile(
+    r"^\W*(is|are|am|can|could|do|does|did|will|would|was|were|should|shall|may|must|have|has|had)\b", re.IGNORECASE
+)
+YES_NO_RULE = (
+    "This is a yes/no question: begin with Yes or No, and make it agree with the rest of your answer "
+    "(if the passage exempts the asker or says it is not possible, the answer is No)."
+)
+NOT_YES_NO_RULE = "This is not a yes/no question: do not begin with Yes or No."
+
+
+def is_yes_no(question: str) -> bool:
+    """Questions that open with an auxiliary verb ("Can I ...", "Is a ... required") take Yes/No;
+    "which", "what", "how" questions do not. Casual questions often put the verb later
+    ("im australian, do i need ...") so the last clause is checked too. "Is it single or multiple
+    entry?" is a choice, not yes/no."""
+    first = re.split(r",\s*and\b|[;?]", question.strip())[0]
+    last = re.split(r"[,;]\s*", question.strip())[-1]
+    clause = first if YES_NO.match(first) else last if YES_NO.match(last) else ""
+    return bool(clause) and not re.search(r"\bor\b", clause, re.IGNORECASE)
 VISA_CODE = re.compile(r"\b([A-H])-(\d{1,2})(?:-(\d{1,2}))?\b")
 AMOUNT = re.compile(
     r"(?:KRW|USD|BGN|won|₩|\$|€)\s?\d[\d,.]*(?:\s(?:million|billion))?"
@@ -74,6 +97,52 @@ NOT_STATED = re.compile(
 OLD_SOURCE_BEFORE = "2023-11-24"  # sources older than ~3 years are flagged for the reader
 MARKER = re.compile(r"\[(\d+)\]")
 SENTENCE = re.compile(r"(?<=[.!?])\s+(?=[A-Z(\-•*])|\n+")
+
+
+ROUTES = {
+    "embassy": (re.compile(r"\b(embass(y|ies)|consulates?|diplomatic missions?)\b", re.IGNORECASE), "Embassy visa application"),
+    "ccvi": (re.compile(r"\b(ccvi|confirmation of visa issuance|visa issuance confirmation)\b", re.IGNORECASE),
+             "Visa Issuance Confirmation (CCVI) application"),
+    "evisa": (re.compile(r"\be-?visa\b", re.IGNORECASE), "E-visa application"),
+}
+
+
+def _codes(text: str) -> set[str]:
+    return {m.group(0).upper() for m in VISA_CODE.finditer(text)}
+
+
+def _code_fits(page_code: str, asked: set[str]) -> bool:
+    """A guide page fits a question about ``asked`` if it is that code, a sub-type of it
+    (C-3 -> C-3-9), or its parent (D-8-1 -> D-8)."""
+    return any(page_code == q or page_code.startswith(q + "-") or q.startswith(page_code + "-") for q in asked)
+
+
+def scope_filter(question: str, hits: list[Hit]) -> tuple[list[Hit], list[str]]:
+    """Keep the generator on the visa and application route the question names.
+
+    Guide-page passages for a different visa code (D-8-3 for a D-8-1 question) or a
+    different route (CCVI for an embassy question) are dropped before generation, so the
+    model cannot borrow a neighbouring case's rule. PDFs are never dropped, and nothing is
+    dropped unless a passage of the named visa or route is retrieved.
+    """
+    flags: list[str] = []
+    asked = _codes(question)
+    pages = [h for h in hits if h.source == "page"]
+    if asked and any(_code_fits(h.doc_id.removeprefix("page-"), asked) for h in pages):
+        kept = [h for h in hits if h.source != "page" or _code_fits(h.doc_id.removeprefix("page-"), asked)]
+        if len(kept) < len(hits):
+            flags.append("scoped_to_visa_code")
+        hits = kept
+    named = [heading for rx, heading in ROUTES.values() if rx.search(question)]
+    if len(named) == 1:
+        other = [heading for _, heading in ROUTES.values() if heading != named[0]]
+        on_route = [h for h in hits if h.source == "page" and named[0] in h.headings]
+        if on_route:
+            kept = [h for h in hits if not (h.source == "page" and any(o in h.headings for o in other))]
+            if len(kept) < len(hits):
+                flags.append("scoped_to_route")
+            hits = kept
+    return hits, flags
 
 
 @dataclass
@@ -249,13 +318,92 @@ def expand_to_pages(hits: list[Hit]) -> list[Hit]:
             out.append(seen[key])
         else:
             out.append(h)
+    return out
+
+
+def cap_context(hits: list[Hit]) -> list[Hit]:
+    """Keep the passages inside the context budget; hits are in rank order."""
     total, kept = 0, []
-    for h in out:  # keep the context inside num_ctx; hits are in rank order
+    for h in hits:
         total += len(h.body)
         if kept and total > settings.context_max_chars:
             break
         kept.append(h)
     return kept
+
+
+@functools.lru_cache(maxsize=256)
+def _guide_sections(code: str) -> tuple[tuple[str, str], ...]:
+    """The top-level sections ("## ...") of a visa guide page as (heading, text)."""
+    path = settings.data_dir / "pages" / "en" / f"{code}.md"
+    if not path.exists():
+        return ()
+    text = path.read_text(encoding="utf-8")
+    if text.startswith("---\n") and "\n---\n" in text:
+        text = text.split("\n---\n", 1)[1]
+    sections: list[tuple[str, str]] = []
+    for block in re.split(r"\n(?=## )", text):
+        block = block.strip()
+        if block.startswith("## "):
+            sections.append((block[3:].split("\n", 1)[0].strip(), block))
+    return tuple(sections)
+
+
+def _overview_and_case(sections: tuple[tuple[str, str], ...], h: Hit) -> list[str]:
+    """The overview's own text (without its sub-sections) plus the sub-section the hit came from."""
+    out: list[str] = []
+    found = False
+    for head, text in sections:
+        subs = re.split(r"\n(?=### )", text)
+        if head.startswith("Overview"):
+            out.insert(0, subs[0].strip())
+        for sub in subs[1:]:
+            title = sub.split("\n", 1)[0].lstrip("# ").strip()
+            if title and title in h.headings:
+                out.append(f"## {head}\n{sub.strip()}")
+                found = True
+    if not found:  # the hit's own section is not a sub-section: fall back to the hit itself
+        out.append(h.body)
+    return out
+
+
+def expand_guide_pages(question: str, hits: list[Hit]) -> list[Hit]:
+    """Small-to-big for visa guide pages: a retrieved section becomes its page's overview plus
+    the whole application route (every case) the question names or the hit came from, or the
+    whole page when it is short. Eligibility conditions often sit in the overview and the
+    right case is often a sibling of the retrieved one, so a single section is not enough.
+    Several hits on one page become one passage."""
+    named = [heading for rx, heading in ROUTES.values() if rx.search(question)]
+    out: list[Hit] = []
+    seen: dict[str, Hit] = {}
+    for h in hits:
+        if h.source != "page":
+            out.append(h)
+            continue
+        if h.doc_id in seen:
+            seen[h.doc_id].score = max(seen[h.doc_id].score, h.score)
+            continue
+        sections = _guide_sections(h.doc_id.removeprefix("page-"))
+        if not sections:
+            out.append(h)
+            continue
+        whole = "\n\n".join(t for _, t in sections)
+        if len(named) == 1 and any(named[0] in head for head, _ in sections):
+            keep = [t for head, t in sections if head.startswith("Overview") or named[0] in head]
+        elif len(whole) <= settings.guide_expand_max_chars:
+            keep = [whole]
+        else:
+            keep = [t for head, t in sections if head.startswith("Overview") or head.split(" — ")[0] in h.headings]
+            if len(keep) <= 1:  # the hit's route is not a top-level section of this page
+                keep = _overview_and_case(sections, h)
+        body = "\n\n".join(keep) or h.body
+        if len(body) > settings.guide_expand_max_chars:
+            # A long route (B-2-1 lists a dozen visa-free schemes) would crowd out the other
+            # passages: keep the overview and only the case the hit came from.
+            body = "\n\n".join(_overview_and_case(sections, h)) or h.body
+        seen[h.doc_id] = dataclasses.replace(h, body=body, headings="", ranks=dict(h.ranks))
+        out.append(seen[h.doc_id])
+    return out
 
 
 class Answerer:
@@ -268,6 +416,7 @@ class Answerer:
         user = (
             f"Passages:\n\n{format_passages(hits)}\n\n"
             f"Question: {question}\n\n"
+            f"{YES_NO_RULE if is_yes_no(question) else NOT_YES_NO_RULE}\n"
             f"Answer from passages [1]-[{len(hits)}] only, with a [n] marker after every factual sentence, "
             f"or reply {NOT_FOUND} if they do not contain the answer."
             + (f"\n\n{correction}" if correction else "")
@@ -275,7 +424,8 @@ class Answerer:
         data = self.llm.chat(
             self.model,
             [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}],
-            num_predict=600,
+            num_predict=4096 if settings.think else 600,
+            think=settings.think,
         )
         return data["message"]["content"].strip(), data
 
@@ -307,11 +457,17 @@ class Answerer:
         hits = self.retriever.search(question, mode=mode)
         if settings.expand_pages and hits:
             hits = expand_to_pages(hits)
+        scope_flags: list[str] = []
+        if settings.scope_filter and hits:
+            hits, scope_flags = scope_filter(question, hits)
+        if settings.expand_guide_pages and hits:
+            hits = expand_guide_pages(question, hits)
+        hits = cap_context(hits)
         timings = {k: round(v, 3) for k, v in self.retriever.timings.items()}
         passages = [_citation(i, h) for i, h in enumerate(hits, 1)]
         top = max((h.score for h in hits), default=0.0)
         confidence = {"retrieval_top_score": round(top, 4)}
-        flags: list[str] = []
+        flags: list[str] = list(scope_flags)
 
         if not hits or (mode == "hybrid+rerank" and top < settings.min_rerank_score):
             timings["total_s"] = round(time.perf_counter() - t0, 3)
