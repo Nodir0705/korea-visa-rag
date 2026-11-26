@@ -1,0 +1,1181 @@
+[
+ {
+  "gid": "21d69ee2bdd9",
+  "type": "lookup",
+  "question": "On the F-2-3 personal details form, what should you write in the date of birth column for a parent or sibling who is no longer living?",
+  "reference": "Write 'DECEASED'.",
+  "answer": "You should write 'DECEASED' in the date of birth column for a parent or sibling who is no longer living [1]. This instruction applies to all family members listed on the form [2]. The same requirement is stated for the Marriage Statement form as well [3].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Personal Details Form for F-2-3 Visa Application",
+    "page": 2,
+    "text": "(제2쪽 / Page2)\n2. 가족 및 혼인관계 / YOUR FAMILY AND SPOUSE 관계 Relation to you 성 Family name 명 Given name 생년월일 Date of birth 혼인인지여부 Whether aware of your marriage or not 부 Father 안다 / 모른다 Know / Doesn't Know 모 Mother 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know\n2.1 신청인의 부모, 형제, 자매가 혼인에 대해 알고 있습니까? (초청인에게 형제, 자매, 자녀가 있는 경우 빠짐없이 모두 작성하여야 하며, 작성 공간이 부족한 경우 별지로 작성. 사망한 경우 생년월일에 ‘사망’으로 기재) Do your parents, brothers, and sisters know about your marriage? (If you have brothers and sisters, please include details for all of them below, and if you do not have enough space, please attach a separate statement.\nIf not living, write 'DECEASED' in the 'Date of birth' column below.)\n배우자의 성명 Name of previous spouse 생년월일 Date of birth 배우자의 국적 Nationality 혼인기간 Marriage period . . . ~ . . .\n. . . ~ . . .\n2.2 신청인은 과거에 혼인한 적이 있습니까?\nHave you ever been married to a person other than your current spouse before?\n[ ] 예 (아래 표를 작성) / Yes (Please provide details about your previous marriages)\n[ ] 아니오 / No\n2.3 현재 배우자 이외에 혼인관계를 유지하고 있는 다른 배우자가 있습니까?\nIs there another person that you maintain marital relations with other than your current spouse?\n[ ] 예 / Yes [ ] 아니오 / No 자녀의 성명 Name of child 생년월일 Date of birth 자녀의 국적 Nationality 현재 양육하고 있는 사람 Person charged with custody of child\n2.4 신청인은 과거 혼인관계에서 출생한 자녀가 있습니까?\nDo you have children from your previous marriages?\n[ ] 예 (아래 표를 작성) / Yes (Please provide details about child)\n[ ] 아니오 / No"
+   },
+   {
+    "n": 2,
+    "title": "Personal Details Form for F-2-3 Marriage Visa Application",
+    "page": 8,
+    "text": "(제2쪽 / Page2)\n2. 가족 및 혼인관계 / YOUR FAMILY AND SPOUSE 관계 Relation to you 성 Family name 명 Given name 생년월일 Date of birth 혼인인지여부 Whether aware of your marriage or not 부 Father 안다 / 모른다 Know / Doesn't Know 모 Mother 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know\n2.1 신청인의 부모, 형제, 자매가 혼인에 대해 알고 있습니까? (초청인에게 형제, 자매, 자녀가 있는 경우 빠짐없이 모두 작성하여야 하며, 작성 공간이 부족한 경우 별지로 작성. 사망한 경우 생년월일에 ‘사망’으로 기재) Do your parents, brothers, and sisters know about your marriage? (If you have brothers and sisters, please include details for all of them below, and if you do not have enough space, please attach a separate statement.\nIf not living, write 'DECEASED' in the 'Date of birth' column below.)\n배우자의 성명 Name of previous spouse 생년월일 Date of birth 배우자의 국적 Nationality 혼인기간 Marriage period . . . ~ . . .\n. . . ~ . . .\n2.2 신청인은 과거에 혼인한 적이 있습니까?\nHave you ever been married to a person other than your current spouse before?\n[ ] 예 (아래 표를 작성) / Yes (Please provide details about your previous marriages)\n[ ] 아니오 / No\n2.3 현재 배우자 이외에 혼인관계를 유지하고 있는 다른 배우자가 있습니까?\nIs there another person that you maintain marital relations with other than your current spouse?\n[ ] 예 / Yes [ ] 아니오 / No 자녀의 성명 Name of child 생년월일 Date of birth 자녀의 국적 Nationality 현재 양육하고 있는 사람 Person charged with custody of child\n2.4 신청인은 과거 혼인관계에서 출생한 자녀가 있습니까?\nDo you have children from your previous marriages?\n[ ] 예 (아래 표를 작성) / Yes (Please provide details about child)\n[ ] 아니오 / No"
+   },
+   {
+    "n": 3,
+    "title": "Marriage Statement for F-2-3 Visa",
+    "page": 2,
+    "text": "(제2쪽 / Page2)\n2. 가족 및 혼인관계 / YOUR FAMILY AND SPOUSE 관계 Relation to you 성 Family name 명 Given name 생년월일 Date of birth 혼인인지여부 Whether aware of your marriage or not 부 Father 안다 / 모른다 Know / Doesn't Know 모 Mother 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know\n2.1 신청인의 부모, 형제, 자매가 혼인에 대해 알고 있습니까? (초청인에게 형제, 자매, 자녀가 있는 경우 빠짐없이 모두 작성하여야 하며, 작성 공간이 부족한 경우 별지로 작성. 사망한 경우 생년월일에 ‘사망’으로 기재) Do your parents, brothers, and sisters know about your marriage? (If you have brothers and sisters, please include details for all of them below, and if you do not have enough space, please attach a separate statement.\nIf not living, write 'DECEASED' in the 'Date of birth' column below.)\n배우자의 성명 Name of previous spouse 생년월일 Date of birth 배우자의 국적 Nationality 혼인기간 Marriage period . . . ~ . . .\n. . . ~ . . .\n2.2 신청인은 과거에 혼인한 적이 있습니까?\nHave you ever been married to a person other than your current spouse before?\n[ ] 예 (아래 표를 작성) / Yes (Please provide details about your previous marriages)\n[ ] 아니오 / No\n2.3 현재 배우자 이외에 혼인관계를 유지하고 있는 다른 배우자가 있습니까?\nIs there another person that you maintain marital relations with other than your current spouse?\n[ ] 예 / Yes [ ] 아니오 / No 자녀의 성명 Name of child 생년월일 Date of birth 자녀의 국적 Nationality 현재 양육하고 있는 사람 Person charged with custody of child\n2.4 신청인은 과거 혼인관계에서 출생한 자녀가 있습니까?\nDo you have children from your previous marriages?\n[ ] 예 (아래 표를 작성) / Yes (Please provide details about child)\n[ ] 아니오 / No"
+   }
+  ]
+ },
+ {
+  "gid": "84529b2720d5",
+  "type": "table",
+  "question": "Which Korean embassies stopped issuing visa labels as of February 24, 2020?",
+  "reference": "The Korean embassies in the United States, Japan and 24 European countries (Greece, Netherlands, Norway, Denmark, Germany, Romania, Belgium, Bulgaria, Serbia, Sweden, Switzerland, Spain, Slovakia, Ireland, United Kingdom, Austria, Italy, Czech Republic, Croatia, Portugal, Poland, France, Finland, Hungary).",
+  "answer": "The Korean Embassies in the United States of America, Japan, and 24 European countries stopped issuing visa labels as of February 24, 2020 [1]. The 24 European countries listed are Greece, Netherlands, Norway, Denmark, Germany, Romania, Belgium, Bulgaria, Serbia, Sweden, Switzerland, Spain, Slovakia, Ireland, United Kingdom, Austria, Italy, Czech Republic, Croatia, Portugal, Poland, France, Finland, and Hungary [1]. All Korean Embassies will stop issuing visa labels from July 1, 2020 [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Announcement of Label Free Visa Policy and Important Guidelines",
+    "page": 1,
+    "text": "Announcement of Label Free Visa Policy and Important Guidelines The Korean Embassies in the United States of America, Japan and 24 European Countries* no longer issue visa labels, as of 24th February, 2020.\n* Europe (24 countries): Greece, Netherlands, Norway, Denmark, Germany, Romania, Belgium, Bulgaria, Serbia, Sweden, Switzerland, Spain, Slovakia, Ireland, United Kingdom, Austria, Italy, Czech Republic, Croatia, Portugal, Poland, France, Finland, Hungary\n※ All Korean Embassies will stop issuing visa labels from 1st July, 2020.\nWhen visa applications are approved, the Embassy will notify applicants of their visa details by issuing ‘Visa Grant Notice’. (Visa Application Center may issue the document on behalf of the Embassy). All applicants can print out the document at any time, by entering passport information (passport number, name and date of birth).\n‘Visa Grant Notice’ document can be used to prove visa status, whether he/she is a holder of a valid Korean visa. Also, all visa holders are required to present the document to immigration officers during immigration clearance.\nThe document is valid printed either in color, or in black and white. Please refer to the ‘Note’ in the document for detailed information.\n【How to verify and print out ‘Visa Grant Notice’】\n1) Go to www.visa.go.kr - Application Status/Issue - Click ‘Check Application Status & Print’ menu. 2) Enter your Passport number, Name and Date of Birth, and Click the ‘Search’ button. 3) If your visa application is approved, the ‘Certificate’ button will be activated. 4) Click the button and print out the ‘Visa Grant Notice’.\n* Please refer to attached file for more details."
+   }
+  ]
+ },
+ {
+  "gid": "05a96a124db7",
+  "type": "lookup",
+  "question": "When did the declaration of accommodation by short-term foreign residents go into force?",
+  "reference": "On 10 December 2020.",
+  "answer": "The declaration of accommodation by short-term foreign residents went into force as of 10 December 2020 [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Introducing declaration of accommodation by short-term foreign residents",
+    "page": 1,
+    "text": "Declaration of accommodation by short-term foreign residents Visit Hi Korea website (www.hikorea.go.kr) or a dedicated website set up for this scheme (www.k-eta.go.kr/trds) for more information.\nThis schemes aims to minimise social/economic loss and ensure safety of the public by locating short-term residents' accommodation in a timely manner should a communicable disease outbreak or a terrorist attack takes place.\n* Alerts are classified into four levels, namely: attention, caution, alert, and serious.\nDeclaration is required in the issuance of a crisis alert* of the \"interest\" level or higher in line with \"Infectious Disease Control And Prevention Act\" or in the issuance of a crisis alert* of the \"caution\" level of higher in line with \"Act On Counter-terrorism For The Protection Of Citizens And Public Security\".\nForeign residents holding short-term visas- B-1(Visa exempted), B-2(Tourism/transit), C-1(Short-term news coverage), C-3(Short-term visit), C-4(Short-term employment)\nshould present passport or a travel document to the owner of the accommodation facility.\nA breach of this requirement will result in a fine up to KRW 500,000.\nAccommodation facilities registed as a lodging business in line with Public Health Control Act or tourist accommodation business, city home-stay services for foreign tourists or Hanok experience business in line with Tourism Promotion Act should relay information of foreign guest (e.g. passport information)\nvia an information network designated by the Ministry of Justice.\nA breach of this requirement will result in a fine up to KRW 500,000.\nwent into force as of 10 December 2020 as a measure to prevent the spread of communicable disease in the country"
+   }
+  ]
+ },
+ {
+  "gid": "258dbbda9aba",
+  "type": "no_answer",
+  "question": "If I apply for an F-5-5 big investor visa at an embassy, is it single or multiple entry and how long is it valid?",
+  "reference": "Not in the corpus. The F-5-5 page gives eligibility and required documents but no visa validity or period of stay.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "afb06067216b",
+  "type": "lookup",
+  "question": "On the personal details form for an F-2-3 or marriage migrant visa, if you have visited Korea more than 3 times, which visit do you give details about?",
+  "reference": "The most recent visit.",
+  "answer": "If you have visited the Republic of Korea more than 3 times, you must provide details about the most recent visit [1]. This rule applies to the personal details form for an F-2-3 visa application [2] and also to the form for a marriage migrant visa [3], as well as the marriage statement for an F-2-3 visa [4]. The same requirement is found on the general Korean Visa Portal form [5] and the official application instructions [6].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Personal Details Form for F-2-3 Marriage Visa Application",
+    "page": 9,
+    "text": "(제3쪽 / Page3)\n3. 과거 입국경력 / HISTORY OF YOUR PAST ENTRIES\n3.1 신청인은 과거 한국에 방문한 적이 있습니까? / Have you ever visited the Republic of Korea before?\n[ ] 예(아래 표를 작성) / Yes (Please provide details about your visit)\n[ ] 아니오 / No 방문기간 Duration of visit 방문목적 Purpose of visit 방문한 지역 Place you visited . . . ~ . . .\n. . . ~ . . .\n. . . ~ . . . (* 3회 이상 방문한 경우 가장 최근에 방문한 기록을 기재) (* If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.)\n3.2 과거 한국 정부로부터 입국거부, 입국금지되거나 강제퇴거 또는 출국명령을 받은 적이 있습니까?\nHave you ever been refused entry, banned, forcibly expelled, deported, or otherwise required to leave the Republic of Korea from the government of the Republic of Korea before?\n[ ] 예 (아래에 관련 일시, 사유 등을 상세히 기재하시오) / Yes (please provide details)\n[ ] 아니오 / No\n4. 서류작성 시 도움 여부 / ASSISTANCE WITH THIS FORM 성명 Name 주소 Address 연락처 Phone number 신청인과의 관계 Relation to you .\n4.1 이 초청장을 작성하는데 다른 사람의 도움을 받았습니까?\nDid you receive assistance in completing this form?\n[ ] 예 (아래 사항을 기재하시오) / Yes (Provide details below)\n[ ] 아니오 / No"
+   },
+   {
+    "n": 2,
+    "title": "Personal Details Form for F-2-3 Visa Application",
+    "page": 3,
+    "text": "(제3쪽 / Page3)\n3. 과거 입국경력 / HISTORY OF YOUR PAST ENTRIES\n3.1 신청인은 과거 한국에 방문한 적이 있습니까? / Have you ever visited the Republic of Korea before?\n[ ] 예(아래 표를 작성) / Yes (Please provide details about your visit)\n[ ] 아니오 / No 방문기간 Duration of visit 방문목적 Purpose of visit 방문한 지역 Place you visited . . . ~ . . .\n. . . ~ . . .\n. . . ~ . . . (* 3회 이상 방문한 경우 가장 최근에 방문한 기록을 기재) (* If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.)\n3.2 과거 한국 정부로부터 입국거부, 입국금지되거나 강제퇴거 또는 출국명령을 받은 적이 있습니까?\nHave you ever been refused entry, banned, forcibly expelled, deported, or otherwise required to leave the Republic of Korea from the government of the Republic of Korea before?\n[ ] 예 (아래에 관련 일시, 사유 등을 상세히 기재하시오) / Yes (please provide details)\n[ ] 아니오 / No\n4. 서류작성 시 도움 여부 / ASSISTANCE WITH THIS FORM 성명 Name 주소 Address 연락처 Phone number 신청인과의 관계 Relation to you .\n4.1 이 초청장을 작성하는데 다른 사람의 도움을 받았습니까?\nDid you receive assistance in completing this form?\n[ ] 예 (아래 사항을 기재하시오) / Yes (Provide details below)\n[ ] 아니오 / No"
+   },
+   {
+    "n": 3,
+    "title": "Personal Details Form for a Marriage Migrant Visa",
+    "page": 3,
+    "text": "(제3쪽 / Page3)\n3. 과거 입국경력 / HISTORY OF YOUR PAST ENTRIES\n3.1 신청인은 과거 한국에 방문한 적이 있습니까?\nHave you ever visited the Republic of Korea before?\n[ ] 예(아래 표를 작성) / Yes (Please provide details about your visit) ︱ [ ] 아니오 / No 방문기간 Duration of visit 방문목적 Purpose of visit 방문한 지역 Place you visited . . . ~ . . .\n. . . ~ . . .\n. . . ~ . . .\n(* 3회 이상 방문한 경우 가장 최근에 방문한 기록을 기재)\n(* If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.)\n3.2 과거 한국 정부로부터 입국거부나 입국금지 또는 강제퇴거나 출국명령을 받은 적이 있습니까?\nHave you ever received any of the following orders by the Korean government: refusal of entry, a ban from entering Korea, deportation, or departure order?\n[ ] 예 (아래에 관련 일시, 사유 등을 상세히 기재하시오) / Yes (please provide details) [ ] 아니오 / No\n4. 서류작성 시 도움 여부 / ASSISTANCE WITH THIS FORM\n4.1 이 진술서를 작성하는데 다른 사람의 도움을 받았습니까?\nDid you receive assistance in filling out this form?\n[ ] 예 (아래 사항을 기재하시오) / Yes (Provide details below) ︱ [ ] 아니오 / No 성명 Name 주소 Address 연락처 Phone number 신청인과의 관계 Relation to you 210mm×297mm[백상지 80g/㎡(재활용품)]"
+   },
+   {
+    "n": 4,
+    "title": "Marriage Statement for F-2-3 Visa",
+    "page": 3,
+    "text": "(제3쪽 / Page3)\n3. 과거 입국경력 / HISTORY OF YOUR PAST ENTRIES\n3.1 신청인은 과거 한국에 방문한 적이 있습니까? / Have you ever visited the Republic of Korea before?\n[ ] 예(아래 표를 작성) / Yes (Please provide details about your visit)\n[ ] 아니오 / No 방문기간 Duration of visit 방문목적 Purpose of visit 방문한 지역 Place you visited . . . ~ . . .\n. . . ~ . . .\n. . . ~ . . . (* 3회 이상 방문한 경우 가장 최근에 방문한 기록을 기재) (* If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.)\n3.2 과거 한국 정부로부터 입국거부, 입국금지되거나 강제퇴거 또는 출국명령을 받은 적이 있습니까?\nHave you ever been refused entry, banned, forcibly expelled, deported, or otherwise required to leave the Republic of Korea from the government of the Republic of Korea before?\n[ ] 예 (아래에 관련 일시, 사유 등을 상세히 기재하시오) / Yes (please provide details)\n[ ] 아니오 / No\n4. 서류작성 시 도움 여부 / ASSISTANCE WITH THIS FORM 성명 Name 주소 Address 연락처 Phone number 신청인과의 관계 Relation to you .\n4.1 이 초청장을 작성하는데 다른 사람의 도움을 받았습니까?\nDid you receive assistance in completing this form?\n[ ] 예 (아래 사항을 기재하시오) / Yes (Provide details below)\n[ ] 아니오 / No"
+   },
+   {
+    "n": 5,
+    "title": "KOREA VISA PORTAL",
+    "page": 3,
+    "text": "(제3쪽 / Page3)\n7、职业 / EMPLOYMENT\n7.1 当前职业 Current personal circumstances 事业家 Entrepreneur [ ] 自雇 Self-Employed [ ] 公司职员 Employed [ ]\n公务员 Civil Servant [ ] 学生 Student [ ] 退休 Retired [ ]\n无业 Unemployed [ ] 其他 Other [ ]\n→ 如其他，请详细说明 If‘Other’, please provide details ( )\n7.2. 职业详细信息 Employment Details\na) 公司/机关/学校名称 Name of Company/Institute/School\nb) 职位/课程 Position/Course\nc) 公司/机关/学校地址 Address of Company/Institute/School\nd) 联系电话 Telephone No.\n8、访问信息 / DETAILS OF VISIT\n8.1 申请入境事由 Purpose of Visit to Korea 旅游/过境 Tourism/Transit [ ] 参加会议等活动 Meeting, Conference [ ] 医疗旅游 Medical Tourism [ ]\n短期商务 Business Trip [ ] 学习/培训 Study/Training [ ] 就业活动 Work [ ]\n贸易/投资/派驻 Trade/Investment/Intra-Corporate Transferee [ ]\n探亲访友 Visiting Family/Relatives/Friends [ ]\n结婚移民 Marriage Migrant [ ]\n外交/公务 Diplomatic/Official [ ] 其他 Other [ ]\n→ 如其他，请详细说明 If ‘Other’, please provide details ( )\n8.2 拟滞留时间 Intended Period of Stay 8.3 拟入境日期 Intended Date of Entry\n8.4 在韩滞留地址（含酒店）Address in Korea (including hotels) 8.5 在韩联系电话 Contact No. in Korea\n8.6 近5年内是否访问过韩国？ Has the applicant travelled to Korea in the last 5 years ?\n否 No [ ] 是 Yes [ ] → 如是，请详细说明 If ‘Yes’, please provide details of any visits to Korea ( ) 次 times, 访问目的 Purpose of Visit 访问期间 Period of Stay\n(yyyy/mm/dd)~ (yyyy/mm/dd)\n8.7 近5年内是否访问过除韩国外其他国家？ Has the applicant travelled outside his/her country of residence, excluding to Korea, in the last 5 years?\n否 No [ ] 是 Yes [ ] → 如是，请详细说明 If ‘Yes’, please provide details of these trips 国家名称 Name of Country (in English) 访问目的 Purpose of Visit 访问期间 Period of Stay\n(yyyy/mm/dd)~ (yyyy/mm/dd)\n210㎜×297㎜[백상지(80ｇ/㎡) 또는 중질지(80ｇ/㎡)]"
+   },
+   {
+    "n": 6,
+    "title": "Korean Immigration Visa Application Form Instructions and Template",
+    "page": 3,
+    "text": "(제3쪽 / Page3)\n7、职业 / EMPLOYMENT\n7.1 当前职业 Current personal circumstances 事业家 Entrepreneur [ ] 自雇 Self-Employed [ ] 公司职员 Employed [ ]\n公务员 Civil Servant [ ] 学生 Student [ ] 退休 Retired [ ]\n无业 Unemployed [ ] 其他 Other [ ]\n→ 如其他，请详细说明 If‘Other’, please provide details ( )\n7.2. 职业详细信息 Employment Details\na) 公司/机关/学校名称 Name of Company/Institute/School\nb) 职位/课程 Position/Course\nc) 公司/机关/学校地址 Address of Company/Institute/School\nd) 联系电话 Telephone No.\n8、访问信息 / DETAILS OF VISIT\n8.1 申请入境事由 Purpose of Visit to Korea 旅游/过境 Tourism/Transit [ ] 参加会议等活动 Meeting, Conference [ ] 医疗旅游 Medical Tourism [ ]\n短期商务 Business Trip [ ] 学习/培训 Study/Training [ ] 就业活动 Work [ ]\n贸易/投资/派驻 Trade/Investment/Intra-Corporate Transferee [ ]\n探亲访友 Visiting Family/Relatives/Friends [ ]\n结婚移民 Marriage Migrant [ ]\n外交/公务 Diplomatic/Official [ ] 其他 Other [ ]\n→ 如其他，请详细说明 If ‘Other’, please provide details ( )\n8.2 拟滞留时间 Intended Period of Stay 8.3 拟入境日期 Intended Date of Entry\n8.4 在韩滞留地址（含酒店）Address in Korea (including hotels) 8.5 在韩联系电话 Contact No. in Korea\n8.6 近5年内是否访问过韩国？ Has the applicant travelled to Korea in the last 5 years ?\n否 No [ ] 是 Yes [ ] → 如是，请详细说明 If ‘Yes’, please provide details of any visits to Korea ( ) 次 times, 访问目的 Purpose of Visit 访问期间 Period of Stay\n(yyyy/mm/dd)~ (yyyy/mm/dd)\n8.7 近5年内是否访问过除韩国外其他国家？ Has the applicant travelled outside his/her country of residence, excluding to Kore a, in the last 5 years?\n否 No [ ] 是 Yes [ ] → 如是，请详细说明 If ‘Yes’, please provide details of these trips 国家名称 Name of Country (in English) 访问目的 Purpose of Visit 访问期间 Period of Stay\n(yyyy/mm/dd)~ (yyyy/mm/dd)\n210㎜×297㎜[백상지(80ｇ/㎡) 또는 중질지(80ｇ/㎡)]"
+   }
+  ]
+ },
+ {
+  "gid": "d1f9525a8496",
+  "type": "lookup",
+  "question": "What must be attached to the letter of attorney used by foreign real estate investors?",
+  "reference": "One copy of the ID cards of the mandator and the trustee, and one certificate of employment of the trustee.",
+  "answer": "To attach to the letter of attorney used by foreign real estate investors, you must submit one copy of ID cards for both the mandator and the trustee, plus one certificate of employment for the trustee [3]. This requirement applies to the \"A letter of attorney for various applications\" form which includes the option for pre-investigation [4].",
+  "cited_passages": [
+   {
+    "n": 3,
+    "title": "Korean Immigration Official Documents: Letter of Attorney and Pre-Investigation Form",
+    "page": 7,
+    "text": "- 7 - [별첨1(영문)]\n각종 허가 신청 등에 대한 대리 위임장 A letter of attorney for various applications 업무종류 Select Application [ ] 체류자격변경 [ ] 체류기간연장 CHANGE OF STATUS OF SOJOURN EXTENSION OF SOJOURN PERIOD [ ] 사증발급인정서 [ ] 사전심사안내 APPLICATION FOR CONFIRMATION OF VISA ISSUANCE PRE-INVESTIGATION 위임하는 사람 Mandator 성명 Full Name 여권번호(외국인등록번호)\nPassport No.(Alien Registration No.)\n주소 Address 위임받은 사람 Trustee 성명 Full Name 주민등록번호 Registration No.\n소속회사 및 직위 Place & Position of Employment 전화번호 Telephone No 주소 Address 부동산등 자산투자 외국인에 대한 체류관리지침의 규정에 따라 각종 허가 등의 신청 및 수령에 관하여 위와 같이 위임합니다. Following regulations in sojourn administration guidelines of foreign investors, I authorize request and receipt of various applications as it is written above.\nDate: 년 YYYY 월 MM 일 DD장 위임하는 사람 Mandator :\n(서명 또는 인)\n(Sign or stamp)\n○○○출입국관리사무소장(출장소장) 귀하 To Chief, ○○○Immigration(Branch) Office 첨부(附件) : 1. 위임자 및 피위임자 신분증사본 1부. (1 copy of ID cards of a Mandator and a Trustee)\n2. 피위임자 재직증명서 1부. (1 certificate of employment of a Trustee)\n유의사항 Matters to be attended to\n1. 위임하는 사람이 한국에 없는 기간에 작성된 위임장으로는 대리할 수 없습니다.\nA letter of attorney that is written while the mandator is out of Korea cannot be used to entrust.\n2. 위임장은 작성한 날로부터 30일까지만 유효합니다. A letter of attorney is only valid for 30 days from the day it is written.\n3. 다른 사람의 서명 또는 인장의 도용 등으로 허위의 위임장을 작성하여 증명서를 신청 또는 수령한 경우에는 관련 법률에 따라 처벌 받을 수 있습니다. If you apply or receive a certificate by writing a false letter of attorney with a stolen signature or stamp, you can be punished due to related laws.\n210㎜×297㎜[일반용지(2급) 60g/㎡]"
+   },
+   {
+    "n": 4,
+    "title": "Korean Immigration Official Documents: Letter of Attorney and Pre-Investigation Form",
+    "page": 7,
+    "text": "- 7 - [별첨1(영문)]\n각종 허가 신청 등에 대한 대리 위임장 A letter of attorney for various applications 업무종류 Select Application [ ] 체류자격변경 [ ] 체류기간연장 CHANGE OF STATUS OF SOJOURN EXTENSION OF SOJOURN PERIOD [ ] 사증발급인정서 [ ] 사전심사안내 APPLICATION FOR CONFIRMATION OF VISA ISSUANCE PRE-INVESTIGATION 위임하는 사람 Mandator 성명 Full Name 여권번호(외국인등록번호)\nPassport No.(Alien Registration No.)\n주소 Address 위임받은 사람 Trustee 성명 Full Name 주민등록번호 Registration No.\n소속회사 및 직위 Place & Position of Employment 전화번호 Telephone No 주소 Address 부동산등 자산투자 외국인에 대한 체류관리지침의 규정에 따라 각종 허가 등의 신청 및 수령에 관하여 위와 같이 위임합니다. Following regulations in sojourn administration guidelines of foreign investors, I authorize request and receipt of various applications as it is written above.\nDate: 년 YYYY 월 MM 일 DD장 위임하는 사람 Mandator :\n(서명 또는 인)\n(Sign or stamp)\n○○○출입국관리사무소장(출장소장) 귀하 To Chief, ○○○Immigration(Branch) Office 첨부(附件) : 1. 위임자 및 피위임자 신분증사본 1부. (1 copy of ID cards of a Mandator and a Trustee)\n2. 피위임자 재직증명서 1부. (1 certificate of employment of a Trustee)\n유의사항 Matters to be attended to\n1. 위임하는 사람이 한국에 없는 기간에 작성된 위임장으로는 대리할 수 없습니다.\nA letter of attorney that is written while the mandator is out of Korea cannot be used to entrust.\n2. 위임장은 작성한 날로부터 30일까지만 유효합니다. A letter of attorney is only valid for 30 days from the day it is written.\n3. 다른 사람의 서명 또는 인장의 도용 등으로 허위의 위임장을 작성하여 증명서를 신청 또는 수령한 경우에는 관련 법률에 따라 처벌 받을 수 있습니다. If you apply or receive a certificate by writing a false letter of attorney with a stolen signature or stamp, you can be punished due to related laws.\n210㎜×297㎜[일반용지(2급) 60g/㎡]"
+   }
+  ]
+ },
+ {
+  "gid": "2923592511c0",
+  "type": "lookup",
+  "question": "Under the 2022 re-entry permit announcement, what fee reduction applies when applying for a re-entry permit online?",
+  "reference": "A 20% discount for using the e-Application service on HiKorea.",
+  "answer": "A 20% fee reduction applies when using the e-Application service on HiKorea. [1] The standard fee for applying is 50,000 KRW. [3] This discount is available for applications submitted through the e-Application service on the HiKorea website. [4]",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Announcement Regarding Re-Entry Permit(Reimplementation of Re-Entry Permit Exemption as of April 1, 2022 after suspension due to COVID-19)",
+    "page": 3,
+    "text": "- 3 - Corporate Investor (D-8) and Large Investors with long-term Resident\n(F-2-5) status holders - It can be granted until incumbency in office ends for Diplomat (A-1), Foreign Government Official (A-2) and International Agreement (A-3)\nstatus holders with a single entry visa  Required Documents and Fees\n❍ (Documents to Submit) Passport, Foreign Resident Registration Card\n(Residence Card), Application Form\n- Persons with type A status (A-1, A-2, A-3) are required to additionally submit a document proving the incumbency period such as diplomatic identification card, official letter of cooperation from Embassy, certificate of employment ❍ (Fees) 50,000 KRW\n※ Persons exempted from fees\n- Nationals from Argentina (aged 14 years or less Only), Taiwan, Tunisia\n- Scholarship students invited by government such as Korean Arts and Culture (D-1), Student (D-2), General Trainee (D-4) status holders who have submitted a certificate of scholarship or those with exemption request from the relevant organization\n- Diplomat (A-1), Foreign Government Official (A-2), International Agreement (A-3), Corporate Investor (D-8) Status holders\n※ Fee reduction : 20% discount for using e-Application service on HiKorea  How to Apply\n❍ Through e-Application services on HiKorea website* , in-person visits to immigration office, by proxy application through administrative agency\n* Applications are available until 3 days prior to departure date (Excluding Holidays) - (At jurisdictional Immigration Offices)"
+   },
+   {
+    "n": 3,
+    "title": "Announcement Regarding Re-Entry Permit(Reimplementation of Re-Entry Permit Exemption as of April 1, 2022 after suspension due to COVID-19)",
+    "page": 3,
+    "text": "- 3 - Corporate Investor (D-8) and Large Investors with long-term Resident\n(F-2-5) status holders - It can be granted until incumbency in office ends for Diplomat (A-1), Foreign Government Official (A-2) and International Agreement (A-3)\nstatus holders with a single entry visa  Required Documents and Fees\n❍ (Documents to Submit) Passport, Foreign Resident Registration Card\n(Residence Card), Application Form\n- Persons with type A status (A-1, A-2, A-3) are required to additionally submit a document proving the incumbency period such as diplomatic identification card, official letter of cooperation from Embassy, certificate of employment ❍ (Fees) 50,000 KRW\n※ Persons exempted from fees\n- Nationals from Argentina (aged 14 years or less Only), Taiwan, Tunisia\n- Scholarship students invited by government such as Korean Arts and Culture (D-1), Student (D-2), General Trainee (D-4) status holders who have submitted a certificate of scholarship or those with exemption request from the relevant organization\n- Diplomat (A-1), Foreign Government Official (A-2), International Agreement (A-3), Corporate Investor (D-8) Status holders\n※ Fee reduction : 20% discount for using e-Application service on HiKorea  How to Apply\n❍ Through e-Application services on HiKorea website* , in-person visits to immigration office, by proxy application through administrative agency\n* Applications are available until 3 days prior to departure date (Excluding Holidays) - (At jurisdictional Immigration Offices)\n- 4 - Single or multiple Re-entry Permits are applicable\n- (At ports and airports nationwide) Only a single Re-entry Permit is applicable at ports and airports in principle. Yet, Corporate Investor\n(D-8) and Marriage Migrant (F-6) status holders can apply for a multiple Re-entry Permit."
+   },
+   {
+    "n": 4,
+    "title": "Announcement Regarding Re-Entry Permit(Reimplementation of Re-Entry Permit Exemption as of April 1, 2022 after suspension due to COVID-19)",
+    "page": 2,
+    "text": "- 2 -\n※ Re-entry will be allowed until the validity of stay for persons with period of stay of less than l year ❍ (Permanent Resident, F-5) For re-entry within 2 years from the date of departure\n❍ (Overseas Korean, F-4) For re-entry within authorized period of stay\n❍ (Holders of Refugee Travel Document) For re-entry within validity period of the document\n❍ (Those from Exempted Countries) For re-entry of nationals from Exempted Countries* within authorized period of stay\n* (13 Countries) Republic of Suriname, Netherlands, Norway, Denmark, Germany, Luxembourg, Belgium, Sweden, Switzerland, Liechtenstein, France, Finland, Chile (D-7, D-8, D-9)\n▢ Re-Entry Permit Exemption Ineligibility\n❍ Persons banned from entering Korea and persons to whom visa issuance is prohibited will need additional review procedures and re-entry permit can be restricted → Please inquire at immigration offices\n2. Those required to apply for Re-entry Permit  Applying for Multiple Re-Entry Permit\n❍ (In principle) Registered foreigners exempted from Re-entry Permit should also apply for a multiple Re-entry Permit to re-enter the ROK after spending for more than 1 year and up to 2 years abroad from the date of departure, and a multiple Re-entry Permit can be granted for up to 2 years ❍ (Exception) Granted period of multiple Re-entry permit may vary for those listed below\n- Multiple Re-entry Permit can be granted for up to 3 years for\n- 3 - Corporate Investor (D-8) and Large Investors with long-term Resident\n(F-2-5) status holders - It can be granted until incumbency in office ends for Diplomat (A-1), Foreign Government Official (A-2) and International Agreement (A-3)\nstatus holders with a single entry visa  Required Documents and Fees\n❍ (Documents to Submit) Passport, Foreign Resident Registration Card\n(Residence Card), Application Form\n- Persons with type A status (A-1, A-2, A-3) are required to additionally submit a document proving the incumbency period such as diplomatic identification card, official letter of cooperation from Embassy, certificate of employment ❍ (Fees) 50,000 KRW\n※ Persons exempted from fees\n- Nationals from Argentina (aged 14 years or less Only), Taiwan, Tunisia\n- Scholarship students invited by government such as Korean Arts and Culture (D-1), Student (D-2), General Trainee (D-4) status holders who have submitted a certificate of scholarship or those with exemption request from the relevant organization\n- Diplomat (A-1), Foreign Government Official (A-2), International Agreement (A-3), Corporate Investor (D-8) Status holders\n※ Fee reduction : 20% discount for using e-Application service on HiKorea  How to Apply\n❍ Through e-Application services on HiKorea website* , in-person visits to immigration office, by proxy application through administrative agency\n* Applications are available until 3 days prior to departure date (Excluding Holidays) - (At jurisdictional Immigration Offices)"
+   }
+  ]
+ },
+ {
+  "gid": "5fe68476179c",
+  "type": "lookup",
+  "question": "Who must sign the Korean visa application form when the applicant is under 17?",
+  "reference": "A parent or legal guardian.",
+  "answer": "When the applicant is under 17 years of age, the signature of the parent or legal guardian must be recorded on the form [3]. Failure to provide the name and signature of the applicant may result in the application being denied [4].",
+  "cited_passages": [
+   {
+    "n": 3,
+    "title": "KOREA VISA PORTAL",
+    "page": 5,
+    "text": "본인은 위의 유의사항에 동의하며, 이 신청서에 기재된 내용이 거짓 없이 정확하게 작성되었음을 확인합니 다. 또한 본인은 대한민국의 「출입국관리법」 규정을 준수할 것을 서약합니다.\nI declare that I agree with the terms of application including the contents of the notice provided above, that statements made in this application are true and correct, and that I will comply with the Immigration Act of the Republic of Korea.\n/\n/\n/ 신청일자 (년. 월. 일) DATE OF APPLICATION (yyyy/mm/dd)\n신청인 성명 Applicant Name\n(자필서명) SIGNATURE OF APPLICANT\n※ 17세 미만자의 경우 부모 또는 법정후견인의 서명을 기재할 것\n- ※ Signature of Parent or Legal Guardian is required for a person under 17 years of age ※ 위 서명란에 본인의 성명과 서명을 기재하지 않는 경우 사증발급이 불허될 수 있음\n- ※ Failure to provide name and signature may result in your application being denied.\n첨부서류\n- ATTACHMENT 「출입국관리법 시행규칙」 제76조제1항 및 별표 5에 따른 사증발급 신청 등 첨부서류"
+   },
+   {
+    "n": 4,
+    "title": "(NEW) VISA APPLICATION FORM(Dec 10, 2020)",
+    "page": 5,
+    "text": "본인은 위의 유의사항에 동의하며, 이 신청서에 기재된 내용이 거짓 없이 정확하게 작성되었음을 확인합니다. 또한 본인은 대한민국의 「출입국관리법」 규정을 준수할 것을 서약합니다.\nI declare that I agree with the terms of application including the contents of the notice provided above, that statements made in this application are true and correct, and that I will comply with the Immigration Act of the Republic of Korea.\n/\n/\n/ 신청일자 (년. 월. 일) DATE OF APPLICATION (yyyy/mm/dd)\n신청인 성명 Applicant Name\n(자필서명) SIGNATURE OF APPLICANT\n※ 17세 미만자의 경우 부모 또는 법정후견인의 서명을 기재할 것 ※ Signature of Parent or Legal Guardian is required for a person under 17 years of age ※ 위 서명란에 본인의 성명과 서명을 기재하지 않는 경우 사증발급이 불허될 수 있음 ※ Failure to provide name and signature may result in your application being denied.\n첨부서류\n- ATTACHMENT 「출입국관리법 시행규칙」 제76조제1항 및 별표 5에 따른 사증발급 신청 등 첨부서류"
+   }
+  ]
+ },
+ {
+  "gid": "21eb1e639dae",
+  "type": "lookup",
+  "question": "An advanced science and technology expert recommended by the Minister of Education applies for an E-1 visa through Confirmation of Visa Issuance (Case 2). How long is the visa valid and how long can they stay?",
+  "reference": "A multiple-entry visa valid for the period of stay, and the period of stay is granted for up to 5 years.",
+  "answer": "You can apply for a multiple-entry visa valid for your period of stay [1]. Periods of stay will be granted for up to 5 years [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-1 Professor",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nA person who meets the qualifications stated in the 「Higher Education Act」, and plans to engage in education or research·guidance of the professional field at educational institutions of higher than the college level or any of the equivalents\n\n## Visa Issuance Confirmation (CCVI) application\n\n### Visa Issuance Confirmation (CCVI) application — Case 1\n\n#### Eligibility\nYou are eligible to apply for this visa if you are\n\nThe head of a university (i.e. chancellor, or dean), a professor, associate professor, assistant professor, lecturer with concurrent posts, honorary professor, visiting scholar, or an exchange professor who plans to teach or research at a community college or above for at least 91 days.\n\n1. A chancellor or dean refers to the head of a university who is hired by a prescribed procedure and oversees school affairs and faculties, and teaches students\n2. A professor, associate professor, or assistant professor refers to an instructor whose qualification is acknowledged by the Human Resources Committee or Teacher’s Personnel Committee of a respective university, or who meets the requirements set forth as Article 16 of the Higher Education Act, and teaches and guides students and conduct academic research.\n3. A lecturer with concurrent posts refers to a lecturer who meets the requirements set forth as Article 16 of the Higher Education Act and who has expertise in the relevant field\n4. A honorary professor refers to a professor who has made remarkable achievements in education and academics ,and who has been designated by the enforcement decree of the Ministry of Education, Science and Technology\n5. A visiting scholar refers to a professor who meets the requirements set forth as Article 16 of the Higher Education Act (However, if the school hires him/her for a specific class, he/she does not have to meet the requirements.)\n6. Exchange professor refers to a professor dispatched to a university in ROK from a foreign university in accordance with the exchange agreement between the two universities.\n\n#### Required documents\n① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② A degree certificate and a certificate of employment history\n③ An employment contract, or confirmation of prospective employment\n④ Documents related to establishment of an inviting university\n- A copy of Business Registration Certificate or a certified copy of unabridged Corporate Register\n⑤ A copy of an agreement for an exchange professor to ROK, or a dispatch order (for eligible applicant only)\n\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee.\n\n#### Visa validity and period of stay\nYou can apply for a multiple-entry visa valid for 1 year.\nPeriods of stay will be granted for up to 1 year.\nFor more information on Alien Registration or Visa Extension, please visit Hi Korea website at www.hikorea.go.kr\n\n### Visa Issuance Confirmation (CCVI) application — Case 2\n\n#### Eligibility\nYou are eligible to apply for this visa if you are\n\nAn advanced science and technology expert recommended by the Minister of Education, Science and Technology of ROK who plans to teach or research at an academic institution such as a community college or higher\n\n1. A person with a doctoral degree in science, technology, engineering, or math.\n2. A person with a master's degree in science, technology, engineering, or math and at least 3 years of work experience in research and development of the field.\n3. A professor of a field recognized as a new growth engine for the national development who is invited for the WCU project (a project to enhance research capacity of a university to world-class) operated by the Ministry of Education, Science and Technology of ROK.\n\n#### Required documents\n① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② An employment contract, or confirmation of prospective employment\n③ An employment recommendation letter for an advanced science and technology worker.\n- If you wish to work in Korean Free Economic Zone, you must submit an employment recommendation letter or a document proving the necessity of employment issued by the respective mayor or provincial governor.\n④ A document relevant to the establishment of the host institution (A copy of Business Registration Certificate or a certified copy of unabridged Corporate Register)\n⑤ A copy of an official document in regards to BK21, or a copy of an official document in regards to the WCU Project (a project to enhance university's research capacity to a world-class level). (only for those applicable to this condition)\n\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee.\n\n#### Visa validity and period of stay\nYou can apply for a multiple-entry visa valid for your period of stay.\nPeriods of stay will be granted for up to 5 years.\nFor more information on Alien Registration or Visa Extension, please visit Hi Korea website at www.hikorea.go.kr"
+   }
+  ]
+ },
+ {
+  "gid": "fee9710ec298",
+  "type": "no_answer",
+  "question": "What documents are required for a D-7-91 intra-company transferee visa under an FTA?",
+  "reference": "Not in the corpus. The D-7-91 page only says it is for transferees of a corporation under an FTA.",
+  "answer": "The provided passages do not list specific required documents for the D-7-91 visa; they only provide an overview stating it is for transferees of a corporation under FTA [4]. The detailed document lists available in the passages are for different visa codes (D-7-1 and D-7-2) or sections (embassy vs. CCVI application) [1][2][3].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-7-1 Intra-Company Transferee (Foreign Company)",
+    "page": 0,
+    "text": "① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② A Statement of Invitation\n③ A document demonstrating you are a highly required specialist (i.e. resume, a certificate of employment history)\n④ A proof of an applicant's current employment status from an applicant's company\n⑤ A dispatch order from an applicant's organization\n⑥ A document relevant to the establishment of a Korean branch\n- A copy of a permission for the establishment of a Korean branch or a copy of an Acceptance of Declaration\n⑦ A document demonstrating that a Korean branch or a liaison office is operated properly\n- A record of the inflow of funds or capital to a Korean branch or liaison office in ROK\n- In case of a newly-established company, a business management outline is required to submit\n- A Certificate of Tax Payment, etc\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee."
+   },
+   {
+    "n": 2,
+    "title": "Visa guide: D-7-1 Intra-Company Transferee (Foreign Company)",
+    "page": 0,
+    "text": "① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② A copy of Certificate of Foreign Legal Consultant Office Registration (issued by the Korean Bar Association)\n③ A declaration form of the establishment of a branch (issued by the Foreign Exchange Bank) and a certificate of business registration\n④ A document demonstrating the inflow of capital or funds to ROK for business operation such as a Certificate of Purchased Foreign Currency, etc.\n⑤ A dispatch order , issued by the headquarters, that indicates the duration of a dispatch\n⑥ For a member of a law firm or foreign law consultant, a copy of Certificate of Foreign Legal Consultant Registration (issued by the Korean Bar Association) is required to submit\n⑦ For an office employee, a certificate of employment history is required to submit in order to verify whether you have worked at the headquarters for at least a year\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee."
+   },
+   {
+    "n": 3,
+    "title": "Visa guide: D-7-2 Intra-Company Transferee (Domestic Company)",
+    "page": 0,
+    "text": "① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② A document demonstrating that you are an indispensable professional specialist (i.e. resume, a certificate of employment history and others)\n③ A certified copy of unabridged Corporate Register of the headquarter (you may be exempt from submitting this document, if your company is a public corporation)\n④ Foreign Direct Investment Declaration or Overseas Branch Office Establishment Declaration\n⑤ A document proving international wire transfer\n⑥ A copy of business registration certificate or a certified copy of Corporate Register(unabridged) of the overseas branch office\n⑦ A proof of employment or a tax payment receipt\n⑧ A dispatch order(It should indicate the period of the overseas assignment.)\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation."
+   },
+   {
+    "n": 4,
+    "title": "Visa guide: D-7-91 Intra-Company Transferee (by FTA)",
+    "page": 0,
+    "text": "Transferee of a corporation under FTA"
+   }
+  ]
+ },
+ {
+  "gid": "28e86b87a974",
+  "type": "lookup",
+  "question": "Under the Ministry of Justice's July 2015 measures after the MERS outbreak, what happened to the validity of single-entry visas issued between March 1 and June 30, 2015?",
+  "reference": "Their validity was extended from three months to six months.",
+  "answer": "Under the July 2015 measures, the validity of single-entry visas issued between March 1 and June 30, 2015, was extended from three months to six months [2]. This extension allowed holders to enter the Republic of Korea even after their original visa expiration date [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "The Ministry of Justice's Measures to Provide Convenient Entry to Foreign Tourists",
+    "page": 2,
+    "text": "- 2 - are issued.\n2. Second, validity extension of single-entry visas that were issued before and after the MERS development (from March 1 to June 30, 2015) from the current three months to six months\n- Persons subject to the extension are allowed to enter the Republic of Korea even after the visa expiration date, which would prevent them from going through inconvenient procedures such as visiting a diplomatic mission to have their visa extended.\nNote: About 1.09 million foreigners were granted a single-entry visa from March to June 2015. The Ministry will promote relevant information through diplomatic missions in China and other countries so that foreigners can benefit from it.\n3. Third, no-visa entry for Chinese group tourists holding a Japanese group tourist visa\n- About 1.1 million chinese group tourists were granted a Japanese group tourist visa in 2014. The no-visa entry is expected to provide Chinese tourists travelling Japan with easier and convenient access to Korea so that they can enjoy tourism activities while staying in the country for a maximum of 15 days.\n- At the same time, the Ministry will prepare restrictive measures to eliminate concerns over illegal stays of tourists that may be caused by the implementation of the measure in order to minimize possible side effects.\n❍ The above measures were designed to dispel public concerns over the tourism industry following the MERS outbreak and to support foreigners with easier and convenient access to Korea. The Ministry of Justice expects the measures to contribute to revitalizing the tourism industry and the Korean economy."
+   },
+   {
+    "n": 2,
+    "title": "The Ministry of Justice's Measures to Provide Convenient Entry to Foreign Tourists",
+    "page": 1,
+    "text": "- 1 - Press Release Embargoed until July 1, 2015 14:00 pm 2 pages Date July 1, 2015 Division Visa & Residence Division Director Kim, Young-guen\n02) 2110-4055 Deputy Director Chang, Hee-jung\n02) 2110-4067 Picture with pictures □ without pictures ■ Office of Spokesperson 02) 2110-3717 The Ministry of Justice's Measures to Provide Convenient Entry to Foreign Tourists\n- Exemption of Visa Application Fees for Group Tourists\n- Extension of Visa Expiration Date\n- Expansion of No-visa Entry\n❍ The Ministry of Justice of the Republic of Korea has decided to implement proactive measures such as exemption of visa application fees in order to provide foreign tourists with easier and convenient access to Korea and thereby support the concerned tourism industry following the recent Middle East Respiratory Syndrome (MERS) outbreak.\n❍ The measures include:\n1. First, exemption of visa application fees for group tourists from China and other countries for three months (from July 6 to September 30)\n- Visa application fees for Chinese group tourists (currently about 15 US dollars per person) are exempt for three months to support attracting foreign tourists.\n- The same exemption measure applies to four Southeast Asian countries (Vietnam, Philippines, Indonesia and Cambodia) to which group tourist visas\n- 2 - are issued.\n2. Second, validity extension of single-entry visas that were issued before and after the MERS development (from March 1 to June 30, 2015) from the current three months to six months\n- Persons subject to the extension are allowed to enter the Republic of Korea even after the visa expiration date, which would prevent them from going through inconvenient procedures such as visiting a diplomatic mission to have their visa extended.\nNote: About 1.09 million foreigners were granted a single-entry visa from March to June 2015. The Ministry will promote relevant information through diplomatic missions in China and other countries so that foreigners can benefit from it.\n3. Third, no-visa entry for Chinese group tourists holding a Japanese group tourist visa\n- About 1.1 million chinese group tourists were granted a Japanese group tourist visa in 2014. The no-visa entry is expected to provide Chinese tourists travelling Japan with easier and convenient access to Korea so that they can enjoy tourism activities while staying in the country for a maximum of 15 days.\n- At the same time, the Ministry will prepare restrictive measures to eliminate concerns over illegal stays of tourists that may be caused by the implementation of the measure in order to minimize possible side effects.\n❍ The above measures were designed to dispel public concerns over the tourism industry following the MERS outbreak and to support foreigners with easier and convenient access to Korea. The Ministry of Justice expects the measures to contribute to revitalizing the tourism industry and the Korean economy."
+   }
+  ]
+ },
+ {
+  "gid": "6a662e658aa2",
+  "type": "lookup",
+  "question": "For a D-4-1 Korean language trainee visa, how recent must the bank statement proving financial ability be?",
+  "reference": "It is only accepted if issued within the past 30 days.",
+  "answer": "For a D-4-1 Korean language trainee visa, a bank statement proving financial ability must be issued within the past 30 days [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-4-1 Korean Language Trainee",
+    "page": 0,
+    "text": "※ Yet, those who acquired a degree (credential) from a Korean uninversity or others are allowed to submit a diploma without official certification ( Copies will be stored after verfication with the original diploma and the records on the Immigration Control Information System)\n- As for graduates from a vocational high school for which Verification/Credentials Report of a degree or others is not available,\nⅰ) For a diploma issued by a relevant school, confirmation by Provincial Office of Education (or Municipal Bureau of Education) and a Korean consul stationed in China is necessary, or\nⅱ) For a diploma issued by Provincial Office of Education (or Municipal Bureau of Education), confirmation by a Korean consul stationed in China is necessary to review the highest degree or level of education\n⑤ Original copy of document proving your financial statement*\n* In principle, documents proving your financial abilities must be reviewed through original copies (ex, bank statement, bankbook, scholarship receipt, deposit/withdrawal statement), and when necessary, a duplicate copy can be attached after an official-in-charge compares the original copy and duplicate copy to confirm authenticity (bank statement is only accepted when it is issued within the past 30 days)\n※ When submitting a parents bank statement, family relation certificate must be attached.\n⑥ Training Plan (Lecture Schedule, Lecturers Profiles, Training Facility and etc.)"
+   }
+  ]
+ },
+ {
+  "gid": "7474680ce7ca",
+  "type": "lookup",
+  "question": "How is a group e-visa application agency's rate of illegal stay calculated, and when is the rate used instead of the number of illegal stayers?",
+  "reference": "The rate is the number of illegal stayers in the previous month divided by the average number of people issued visas in the last 3 months. The rate is used when the average number of tourists in the last 3 months was 300 or more; below 300, the number of illegal stayers is counted.",
+  "answer": "The rate of illegal stay is calculated by dividing the number of illegal stayers of the previous month by the average number of visa issued persons in the last 3 months [1]. The rate is used when the average number of tourists was 300 people or more in the last 3 months; when the average is less than 300, the number of illegal stayers will be counted [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 12,
+    "text": "| - |\n Violation of Article 4, etc. = warning or suspension, a step higher level of sanction shall be imposed. Suspension (1 month), Number of illegal stayers Rate of illegal stay = 3 ~ 4 0.4 ~ less than 1.0% 2. Suspension (1 month), Violation of Article 4, etc. = · Where the violation of general obligations is relatively minor, such as violating obligation to report · Nonfulfillment of reasonable orders such as regarding the. Warning, Number of illegal stayers Rate of illegal stay = 0.2 ~ less than 0.4%. Warning, Violation of Article 4, etc. = investigation of actual condition or submission of documents request stated in Article 8 |\n\n- ※ Rate of Illegal Stay = (Number of illegal stayers of previous month) / (Average number of visa issued persons in the last 3 months)\n- When the average number of tourists was 300 people or more in the last 3 months, the rate of illegal stay will be calculated; when less than 300, number of illegal stayers will be counted\n- ※ In case of designation revocation, such agency shall not be re-designated within 2 years from the revocation.\n[Table 2] Notification of Administrative Sanctions\nN o-"
+   }
+  ]
+ },
+ {
+  "gid": "e3d9f88efb72",
+  "type": "multi_hop",
+  "question": "An F-1-22 household assistant application requires a letter of guarantee. What does the guarantor promise on the Letter of Guarantee form?",
+  "reference": "The guarantor promises to ensure the applicant abides by Korean laws and regulations, to pay the applicant's return travel expenses if the applicant cannot, and to pay expenses arising from the applicant's stay or detention in Korea if the applicant cannot.",
+  "answer": "The guarantor promises to ensure that the applicant abides by competent laws and regulations of Korea [2]. They also promise to shoulder the travel expenses for the applicant’s return if the applicant is unable to pay them [2]. Additionally, the guarantor promises to shoulder the expenses arising from the applicant’s stay or detention in Korea if the applicant is unable to pay them [2].",
+  "cited_passages": [
+   {
+    "n": 2,
+    "title": "Letter of Guarantee",
+    "page": 1,
+    "text": "Letter of Guarantee\n※ Tick [√] where applicable. (뒤쪽)\nApplicant (a foreign n a t i o n a l e n t e r i n g Korea)\nFamily name Given names Name in Chinese character Date of birth Sex [ ]male [ ]female Nationality Passport No.\nAddress in Korea Telephone No.\nPurpose of sojourn Guarantor\na. Personal information Full name Name in Chinese character Nationality Sex [ ]male [ ]female Passport Number or Date of Birth Phone No.\nAddress Relationship to applicant Company or organization you work for Job position Work address Note\nb. Period of guarantee(The period of guarantee shall not exceed 4 years)\nc. I shall guarantee the following items:\n(1) I shall ensure that the applicant abides by competent laws and regulations of Korea.\n(2) I shall shoulder the travel expenses for the applicant’s return if he/she is unable to pay them.\n(3) I shall shoulder the expenses arising from the applicant’s stay or detention in Korea if he/she is unable to pay them.\nI hereby declare that the above statements are true and correct.\nYear Month Day Guarantor (signature or seal)\n210mm×297mm[백상지 80g/㎡(재활용품)]"
+   }
+  ]
+ },
+ {
+  "gid": "550e115e1097",
+  "type": "lookup",
+  "question": "Can a real estate immigrant investor holding an investor visa work or study in Korea?",
+  "reference": "Yes. They are free to work, study and engage in economic activities, but must not engage in speculative behaviour or sell or work in an industry that hinders public good and custom.",
+  "answer": "Yes, a real estate immigrant investor holding an investor visa is free to work and study in Korea. When you have an investor visa, you are free to work, study, and involve in economic activities [1]. However, you must not engage in any speculative behavior or sell or work in an industry that hinders public good and custom [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korea Investment Immigration Center Real Estate Investor Scheme Guide",
+    "page": 3,
+    "text": "Investment Guide for Investors for the Real Estate Immigrant Investor Scheme This guide outlines relevant details for investors for the Immigrant Investor Scheme for Real Estate.\nA. (Maintaining Investment Status) Please be warned that your status will be cancelled if you lease or sold the estate, or if your estate becomes foreclosed or is set up for mortgage.\n* If you, in any case, fail to meet any of the investment requirements during your investment period, your alien registration will be cancelled, and you will not be able to continue your stay in Korea.\nB. (Working or Engaging in Economic Activities) When you have an investor visa, you are free to work, study, and involve in economic activities, however, you must not engage in any speculative behavior or sell or work in an industry that hinders public good and custom.\nC. (Re-entry Period) If you have done your alien registration already, you must come to Korea at least once within one year from the date of departure, otherwise, your alien registration will be cancelled.\nD. (Extending the Period of Stay) You must come to Korea and get an extension from an immigration office BEFORE your visa expires, otherwise, your alien registration will be cancelled.\nE. (Giving a Consent to the Use of Personal Information) Please note that, by laws, all agents who sell their real estate properties to others must check the lease status, mortgage, sale or foreclosure of their individual buyers and report to the Immigration Office every May and November.\nF. (Other Remarks) For more information, please check our website at www.visa.go.kr or contact the Korea Investment Immigration Center (☏ 032-740-7888, 7788) and your jurisdictional immigration office.\nAs a real estate investor, I, (Investor's name), hereby consent that I have read and understood all of the information above, and I will abide by the rules.\n20 . . .\nName (signature)\n[별첨3(영문)]"
+   }
+  ]
+ },
+ {
+  "gid": "f71568cf64c3",
+  "type": "table",
+  "question": "How many countries are on the high TB-burden country list in the 2016 TB test certificate notice, and which are they?",
+  "reference": "18 countries, namely Nepal, East Timor, Russia, Malaysia, Mongolia, Myanmar, Bangladesh, Vietnam, Sri Lanka, Uzbekistan, India, Indonesia, China, Cambodia, Kyrgyzstan, Thailand, Pakistan and the Philippines.",
+  "answer": "There are 20 countries listed as high TB-burden countries in the notice [1]. The countries are Nepal, East Timor, Russia, Malaysia, Mongolia, Myanmar, Bangladesh, Vietnam, Sri Lanka, Uzbekistan, India, Indonesia, China, Cambodia, Kyrgyzstan, Thailand, Pakistan, and the Philippines [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Requirement for Tuberculosis (TB) Test Certificate Submission",
+    "page": 2,
+    "text": "- 2 - [Note] Exceptions (the following persons are exempt from submission)\n- Diplomat (A-1), Foreign Government Official (A-2), and International Agreement (A-3) status holders\n- Children aged 5 and under\n(High TB-burden countries)\n① Nepal ② East Timor ③ Russia ④ Malaysia ⑤ Mongol ⑥ Myanmar ⑦ Bangladesh ⑧ Vietnam ⑨ Sri Lanka ⑩ Uzbekistan ⑪ India ⑫ Indonesia ⑬ China ⑭ Cambodia ⑮ Kyrgyzstan ⑯ Thailand ⑰ Pakistan ⑱ Philippines\n- Non-professional (E-9), Maritime Crew (E-10), Work and Visit (H-2)\nand other visa holders who already submitted the certificate including TB test result when applying for alien registration on March 2, 2016 or after (however, if you applied for alien registration on March 1, 2016 or before, you still have to submit the certificate to extend your stay period)\n- Marriage Migrant (F-6), spouse of a permanent resident (F-2-3), or other visa holders who already submitted the certificate including TB test result to acquired the status (granted on March 2, 2016 or after)\nand apply for extension of stay period, etc.\n- Short-term status holders who apply for extension of stay period\n3. What to Submit\n1) (Visa application to a diplomatic mission) A “Certificate of Health” including TB test result (Attachment 1, valid for one year) issued by a hospital designated by Korean diplomatic missions\n* A certificate of health issued by a designated hospital that includes at least one of the following tests result: chest X-ray, sputum test, tuberculin skin test, blood test, etc.\n2) (Change of status of stay, alien registration, extension of stay period) A certificate of confirmation issued by a Korean public health center\n(Attachment 2)"
+   }
+  ]
+ },
+ {
+  "gid": "9305ef895067",
+  "type": "lookup",
+  "question": "What status of stay is given to APEC Business Travel Card holders entering Korea, and how long can they stay?",
+  "reference": "They are granted Short-Term Business (C-3-4) status and can stay in Korea for up to 90 days.",
+  "answer": "APEC Business Travel Card holders are granted Short-Term Business (C-3-4) status and allowed to stay in Korea for up to 90 days [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: B-1 Visa Exempted",
+    "page": 0,
+    "text": "APEC Business Travel Card holders entering Korea are granted Short-Term Business (C-3-4) status and allowed to stay in Korea for up to 90 days."
+   }
+  ]
+ },
+ {
+  "gid": "4a9130330603",
+  "type": "table",
+  "question": "Which applications can be selected on the letter of attorney form for foreign real estate investors?",
+  "reference": "Change of status of sojourn, extension of sojourn period, application for Confirmation of Visa Issuance, and pre-investigation.",
+  "answer": "The letter of attorney form allows selection of applications related to \"Change of Status of Sojourn\" and \"Extension of Sojourn Period\". It also permits selecting \"Application for Confirmation of Visa Issuance\" and \"Pre-investigation\". [1] [2] [3] [4]",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korean Immigration Official Documents: Letter of Attorney and Pre-Investigation Form",
+    "page": 7,
+    "text": "- 7 - [별첨1(영문)]\n각종 허가 신청 등에 대한 대리 위임장 A letter of attorney for various applications 업무종류 Select Application [ ] 체류자격변경 [ ] 체류기간연장 CHANGE OF STATUS OF SOJOURN EXTENSION OF SOJOURN PERIOD [ ] 사증발급인정서 [ ] 사전심사안내 APPLICATION FOR CONFIRMATION OF VISA ISSUANCE PRE-INVESTIGATION 위임하는 사람 Mandator 성명 Full Name 여권번호(외국인등록번호)\nPassport No.(Alien Registration No.)\n주소 Address 위임받은 사람 Trustee 성명 Full Name 주민등록번호 Registration No.\n소속회사 및 직위 Place & Position of Employment 전화번호 Telephone No 주소 Address 부동산등 자산투자 외국인에 대한 체류관리지침의 규정에 따라 각종 허가 등의 신청 및 수령에 관하여 위와 같이 위임합니다. Following regulations in sojourn administration guidelines of foreign investors, I authorize request and receipt of various applications as it is written above.\nDate: 년 YYYY 월 MM 일 DD장 위임하는 사람 Mandator :\n(서명 또는 인)\n(Sign or stamp)\n○○○출입국관리사무소장(출장소장) 귀하 To Chief, ○○○Immigration(Branch) Office 첨부(附件) : 1. 위임자 및 피위임자 신분증사본 1부. (1 copy of ID cards of a Mandator and a Trustee)\n2. 피위임자 재직증명서 1부. (1 certificate of employment of a Trustee)\n유의사항 Matters to be attended to\n1. 위임하는 사람이 한국에 없는 기간에 작성된 위임장으로는 대리할 수 없습니다.\nA letter of attorney that is written while the mandator is out of Korea cannot be used to entrust.\n2. 위임장은 작성한 날로부터 30일까지만 유효합니다. A letter of attorney is only valid for 30 days from the day it is written.\n3. 다른 사람의 서명 또는 인장의 도용 등으로 허위의 위임장을 작성하여 증명서를 신청 또는 수령한 경우에는 관련 법률에 따라 처벌 받을 수 있습니다. If you apply or receive a certificate by writing a false letter of attorney with a stolen signature or stamp, you can be punished due to related laws.\n210㎜×297㎜[일반용지(2급) 60g/㎡]"
+   },
+   {
+    "n": 2,
+    "title": "Korean Immigration Official Documents: Letter of Attorney and Pre-Investigation Form",
+    "page": 7,
+    "text": "- 7 - [별첨1(영문)]\n각종 허가 신청 등에 대한 대리 위임장 A letter of attorney for various applications 업무종류 Select Application [ ] 체류자격변경 [ ] 체류기간연장 CHANGE OF STATUS OF SOJOURN EXTENSION OF SOJOURN PERIOD [ ] 사증발급인정서 [ ] 사전심사안내 APPLICATION FOR CONFIRMATION OF VISA ISSUANCE PRE-INVESTIGATION 위임하는 사람 Mandator 성명 Full Name 여권번호(외국인등록번호)\nPassport No.(Alien Registration No.)\n주소 Address 위임받은 사람 Trustee 성명 Full Name 주민등록번호 Registration No.\n소속회사 및 직위 Place & Position of Employment 전화번호 Telephone No 주소 Address 부동산등 자산투자 외국인에 대한 체류관리지침의 규정에 따라 각종 허가 등의 신청 및 수령에 관하여 위와 같이 위임합니다. Following regulations in sojourn administration guidelines of foreign investors, I authorize request and receipt of various applications as it is written above.\nDate: 년 YYYY 월 MM 일 DD장 위임하는 사람 Mandator :\n(서명 또는 인)\n(Sign or stamp)\n○○○출입국관리사무소장(출장소장) 귀하 To Chief, ○○○Immigration(Branch) Office 첨부(附件) : 1. 위임자 및 피위임자 신분증사본 1부. (1 copy of ID cards of a Mandator and a Trustee)\n2. 피위임자 재직증명서 1부. (1 certificate of employment of a Trustee)\n유의사항 Matters to be attended to\n1. 위임하는 사람이 한국에 없는 기간에 작성된 위임장으로는 대리할 수 없습니다.\nA letter of attorney that is written while the mandator is out of Korea cannot be used to entrust.\n2. 위임장은 작성한 날로부터 30일까지만 유효합니다. A letter of attorney is only valid for 30 days from the day it is written.\n3. 다른 사람의 서명 또는 인장의 도용 등으로 허위의 위임장을 작성하여 증명서를 신청 또는 수령한 경우에는 관련 법률에 따라 처벌 받을 수 있습니다. If you apply or receive a certificate by writing a false letter of attorney with a stolen signature or stamp, you can be punished due to related laws.\n210㎜×297㎜[일반용지(2급) 60g/㎡]"
+   },
+   {
+    "n": 3,
+    "title": "Korean Immigration Official Documents: Letter of Attorney and Pre-Investigation Form",
+    "page": 9,
+    "text": "- 9 - 부동산등 자산투자 외국인 사전심사안내 신청서 Application for Pre-investigation of Foreign Investor(Real estate, etc)\n신청인 Applicant 성명 Full Name 여권번호(외국인등록번호)\nPassport No.(Alien Registration No.)\n주소 Address 투자대상 Investment Project 투자시설 Investment Facility 개발업체 또는 분양업체 Development enterprise or Selling-in-lots enterprise 투자시설 소재지 Address of Investment Facility 투자예정 금액 Amount of Planned Investment Money 부동산등 자산투자 외국인에 대한 체류관리지침의 규정에 따라 본인의 체류허가 적합여부에 대하여 사전심사안내를 위와 같이 신청하며, 사후 사정변경 등으로 실제 체류허가 등 결정내용이 사전안내와 다르더라도 이의를 제기하지 않겠습니다.\nFollowing regulations in sojourn administration guidelines of foreign investors, I request the pre-investigation of my sojourn suitability as it is written above, and will never raise objections even if the final decision is different from the result of pre-investigation due to condition changes in future.\nDate: 년 YYYY 월 MM 일 DD장 신청인 Applicant :\n(서명 또는 인)\n(Sign or stamp)\n○○○출입국관리사무소장(출장소장) 귀하 To Chief, ○○○Immigration(Branch) Office 첨부 : 신분증사본 1부. (1 copy of ID card)\n사 전 심 사 결 과 事先审查结果\n□ 적합 / □ 부적합 Approved Disapproved 확인자Confirmer (서명 또는 인)\n(Sign or stamp)\n유의사항 Matters to be attended to\n1. 사전심사안내는 투자금액 등 투자요건을 갖추었을 경우 신청인에 대한 각종 체류허가 등 가능여부에 대하여 사전에 확인해주는 것이며, 실제로 체류허가를 결정하는 것은 아닙니다. Pre-investigation is only for checking possibilities of various sojourn related businesses in advance when the applicant satisfies investment conditions such as investment money. It does not make an actual decision about sojourn related businesses.\n2. 사전심사안내를 받은 이후 국내법 위반 및 기타 사정변경 등이 있을 경우 실제 체류허가 등 신청 시에는 사전안내와 다르게 결정될 수 있습니다.\nIn case of violating domestic laws or other condition changes, your apply for sojourn related businesses can be decided in a different way other than pre-investigation.\n210㎜×297㎜[일반용지(2급) 60g/㎡]\n[별첨2(영문)]"
+   },
+   {
+    "n": 4,
+    "title": "Korean Immigration Official Documents: Letter of Attorney and Pre-Investigation Form",
+    "page": 9,
+    "text": "- 9 - 부동산등 자산투자 외국인 사전심사안내 신청서 Application for Pre-investigation of Foreign Investor(Real estate, etc)\n신청인 Applicant 성명 Full Name 여권번호(외국인등록번호)\nPassport No.(Alien Registration No.)\n주소 Address 투자대상 Investment Project 투자시설 Investment Facility 개발업체 또는 분양업체 Development enterprise or Selling-in-lots enterprise 투자시설 소재지 Address of Investment Facility 투자예정 금액 Amount of Planned Investment Money 부동산등 자산투자 외국인에 대한 체류관리지침의 규정에 따라 본인의 체류허가 적합여부에 대하여 사전심사안내를 위와 같이 신청하며, 사후 사정변경 등으로 실제 체류허가 등 결정내용이 사전안내와 다르더라도 이의를 제기하지 않겠습니다.\nFollowing regulations in sojourn administration guidelines of foreign investors, I request the pre-investigation of my sojourn suitability as it is written above, and will never raise objections even if the final decision is different from the result of pre-investigation due to condition changes in future.\nDate: 년 YYYY 월 MM 일 DD장 신청인 Applicant :\n(서명 또는 인)\n(Sign or stamp)\n○○○출입국관리사무소장(출장소장) 귀하 To Chief, ○○○Immigration(Branch) Office 첨부 : 신분증사본 1부. (1 copy of ID card)\n사 전 심 사 결 과 事先审查结果\n□ 적합 / □ 부적합 Approved Disapproved 확인자Confirmer (서명 또는 인)\n(Sign or stamp)\n유의사항 Matters to be attended to\n1. 사전심사안내는 투자금액 등 투자요건을 갖추었을 경우 신청인에 대한 각종 체류허가 등 가능여부에 대하여 사전에 확인해주는 것이며, 실제로 체류허가를 결정하는 것은 아닙니다. Pre-investigation is only for checking possibilities of various sojourn related businesses in advance when the applicant satisfies investment conditions such as investment money. It does not make an actual decision about sojourn related businesses.\n2. 사전심사안내를 받은 이후 국내법 위반 및 기타 사정변경 등이 있을 경우 실제 체류허가 등 신청 시에는 사전안내와 다르게 결정될 수 있습니다.\nIn case of violating domestic laws or other condition changes, your apply for sojourn related businesses can be decided in a different way other than pre-investigation.\n210㎜×297㎜[일반용지(2급) 60g/㎡]\n[별첨2(영문)]"
+   }
+  ]
+ },
+ {
+  "gid": "986a1cdc9952",
+  "type": "lookup",
+  "question": "After a group e-visa application agency has entered the group members' details, how are the fees paid?",
+  "reference": "The visa fees and electronic payment service fees are paid through the Electronic Payment System.",
+  "answer": "Visa fees and electronic payment service fees are paid through the Electronic Payment System after the input procedure is complete [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 6,
+    "text": "- 6 -\n3. Where some of the group members who have entered the Republic of Korea fail to depart on the same vessel or airplane with the relevant group, the group leader shall explain the reasons to an immigration control official at the time of departure inspection of the Republic of Korea.\n③ Where a reason occur falling under any of the following subparagraphs, a group e-Visa application agency shall report it to the head of Seoul Immigration Office or to the head of an overseas diplomatic mission within 15 days after the occurrence thereof, and the head of an overseas diplomatic mission, upon receipt of report, shall notify it to the head of Seoul Immigration Office by means of entering the information into the Integrated Visa Information System (IVIS).\n1. Where there is a change in major matters related to a business license or business registration such as representative, business name, business location, etc.\n2. Where normal operation of business is restricted due to business transfer/acquisition, merger, cessation/closure of business, etc.\nArticle 5 (Group e-Visa Application and processing procedures)\n① A Group e-Visa Application Agency shall apply for a group e-Visa by accessing the Visa Portal.\n② A Group e-Visa Application Agency shall, when applying for an e-Visa, enter the personal information accurately, as shown on passport, of a group tour leader as well as of group members either by using the MRP (Machine\n- 7 - Readable Passport) Reader or by entering the information directly: Provided, That where entering the information directly, a passport photo and a copy of passport of a group leader as well as of group members shall be registered at the Visa Portal after having them scanned.\n③ After the input procedure referred to in paragraph (2) is complete, visa fees and electronic payment service fees shall be paid through the Electronic Payment System.\n④ A domestic designated travel agency shall check the visa application information that a group e-Visa application agency has entered and shall confirm its attraction by accessing the Visa portal after signing up for membership at the Visa Portal: Provided, That this shall not apply where an application agency of countries except for China applies for a group e-Visa.\n⑤ The head of Seoul Immigration Office shall grant an application number for each tourist group whose application it has received and shall notify online the relevant application agency of the decision on whether it is approved after reviewing the visa eligibility of the group members, records of tourist group attractions and the rate of illegal stayers of a group e-Visa application agency.\n⑥ Where a group leader has changed or if any spelling mistakes are found in group members’ personal information after a group e-Visa application is complete, it shall be immediately corrected or a request shall be made to the head of Seoul Immigration Office to correct it: Provided, That the changed group leader shall hold a valid visa of the Republic of Korea.\n⑦ A Group e-Visa Application Agency shall take responsibility for any disadvantages incurred by mistyping the personal information referred to in"
+   }
+  ]
+ },
+ {
+  "gid": "261a8adf19a7",
+  "type": "no_answer",
+  "question": "What criteria must a Korean company meet to be selected by the Ministry of Justice as a preferential company whose invitees can get a C-3-6 visa?",
+  "reference": "Not in the corpus. The C-3-6 page only says the inviting company or organisation must be designated or selected by the Ministry of Justice as a preferential company, without giving the selection criteria.",
+  "answer": "The provided passage does not specify the criteria that a Korean company must meet to be selected by the Ministry of Justice as a preferential company; it only states that eligibility for the C-3-6 visa requires an invitation from such a company [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: C-3-6 Business Visitor (Sponsored)",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nA person who has been invited by a company or an organization designated by the Minister of Justice of ROK as a preferential company.\n\n## Visa Issuance Confirmation (CCVI) application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\nA person invited by preference companies or organizations selected by Ministry of Justice.\n\n### Required documents\n① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② Proof of Employment\n③ An invitation letter issued by selected corporations or associations\n\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee.\n\n### Visa validity and period of stay\nYou can apply for a multiple-entry visa valid for 1 year.\nPeriods of stay for this visa will be granted for up to 90 days."
+   }
+  ]
+ },
+ {
+  "gid": "549b795be231",
+  "type": "lookup",
+  "question": "From what date did the Ministry of Justice expand multiple-entry visa eligibility for nationals of New Southern Policy countries?",
+  "reference": "From December 3, 2018.",
+  "answer": "The Ministry of Justice expanded the eligibility for multiple entry visas starting from December 3, 2018 [1]. This expansion applies to nationals of New Southern Policy countries such as Vietnam, the Philippines, and Indonesia [1]. The measure aims to revitalize people-to-people exchanges and attract inbound tourists [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Expansion of multiple entry visa issuance",
+    "page": 1,
+    "text": "- 1 -\n□ The Ministry of Justice (Minister Park Sang-ki) announced that it will expand the eligibility for multiple entry visas starting from December 3, 2018 to revitalize people to people exchanges and to attract inbound tourists from the countries of New Southern Policy, by granting a multiple entry visa with validity of 10 years to professionals such as doctors, lawyers, etc. in the region.\n○ The number of visitors between Korea and the countries of New Southern Policy is expected to surpass a record 10 million this year with the visitors from those countries to the ROK already rising 13.8% from the previous year as of end-October this year.\n○ The Ministry has decided to expand the eligibility for multiple entry visas to provide expedited entry services to the nationals from the countries of New Southern Policy, and the measure comes at a time when inbound tourists from those countries under the President Moon’s new policy are steadily on the rise with the popularity of Hallyu\n(Korean Wave) such as K-POP, etc.\n□ Eligibility and details for the 10-year multiple visa issuance scheme are as follows.\n○ A Short-Term General (C-3) multiple entry visa valid for 10 years will be granted, MOJ revises its visa rules to expand exchanges with countries of New Southern Policy\n-Expansion of multiple entry visa issuance for nationals of Vietnam, Philippines, Indonesia, etc."
+   }
+  ]
+ },
+ {
+  "gid": "973cc9a07652",
+  "type": "lookup",
+  "question": "An advanced science and technology expert recommended by the Minister of Education applies for an E-1 visa through Confirmation of Visa Issuance (Case 2). How long is the visa valid and how long can they stay?",
+  "reference": "A multiple-entry visa valid for the period of stay, and the period of stay is granted for up to 5 years.",
+  "answer": "The E-1 visa for an advanced science and technology expert applying through Case 2 is valid for up to 5 years [1]. The period of stay granted will be up to 5 years [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-1 Professor",
+    "page": 0,
+    "text": "You can apply for a multiple-entry visa valid for your period of stay.\nPeriods of stay will be granted for up to 5 years.\nFor more information on Alien Registration or Visa Extension, please visit Hi Korea website at www.hikorea.go.kr"
+   }
+  ]
+ },
+ {
+  "gid": "0f56e6a50828",
+  "type": "table",
+  "question": "Under Table 1 (Detailed Standards for Administrative Sanctions) of the regulation on group e-visa application agencies, what sanction applies to an agency with no sanctions in the last 3 months that averaged fewer than 300 tourists over the last 3 months and whose tourists include 7 to 8 illegal stayers?",
+  "reference": "Suspension of agency operation for 3 months.",
+  "answer": "For an agency with no prior sanctions in the last 3 months and fewer than 300 average tourists over the last 3 months, having 7 to 8 illegal stayers results in a **Suspension (2 months)** [1]. This sanction applies when the rate of illegal stay is between 1.5% and less than 2.0%, calculated based on the number of illegal stayers divided by the average number of visa issued persons in the last 3 months [1]. The calculation of the rate uses the number of illegal stayers from the previous month divided by the average number of visa issued persons in the last 3 months, provided this average was 300 people or more; if it was less than 300, the number of illegal stayers is counted directly [2].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 12,
+    "text": "- 12 - [Table 1] Detailed Standards for Administrative Sanctions Type Number of illegal stayers Violation of Article 4, etc. Rate of illegal stay Cancellation of Designation 11 or more\n• Demanding an unreasonably high fee for acting as a visa application agency\n• Submitting a false document or reporting false information even when it could have been known to be false\n• Occurring absconder incident deliberately or in collusion\n• Lending its name to a non-designated travel agency\n• Having no record of tourist attractions for more than 1 year, or where operation of business is restricted due to membership withdrawal, closure of business, designation revocation, etc.\n• Where the agency had received suspension of agency operation for 6 months in the last 3 months, and was found in violation subject to suspension again\n• Making applications for a foreigner who are not eligible for a group e-Visa\n• Other cases where the degree of violation of obligations set forth in this Regulation is significant 3% or more Suspension (6 months)\n9 ~ 10\n• Where the agency had received a warning or suspension of agency operation in the last 3 months, and was found in violation subject to warning or suspension, a step higher level of sanction shall be imposed\n2.0 ~ less than 3.0% Suspension (3 months)\n7 ~ 8\n1.5 ~ less than 2.0% Suspension (2 months)\n5 ~ 6\n1.0 ~ less than 1.5% Suspension (1 month)\n3 ~ 4\n0.4 ~ less than 1.0% Warning 2\n• Where the violation of general obligations is relatively minor, such as violating obligation to report\n• Nonfulfillment of reasonable orders such as regarding the investigation of actual condition or submission of documents request stated in\nArticle 8\n0.2 ~ less than 0.4%"
+   },
+   {
+    "n": 2,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 12,
+    "text": "| - |\n Violation of Article 4, etc. = warning or suspension, a step higher level of sanction shall be imposed. Suspension (1 month), Number of illegal stayers Rate of illegal stay = 3 ~ 4 0.4 ~ less than 1.0% 2. Suspension (1 month), Violation of Article 4, etc. = · Where the violation of general obligations is relatively minor, such as violating obligation to report · Nonfulfillment of reasonable orders such as regarding the. Warning, Number of illegal stayers Rate of illegal stay = 0.2 ~ less than 0.4%. Warning, Violation of Article 4, etc. = investigation of actual condition or submission of documents request stated in Article 8 |\n\n- ※ Rate of Illegal Stay = (Number of illegal stayers of previous month) / (Average number of visa issued persons in the last 3 months)\n- When the average number of tourists was 300 people or more in the last 3 months, the rate of illegal stay will be calculated; when less than 300, number of illegal stayers will be counted\n- ※ In case of designation revocation, such agency shall not be re-designated within 2 years from the revocation.\n[Table 2] Notification of Administrative Sanctions\nN o-"
+   }
+  ]
+ },
+ {
+  "gid": "731294a1f981",
+  "type": "no_answer",
+  "question": "How many D-3-12 technology trainees can a host company accept per Korean full-time employee?",
+  "reference": "Not in the corpus. The D-3-12 page only says the host company must submit proof of its number of Korean full-time employees so the permitted number of trainees can be determined.",
+  "answer": "The provided passage does not state how many D-3-12 technology trainees a host company can accept per Korean full-time employee; it only lists documents proving the number of employees to determine the permitted number of trainees [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-3-12 Industrial Trainee (Technology)",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nA person who plans to receive a training at a technology-exporting entity which the need of the training at the entity acknowledged by the Minister of Justice of ROK\n\n## Visa Issuance Confirmation (CCVI) application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\nAn production employee of a foreign company, which has signed a technical license agreement or technology partnership agreement worth of US $100,000 or more with a Korean company, is deemed to require receiving job training to manage the technology\n\n[ Trainee Requirements ]\n1. A healthy person aged between 18 and 40\n2. More than 3 months of working experience at a local subsidiary\n3. Acquiring second-level or higher, or score of 50 out of 200 on TOPIK (excluding those who have a bachelor’s degree or higher in Korea, or who plans to receive training at the corporation that has signed a pledge to implement Korean language education 5 hours or more per month, and hire a full-time translator per 100 trainees)\n\n### Required documents\n1. Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n2. Documents proving an invitee has met requirements for being an industrial trainee\n① A copy of Business Registration Certificate of the branch office located in an applicant's country (or a charter)\n② Invitee’s Employment Certificate issued by the head of a branch office and a copy of passport.\n③ Documents proving sufficiency in Korean\n※ If there is a Korean diplomatic mission in an applicant's country, ① and ② need to be authenticated by consular officers\n3. A training course plan confirming the details of training schedule. (refer to Archive)\n4. A letter of guarantee from inviter\n5. Documents proving the host company is a permitted corporation as a technology export business\n- A copy of technology export agreement in Korean\n- A written approval letter is required, if an approval from the Minister of Trade, Industry and Energy of ROK is required in accordance with the 「International Trade Act」or the「Act on Industrial Technology Drain Protection and Prevention」.\n6. Documents proving the number of Korean full-time employees of the host company in order to determine the permitted number of trainees\n- You need to submit a statement of insurance qualification printed out from the website of the Ministry of Employment and Labor (Employment Insurance website)\n7. Documents demonstrating the on-the-job training facilities such as photos of dormitory for more details of training or housing facilities.\n\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee.\n\n### Visa validity and period of stay\nYou can apply for a single-entry visa valid for 3 months.\nPeriods of stay will be granted for up to 6 months.\nFor more information on Alien Registration or Visa Extension, please visit Hi Korea website at www.hikorea.go.kr"
+   }
+  ]
+ },
+ {
+  "gid": "3b22190afdad",
+  "type": "lookup",
+  "question": "For a D-4-7 foreign language trainee applying through Confirmation of Visa Issuance, who must submit proof of insurance, and how long must the policy run?",
+  "reference": "Elementary, middle/junior high and high school students must submit an international student insurance certificate or National Health Insurance (graduates-to-be are excluded). The insurance period must be longer than the stay in Korea.",
+  "answer": "For a D-4-7 foreign language trainee applying through Confirmation of Visa Issuance, an applicant must submit proof of an international student insurance policy or National Health Insurance only if they are an elementary, middle/junior high, or high school student [1]. The period of the insurance policy must be longer than the length of stay in ROK [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-4-7 Foreign Language Trainee",
+    "page": 0,
+    "text": "① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② A copy of Business Registration Certificate (or registration number certificate) of a respective academic institution\n③ A Standard Acceptance Letter* (issued by the President/Dean’s of Student)\n* For scholarship students invited by the National Institute for International Education, an invitation letter issued by the director can be a replacement\n④ Certificate of Enrollment or any documents proving the highest level of education\n⑤ Documents proving an applicant's financial statement*\n* In principle, documents proving an applicant's financial abilities must be reviewed through original copies (ex, balance statement, bankbook, scholarship receipt, bank statement),and when necessary, a copy can be attached after an official-in-charge compares the original and the copy to confirm authenticity (account balance must be issued within the past 30 days).\n- When submitting a parent's bank statement, family relation certificate is required to submit..\n⑥ A training course plan (lecture schedule, instructors' profile, training facility information, tuition fees)\n⑦ A certificate of an international student insurance policy or National Health Insurance (only for an elementary, middle/junior high, high school student)\n* A graduate-to-be is excluded.\n** The period of insurance policy must be longer than the length of stay in ROK"
+   }
+  ]
+ },
+ {
+  "gid": "61ffdc2b2b79",
+  "type": "lookup",
+  "question": "Which athletes and coaches qualify for the F-5-11 special talent visa in the sports field?",
+  "reference": "Athletes and coaches who won a bronze medal or better at an international competition equivalent to the Olympics, the World Championships or the Asian Games, and soccer players and coaches who finished in the Top 16 at the World Cup, while being recommended by the Minister of Culture, Sports and Tourism.",
+  "answer": "An athlete and a coach who won a bronze medal or above at an international athletic competition equivalent to the Olympic, the World Championship, the Asian Game, and others qualify for the F-5-11 visa [1]. Soccer players and their coaches who finished in the Top 16 at the World Cup Game also qualify if they are recommended by the Minister of Culture, Sports and Tourism of ROK [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-5-11 Special talent",
+    "page": 0,
+    "text": "- An athlete and a coach who won a bronze medal or above at an international athletic competition equivalent to the Olympic, the World Championship, the Asian Game and others. Soccer players and the coaches finished in the Top 16 at the World Cup Game while being recommended by the Minister of Culture, Sports and Tourism of ROK"
+   }
+  ]
+ },
+ {
+  "gid": "d54ec8d22edc",
+  "type": "lookup",
+  "question": "For a D-9-4 individual foreign businessman visa, what investment is enough if the applicant signs up to hire Korean workers?",
+  "reference": "200 million KRW or more (instead of 300 million KRW).",
+  "answer": "For a D-9-4 individual foreign businessman visa, an investment of 200 million KRW or more is enough if the applicant signs up to hire Korean workers [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-9-4 Individual Foreign Business Man",
+    "page": 0,
+    "text": "You are eligible to apply for this visa if you are\n1. A person who has completed a business registration under Value Added Tax Laws and plans to manage a company or engage in for-profit activities in Korea, after having invested foreign capitals worth 300 million KRW in accordance with Foreign Exchange Transaction Act and Foreign Exchange Transaction Regulation,\n2. A private entrepreneur who has completed the foreigner investment notification and has been issued a certificate of foreign-invested company registration, after having invested 300 million KRW or more in accordance with the Foreign Investment Promotion Act\n※ A person signing up for hiring Korean workers is eligible for applying for this visa in the case of making an investment of 200 million KRW or more."
+   }
+  ]
+ },
+ {
+  "gid": "2d24e5f79c86",
+  "type": "multi_hop",
+  "question": "In the Korea Visa Portal e-form, which two answers in the visit information section affect the visa application fee?",
+  "reference": "The planned number of visits to Korea (fees are calculated based on it) and the expected duration of stay (fees differ between \"more than 90 days\" and \"90 days or less\").",
+  "answer": "The two answers in the visit information section that affect the visa application fee are the planned number of visits to Korea and the expected duration of stay [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "User Manual for Electronic Form (for Visal Portal Users)",
+    "page": 13,
+    "text": "13 사증포털시스템 사용자 매뉴얼\n1.10 Visit information\n1) Select your purpose of entry.\n2) Select the planned number of visits to Korea (your visa application fees are calculated based on the number of planned visits to Korea).\n3) Select the expected duration of stay (different visa application fees are incurred between “more than 90 days” and “90 days or less”).\n4) Select the expected date of entry.\n5) Enter the expected location of stay.\n6) Enter a contact number in Korea.\n7) If you have ever entered Korea in the past five years, select “YES”.\n8) If you have ever traveled to countries other than Korea in the past five years, select “YES”.\n9) If you have an accompanying family member, select “YES” and enter the relevant information.\n1 2 3 4 5 6 7 8 9"
+   }
+  ]
+ },
+ {
+  "gid": "7d84d66ab2e8",
+  "type": "lookup",
+  "question": "For a D-9-4 individual foreign businessman visa, what investment is enough if the applicant signs up to hire Korean workers?",
+  "reference": "200 million KRW or more (instead of 300 million KRW).",
+  "answer": "If an applicant signs up to hire Korean workers for a D-9-4 visa, an investment of 200 million KRW or more is sufficient [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-9-4 Individual Foreign Business Man",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nA person who plans to run a domestic business or company (with business registration according to the 「Value-Added Tax Act」) after raising a certain amount of foreign capital in accordance with the 「Foreign Exchange Transactions Act」 and 「Regulations of Foreign Exchange Transactions」or an individual businessman of a company with an issued registration certificate of investment after reporting that a company has made a certain amount of foreign investment in accordance with the 「Foreign Investment Promotion Act」\n\n## Embassy visa application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\n1. A person who has completed a business registration under Value Added Tax Laws and plans to manage a company or engage in for-profit activities in Korea, after having invested foreign capitals worth 300 million KRW in accordance with Foreign Exchange Transaction Act and Foreign Exchange Transaction Regulation,\n2. A private entrepreneur who has completed the foreigner investment notification and has been issued a certificate of foreign-invested company registration, after having invested 300 million KRW or more in accordance with the Foreign Investment Promotion Act\n\n※ A person signing up for hiring Korean workers is eligible for applying for this visa in the case of making an investment of 200 million KRW or more.\n\n### Required documents\n① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② A copy of Business Registration Certificate, a copy of business license (not required by all), a copy of Certificate of FDI Company Registration (holders only)\n③ Documents (both original and photocopy) of joint venture contract (not required by all)\n※ The documents above should include details on the gross capital, equity, profit sharing allocation method.\n④ Documents on business fund\n- A certificate of wire transfer, certificate of foreign currency purchase, customs declaration,\n⑤ Detailed statement of business fund expenditure\n- Receipt of purchased goods, office interior's costs, domestic bank statement\n⑥ Any documents proving the sales record\n- Trade(import and export) permit, value-added tax or final tax return, etc.\n※ Limited to those who has engaged in sales activities with general business visitor visa such as (C-3-4), prior to apply for the D-9 visa\n⑦ Documents confirming the existence of your company\n- Office rental contract, photographic documents of workplace, offices, and signs\n⑧ Pledge to hire Korean(if applicable)\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation\n\n### Visa validity and period of stay\nYou can apply for a single-entry visa valid for 3 months.\nPeriods of stay for this visa will be granted initially for up to 1 year.\nFor more information on Alien Registration or Visa extension, please visit Hi Korea website at www.hikorea.go.kr."
+   }
+  ]
+ },
+ {
+  "gid": "097c15cce063",
+  "type": "lookup",
+  "question": "When an E-2 visa holder registers as an alien in Korea, what health document must they submit?",
+  "reference": "A health certificate obtained from a hospital designated by the Korean government.",
+  "answer": "An E-2 visa holder must submit their Health Certificate obtained from a hospital designated by the Korean Government when registering as an alien in Korea [1]. They must also complete the basic training program on law and order set by the government for alien registration [2]. The registration must be completed within 90 days after arriving in Korea [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Self Health Assessment Report(For E-2 Applicants)",
+    "page": 1,
+    "text": "(뒷면)\nE-2 Applicant‘s Health Statement This form is to check the E-2 Visa Applicant‘s Health. Please fill in the blanks accurately and truthfully. Please keep in mind that if you willfully fill in the blanks with incorrect information, you will face consequences such as visa denial, visa cancellation, and/or deportation, etc.\n1) NAME IN FULL(As in Passport) 2) DATE OF BIRTH\n3) NATIONALITY 4) GENDER 5) PASSPORT NUMBER\n6) Have you ever had any infectious diseases that threatened the Public health before?\nYes □ (Infectious Disease name: Cholera, Viral hepatitis A, Tuberculosis, AIDS, etc), No □\n7) Have you taken any Narcotic (Drug) or have you ever been addicted to alcohol in the last 5 years?\nYes □ (Narcotic name: ), No □\n8) Have you ever received treatment for Mental/ Neurotic/or Emotional Disorders?\nYes □ (Disorder name: ), No □\n9) Have you had any serious Diseases or Injuries for the last 5 years?\nYes □ (name & recent situation: ), No □ NOTICE :\nYou must apply for Alien Registration card at your District Immigration Office (or Branch Office)\nwithin 90 days after your arrival in Korea. At the time of registration, You MUST submit your Health Certificate obtained from the hospital which has been designated by the Korean Government.\nDate: ____________________________ Applicant‘s Signature: __________________________ TO : CHIEF, ◯◯ IMMIGRATION OFFICE(BRANCH OFFICE)\n210mm×297mm[일반용지60g/㎡(재활용품)]"
+   },
+   {
+    "n": 2,
+    "title": "Health & Mentality Statement(for E-9, E-10, H-2 Applicants)",
+    "page": 1,
+    "text": "E-9 / E-10 / H-2 Visa Applicants' Health & Mentality Statement This form is to check the E-9, E-10 and H-2 visa applicants' health and mentality.\nAn applicant must fill out this form accurately and truthfully. An applicant will be faced with consequences such as denial of visa application, cancellation of visa approval, and/or deportation if the details on the statement are not true or missed out.\n1) Full Name (As in passport) 2) Date of Birth\n3) Nationality 4) Sex 5) Passport Number\n6) Have you ever had any infectious diseases that threatened the public health before?\nYes □ (Name of Disease : Syphilis, Viral hepatitis type B, Tuberculosis) No □\n7) Have you taken any banned substances(drugs) or been addicted to alcohol in the last 5 years?\nYes □ (Name of Drug : ) No □\n8) Have you ever received medical treatment for mental, emotional, or neurotic disorders? Yes □ (Name of Disorder : ) No □\n9) Have you had any serious diseases or injuries in the last 5 years? Yes □ (Name and recent state : ) No □ NOTE : You must be registered as a foreigner at the immigration office or branch office under the jurisdiction of your residence within 90 days after arriving in Korea if you wish to stay longer than 90 days. At the time of registration, you must submit your medical examination certificate obtained from the designated hospitals by the Korean government. Besides, you must complete the basic training program on law and order set by the government for alien registration.\nDate (Y/M/D) :\nApplicant : (Signature)\nTO : Korean Ambassador(Consul General) to ○ ○ ○ ○ ○"
+   }
+  ]
+ },
+ {
+  "gid": "2a56a3e3fab4",
+  "type": "paraphrase",
+  "question": "doing an internship at a foreign investment firm in korea on a D-4-2 visa (confirmation of visa issuance), how much money do i need to show in my bank acount?",
+  "reference": "A bank statement showing more than $3,000 in the account, or a record of a wire transfer to Korea or of currency exchange. If the training facility pays your living expenses, a cost-payment confirmation from it can be submitted instead.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "63efee42747b",
+  "type": "lookup",
+  "question": "On the Personal Details Form for a Marriage Migrant Visa, how do you list a parent or sibling who has died?",
+  "reference": "Write \"DECEASED\" in the date of birth column.",
+  "answer": "On the Personal Details Form for a Marriage Migrant Visa, you list a deceased parent or sibling by writing \"DECEASED\" in the \"Date of birth\" column [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Personal Details Form for a Marriage Migrant Visa",
+    "page": 2,
+    "text": "(제2쪽 / Page2)\n2. 가족 및 혼인관계 / YOUR FAMILY AND MARITAL STATUS 관계 Relations 성 Family name 명 Given name 생년월일 Date of birth 혼인사실을 알고 있는지 여부 Whether aware of your marriage or not 부 Father 안다 / 모른다 Know / Doesn't Know 모 Mother 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know 안다 / 모른다 Know / Doesn't Know\n2.1 신청인의 부모, 형제자매가 혼인사실에 대해 알고 있습니까?\n(초청인에게 형제자매, 자녀가 있는 경우 빠짐없이 모두 작성하여야 하고, 작성 공간이 부족한 경우 별지에 작성 하며. 사망한 경우 생년월일에 \"사망\"으로 기재합니다)\nDo your parents, brothers or sisters know about your marriage? (If you have any siblings or children, please give brief details on each of them below, and if you need more space, please attach another sheet of paper. For a decea sed family member, specify \"DECEASED\" in the \"Date of birth\" column below.)\n2.2 신청인은 과거에 혼인한 적이 있습니까?\nHave you ever been married to a person other than your current spouse before?\n[ ] 예 (아래 표를 작성) / Yes (Please provide details about your previous marriages) ︱ [ ] 아니오 / No 배우자의 성명 Name of previous spouse 생년월일 Date of birth 배우자의 국적 Nationality 혼인기간 Marriage period . . . ~ . . .\n. . . ~ . . .\n2.3 초청인 이외에 혼인관계를 유지하고 있는 다른 배우자가 있습니까?\nIs there another person that you maintain marital status with other than your current spouse?\n[ ] 예 / Yes [ ] 아니오 / No\n2.4 신청인은 과거 혼인관계에서 출생한 자녀가 있습니까?\nDo you have children from your previous relationship?\n[ ] 예 (아래 표를 작성) / Yes (Please provide details about child) ︱ [ ] 아니오 / No 자녀의 성명 Name of child 생년월일 Date of birth 자녀의 국적 Nationality 현재 양육하고 있는 사람 Person charged with custody of child 210mm×297mm[백상지 80g/㎡(재활용품)]"
+   }
+  ]
+ },
+ {
+  "gid": "2b6af896aea5",
+  "type": "no_answer",
+  "question": "How many days before the expected entry date must a travel agency file an Application for Invalidation of Group e-Visa?",
+  "reference": "Not in the corpus. The invalidation form only asks for the agencies, e-visa application number, expected date of entry, reasons and list of applicants, with no deadline.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "0b53a13eaccb",
+  "type": "table",
+  "question": "A Chinese national whose son is a diplomat stationed in Korea wants to visit him on her own with a C-3-1 visa applied for at the embassy. Which documents are required?",
+  "reference": "The visa application form (Form No. 17), passport, a standard photo and the fee; an official letter from the Minister of Foreign Affairs of her country asking for cooperation; and a certificate of family relation and other documents proving the family relationship (such as a household register booklet or hukou).",
+  "answer": "The required documents for an embassy visa application for a C-3-1 visa are: ① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee [1]. ② A document (or an invitation letter) demonstrating the purpose of entry such as attending an event or taking a training program [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: C-3-1 Short-Term General",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nA person who plans to stay for a short period of time on the purpose of visiting relatives, investing in public business, participating in a non-official sport games, attending events or meetings, performing cultural art, engaging in a training, taking lessons, attending a religious ceremony, collecting documents for academic research, or any other equivalent activities.\n\n## Embassy visa application\n### Embassy visa application — Case 1\n\n#### Eligibility\nYou are eligible to apply for this visa if you are\n\n1. A participant in friendly sporting matches, events or conferences in the ROK, including sports competitions (golf, soccer, etc.) with set cash prizes for finalists.\n* Even if the host party provides you with flight tickets and living expenses for your trip, you are eligible for this visa. However, if you receive or will receive monetary compensation exceeding your living expenses other than cash prizes, you are eligible for Short-term Employee (C-4) visa.\n2. A person who is planning for short-term stay to learn and improve technologies or functionalities at government or a company.\n- If you receive monetary compensation not exceeding the living expenses, you are eligible for this visa. However, if you receive monetary compensation in return for your work such as learning to use technologies or technical features, you are eligible for Industrial Trainee (D-3-1) visa.\n3. A family visitor for wedding, funeral, nursing, etc.\n4. A person who is planning for short-term visit upon invitation by relatives residing in Korea\n5. A person who is planning for short-term language study\n6. A household assistant, hired by Korean citizen whose living base is located abroad, who needs to enter Korea along with the Korean citizen for humanitarian causes* for short duration (less than 90 days)\n※ Humanitarian causes include household assistants giving hands to parenting, nursing, funeral procedure and other activities of a Korean national who recently have given a birth\n7. Spouse and child of those with refugees status for the purpose of family unification in accordance with Article 37 of the Refugee Act\n8. A visitor to Korea for the purpose of engaging in all C-3 activities except Group Tourist (C-3-2), Medical Tourist (C-3-3), Business Visitor(General) (C-3-4), Business Visitor(Agreement) (C-3-5), Business Visitor(Sponsored) (C-3-6), Short-term Visitor(Overseas Korean) (C-3-8), or Ordinary Tourist (C-3-9)\n* Those who is planning for for-profit activities or employment should obtain a proper visa for those activities.\n\n#### Required documents\n① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② A document (or an invitation letter) demonstrating the purpose of entry such as attending an event or taking a training program.\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation.\n\n#### Visa validity and period of stay\nYou can apply for a single-entry visa valid for 3 months or a double-entry visa valid for 6 months.\nPeriods of stay will be granted for up to 90 days for a single-entry visa , or 30 days for a double-entry visa.\n\n## E-visa application\n### Required documents\n① Visa Application Form, a copy of passport, a photo in a standard format, fee\n② An Immigrant Investment Contract signed between an investor and a promotion agency\n③ A Power of Attorney\n④ Documents proving payment of fees to a promotion agency or remittance (deposit) of investment money\n⑤ Documents proving the family relations (if you are coming to ROK with family members)\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee."
+   }
+  ]
+ },
+ {
+  "gid": "f7ae51cf38d2",
+  "type": "lookup",
+  "question": "What labour contract and ship size requirements apply to the E-10-3 cruise ship crew visa?",
+  "reference": "The applicant must be a seafarer assistant who has signed a seafarer labor contract of 6 months or more with an employer running a cruise service that operates a cruise ship of 2,000 tons or heavier.",
+  "answer": "The labour contract requirement is a seafarer labor contract of 6 months or more signed with an employer engaging in a cruise service [1]. The ship size requirement is operating a cruise ship of 2,000 tons or heavier [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-10-3 Cruise Ship Crew",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nA person who is a seafarer assistant, and has signed a seafarer labor contract of 6 months or more with an employer engaging in a cruise service (operating cruise ship of 2,000 tons or heavier)"
+   }
+  ]
+ },
+ {
+  "gid": "7494c61163e3",
+  "type": "lookup",
+  "question": "After the January 2021 change to the re-entry permit system, could foreigners still apply for a Medical Examination Exemption Certificate for their re-entry permit?",
+  "reference": "No. Applications for the Medical Examination Exemption Certificate for re-entry permits were no longer available.",
+  "answer": "No, foreigners could not apply for a Medical Examination Exemption Certificate for their re-entry permit after the January 2021 change. The announcement states that the application for this certificate is no longer available [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Announcement on Changes in Re-entry Permit System",
+    "page": 1,
+    "text": "【 Announcement on Changes in Re-entry Permit System 】 This is to announce that Re-entry Permit System will change as specified below as all entrants from overseas are required to submit a negative COVID-19 PCR test certificate starting January 8 (Fri.), 2021 in response to recent spread of the highly transmissible new coronavirus strains.\n□ Mandatory submission of negative COVID-19 PCR test certificate by foreigners issued with Re-entry Permit\n• (Current) Foreigners re-entering the ROK with a Re-entry Permit are required to submit a negative COVID-19 PCR certificate, a medical certificate, or a medical examination exemption certificate.\n• (After the Change) Foreigners re-entering the ROK with a Re-entry Permit are required to submit a negative COVID-19 PCR test certificate.\n- A negative COVID-19 PCR test certificate is deemed valid only when issued within 72 hours prior to departure.\n※ Application for ‘Medical Examination Exemption Certificate’ for Re-entry Permit is no longer available.\n□ Date of Enforcement\n• All foreigners entering the ROK are required to submit a negative COVID-19 PCR test certificate as of 00:00 January 8 (Fri.), 2021.\n- Foreigners with a Re-entry Permit (including those exempted from medical examination) issued before January 8 (Fri.), 2021 are also required to submit a negative COVID-19 PCR test certificate if entering the nation after 00:00 January 8 (Fri.), 2021."
+   }
+  ]
+ },
+ {
+  "gid": "519ea309fd95",
+  "type": "lookup",
+  "question": "On the F-2-3 personal details form, which visits to Korea should you describe if you have visited more than 3 times?",
+  "reference": "Provide details about the most recent visit.",
+  "answer": "If you have visited the Republic of Korea more than three times on the F-2-3 personal details form, you must provide details about your most recent visit [1]. You should also include the duration of the visit, the purpose of the visit, and the place you visited [1]. This rule applies to the F-2-3 Marriage Visa Application form as well [2], and similarly for the Marriage Statement form [3] and the Marriage Migrant Visa form [4].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Personal Details Form for F-2-3 Visa Application",
+    "page": 3,
+    "text": "(제3쪽 / Page3)\n3. 과거 입국경력 / HISTORY OF YOUR PAST ENTRIES\n3.1 신청인은 과거 한국에 방문한 적이 있습니까? / Have you ever visited the Republic of Korea before?\n[ ] 예(아래 표를 작성) / Yes (Please provide details about your visit)\n[ ] 아니오 / No 방문기간 Duration of visit 방문목적 Purpose of visit 방문한 지역 Place you visited . . . ~ . . .\n. . . ~ . . .\n. . . ~ . . . (* 3회 이상 방문한 경우 가장 최근에 방문한 기록을 기재) (* If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.)\n3.2 과거 한국 정부로부터 입국거부, 입국금지되거나 강제퇴거 또는 출국명령을 받은 적이 있습니까?\nHave you ever been refused entry, banned, forcibly expelled, deported, or otherwise required to leave the Republic of Korea from the government of the Republic of Korea before?\n[ ] 예 (아래에 관련 일시, 사유 등을 상세히 기재하시오) / Yes (please provide details)\n[ ] 아니오 / No\n4. 서류작성 시 도움 여부 / ASSISTANCE WITH THIS FORM 성명 Name 주소 Address 연락처 Phone number 신청인과의 관계 Relation to you .\n4.1 이 초청장을 작성하는데 다른 사람의 도움을 받았습니까?\nDid you receive assistance in completing this form?\n[ ] 예 (아래 사항을 기재하시오) / Yes (Provide details below)\n[ ] 아니오 / No"
+   },
+   {
+    "n": 2,
+    "title": "Personal Details Form for F-2-3 Marriage Visa Application",
+    "page": 9,
+    "text": "(제3쪽 / Page3)\n3. 과거 입국경력 / HISTORY OF YOUR PAST ENTRIES\n3.1 신청인은 과거 한국에 방문한 적이 있습니까? / Have you ever visited the Republic of Korea before?\n[ ] 예(아래 표를 작성) / Yes (Please provide details about your visit)\n[ ] 아니오 / No 방문기간 Duration of visit 방문목적 Purpose of visit 방문한 지역 Place you visited . . . ~ . . .\n. . . ~ . . .\n. . . ~ . . . (* 3회 이상 방문한 경우 가장 최근에 방문한 기록을 기재) (* If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.)\n3.2 과거 한국 정부로부터 입국거부, 입국금지되거나 강제퇴거 또는 출국명령을 받은 적이 있습니까?\nHave you ever been refused entry, banned, forcibly expelled, deported, or otherwise required to leave the Republic of Korea from the government of the Republic of Korea before?\n[ ] 예 (아래에 관련 일시, 사유 등을 상세히 기재하시오) / Yes (please provide details)\n[ ] 아니오 / No\n4. 서류작성 시 도움 여부 / ASSISTANCE WITH THIS FORM 성명 Name 주소 Address 연락처 Phone number 신청인과의 관계 Relation to you .\n4.1 이 초청장을 작성하는데 다른 사람의 도움을 받았습니까?\nDid you receive assistance in completing this form?\n[ ] 예 (아래 사항을 기재하시오) / Yes (Provide details below)\n[ ] 아니오 / No"
+   },
+   {
+    "n": 3,
+    "title": "Marriage Statement for F-2-3 Visa",
+    "page": 3,
+    "text": "(제3쪽 / Page3)\n3. 과거 입국경력 / HISTORY OF YOUR PAST ENTRIES\n3.1 신청인은 과거 한국에 방문한 적이 있습니까? / Have you ever visited the Republic of Korea before?\n[ ] 예(아래 표를 작성) / Yes (Please provide details about your visit)\n[ ] 아니오 / No 방문기간 Duration of visit 방문목적 Purpose of visit 방문한 지역 Place you visited . . . ~ . . .\n. . . ~ . . .\n. . . ~ . . . (* 3회 이상 방문한 경우 가장 최근에 방문한 기록을 기재) (* If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.)\n3.2 과거 한국 정부로부터 입국거부, 입국금지되거나 강제퇴거 또는 출국명령을 받은 적이 있습니까?\nHave you ever been refused entry, banned, forcibly expelled, deported, or otherwise required to leave the Republic of Korea from the government of the Republic of Korea before?\n[ ] 예 (아래에 관련 일시, 사유 등을 상세히 기재하시오) / Yes (please provide details)\n[ ] 아니오 / No\n4. 서류작성 시 도움 여부 / ASSISTANCE WITH THIS FORM 성명 Name 주소 Address 연락처 Phone number 신청인과의 관계 Relation to you .\n4.1 이 초청장을 작성하는데 다른 사람의 도움을 받았습니까?\nDid you receive assistance in completing this form?\n[ ] 예 (아래 사항을 기재하시오) / Yes (Provide details below)\n[ ] 아니오 / No"
+   },
+   {
+    "n": 4,
+    "title": "Personal Details Form for a Marriage Migrant Visa",
+    "page": 3,
+    "text": "(제3쪽 / Page3)\n3. 과거 입국경력 / HISTORY OF YOUR PAST ENTRIES\n3.1 신청인은 과거 한국에 방문한 적이 있습니까?\nHave you ever visited the Republic of Korea before?\n[ ] 예(아래 표를 작성) / Yes (Please provide details about your visit) ︱ [ ] 아니오 / No 방문기간 Duration of visit 방문목적 Purpose of visit 방문한 지역 Place you visited . . . ~ . . .\n. . . ~ . . .\n. . . ~ . . .\n(* 3회 이상 방문한 경우 가장 최근에 방문한 기록을 기재)\n(* If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.)\n3.2 과거 한국 정부로부터 입국거부나 입국금지 또는 강제퇴거나 출국명령을 받은 적이 있습니까?\nHave you ever received any of the following orders by the Korean government: refusal of entry, a ban from entering Korea, deportation, or departure order?\n[ ] 예 (아래에 관련 일시, 사유 등을 상세히 기재하시오) / Yes (please provide details) [ ] 아니오 / No\n4. 서류작성 시 도움 여부 / ASSISTANCE WITH THIS FORM\n4.1 이 진술서를 작성하는데 다른 사람의 도움을 받았습니까?\nDid you receive assistance in filling out this form?\n[ ] 예 (아래 사항을 기재하시오) / Yes (Provide details below) ︱ [ ] 아니오 / No 성명 Name 주소 Address 연락처 Phone number 신청인과의 관계 Relation to you 210mm×297mm[백상지 80g/㎡(재활용품)]"
+   }
+  ]
+ },
+ {
+  "gid": "c4ec45ed0882",
+  "type": "lookup",
+  "question": "How long is a C-1 short-term news coverage visa valid, and how long can each stay be?",
+  "reference": "It is a multiple-entry visa valid for 5 years, and periods of stay are granted for up to 90 days.",
+  "answer": "You can apply for a multiple-entry visa valid for 5 years [1]. Periods of stay for this visa will be granted for up to 90 days [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: C-1 Short-Term News Coverage",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\n1. A person dispatched from a foreign newspaper, broadcasting channel, journal, and other media to cover/report news\n2. A person to cover and report news under contract with foreign media\n3. A person to stay for a short period of time to establish a branch in ROK\n\n## Embassy visa application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\n1. A representative of the foreign media travelling to the Republic of Korea for temporary news coverage · report\n2. A journalist seeking for temporary news coverage · report on the basis of a contract with the foreign media\n3. A representative preparing to establish a Korean branch office of the foreign media outlet\n\n※ If you continue to stay in the ROK after you have successfully established the Korean branch office, you are allowed to change your status of stay to the Long- Term News Coverage ( D-5 ) visa.\n\n### Required documents\n① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② An international press card or a document demonstrating an applicant's current employment status or overseas assignment\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation.\n\n### Visa validity and period of stay\nYou can apply for a multiple-entry visa valid for 5 years. Periods of stay for this visa will be granted for up to 90 days."
+   }
+  ]
+ },
+ {
+  "gid": "ff901233045b",
+  "type": "lookup",
+  "question": "For the A-1 visa under Embassy Case 3 (officials of an inter-governmental organisation in which Korea is involved), which officials are eligible?",
+  "reference": "Under the agreements, eligibility is limited to the Director of the International Vaccine Institute, the Secretary General of the Green Climate Fund, and secretariat workers whose position is equivalent to P-5 or higher in the UN position category approved by the Korean government.",
+  "answer": "In accordance with the agreements, an eligible applicant is limited to the Director of the International Vaccine Institute, Secretary General of Green Climate Fund and secretariat worker whose position is equivalent to P-5 or higher defined in the UN position category approved by the government of ROK [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: A-1 Diplomat",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\n- A member of consulate or diplomatic delegation of a foreign government approved by the Republic of Korea\n- A person granted with the same level of diplomatic privileges and exemptions as diplomatic delegations in accordance with international agreements or practices\n- Immediate family members of the above\n\n## Embassy visa application\n\n### Embassy visa application — Case 1\n\n#### Eligibility\nYou are eligible to apply for this visa if you are\n\n1. A member of diplomatic delegation or consulate\n- Diplomatic mission: a foreign relations service officer such as ambassador, minister, councilor and secretary\n- Consular Mission: consular officers such as consul general and consul\n2. Person granted with the same level of privileges and immunities with a diplomatic/consular mission in accordance with international agreements and treaties\n- Secretary General or Deputy Secretary General of the UN, or Executive Director of the UN agencies\n- Head of State, Cabinet member, head of legislature (including both heads of houses in a country with a bicameral system), member of foreign delegation to attend a meeting hosted by the government of ROK.\n3. Immediate family members of the above applicants\n- Parents, spouse, child residing in ROK together with the above applicants\n\n#### Required documents\n① Visa Application Form (Form No. 17), passport(Laissez-passer, international organization passer, diplomatic passport), a photo in a standard format\n② A document demonstrating your current employment status and overseas assignment, or an official letter of cooperation written by the Minister of Foreign Affairs of an applicant's country\n③ A certificate of family relation and any documents proving family relationship for an accompanied family member\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation.\n\n#### Visa validity and period of stay\nYou can apply for a single-entry or multiple-entry visa, and you will be allowed to stay in Korea until the end of your assignment.\n\n### Embassy visa application — Case 2\n\n#### Eligibility\nYou are eligible to apply for this visa if you are\n\n1. Officials and conference attendees of an international organization located in Korea\n2. Immediate family members of the above applicants.\n\n#### Required documents\n① Visa Application Form (Form No. 17), passport(Laissez-passer, international organization passer, diplomatic passport), a photo in a standard format\n② A document demonstrating your current employment status and overseas assignment, or an official letter of cooperation written by the Minister of Foreign Affairs of an applicant's country\n③ A certificate of family relation and any documents proving family relationship for an accompanied family member\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation.\n\n#### Visa validity and period of stay\nIf you want to work at the embassy/consulate of your country in Korea, you can apply for a multiple-entry visa. In this case, you will be allowed to stay in Korea until the end of your assignment. However, if you are just visiting Korea on a short-term assignment, you can apply for a single-entry visa. Please contact the Korean Embassy or Consulate General(s) in your country for more information.\n\n### Embassy visa application — Case 3\n\n#### Eligibility\nYou are eligible to apply for this visa if you are\n\n1. Officials or conference attendees of an Inter-governmental organization in which the Republic of Korea is involved.\n※ In accordance with the agreements, an eligible applicant is limited to Director of the International Vaccine Institute, Secretary General of Green Climate Fund and secretariat worker whose position is equivalent to P-5 or higher defined in the UN position category approved by the government of ROK\n2. Immediate family members of the above applicants.\n\n#### Required documents\n① Visa Application Form (Form No. 17), passport(Laissez-passer, international organization passer, diplomatic passport), a photo in a standard format\n② A document demonstrating your current employment status and overseas assignment, or an official letter of cooperation written by the Minister of Foreign Affairs of an applicant's country\n③ A certificate of family relation and any documents proving family relationship for an accompanied family member\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation.\n\n#### Visa validity and period of stay\nIf you want to work at the embassy/consulate of your country in Korea, you can apply for a multiple-entry visa. In this case, you will be allowed to stay in Korea until the end of your assignment. However, if you are just visiting Korea on a short-term assignment, you can apply for a single-entry visa. Please contact the Korean Embassy or Consulate General(s) in your country for more information."
+   }
+  ]
+ },
+ {
+  "gid": "6282c45dc99f",
+  "type": "no_answer",
+  "question": "What is the minimum score required under the Points-Based System for a D-8-4 technology and business startup visa?",
+  "reference": "Not in the corpus. The D-8-4 page only lists documents that prove points earned under the Points-Based System (such as patent certificates and OASIS certificates), not the pass mark.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "cc4fc1159400",
+  "type": "paraphrase",
+  "question": "im vietnamese on an E-9 visa, did my alien registration in april 2016 and handed in the health certificate with the tb test then. now im extending my stay, do i have to submit the tb certificate again?",
+  "reference": "No. E-9, E-10 and H-2 holders who already submitted the certificate including a TB test result when applying for alien registration on or after March 2, 2016 do not have to submit it again. Only those who registered on or before March 1, 2016 still have to submit it to extend their stay.",
+  "answer": "No, you do not have to submit the certificate again [1]. Non-professional (E-9) visa holders who already submitted the certificate including TB test result when applying for alien registration on March 2, 2016 or after are exempt from submission [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Requirement for Tuberculosis (TB) Test Certificate Submission",
+    "page": 2,
+    "text": "- 2 - [Note] Exceptions (the following persons are exempt from submission)\n- Diplomat (A-1), Foreign Government Official (A-2), and International Agreement (A-3) status holders\n- Children aged 5 and under\n(High TB-burden countries)\n① Nepal ② East Timor ③ Russia ④ Malaysia ⑤ Mongol ⑥ Myanmar ⑦ Bangladesh ⑧ Vietnam ⑨ Sri Lanka ⑩ Uzbekistan ⑪ India ⑫ Indonesia ⑬ China ⑭ Cambodia ⑮ Kyrgyzstan ⑯ Thailand ⑰ Pakistan ⑱ Philippines\n- Non-professional (E-9), Maritime Crew (E-10), Work and Visit (H-2)\nand other visa holders who already submitted the certificate including TB test result when applying for alien registration on March 2, 2016 or after (however, if you applied for alien registration on March 1, 2016 or before, you still have to submit the certificate to extend your stay period)\n- Marriage Migrant (F-6), spouse of a permanent resident (F-2-3), or other visa holders who already submitted the certificate including TB test result to acquired the status (granted on March 2, 2016 or after)\nand apply for extension of stay period, etc.\n- Short-term status holders who apply for extension of stay period\n3. What to Submit\n1) (Visa application to a diplomatic mission) A “Certificate of Health” including TB test result (Attachment 1, valid for one year) issued by a hospital designated by Korean diplomatic missions\n* A certificate of health issued by a designated hospital that includes at least one of the following tests result: chest X-ray, sputum test, tuberculin skin test, blood test, etc.\n2) (Change of status of stay, alien registration, extension of stay period) A certificate of confirmation issued by a Korean public health center\n(Attachment 2)"
+   }
+  ]
+ },
+ {
+  "gid": "40abfd8a6368",
+  "type": "paraphrase",
+  "question": "me and my korean ex had a kid, but the court only gave me visitation rights. can i still get the F-6-2 child raising visa?",
+  "reference": "No. If you only have visitation rights to your child, you are not eligible for the F-6-2 visa; you must prove custody.",
+  "answer": "You are not eligible for this visa if you only have visitation rights to your child [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-6-2 Child Raising",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nFather or mother of minor child born after a marriage with Korean (including de facto marriage), but not qualified for F-6-1 (spouse of Korean citizen), who is raising or is planning to raise the child in ROK\n\n## Embassy visa application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\nA father or a mother who is currently raising or planning to raise a minor child in ROK who was born during the marriage (including the de facto marriage) with Korean and does not meet the qualification of F-6-1 visa.\n\n### Required documents\n① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② Documents proving the family (biological) relation\n- Basic Certificate of the child, Birth Certificate, DNA test result confirmation or family relation certificate\n※ If a child was born through a de facto couple, you must submit documents proving related facts.\n③ Documents proving that you have custody over your child\nex) A sentencing that includes the content of child custody, a confirmation of child rearing from a Korean relative in the fifth degree with the child (including a parent) and other equivalent documents\n※ If you only have visitation rights to your child, you are not eligible for this visa.\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation.\n\n### Visa validity and period of stay\nYou can apply for a multiple-entry visa valid for 5 years.\nPeriods of stay for this visa will be granted for up to 90 days.\nFor more information on Alien Registration or Visa extension, please visit Hi Korea website at www.hikorea.go.kr."
+   }
+  ]
+ },
+ {
+  "gid": "b9be4dc06921",
+  "type": "paraphrase",
+  "question": "my confirmation of visa issuance application was refused, how do i get the refusal notice on paper?",
+  "reference": "Results are checked online on the Korea Visa Portal. To receive the disapproval notice in written form, you must visit the immigration office and apply in person.",
+  "answer": "To receive the disapproval notice in written form, you must visit the diplomatic office and apply in person [5]. You can check your visa application results online on the Korea Visa Portal website (www.visa.go.kr) [6].",
+  "cited_passages": [
+   {
+    "n": 5,
+    "title": "(NEW) VISA APPLICATION FORM(Dec 10, 2020)",
+    "page": 5,
+    "text": "Providing false information or documents leads to revocation of a visa and permission to stay, and may result in criminal punishments and an entry ban to the Republic of Korea.\n- 6.사증심사에 필요한 관련 서류 제출 요구에 따르지 않는 경우, 사증심사가 지연되거나 신청이 불허 될 수 있습니다.\nFailure to submit all required documents may cause delay or denial of a visa.\n7. 사증발급 신청 결과는 '대한민국 비자포털(www.visa.go.kr)'에서 확인*해야 하며, 사증발급거부통지서를 문서로 교부받 고자 하는 경우에는 직접 공관을 방문하여 신청해야 합니다.\n* 확인 방법 : 비자포털 초기화면 좌측 '조회/발급'-'진행현황 조회 및 출력'-'재외공관'을 선택하고 여권번호, 성명, 생년월일 입력 후 조회\nVisa applicants must check online on the Korea Visa Portal website* (www.visa.go.kr) for visa application results. To receive the disapproval notice in written form, visa applicants must visit the diplomatic office and apply in person.\n* How to check results: click'Check Application Status'located on the left side of the Visa Portal main display - click'Ch eck Application Status & Print'- select'Diplomatic Office' and input information in the blanks."
+   },
+   {
+    "n": 6,
+    "title": "KOREA VISA PORTAL",
+    "page": 5,
+    "text": "Providing false information or documents leads to revocation of a visa and permission to stay, and may result in criminal punishments and an entry ban to the Republic of Korea.\n- 6.사증심사에 필요한 관련 서류 제출 요구에 따르지 않는 경우, 사증심사가 지연되거나 신청이 불허 될 수 있습니다. Failure to submit all required documents may cause delay or denial of a visa.\n7. 사증발급 신청 결과는 '대한민국 비자포털(www.visa.go.kr)'에서 확인*해야 하며, 사증발급거부통지서를 문서로 교 부받고자 하는 경우에는 직접 공관을 방문하여 신청해야 합니다.\n* 확인 방법 : 비자포털 초기화면 좌측 '조회/발급'-'진행현황 조회 및 출력'-'재외공관'을 선택하고 여권번호, 성명, 생년 월일 입력 후 조회\nVisa applicants must check online on the Korea Visa Portal website* (www.visa.go.kr) for visa application results. To receive the disapproval notice in written form, visa applicants must visit the diplomatic office and apply in person.\n* How to check results: click'Check Application Status'located on the left side of the Visa Portal main display - click'Check Application Status & Print'- select'Diplomatic Office' and input information in the blanks."
+   }
+  ]
+ },
+ {
+  "gid": "4c5fe7acbf98",
+  "type": "lookup",
+  "question": "How long is the F-4-12 visa for descendants of overseas Koreans valid, and what is the initial period of stay?",
+  "reference": "It is a multiple-entry visa valid for 5 years; the initial period of stay is up to 2 years.",
+  "answer": "You can apply for a multiple-entry visa valid for 5 years [1]. Periods of stay for this visa will be granted initially for up to 2 years [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-4-12 Descendant of Overseas Korean",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nA person whose parent or grandparent was Korean but has acquired nationality of a country other than the countries notified by the Minister of Justice of ROK\n\n## Embassy visa application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\nA person whose parent or grandparent had a Korean Nationality and has acquired a foreign nationality\n\n### Required documents\n1. Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n2. Documents proving that your immediate family member once had a Korean nationality\n- Certificate of Family Registry, Certificate of Removal from Family Registry or closed Register and other documents proving that your immediate family member had a Korean nationality\n※ If you can not submit certification of the family relations record, Certificate of Removal from Family Registry or closed Register, you can submit any documents such as certificate of birth, discharge, and death for proving Overseas Koreans with foreign citizenship or family relations\n3. Documents demonstrating the reason for and an exact date of obtaining foreign citizenship such as passport of you and immediate family member, and a certificate proving the lineal descendant\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation.\n\n### Visa validity and period of stay\nYou can apply for a multiple-entry visa valid for 5 years.\nPeriods of stay for this visa will be granted initially for up to 2 years.\nFor more information on Alien Registration or Visa extension, please visit Hi Korea website at www.hikorea.go.kr."
+   }
+  ]
+ },
+ {
+  "gid": "702ab43bc1c1",
+  "type": "lookup",
+  "question": "On the F-2-3 personal details form, what should you write in the date of birth column for a parent or sibling who is no longer living?",
+  "reference": "Write 'DECEASED'.",
+  "answer": "You should write 'DECEASED' in the 'Date of birth' column [1, 2, 3].",
+  "cited_passages": []
+ },
+ {
+  "gid": "a1294c4e66fa",
+  "type": "lookup",
+  "question": "What status of stay is given to APEC Business Travel Card holders entering Korea, and how long can they stay?",
+  "reference": "They are granted Short-Term Business (C-3-4) status and can stay in Korea for up to 90 days.",
+  "answer": "APEC Business Travel Card holders entering Korea are granted Short-Term Business (C-3-4) status and are allowed to stay in Korea for up to 90 days [1, 2, 3].",
+  "cited_passages": []
+ },
+ {
+  "gid": "66dfea0544de",
+  "type": "lookup",
+  "question": "How long is the F-4-12 visa for descendants of overseas Koreans valid, and what is the initial period of stay?",
+  "reference": "It is a multiple-entry visa valid for 5 years; the initial period of stay is up to 2 years.",
+  "answer": "The F-4-12 visa is valid for 5 years [1]. The initial period of stay granted for this visa is up to 2 years [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-4-12 Descendant of Overseas Korean",
+    "page": 0,
+    "text": "You can apply for a multiple-entry visa valid for 5 years.\nPeriods of stay for this visa will be granted initially for up to 2 years.\nFor more information on Alien Registration or Visa extension, please visit Hi Korea website at www.hikorea.go.kr."
+   }
+  ]
+ },
+ {
+  "gid": "eab296abebbf",
+  "type": "lookup",
+  "question": "From what date did the Ministry of Justice expand multiple-entry visa eligibility for nationals of New Southern Policy countries?",
+  "reference": "From December 3, 2018.",
+  "answer": "The Ministry of Justice expanded eligibility for multiple-entry visas for nationals of New Southern Policy countries starting from December 3, 2018 [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Expansion of multiple entry visa issuance",
+    "page": 1,
+    "text": "- 1 -\n□ The Ministry of Justice (Minister Park Sang-ki) announced that it will expand the eligibility for multiple entry visas starting from December 3, 2018 to revitalize people to people exchanges and to attract inbound tourists from the countries of New Southern Policy, by granting a multiple entry visa with validity of 10 years to professionals such as doctors, lawyers, etc. in the region.\n○ The number of visitors between Korea and the countries of New Southern Policy is expected to surpass a record 10 million this year with the visitors from those countries to the ROK already rising 13.8% from the previous year as of end-October this year.\n○ The Ministry has decided to expand the eligibility for multiple entry visas to provide expedited entry services to the nationals from the countries of New Southern Policy, and the measure comes at a time when inbound tourists from those countries under the President Moon’s new policy are steadily on the rise with the popularity of Hallyu\n(Korean Wave) such as K-POP, etc.\n□ Eligibility and details for the 10-year multiple visa issuance scheme are as follows.\n○ A Short-Term General (C-3) multiple entry visa valid for 10 years will be granted, MOJ revises its visa rules to expand exchanges with countries of New Southern Policy\n-Expansion of multiple entry visa issuance for nationals of Vietnam, Philippines, Indonesia, etc."
+   }
+  ]
+ },
+ {
+  "gid": "22ef393db919",
+  "type": "lookup",
+  "question": "How much does an apostille cost in Ireland?",
+  "reference": "€20 for each apostille. There is a special fee of €50 for a series of apostilles relating to the adoption of a child.",
+  "answer": "The cost of an apostille in Ireland is €20 per document [1]. There is a special fee of €50 for a series of apostilles related to the adoption of a child [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korean Immigration Apostille Convention Competent Authorities List",
+    "page": 19,
+    "text": "Price:, 1 = 20 for each Apostille. There is a special € fee of 50 for a series of Apostilles in € relation to the adoption of a child.. Useful Links:, 1 = http://www.dfa.ie/home/index.aspx?id=268"
+   }
+  ]
+ },
+ {
+  "gid": "e2563ea7d7f0",
+  "type": "lookup",
+  "question": "According to the e-visa issuance confirmation, by when must an e-visa holder enter Korea, and does the e-visa guarantee entry?",
+  "reference": "They must enter Korea before the e-visa's expiry date. It does not guarantee entry, because the holder may still be denied entry during immigration clearance at the port of entry.",
+  "answer": "An e-visa holder must enter the Republic of Korea before the expiry date listed on the confirmation document [3]. The e-visa does not guarantee entry because an individual may be denied entry during immigration clearance at the port of entry even if they have the e-visa [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Confirmation of E-Visa Issuance for Korean Immigration",
+    "page": 1,
+    "text": "대 한 민 국 법 무 부 MINISTRY OF JUSTICE, THE REPUBLIC OF KOREA 【 바 코 드 삽 입 】 CONFIRMATION OF E-VISA ISSUANCE 전 자 사 증 발 급 확 인 서 e-Visa No. 전자사증발급번호\n1. DETAILS OF APPLICANT 신청자 정보 PHOTO 신청인 사진 Full Name 영문성명 Date of Birth 생년월일 Gender 성별 Nationality 국적 Passport No. 여권번호 Passport Expiration Date 여권만료일\n2. VISA DETAILS 사증사항 Status of Stay 체류자격 Period of Stay 체류기간 Number of Entries 사증 종류 Date of Issue 발급일 Expiry Date 입국만료일 Remarks 비고 This document confirms that the e-Visa application of the above applicant has been approved in accordance with article 7(2) of the Korean Immigration Act.\n대한민국 출입국관리법 시행령 제7조의 2(온라인에 의한 사증 등의 신청)의 규정에 의하여 상기 신청인에 대한 전자사증이 허가되었음을 확인합니다.\nMinister of Justice, Republic of Korea 대한민국 법무부장관\n< NOTICE 주의사항 >\n1. If you receive an e-Visa, you will not have to apply for a visa at a Korean diplomatic mission.\n전자사증을 받은 자는 대한민국 재외공관에 사증발급을 신청할 필요가 없습니다.\n2. You may present this document when you are asked for Korean visa verification, and you must present it to a Korean Immigration officer at a port of entry. If you do not bring this document with you, you will need to explain your reason(s) to the immigration officer.\n이 확인서는 대한민국 사증발급 여부를 확인받기 위하여 제시할 수 있으며, 대한민국 입국 시 입국심사관에게 제시하여야 합니다. 확인서를 소지 하지 않고 입국하는 경우 그 사유를 입국심사관에게 설명하시기 바랍니다.\n3. If you receive an e-Visa, you must enter the Republic of Korea before its expiry date. Please note, however, even if you have the e-Visa, you may be denied entry to the ROK during immigration clearance at the port of entry.\n전자사증을 받은 자는 이 확인서 상의 입국만료일 이전에 출입국관리공무원의 입국심사를 받은 후 대한민국에 입국할 수 있습 니다. 다만, 전자사증을 발급받았더라도 입국심사 과정에서 대한민국 입국이 불허될 수 있음을 알려 드립니다."
+   },
+   {
+    "n": 3,
+    "title": "CONFIRMATION OF E-VISA ISSUANCE FOR GROUP",
+    "page": 2,
+    "text": "< NOTICE 주의사항 >\n1. If you receive an e-Visa, you will not have to apply for a visa at a Korean diplomatic mission.\n전자사증을 받은 자는 대한민국 재외공관에 사증발급을 신청할 필요가 없습니다.\n2. You may present this document when you are asked for Korean visa verification, and you must present it to a Korean Immigration officer at a port of entry. If you do not bring the document with you, you will need to explain your reason(s) to the immigration officer.\n이 확인서는 대한민국 사증발급 여부를 확인받기 위하여 제시할 수 있으며, 대한민국 입국 시 입국심사관에게 제시하여야 합니다. 확인서를 소지 하지 않고 입국하는 경우 그 사유를 입국심사관에게 설명하시기 바랍니다.\n3. If you receive an e-Visa, you must enter the Republic of Korea before its expiry date. Please note, however, even if you have the e-Visa, you may be denied entry to the ROK during immigration clearance at the port of entry.\n전자사증을 받은 자는 이 확인서 상의 입국만료일 이전에 출입국관리공무원의 입국심사를 받은 후 대한민국에 입국할 수 있습니다. 다만, 전자사증을 발급받았더라도 입국심사 과정에서 대한민국 입국이 불허될 수 있음을 알려 드립니다."
+   }
+  ]
+ },
+ {
+  "gid": "6355180c30db",
+  "type": "lookup",
+  "question": "For an E-9-3 agriculture worker's Confirmation of Visa Issuance, which document shows the size of the farm, and what can a crop farmer submit instead?",
+  "reference": "A certificate of the farm size issued by the head of the local government's agricultural technology center, or a copy of the Agriculture/Fishery Entity Registration Certificate issued by the head of the National Agricultural Products Quality Management Service. A crop farmer can submit a certified copy of resident registration instead.",
+  "answer": "For an E-9-3 agriculture worker's Confirmation of Visa Issuance, the document that shows the size of the farm is a certificate issued by the head of the relevant agricultural technology center run by a local government [1]. A crop farmer can submit a certified copy of resident registration instead [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-9-3 Agriculture",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nA person who meets the employment requirements defined in the Employment of Foreign Workers Act and plans to work in agriculture or livestock industry\n\n## Visa Issuance Confirmation (CCVI) application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\nA person who meets employment requirements in accordance with the provisions of the Act on Foreign Workers' Employment, who plans to work for an agriculture or livestock industry or services\n\n### Required documents\n① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② A copy of Business Registration Certificate\n③ A copy of Employment Permit and a copy of Standard Labor Contract\n④ A report on workplace assessment\n⑤ A certificate demonstrating the size of farm issued by the head of relevant agricultural technology center run by a local government, or a copy of Agriculture/Fishery Entity Registration Certificate issued by the head of National Agricultural Products Quality Management Service\n* If you are a crop farmer, you can submit a certified copy of resident registration, instead.\n\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee.\n\n### Visa validity and period of stay\nYou can apply for a single-entry visa valid for 3 months.\nPeriods of stay will be granted for up to 3 years.\nFor more information on Alien Registration or Visa Extension, please visit Hi Korea website at www.hikorea.go.kr"
+   }
+  ]
+ },
+ {
+  "gid": "428a7c7b78ac",
+  "type": "no_answer",
+  "question": "What fine does an E-9 worker face for not registering as a foreigner within 90 days of arriving in Korea?",
+  "reference": "Not in the corpus. The Health & Mentality Statement says E-9, E-10 and H-2 holders must register within 90 days, but no fine for missing it is given.",
+  "answer": "An E-9 worker faces consequences such as denial of visa application, cancellation of visa approval, and/or deportation for providing false information on their health statement, but the passages do not specify a fine amount for failing to register as a foreigner within 90 days [1]. The passages state that an applicant must be registered as a foreigner at the immigration office or branch office within 90 days after arriving in Korea if they wish to stay longer than 90 days, but they do not mention the specific fine for not doing so [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Health & Mentality Statement(for E-9, E-10, H-2 Applicants)",
+    "page": 1,
+    "text": "E-9 / E-10 / H-2 Visa Applicants' Health & Mentality Statement This form is to check the E-9, E-10 and H-2 visa applicants' health and mentality.\nAn applicant must fill out this form accurately and truthfully. An applicant will be faced with consequences such as denial of visa application, cancellation of visa approval, and/or deportation if the details on the statement are not true or missed out.\n1) Full Name (As in passport) 2) Date of Birth\n3) Nationality 4) Sex 5) Passport Number\n6) Have you ever had any infectious diseases that threatened the public health before?\nYes □ (Name of Disease : Syphilis, Viral hepatitis type B, Tuberculosis) No □\n7) Have you taken any banned substances(drugs) or been addicted to alcohol in the last 5 years?\nYes □ (Name of Drug : ) No □\n8) Have you ever received medical treatment for mental, emotional, or neurotic disorders? Yes □ (Name of Disorder : ) No □\n9) Have you had any serious diseases or injuries in the last 5 years? Yes □ (Name and recent state : ) No □ NOTE : You must be registered as a foreigner at the immigration office or branch office under the jurisdiction of your residence within 90 days after arriving in Korea if you wish to stay longer than 90 days. At the time of registration, you must submit your medical examination certificate obtained from the designated hospitals by the Korean government. Besides, you must complete the basic training program on law and order set by the government for alien registration.\nDate (Y/M/D) :\nApplicant : (Signature)\nTO : Korean Ambassador(Consul General) to ○ ○ ○ ○ ○"
+   }
+  ]
+ },
+ {
+  "gid": "726c7c471561",
+  "type": "lookup",
+  "question": "For the D-8-4 technology and business startup visa, who issues the OASIS program completion or graduation certificate that can be submitted as proof of points?",
+  "reference": "The head of the Global Investment Center designated by the Minister of Justice.",
+  "answer": "The OASIS program completion or graduation certificate is issued by the head of the Global Investment Center designated by the Minister of Justice of ROK [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-8-4 Technology and Business Startup",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nwho has aquirede degree from a Korean university (Bachelor’s degree from an overseas university) or higher\n\n## Embassy visa application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\nA person acquired a bachelor's degree or higher who is a Corporate founder with intellectual property rights or any equivalent technical skills\n\n### Required documents\n① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② A certified copy of Corporate Register(unabridged) and a copy of Business Registration Certificate\n③ Documents demonstrating that you have either intellectual property right or equivalent skills\n④ Any documents proving points earned through the Points-Based System\n- A copy of Patent Registration Certificate, Utility Model Right Registration Certificate, Design Registration Certificate, Trade Mark Registration Certificate for intellectual property rights holders\n- Patent Candidates must submit application certificate issued by the head of Korea Intellectual Property Office\n- A certificate for completion or graduation of the OASIS program issued by the head of Global Investment Center designated by the Minister of Justice, award winner confirmation letter, official statement of selection, and etc.\n- Other documents that can prove points earned through the Points-Based System\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation.\n\n### Visa validity and period of stay\nYou can apply for a single-entry visa valid for 3 months.\nPeriods of stay for this visa will be granted for up to 1 year.\nFor more information on Alien Registration or Visa extension, please visit Hi Korea website at www.hikorea.go.kr.\n\n## Visa Issuance Confirmation (CCVI) application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\nA person who is a corporate founder with a bachelor's degree or higher and who has intellectual property rights or other equivalent technical skills.\n\n### Required documents\n① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② A certified copy of unabridged Corporate Register and a copy of Business Registration Certificate\n③ Documents demonstrating an applicant having intellectual property rights or equivalent skills\n④ Any documents proving scores earned at Points-Based System\n- A copy of Patent Registration Certificate, Utility Model Right Registration Certificate, Design Registration Certificate, Trade Mark Registration Certificate for intellectual property rights holders\n- A patent candidate must submit application certificate issued by the head of Korea Intellectual Property Office\n- A certificate for completion or graduation of the OASIS program issued by the head of the Global Investment Center designated by the Minister of Justice of ROK, an award winner confirmation letter, an official statement of selection and others.\n- Other documents that can prove scores earned at Points-Based System\n\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee.\n\n### Visa validity and period of stay\nYou can apply for a single-entry visa valid for 3 months.\nPeriods of stay will be granted for up to 1 year.\nFor more information on Alien Registration or Visa Extension, please visit Hi Korea website at www.hikorea.go.kr"
+   }
+  ]
+ },
+ {
+  "gid": "a1cb02f86156",
+  "type": "lookup",
+  "question": "What should a marriage migrant visa applicant submit if they cannot provide proper documentation for the requirements?",
+  "reference": "A statement stating the reason.",
+  "answer": "The applicant should submit a statement stating the reason if they are unable to provide proper documentation [1, 2, 3, 4].",
+  "cited_passages": []
+ },
+ {
+  "gid": "2291a9b4ac7f",
+  "type": "lookup",
+  "question": "Which authority issues apostilles in Japan, and what does it charge?",
+  "reference": "The Ministry of Foreign Affairs in Tokyo, and there is no charge.",
+  "answer": "The Ministry of Foreign Affairs in Tokyo is the designated competent authority that issues apostilles in Japan [2]. There is no charge for the issuance of an apostille when issued by this authority [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korean Immigration Apostille Convention Competent Authorities List",
+    "page": 21,
+    "text": "Price:, 1 = No charge.. Useful Links:, 1 = -"
+   },
+   {
+    "n": 2,
+    "title": "Korean Immigration Apostille Convention Competent Authorities List",
+    "page": 21,
+    "text": "Japan - Competent Authority (Art. 6)\nDesignated Competent Authority(ies):\nThe Ministry of Foreign Affairs in Tokyo"
+   }
+  ]
+ },
+ {
+  "gid": "5c53b4e051cf",
+  "type": "no_answer",
+  "question": "What fine does an E-9 worker face for not registering as a foreigner within 90 days of arriving in Korea?",
+  "reference": "Not in the corpus. The Health & Mentality Statement says E-9, E-10 and H-2 holders must register within 90 days, but no fine for missing it is given.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "3b1ea3ca980d",
+  "type": "table",
+  "question": "Under Table 1 (Detailed Standards for Administrative Sanctions) of the regulation on group e-visa application agencies, what sanction applies to an agency with no sanctions in the last 3 months that averaged fewer than 300 tourists over the last 3 months and whose tourists include 7 to 8 illegal stayers?",
+  "reference": "Suspension of agency operation for 3 months.",
+  "answer": "The sanction that applies is a Suspension (2 months) [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 12,
+    "text": "- 12 - [Table 1] Detailed Standards for Administrative Sanctions Type Number of illegal stayers Violation of Article 4, etc. Rate of illegal stay Cancellation of Designation 11 or more\n• Demanding an unreasonably high fee for acting as a visa application agency\n• Submitting a false document or reporting false information even when it could have been known to be false\n• Occurring absconder incident deliberately or in collusion\n• Lending its name to a non-designated travel agency\n• Having no record of tourist attractions for more than 1 year, or where operation of business is restricted due to membership withdrawal, closure of business, designation revocation, etc.\n• Where the agency had received suspension of agency operation for 6 months in the last 3 months, and was found in violation subject to suspension again\n• Making applications for a foreigner who are not eligible for a group e-Visa\n• Other cases where the degree of violation of obligations set forth in this Regulation is significant 3% or more Suspension (6 months)\n9 ~ 10\n• Where the agency had received a warning or suspension of agency operation in the last 3 months, and was found in violation subject to warning or suspension, a step higher level of sanction shall be imposed\n2.0 ~ less than 3.0% Suspension (3 months)\n7 ~ 8\n1.5 ~ less than 2.0% Suspension (2 months)\n5 ~ 6\n1.0 ~ less than 1.5% Suspension (1 month)\n3 ~ 4\n0.4 ~ less than 1.0% Warning 2\n• Where the violation of general obligations is relatively minor, such as violating obligation to report\n• Nonfulfillment of reasonable orders such as regarding the investigation of actual condition or submission of documents request stated in\nArticle 8\n0.2 ~ less than 0.4%"
+   }
+  ]
+ },
+ {
+  "gid": "092a3e5811ed",
+  "type": "lookup",
+  "question": "After a group e-visa application agency has entered the group members' details, how are the fees paid?",
+  "reference": "The visa fees and electronic payment service fees are paid through the Electronic Payment System.",
+  "answer": "After the input procedure for group members' details is complete, visa fees and electronic payment service fees shall be paid through the Electronic Payment System [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 6,
+    "text": "- 6 -\n3. Where some of the group members who have entered the Republic of Korea fail to depart on the same vessel or airplane with the relevant group, the group leader shall explain the reasons to an immigration control official at the time of departure inspection of the Republic of Korea.\n③ Where a reason occur falling under any of the following subparagraphs, a group e-Visa application agency shall report it to the head of Seoul Immigration Office or to the head of an overseas diplomatic mission within 15 days after the occurrence thereof, and the head of an overseas diplomatic mission, upon receipt of report, shall notify it to the head of Seoul Immigration Office by means of entering the information into the Integrated Visa Information System (IVIS).\n1. Where there is a change in major matters related to a business license or business registration such as representative, business name, business location, etc.\n2. Where normal operation of business is restricted due to business transfer/acquisition, merger, cessation/closure of business, etc.\nArticle 5 (Group e-Visa Application and processing procedures)\n① A Group e-Visa Application Agency shall apply for a group e-Visa by accessing the Visa Portal.\n② A Group e-Visa Application Agency shall, when applying for an e-Visa, enter the personal information accurately, as shown on passport, of a group tour leader as well as of group members either by using the MRP (Machine\n- 7 - Readable Passport) Reader or by entering the information directly: Provided, That where entering the information directly, a passport photo and a copy of passport of a group leader as well as of group members shall be registered at the Visa Portal after having them scanned.\n③ After the input procedure referred to in paragraph (2) is complete, visa fees and electronic payment service fees shall be paid through the Electronic Payment System.\n④ A domestic designated travel agency shall check the visa application information that a group e-Visa application agency has entered and shall confirm its attraction by accessing the Visa portal after signing up for membership at the Visa Portal: Provided, That this shall not apply where an application agency of countries except for China applies for a group e-Visa.\n⑤ The head of Seoul Immigration Office shall grant an application number for each tourist group whose application it has received and shall notify online the relevant application agency of the decision on whether it is approved after reviewing the visa eligibility of the group members, records of tourist group attractions and the rate of illegal stayers of a group e-Visa application agency.\n⑥ Where a group leader has changed or if any spelling mistakes are found in group members’ personal information after a group e-Visa application is complete, it shall be immediately corrected or a request shall be made to the head of Seoul Immigration Office to correct it: Provided, That the changed group leader shall hold a valid visa of the Republic of Korea.\n⑦ A Group e-Visa Application Agency shall take responsibility for any disadvantages incurred by mistyping the personal information referred to in"
+   }
+  ]
+ },
+ {
+  "gid": "74209f545a6b",
+  "type": "multi_hop",
+  "question": "I have an employment recommendation (gold card) for a high-tech field. What does the guide list to submit for the E-7-1 e-visa, and what visa validity and period of stay will I get?",
+  "reference": "The visa application form, a copy of the passport, a standard photo and the fee, plus the employment recommendation letter (or gold card) issued by the Small and Medium Business Association or the Minister of Trade, Industry and Energy (KOTRA). Other documents are submitted when applying for alien registration after arrival. The visa is multiple-entry and valid for 3 years, and the stay is granted for up to 3 years.",
+  "answer": "For the E-7-1 e-visa, you must submit a Visa Application Form (Form No. 21), a copy of your passport, a standard format photo, and an employment recommendation letter or gold card [5]. You can apply for a multiple-entry visa valid for 3 years, with periods of stay granted for up to 3 years [6].",
+  "cited_passages": [
+   {
+    "n": 5,
+    "title": "Visa guide: E-7-1 Professionals",
+    "page": 0,
+    "text": "① Visa Application Form (Form No. 21), a copy of passport, a photo in a standard format, fee\n② A recommendation letter of employment (or gold card) issued by Small and Medium Business Association or Minister of Trade, Industry and Energy (KOTRA)\n※ You must submit other documents when applying for a foreign registration after the arrival at ROK. Others documents include a document of the establishment of public or private institute organization, a copy of employment contract, a letter of guarantee, a document of requirements\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee."
+   },
+   {
+    "n": 6,
+    "title": "Visa guide: E-7-1 Professionals",
+    "page": 0,
+    "text": "You can apply for a multiple-entry visa valid for 3 years.\nPeriods of stay will be granted for up to 3 years.\nFor more information on Alien Registration or Visa Extension, please visit Hi Korea website at www.hikorea.go.kr."
+   }
+  ]
+ },
+ {
+  "gid": "a8c9ba56c849",
+  "type": "lookup",
+  "question": "On the visa application form for people who already have a visa issuance confirmation, what passport change does the applicant have to declare?",
+  "reference": "Whether the passport has been changed within the recent 3 months.",
+  "answer": "The applicant must notify the concerned visa office of changes in their passport information if they received Korean visa approval and then had a new passport issued due to loss or damage [2]. Specifically, the applicant must declare the updated passport details so that accurate personal information can be reflected [3].",
+  "cited_passages": [
+   {
+    "n": 2,
+    "title": "(NEW) VISA APPLICATION FORM(Dec 10, 2020)",
+    "page": 5,
+    "text": "1. 위 기재사항과 관련하여 자세한 내용은 별지로 작성하거나 관련 서류를 추가로 제출할 수 있습니다.\nIf extra space is needed to complete any item, record on a separate sheet of paper or submit relevant documents which could support the application.\n2. 대한민국 사증을 승인받은 후 분실 또는 훼손 등의 사유로 여권을 새로 발급받은 경우에는, 정확한 개인정보를 반영할 수 있도록 변경된 여권정보를 사증처리기관에 통보해야 합니다.\nIf you received Korean visa approval, and have new passport issued thereafter in lieu of lost/damaged passpor t, you must notify the concerned visa office of changes in your passport information.\n3. 사증을 발급받았더라도 대한민국 입국 시 입국거부 사유가 발견될 경우에는 대한민국으로의 입국이 허가되지 않을 수 있습니다.\nPossession of a visa does not entitle the bearer to enter the Republic of Korea upon arrival at the port of entry if he/she is found inadmissible.\n4. 「출입국관리법 시행규칙」 제9조제1항에 따라 C 계열 사증소지자는 입국 후에 체류자격을 변경할 수 없습니다. Please note that category C visa holders are not able to change their status of stay after their entry into the Repu\nblic of Korea in accordance with Article 9(1) of the Enforcement Regulations of the Immigration Act.\n5. 허위사실 기재 또는 허위서류 제출이 확인되는 경우에는 사증발급ㆍ체류허가가 취소되며, 형사처벌ㆍ입국금지의 대상이 될 수 있습니다."
+   },
+   {
+    "n": 3,
+    "title": "(NEW) APPLICATION FOR CERTIFICATE OF VISA ELIGIBILITY",
+    "page": 5,
+    "text": "(제5쪽 / Page5)\n유의사항 / Notice\n1. 위 기재사항과 관련하여 자세한 내용은 별지로 작성하거나 관련 서류를 추가로 제출할 수 있습니다.\nIf extra space is needed to complete any item, record on a separate sheet of paper or submit relevant documents which could support your application.\n2. 대한민국 사증을 승인받은 후 분실 또는 훼손 등의 사유로 여권을 새로 발급받은 경우에는, 정확한 개인정보를 반영할 수 있도록 변경된 여권정보를 사증처 리기관에 통보하여야 합니다.\nIf you received Korean visa approval, and have new passport issued thereafter in lieu of lost/damaged passport, you must notify the concerned visa office of changes in your passport information.\n3. 「출입국관리법 시행규칙」 제9조제1항에 따라 C 계열 사증소지자는 입국 후에 체류자격을 변경할 수 없습니다. Please note that category C visa holders are not able to change their status of stay after their entry into Republic of Korea in accordance with\nArticle 9(1) of the Enforcement Regulations of the Immigration Act.\n4. 사증심사에 필요한 관련 서류 제출 요구에 따르지 않는 경우, 사증심사가 지연되거나 신청이 불허 될 수 있습니다.\nFailure to submit all required documents may cause delay or denial of a visa\n5. 사증발급인정서 발급의 신청 결과는 ‘대한민국 비자포털(www.visa.go.kr)’에서 확인*하여야 하며, 사증발급인정서 발급 거부통지서를 문서로 교 부받고자 하는 경우에는 청·사무소 또는 출장소에 직접 방문하여 신청하여야 합니다.\n* 확인 방법 : 비자포털 초기화면 좌측 ‘조회/발급’-‘진행현황 조회 및 출력’-‘비자발급인정서’를 선택하고 접수번호, 여권번호, 성명, 생년월일 입 력 후 조회 Visa applicants must check online on the Korea Visa Portal website* (www.visa.go.kr) for visa application results. To receive the disapproval notice in written form, visa applicants must visit the immigration office and apply in person.\n* How to check results: click‘Check Application Status’located on the left side of the Visa Portal main display - click‘Check Application Status & Print’- select‘Confirmation of Visa Issuance’ and input information in the blanks.\n공용란 / FOR OFFICIAL USE ONLY 기본사항 체류자격 체류기간 사증종류 단수ㆍ복수(2회, 3회 이상)\n접수사항 접수일자 접수번호 처리과 허가사항 허가일자 인정번호 고지사항 결 재 담당자 가 [ ]\n부 [ ]\n<심사의견>\n처리절차 / Procedure 인정신청서 작성 Application for Ceritificate è 접 수 Reception è 심 사 Assessment è 결과통지 Notification è 사증신청 및 발급 Visa Application and Issuance 신청인 또는 초청인 Applicant or Inviting person 처 리 기 관 출입국ㆍ외국인청 (사무소ㆍ출장소)\nImmigration Office 처 리 기 관 (좌동)\nImmigration Office 처 리 기 관 (좌동)\nImmigration Office 처 리 기 관 (재외공관)\nDiplomatic Mission"
+   }
+  ]
+ },
+ {
+  "gid": "f849c0248c6b",
+  "type": "lookup",
+  "question": "An administrative staff member of a foreign embassy in Korea applies for an A-2 visa at a Korean embassy. What kind of visa can they get and how long can they stay?",
+  "reference": "They can apply for a single-entry or a multiple-entry visa and may stay in Korea until the end of their assignment.",
+  "answer": "An administrative staff member of a foreign embassy in Korea applies for an A-2 visa at a Korean embassy. They can get either a single-entry or multiple-entry visa and will be allowed to stay in Korea until the end of their assignment [6].",
+  "cited_passages": [
+   {
+    "n": 6,
+    "title": "Visa guide: A-2 Foreign Government Official",
+    "page": 0,
+    "text": "You can apply for a single-entry or multiple-entry visa, and you will be allowed to stay in Korea until the end of your assignment."
+   }
+  ]
+ },
+ {
+  "gid": "bff52f81bad6",
+  "type": "lookup",
+  "question": "According to the e-visa issuance confirmation, by when must an e-visa holder enter Korea, and does the e-visa guarantee entry?",
+  "reference": "They must enter Korea before the e-visa's expiry date. It does not guarantee entry, because the holder may still be denied entry during immigration clearance at the port of entry.",
+  "answer": "An e-visa holder must enter the Republic of Korea before its expiry date [1, 2, 3]. Even with an e-visa, entry may be denied during immigration clearance at the port of entry [1, 2, 3].",
+  "cited_passages": []
+ },
+ {
+  "gid": "966f008a9425",
+  "type": "multi_hop",
+  "question": "A university lecturer is invited to give lectures in Korea for less than 90 days. Which visa applies if they receive no compensation other than flight and accommodation, and if they are paid, what contract or invitation document must the C-4 application include?",
+  "reference": "With no compensation other than flight and accommodation, they are eligible for a Short-term General (C-3-1) visa. If paid (C-4), they submit an employment contract on providing lectures or public speeches, or an invitation card that indicates the lecture fees.",
+  "answer": "If the university lecturer receives no compensation other than flight and accommodation, they are eligible for a Short-term General (C-3-1) visa instead of the C-4 visa [1]. If they receive payment, they must include an employment contract or an invitation card indicating lecture fees in their application [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: C-4 Short-Term Employee",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nA person who plans to visit for a short-term employment such as temporary show, advertising·modeling, lecturing·speeching, research, technology consulting, etc.\n\n## Embassy visa application\n### Embassy visa application — Case 4\n\n#### Eligibility\nYou are eligible to apply for this visa if you are\n\nA person who is applicable for a Professor(E-1) visa or a Foreign National of Special Ability (E-7) visa, and plans to give a lecture, give public speeches, or research for less than 90 days on the basis of a contract for profits as an expert in a particular area or a university instructor\n※ If the lecturer or speaker is not compensated other than flight and accommodation, he/she is eligible for a Short-term General (C-3-1) visa.\n\n#### Required documents\n① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② An employment contract (on providing lectures·public speeches) or an invitation card that indicates lecture fees and others (a document of request for visa issuance cooperation)\n③ A copy of degree certificate and proof of employment\n④ A document related to the establishment of an inviting academic institution (a copy of Business Registration Certificate or a certified copy of unabridged Corporate Register and others)\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation.\n\n#### Visa validity and period of stay\nYou can apply for a multiple-entry visa valid for 3 months under the Visa Exemption Agreement between two countries.\nPeriod of stay for this visa will be granted for up to 90 days."
+   }
+  ]
+ },
+ {
+  "gid": "6a49b98d4e1d",
+  "type": "lookup",
+  "question": "For an E-10-2 fishing ship crew visa, how long must the seafarer labor contract be and how large must the vessel be?",
+  "reference": "The contract must be for 6 months or more, with an employer operating a ship of 20 tons or heavier.",
+  "answer": "For an E-10-2 fishing ship crew visa, the seafarer labor contract must be for 6 months or more, and the vessel must be 20 tons or heavier [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-10-2 Fishing ship crew",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nA person who is a seafarer assistant and has signed a seafarer labor contract of 6 months or more with an employer engaging in a business (operating fishing vessel of 20 tons or heavier) in accordance with the Regulation on Fixed net Fishery and Inshore Fishery using Motor Vessel\n\n## Visa Issuance Confirmation (CCVI) application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\nA sailor who falls under the provisions of Article 2(6) of the Seafarers Act, who has signed a seafarer labor contract of 6 months or more with an employer engaging in a business( a ship of 20 tons or heavier) defined in Sub-section (1) of Article 8(1) [Fixed net Fishery] and sub-section (1) of Article 43(1) [ Inshore Fishery using Motor Vessel] of the Fishery Act\n\n### Required documents\n① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② A copy standard labor contract\n③ A letter of guarantee\n④ A Certificate of Report on Foreign Crew Employment issued by the head of local Maritime Affairs ＆ Port Administration\n⑤ An employment recommendation letter\n⑥ A fishery license and a certificate of fishing boat, a copy of coastal fishing license in accordance with the Fishery Act.\nPlease submit the document only if you are a first time applier or wish to change the registration information.\n⑦ A copy of Ship Inspection Report\n\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee.\n\n### Visa validity and period of stay\nYou can apply for a single-entry visa valid for 3 months.\nPeriods of stay will be granted for up to 1 year.\nFor more information on Alien Registration or Visa Extension, please visit Hi Korea website at www.hikorea.go.kr"
+   }
+  ]
+ },
+ {
+  "gid": "1e55dfd56efa",
+  "type": "lookup",
+  "question": "What should a marriage migrant visa applicant submit if they cannot provide proper documentation for the requirements?",
+  "reference": "A statement stating the reason.",
+  "answer": "If an applicant cannot provide proper documentation to meet visa requirements, they must submit a statement stating the reason [2]. This applies whether the conditions are not met or the necessary documents for proving the conditions are missing [3]. The same requirement is reiterated for applicants of the F-2-3 visa [4].",
+  "cited_passages": [
+   {
+    "n": 2,
+    "title": "Personal Details Form for F-2-3 Marriage Visa Application",
+    "page": 7,
+    "text": "<붙임2>\n(제1쪽 / Page1)\n결혼 배경 진술서 (Personal Details Form for F-2-3 Visa)\n<유의사항>\n이 질문지는 영주자격 소지자의 배우자(F-2-3) 사증발급 또는 체류자격 변경허가를 신청하는 신청인이 작성합니다. 원칙적으로 이 서류에 기재된 정보에 따라 심사가 진행되니 신청인께서는 가능한 모든 질문에 답변하고, 영사 및 출입국관리공무원이 심사 시 참고할 수 있도록 답변과 관련된 입증서류가 있는 경우 모두 제출하시기 바랍니다. 답변이 누락되거나 입증서류가 제출되지 않는 경 우 심사가 지연되거나 불허될 수 있습니다.\n만약 허가에 필요한 요건을 갖추지 못하였거나 요건입증에 필요한 서류를 갖추지 못하였음에도 요건을 충족한 것으로 보이기 위해 허위의 사실을 기재하거나 위조된 서류를 제출하는 것은 관련 법령에 의거 처벌될 뿐만 아니라, 한국 입국이 금지될 수 있습니다.\n요건을 갖추지 못하였거나 요건을 입증하는 서류를 갖추지 못하였다면, 그 사유를 기재한 사유서를 제출하여 주시기 바랍니다.\n귀하가 제공하신 정보는 개인정보 보호법에 따라 보호되며, 다른 법령에 근거가 없는 한 출입국관리법에 따른 업무에만 활용됩니다.\n<NOTE>\nThis form is to be completed by a person applying for a marriage visa(F-2-3). In principle, the evaluation of the visa application will be based on the information provided on this personal details form. Therefore, the questions must be answered to the best of the applicant's knowledge and submit any relevant documentation that can be provided to the consul or the immigration officer as reference. If a necessary answer has been omitted or any relevant documentation has not been submitted, the evaluation process for the application may be delayed or disapproved.\nIf conditions are not met for the visa or if falsified information and/or documentation are forged to meet the conditions required to receive the visa, you will be not only penalized under the relevant Act but also banned from entering the Republic of Korea. If you are unable to provide proper documentation, submit a statement stating the reason.\nThe information you provide in this form will be protected according to the Personal Information Protection Law, and will only be used for matters governed by the Immigration Act. 1. 인적사항 / PERSONAL INFORMATION\n1.1 여권에 기재된 성명 / Your full name (as shown in your passport)\n성 / Famliy name 명 / Given name\n1.2 성별 / Sex [ ] 남 / Male [ ] 여 / Female\n1.3 현지 언어로 성명을 기재하시오 / Your full name written in your native language 성 / Famliy name 명 / Given name\n1.4 과거에 다른 이름을 사용하였던 적이 있습니까?(있다면 그 이름과 변경한 이유를 기재하시오 / Do you have other names you have been known by?(If yes, write the names and explain why you changed the names)\n[ ] 예 / Yes [ ] 아니오 / No"
+   },
+   {
+    "n": 3,
+    "title": "Marriage Statement for F-2-3 Visa",
+    "page": 1,
+    "text": "<붙임2>\n(제1쪽 / Page1)\n결혼 배경 진술서 (Personal Details Form for F-2-3 Visa)\n<유의사항>\n이 질문지는 영주자격 소지자의 배우자(F-2-3) 사증발급 또는 체류자격 변경허가를 신청하는 신청인이 작성합니다. 원칙적으로 이 서류에 기재된 정보에 따라 심사가 진행되니 신청인께서는 가능한 모든 질문에 답변하고, 영사 및 출입국관리공무원이 심사 시 참고할 수 있도록 답변과 관련된 입증서류가 있는 경우 모두 제출하시기 바랍니다. 답변이 누락되거나 입증서류가 제출되지 않는 경 우 심사가 지연되거나 불허될 수 있습니다.\n만약 허가에 필요한 요건을 갖추지 못하였거나 요건입증에 필요한 서류를 갖추지 못하였음에도 요건을 충족한 것으로 보이기 위해 허위의 사실을 기재하거나 위조된 서류를 제출하는 것은 관련 법령에 의거 처벌될 뿐만 아니라, 한국 입국이 금지될 수 있습니다.\n요건을 갖추지 못하였거나 요건을 입증하는 서류를 갖추지 못하였다면, 그 사유를 기재한 사유서를 제출하여 주시기 바랍니다.\n귀하가 제공하신 정보는 개인정보 보호법에 따라 보호되며, 다른 법령에 근거가 없는 한 출입국관리법에 따른 업무에만 활용됩니다.\n<NOTE>\nThis form is to be completed by a person applying for a marriage visa(F-2-3). In principle, the evaluation of the visa application will be based on the information provided on this personal details form. Therefore, the questions must be answered to the best of the applicant's knowledge and submit any relevant documentation that can be provided to the consul or the immigration officer as reference. If a necessary answer has been omitted or any relevant documentation has not been submitted, the evaluation process for the application may be delayed or disapproved.\nIf conditions are not met for the visa or if falsified information and/or documentation are forged to meet the conditions required to receive the visa, you will be not only penalized under the relevant Act but also banned from entering the Republic of Korea. If you are unable to provide proper documentation, submit a statement stating the reason.\nThe information you provide in this form will be protected according to the Personal Information Protection Law, and will only be used for matters governed by the Immigration Act. 1. 인적사항 / PERSONAL INFORMATION\n1.1 여권에 기재된 성명 / Your full name (as shown in your passport)\n성 / Famliy name 명 / Given name\n1.2 성별 / Sex [ ] 남 / Male [ ] 여 / Female\n1.3 현지 언어로 성명을 기재하시오 / Your full name written in your native language 성 / Famliy name 명 / Given name\n1.4 과거에 다른 이름을 사용하였던 적이 있습니까?(있다면 그 이름과 변경한 이유를 기재하시오 / Do you have other names you have been known by?(If yes, write the names and explain why you changed the names)\n[ ] 예 / Yes [ ] 아니오 / No"
+   },
+   {
+    "n": 4,
+    "title": "Personal Details Form for F-2-3 Visa Application",
+    "page": 1,
+    "text": "<붙임2>\n(제1쪽 / Page1)\n결혼 배경 진술서 (Personal Details Form for F-2-3 Visa)\n<유의사항>\n이 질문지는 영주자격 소지자의 배우자(F-2-3) 사증발급 또는 체류자격 변경허가를 신청하는 신청인이 작성합니다. 원칙적으로 이 서류에 기재된 정보에 따라 심사가 진행되니 신청인께서는 가능한 모든 질문에 답변하고, 영사 및 출입국관리공무원이 심사 시 참고할 수 있도록 답변과 관련된 입증서류가 있는 경우 모두 제출하시기 바랍니다. 답변이 누락되거나 입증서류가 제출되지 않는 경 우 심사가 지연되거나 불허될 수 있습니다.\n만약 허가에 필요한 요건을 갖추지 못하였거나 요건입증에 필요한 서류를 갖추지 못하였음에도 요건을 충족한 것으로 보이기 위해 허위의 사실을 기재하거나 위조된 서류를 제출하는 것은 관련 법령에 의거 처벌될 뿐만 아니라, 한국 입국이 금지될 수 있습니다.\n요건을 갖추지 못하였거나 요건을 입증하는 서류를 갖추지 못하였다면, 그 사유를 기재한 사유서를 제출하여 주시기 바랍니다.\n귀하가 제공하신 정보는 개인정보 보호법에 따라 보호되며, 다른 법령에 근거가 없는 한 출입국관리법에 따른 업무에만 활용됩니다.\n<NOTE>\nThis form is to be completed by a person applying for a marriage visa(F-2-3). In principle, the evaluation of the visa application will be based on the information provided on this personal details form. Therefore, the questions must be answered to the best of the applicant's knowledge and submit any relevant documentation that can be provided to the consul or the immigration officer as reference. If a necessary answer has been omitted or any relevant documentation has not been submitted, the evaluation process for the application may be delayed or disapproved.\nIf conditions are not met for the visa or if falsified information and/or documentation are forged to meet the conditions required to receive the visa, you will be not only penalized under the relevant Act but also banned from entering the Republic of Korea. If you are unable to provide proper documentation, submit a statement stating the reason.\nThe information you provide in this form will be protected according to the Personal Information Protection Law, and will only be used for matters governed by the Immigration Act. 1. 인적사항 / PERSONAL INFORMATION\n1.1 여권에 기재된 성명 / Your full name (as shown in your passport)\n성 / Famliy name 명 / Given name\n1.2 성별 / Sex [ ] 남 / Male [ ] 여 / Female\n1.3 현지 언어로 성명을 기재하시오 / Your full name written in your native language 성 / Famliy name 명 / Given name\n1.4 과거에 다른 이름을 사용하였던 적이 있습니까?(있다면 그 이름과 변경한 이유를 기재하시오 / Do you have other names you have been known by?(If yes, write the names and explain why you changed the names)\n[ ] 예 / Yes [ ] 아니오 / No"
+   }
+  ]
+ },
+ {
+  "gid": "7969be06a8f5",
+  "type": "lookup",
+  "question": "For the D-8-4 technology and business startup visa, who issues the OASIS program completion or graduation certificate that can be submitted as proof of points?",
+  "reference": "The head of the Global Investment Center designated by the Minister of Justice.",
+  "answer": "The OASIS program completion or graduation certificate for the D-8-4 visa is issued by the head of the Global Investment Center designated by the Minister of Justice of ROK [1]. It can also be issued by the head of the Global Investment Center designated by the Minister of Justice [2].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-8-4 Technology and Business Startup",
+    "page": 0,
+    "text": "① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② A certified copy of unabridged Corporate Register and a copy of Business Registration Certificate\n③ Documents demonstrating an applicant having intellectual property rights or equivalent skills\n④ Any documents proving scores earned at Points-Based System\n- A copy of Patent Registration Certificate, Utility Model Right Registration Certificate, Design Registration Certificate, Trade Mark Registration Certificate for intellectual property rights holders\n- A patent candidate must submit application certificate issued by the head of Korea Intellectual Property Office\n- A certificate for completion or graduation of the OASIS program issued by the head of the Global Investment Center designated by the Minister of Justice of ROK, an award winner confirmation letter, an official statement of selection and others.\n- Other documents that can prove scores earned at Points-Based System\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee."
+   },
+   {
+    "n": 2,
+    "title": "Visa guide: D-8-4 Technology and Business Startup",
+    "page": 0,
+    "text": "① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② A certified copy of Corporate Register(unabridged) and a copy of Business Registration Certificate\n③ Documents demonstrating that you have either intellectual property right or equivalent skills\n④ Any documents proving points earned through the Points-Based System\n- A copy of Patent Registration Certificate, Utility Model Right Registration Certificate, Design Registration Certificate, Trade Mark Registration Certificate for intellectual property rights holders\n- Patent Candidates must submit application certificate issued by the head of Korea Intellectual Property Office\n- A certificate for completion or graduation of the OASIS program issued by the head of Global Investment Center designated by the Minister of Justice, award winner confirmation letter, official statement of selection, and etc.\n- Other documents that can prove points earned through the Points-Based System\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation."
+   }
+  ]
+ },
+ {
+  "gid": "01a684adab2d",
+  "type": "table",
+  "question": "A Chinese national whose son is a diplomat stationed in Korea wants to visit him on her own with a C-3-1 visa applied for at the embassy. Which documents are required?",
+  "reference": "The visa application form (Form No. 17), passport, a standard photo and the fee; an official letter from the Minister of Foreign Affairs of her country asking for cooperation; and a certificate of family relation and other documents proving the family relationship (such as a household register booklet or hukou).",
+  "answer": "The required documents are a Visa Application Form (Form No. 17), passport, a photo in a standard format, fee, and an official document verifying you are overseas Koreans with foreign nationality [4]. A certificate of family relation and any documents proving family relationship are also required for accompanied family members [2]. The head of Korean diplomatic missions abroad may request additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation [4].",
+  "cited_passages": [
+   {
+    "n": 2,
+    "title": "Visa guide: C-3-1 Short-Term General",
+    "page": 0,
+    "text": "① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② Certificate of family relation and any documents proving family relationship for an accompanied family members\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation."
+   },
+   {
+    "n": 4,
+    "title": "Visa guide: C-3-1 Short-Term General",
+    "page": 0,
+    "text": "① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② An official document of the country of citizenship verifying you are overseas Koreans with foreign nationality\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation."
+   }
+  ]
+ },
+ {
+  "gid": "04534985dca2",
+  "type": "lookup",
+  "question": "What must a D-2-6 exchange student submit to show they have completed at least one semester?",
+  "reference": "Proof of enrollment from a university.",
+  "answer": "To show they have completed at least one semester, an applicant must submit documents proving their enrollment from a university [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-2-6 Exchange Student",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nAn exchange student who plans to study for a required course/curriculum in accordance with an agreement of exchange program between corresponding universities\n\n## Embassy visa application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\nAn exchange student who plans to study, according to a degree exchange program between universities\n\n### Required documents\n① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee\n② A copy of Business Registration Certificate (or Registration Number Certificate) of a respective education institute\n③ Standard Acceptance Letter* (issued by the dean/president of the university)\n④ Original copy of documents proving your financial ability to support yourself\n- When submitting a parent's bank statement, family relation certificate is required to submit.\n⑤ Recommendation letter issued by the head of your university\n⑥ Documents proving that you are an exchange student (official documents of the host university, exchange student agreement between universities)\n⑦ Documents proving that you have completed at least one semester (Proof of enrollment from a university)\n\n※ The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation.\n\n### Visa validity and period of stay\nYou can apply for a single-entry visa valid for 3 months.\nPeriods of stay for this visa will be granted for up to 1 year.\nFor more information on Alien Registration or Visa extension, please visit Hi Korea website at www.hikorea.go.kr."
+   }
+  ]
+ },
+ {
+  "gid": "3d1567e502c7",
+  "type": "no_answer",
+  "question": "How much money must a parent have in the bank to get an F-1-13 visa as the parent of an international student?",
+  "reference": "Not in the corpus. The F-1-13 page asks for a balance statement showing that the standard amount has been deposited for at least 1 month, but does not state the amount.",
+  "answer": "The passages do not specify the exact amount of money required, only that the applicant must provide a Balance Statement proving that the standard amount of money has been deposited for at least 1 month [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-1-13 Parents of international student",
+    "page": 0,
+    "text": "## Overview (eligible applicants / activities)\n\nParents of an international student who has educated at an academic institute lower than high school\n\n## Visa Issuance Confirmation (CCVI) application\n\n### Eligibility\nYou are eligible to apply for this visa if you are\n\nA family member (closer than second degree) of an international student paying for his/her own tuition who plans to enroll or is currently enrolled in an academic institution, including an elementary, middle/junior high, high school, or international school in accordance with 「Elementary and Secondary Education Act」or a foreign academic institution in accordance with 「Special Act on Establishment and Management of Foreign Educational Institutions in Free Economic Zones and Jeju International City」, who meets visa requirements such as sufficient funds for his/her stay\n\n### Required documents\n① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② An acceptance letter or Certificate of Enrollment\n③ Documents demonstrating family relations in both original and translated copy (i.e. Household register booklet, Birth Certificate)\n④ Documents demonstrating the living expenses (i.e. a Balance Statement proving that the standard amount of money has been deposited for at least 1 month)\n\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee.\n\n### Visa validity and period of stay\nYou can apply for a single-entry visa valid for 3 months.\nPeriods of stay will be granted for up to 1 year.\nFor more information on Alien Registration or Visa Extension, please visit Hi Korea website at www.hikorea.go.kr"
+   }
+  ]
+ },
+ {
+  "gid": "b7a75a6b5a95",
+  "type": "lookup",
+  "question": "When a D-6 religious worker applying through Confirmation of Visa Issuance is invited by a religious group, who has to submit a copy of the Registration Number Certificate?",
+  "reference": "Both the religious denomination and the unit must submit it.",
+  "answer": "The applicant's organization must submit a copy of the Registration Number Certificate when invited by a religious group. [1]",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-6 Religious Worker",
+    "page": 0,
+    "text": "① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo in a standard format\n② A Statement of Invitation\n③ A dispatch order from an applicant's organization\n④ A copy of permission for the establishment of religious organization or social welfare service organization\n⑤ A copy of Registration Number Certificate\n- If you are invited by a religious group, both religious denomination and unit are required to submit\n⑥ Documents demonstration a respective organization supports the living expenses of an applicant in ROK\n※ If a representative is hired, he/she must submit a Power of Attorney from an applicant, his/her employment certificate and A copy of ID Card.\n※ The head of Immigration Office may request for additional documents if it is deemed necessary to review the purpose of entry, validity of an invitation, and qualification of an inviting organization or an invitee."
+   }
+  ]
+ }
+]

@@ -1,0 +1,827 @@
+[
+ {
+  "gid": "df9339487e63",
+  "type": "paraphrase",
+  "question": "on the corona health condition report form what do i tick if i didnt have any of the symptoms in the last 2 weeks?",
+  "reference": "Mark the \"No Symptoms\" box.",
+  "answer": "You should mark the \"No Symptoms\" box [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Health Condition Report Form",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "fa123bc81b2f",
+  "type": "lookup",
+  "question": "A retired Chinese immigrant investor over 55 is applying for a C-3-1 visa through Confirmation of Visa Issuance (Case 2). What proof of assets is needed?",
+  "reference": "Documents showing financial assets worth at least 300 million KRW, such as deposits or real estate.",
+  "answer": "For a retired immigrant investor over 55 applying for a C-3-1 visa through Confirmation of Visa Issuance (Case 2), proof of assets worth at least 300 million KRW is needed [1]. This includes deposits and assets such as real estate [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: C-3-1 Short-Term General",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "185fa429b196",
+  "type": "lookup",
+  "question": "What proof of tuition payment does a D-4-6 private institute trainee submit for Confirmation of Visa Issuance?",
+  "reference": "A receipt of full payment of tuition or admission.",
+  "answer": "A receipt of full payment of tuition or admission must be submitted [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-4-6 General Trainee (Private Institute)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "2a001374257e",
+  "type": "lookup",
+  "question": "How much does an apostille cost in Australia?",
+  "reference": "60 Australian dollars for a single-sided page document and 80 Australian dollars for a binding (documents of two or more pages).",
+  "answer": "In Australia, the cost for an apostille is $60 Australian dollars for a single-sided page document and $80 Australian dollars for a binding document (two or more pages) [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korean Immigration Apostille Convention Competent Authorities List",
+    "page": 2
+   }
+  ]
+ },
+ {
+  "gid": "b2807a364afe",
+  "type": "lookup",
+  "question": "For an E-3 researcher applying through Confirmation of Visa Issuance, what kind of visa is issued and what is the maximum period of stay?",
+  "reference": "A multiple-entry visa valid for the period of stay, and the stay is granted for up to 5 years.",
+  "answer": "For an E-3 researcher applying through Confirmation of Visa Issuance (CCVI), a multiple-entry visa is issued [1]. The maximum period of stay granted is up to 5 years [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-3 Researcher",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "318c7db83409",
+  "type": "no_answer",
+  "question": "How long can I stay in Korea per visit on a C-3-8 short-term visa for overseas Koreans?",
+  "reference": "Not in the corpus. The C-3-8 page only says it is for overseas Koreans with foreign nationality below age 60, with no period of stay.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "19acaded6934",
+  "type": "lookup",
+  "question": "For an F-2-2 visa for a child born to a Korean and a foreign parent (Case 2), what documents prove the relationship between the Korean parent and the child?",
+  "reference": "Documents proving a biological relation, such as DNA test results or birth certificates.",
+  "answer": "Documents proving the relation between a Korean national and a respective underage child, which include documents proving a biological relation such as the DNA test results or Birth Certificates, are required [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-2-2 Underage children of Korean National",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "871cd98c5da9",
+  "type": "lookup",
+  "question": "How long is the E-7 e-visa for a person with a gold card employment recommendation in a high-tech field valid, and how long can they stay?",
+  "reference": "A multiple-entry visa valid for 3 years, with a period of stay of up to 3 years.",
+  "answer": "For an E-7 e-visa applicant with a gold card employment recommendation in a high-tech field, you can apply for a multiple-entry visa valid for 3 years [1]. The period of stay will be granted for up to 3 years [2].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-7-1 Professionals",
+    "page": 0
+   },
+   {
+    "n": 2,
+    "title": "Visa guide: E-7-2 Semi-professionals",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "2d8b202fc108",
+  "type": "lookup",
+  "question": "A Chinese national entered Korea on March 10, 2016 with a long-term visa that was granted in February 2016. At what point do they have to submit the TB certificate?",
+  "reference": "When applying for alien registration.",
+  "answer": "A Chinese national who entered Korea on March 10, 2016, with a long-term visa granted before that date must submit the TB certificate when applying for alien registration [1]. This requirement applies because the individual is a national of a high TB-burden country (China) and entered after March 2, 2016 [1]. The submission deadline is tied to the specific action of applying for alien registration rather than a fixed date [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Requirement for Tuberculosis (TB) Test Certificate Submission",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "608790f25330",
+  "type": "lookup",
+  "question": "Which documents are attached when a Chinese travel agency is put forward for designation as a group e-visa application agency?",
+  "reference": "A certificate of permission for travel agency operation and a business license (equivalent documents are used for the Southeast Asian region).",
+  "answer": "For a Chinese travel agency, the relevant document is the certificate of permission for travel agency operation [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 3
+   }
+  ]
+ },
+ {
+  "gid": "8298d6aebb27",
+  "type": "lookup",
+  "question": "When applying for an F-1-24 household assistant visa at an embassy, what must the employer show about why a household assistant is needed?",
+  "reference": "A document proving they have a child under age 13, or that they need a household assistant because their spouse has medical issues or is employed.",
+  "answer": "To prove the need for a household assistant, the applicant must provide a document showing they have a child under age 13, or that their spouse has medical issues or is employed [1]. The head of Korean diplomatic missions may also request additional documents depending on the country's conditions [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-1-24 Household assistant of professional",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "e2a02b7fbe8c",
+  "type": "lookup",
+  "question": "What consequences does the E-2 applicant's health statement warn of for wilfully giving incorrect answers?",
+  "reference": "Consequences such as visa denial, visa cancellation and/or deportation.",
+  "answer": "If you willfully fill in the blanks with incorrect information, you will face consequences such as visa denial, visa cancellation, and/or deportation, etc. [1]",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Self Health Assessment Report(For E-2 Applicants)",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "d8ac615edb9e",
+  "type": "lookup",
+  "question": "For an F-1-23 household assistant visa applied for at an embassy, what must the foreign investor employer's investment and company look like?",
+  "reference": "The investor must have invested $100,000 or more in a high-tech information business and hold D-8, F-2 or F-5 status, and must be a CEO or executive of a high-tech company with at least three Korean full-time workers.",
+  "answer": "The foreign investor must have invested $100,000 or more in high-tech information business and acquired a status of stay as a Corporate/Foreign Investor (D-8), Resident (F-2), or Permanent Resident (F-5) [1]. The employer must be the CEO or an executive of a high-tech company with at least three Korean full-time workers [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-1-23 Household assistant of high-tech investor",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "77b373805ca2",
+  "type": "lookup",
+  "question": "What can happen to an E-9, E-10 or H-2 applicant if the details on their Health & Mentality Statement are untrue or left out?",
+  "reference": "Denial of the visa application, cancellation of the visa approval, and/or deportation.",
+  "answer": "An applicant will be faced with consequences such as denial of visa application, cancellation of visa approval, and/or deportation [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Health & Mentality Statement(for E-9, E-10, H-2 Applicants)",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "e88aa9c56469",
+  "type": "no_answer",
+  "question": "How many hours can I stay in the airport transit area on a C-3-10 direct transit visa?",
+  "reference": "Not in the corpus. The C-3-10 page only says the visa allows transfer to a connecting flight without passing immigration.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "bd1cbcc13225",
+  "type": "table",
+  "question": "What details are listed for each group member on the Confirmation of e-Visa Issuance for a group?",
+  "reference": "A serial number (No.), nationality, English name, gender, date of birth, passport number and remarks.",
+  "answer": "The details listed for each group member on the Confirmation of e-Visa Issuance include Nationality, English Name, Gender, Date of Birth, and Passport No. [1] [2]",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "CONFIRMATION OF E-VISA ISSUANCE",
+    "page": 1
+   },
+   {
+    "n": 2,
+    "title": "CONFIRMATION OF E-VISA ISSUANCE FOR GROUP",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "05845c007ac5",
+  "type": "lookup",
+  "question": "If the group leader changes after a group e-visa application is complete, what must happen and what condition must the new leader meet?",
+  "reference": "The change must be corrected immediately, or a request made to the head of the Seoul Immigration Office to correct it, and the new group leader must hold a valid visa of the Republic of Korea.",
+  "answer": "If the group leader changes after a group e-Visa application is complete, it must be immediately corrected or a request must be made to the head of Seoul Immigration Office to correct it [1]. The new group leader must hold a valid visa of the Republic of Korea [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 7
+   }
+  ]
+ },
+ {
+  "gid": "96a513093cda",
+  "type": "lookup",
+  "question": "For an E-6-1 visa, who issues the employment recommendation letter for an advertising or fashion model?",
+  "reference": "The Minister of Culture, Sports and Tourism.",
+  "answer": "The employment recommendation letter for an advertising/fashion model is issued by the Minister of Culture, Sports, and Tourism of ROK [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-6-1 Artist",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "963614571543",
+  "type": "paraphrase",
+  "question": "im from mongolia on a short term visa in korea and just want to extend my short stay a bit, do i need the tb certificate for that?",
+  "reference": "No. Short-term status holders who apply to extend their short-term stay are exempt from submitting the TB certificate.",
+  "answer": "No, you are exempt from submitting the TB test certificate because Mongolia is listed as a high TB-burden country and your exemption applies to nationals of such countries who already submitted the certificate when applying for alien registration on March 2, 2016 or after [2].",
+  "cited_passages": [
+   {
+    "n": 2,
+    "title": "Requirement for Tuberculosis (TB) Test Certificate Submission",
+    "page": 2
+   }
+  ]
+ },
+ {
+  "gid": "0f5e9384b43c",
+  "type": "lookup",
+  "question": "In what language and lettering must the Korean visa application form be filled out?",
+  "reference": "In block letters, in either English or Korean.",
+  "answer": "The applicant must write in block letters either in English or Korean [1]. The applicant must write in block letters either in English or Korean [2]. The applicant must write in block letters either in English or Korean [3]. The applicant must write in block letters either in English or Korean [4]. The applicant must write in block letters either in English or Korean [5]. The applicant must write in block letters either in English or Korean [6].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korean Immigration Visa Application Form Instructions and Template",
+    "page": 1
+   },
+   {
+    "n": 2,
+    "title": "KOREA VISA PORTAL",
+    "page": 1
+   },
+   {
+    "n": 3,
+    "title": "KOREA VISA PORTAL",
+    "page": 1
+   },
+   {
+    "n": 4,
+    "title": "KOREA VISA PORTAL",
+    "page": 1
+   },
+   {
+    "n": 5,
+    "title": "(NEW) VISA APPLICATION FORM(Dec 10, 2020)",
+    "page": 1
+   },
+   {
+    "n": 6,
+    "title": "(NEW) APPLICATION FOR CERTIFICATE OF VISA ELIGIBILITY",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "6b062b437427",
+  "type": "table",
+  "question": "What documents are required for an F-5-5 big investor visa at an embassy?",
+  "reference": "The visa application form (Form No. 17), passport, a standard photo and the fee; a copy of the Certificate of FDI Company Registration; a letter of guarantee; a copy of the Business Registration Certificate or a certified copy of the unabridged Corporate Register; and Receipts for Earned Income Tax Withholding for at least 5 Korean employees or a Certificate of Income Amount, issued by a Tax Office.",
+  "answer": "The required documents for an F-5-5 big investor visa at an embassy are: 1. Visa Application Form (Form No. 17), passport, a photo in a standard format, and fee [1]. A copy of Certificate of FDI Company Registration [1]. A letter of guarantee [1]. A copy of Business Registration Certificate or a certified copy of unabridged Corporate Register [1]. 5. Receipts for Earned Income Tax Withholding (issued by a Tax Office) of at least 5 Korean employees or Certificate of Income Amount (issued by a Tax Office) [1]. The head of Korean diplomatic missions abroad may request additional documents depending on the condition of the country of residence/jurisdiction if deemed necessary for visa evaluation [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-5-5 Big Investor",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "52785f4feb16",
+  "type": "lookup",
+  "question": "What must a foreign company have imported for its production employees to be eligible for the D-3-13 industrial trainee (plant) visa?",
+  "reference": "Industrial facilities or plants worth US$500,000 or more, with the employee needing job training to manage those facilities or plants.",
+  "answer": "A foreign company must have imported industrial facilities or plants worth of US$500,000 or more [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-3-13 Industrial Trainee (Plant)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "4690cf6cb5cb",
+  "type": "lookup",
+  "question": "How much money must an ordinary D-2-2 bachelor's degree applicant (Case 1, not a Ministry of National Defense consigned student) prove they have when applying at an embassy?",
+  "reference": "Enough to cover one year's tuition fee and one year's living expenses, shown with an original document.",
+  "answer": "An ordinary D-2-2 bachelor's degree applicant must prove financial ability to support themselves for one-year tuition fee and living expenses for a year [1]. The specific amount in won is not stated in the passages.",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-2-2 Bachelor's Degree",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "68b8151c03d9",
+  "type": "lookup",
+  "question": "For a D-2-5 research student applying at an embassy, which documents can prove financial ability, and who has to submit the original final education document?",
+  "reference": "An original document proving financial ability, such as a bank statement or a receipt of research allowance (a family relation certificate is also needed if a parent's bank statement is used). The original document showing the final level of education is required only for those who have earned a master's degree or higher.",
+  "answer": "For a D-2-5 research student applying at an embassy, documents that can prove financial ability include a bank statement or a receipt of research allowance [1]. The original copy of the document indicating the final level of education must be submitted by those who earned a master's degree or higher [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-2-5 Research Study",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "956784cd8047",
+  "type": "lookup",
+  "question": "What kinds of performers does the E-6-2 hotel and adult entertainment visa cover, and what visa validity and period of stay are granted?",
+  "reference": "People who perform or do entertainment activities at a hotel or an adult entertainment business defined in the Tourism Promotion Act, such as pop musicians, instrument players, circus artists or magicians. The visa is multiple-entry and valid for 1 year, and the stay is granted for up to 1 year.",
+  "answer": "The visa covers a pop musician, instrument player, circus artists or magician who plans to perform or engage in entertainment activities in a hotel or an adult entertainment business defined in the Tourism Promotion Act [1]. Any form of activities such as music, fine arts, and literature, professional acting, or professional entertainment in accordance with the Public Performance Act are not included [1]. You can apply for a multiple-entry visa valid for 1 year, and periods of stay will be granted for up to 1 year [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-6-2 Hotel and Adult Entertainment",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "21d9d63f3409",
+  "type": "lookup",
+  "question": "What phone number does the real estate investor guide give for the Korea Investment Immigration Center?",
+  "reference": "032-740-7888 or 7788.",
+  "answer": "The phone numbers provided for the Korea Investment Immigration Center are 032-740-7888 and 7788 [1, 2, 3, 4].",
+  "cited_passages": []
+ },
+ {
+  "gid": "7fbe4b2862b0",
+  "type": "lookup",
+  "question": "Under which article of the Immigration Act can someone be deported for giving false information on the marriage personal details form?",
+  "reference": "Article 46 of the Immigration Act.",
+  "answer": "Someone can be deported in accordance with Article 46 of the immigration Act [1, 2, 3, 4].",
+  "cited_passages": []
+ },
+ {
+  "gid": "70a70d216f46",
+  "type": "no_answer",
+  "question": "How many years must I have been a company executive to qualify for the F-4-16 corporate executive visa?",
+  "reference": "Not in the corpus. The F-4-16 page only says it is for overseas Koreans who are a CEO, board member or manager of a company, with no length of service.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "2339c8471fd4",
+  "type": "lookup",
+  "question": "What must a foreign company have imported for its production employees to be eligible for the D-3-13 industrial trainee (plant) visa?",
+  "reference": "Industrial facilities or plants worth US$500,000 or more, with the employee needing job training to manage those facilities or plants.",
+  "answer": "A foreign company must have imported industrial facilities or plants worth US$500,000 or more for its production employees to be eligible for the D-3-13 industrial trainee (plant) visa [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-3-13 Industrial Trainee (Plant)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "22c9f1460e01",
+  "type": "lookup",
+  "question": "If my passport is lost or damaged and I get a new one after my Korean visa is approved, what must I do?",
+  "reference": "You must notify the visa office concerned of the changes in your passport information.",
+  "answer": "You must notify the concerned visa office of changes in your passport information so that accurate personal information can be reflected [1, 2, 3, 4, 5, 6].",
+  "cited_passages": []
+ },
+ {
+  "gid": "f083b7261d71",
+  "type": "table",
+  "question": "What documents does a D-9-2 industrial machinery technician submit at an embassy?",
+  "reference": "The visa application form (Form No. 17), passport, a standard photo and the fee; the equipment introduction contract or other proof of the industrial equipment introduction contract; a dispatch order; a copy of the inviting company's Business Registration Certificate or a certified copy of its unabridged Corporate Register; and a certificate of annual tax payment.",
+  "answer": "Applicants must submit the following documents at an embassy: Visa Application Form (Form No. 17), passport, a photo in a standard format, fee; Equipment Introduction Contract or any documents proving industrial equipment introduction contract; Dispatch order; A copy of Business Registration Certificate or a certified copy of unabridged Corporate Register of the inviting company; and Certificate of annual tax payment [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-9-2 Technician (Industrial Machinery)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "b550fa5038f7",
+  "type": "lookup",
+  "question": "Does a domestic designated travel agency have to check and confirm group e-visa applications filed by agencies from countries other than China?",
+  "reference": "No. The domestic designated travel agency's check and confirmation on the Visa Portal does not apply when an application agency from a country other than China applies for a group e-visa.",
+  "answer": "No, a domestic designated travel agency does not have to check and confirm group e-visa applications filed by agencies from countries other than China. Passage [1] states that this requirement shall not apply where an application agency of countries except for China applies for a group e-Visa [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 6
+   }
+  ]
+ },
+ {
+  "gid": "0dabcec212b5",
+  "type": "paraphrase",
+  "question": "i lease a salt farm and want to hire a worker on E-9-4. what do i give instead of a salt farming permit since i dont own it?",
+  "reference": "As a salt farm leaseholder you must submit a lease contract and a confirmation of sea salt farming issued by the mayor or the head of the local village.",
+  "answer": "For a salt farm leaseholder, you must submit a lease contract and a confirmation of sea salt farming issued by the mayor or the head of a local village instead of a permit [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-9-4 Fishery",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "50e89062a72e",
+  "type": "lookup",
+  "question": "What must be attached to an Application for Pre-investigation of Foreign Investor (real estate)?",
+  "reference": "One copy of an ID card.",
+  "answer": "1 copy of ID card must be attached [1, 2].",
+  "cited_passages": []
+ },
+ {
+  "gid": "07852f6b47b2",
+  "type": "no_answer",
+  "question": "Is there a maximum age for a child applying for a D-4-3 elementary, middle or high school student visa?",
+  "reference": "Not in the corpus. The D-4-3 page covers students at schools at high-school level or below but sets no age limit.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "5f39f440fb46",
+  "type": "lookup",
+  "question": "What phone number does the real estate investor guide give for the Korea Investment Immigration Center?",
+  "reference": "032-740-7888 or 7788.",
+  "answer": "The Korea Investment Immigration Center phone number is 032-740-7888, 7788 [1]. This same phone number is also listed in passages [2], [3], and [4] [2][3][4].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korea Investment Immigration Center Real Estate Investor Scheme Guide",
+    "page": 3
+   },
+   {
+    "n": 2,
+    "title": "Investment Guide for Investors for the Real Estate",
+    "page": 1
+   },
+   {
+    "n": 3,
+    "title": "Korean Immigration Official Documents: Letter of Attorney and Pre-Investigation Form",
+    "page": 12
+   },
+   {
+    "n": 4,
+    "title": "Korean Immigration Official Documents: Letter of Attorney and Pre-Investigation Form",
+    "page": 12
+   }
+  ]
+ },
+ {
+  "gid": "a89b9faaf4b6",
+  "type": "table",
+  "question": "Which documents does the D-9-3 shipbuilding technician guide list for an embassy application?",
+  "reference": "The visa application form (Form No. 17), passport, a standard photo and the fee; a copy of the trade contract; a dispatch order; a copy of the inviting company's Business Registration Certificate or a certified copy of its unabridged Corporate Register; and a certificate of annual tax payment.",
+  "answer": "The D-9-3 shipbuilding technician guide lists the following documents for an embassy application: Visa Application Form (Form No. 17), passport, a photo in a standard format, fee; a copy of trade contract; dispatch order; a copy of Business Registration Certificate or a certified copy of unabridged Corporate Register of the inviting company; and Certificate of annual tax payment [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-9-3 Technician (Ship Building)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "da1f40243538",
+  "type": "table",
+  "question": "Which documents does the D-9-3 shipbuilding technician guide list for an embassy application?",
+  "reference": "The visa application form (Form No. 17), passport, a standard photo and the fee; a copy of the trade contract; a dispatch order; a copy of the inviting company's Business Registration Certificate or a certified copy of its unabridged Corporate Register; and a certificate of annual tax payment.",
+  "answer": "The required documents for an embassy visa application are: ① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee [1] ② A copy of trade contract [1] ③ Dispatch order [1] ④ A copy of Business Registration Certificate or a certified copy of unabridged Corporate Register of the inviting company [1] ⑤ Certificate of annual tax payment [1]",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-9-3 Technician (Ship Building)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "950ad6232861",
+  "type": "multi_hop",
+  "question": "On a D-4-2 general trainee visa, which application route does a trainee invited by the Ministry of National Defense use compared with an intern at a foreign investment firm, and how do their periods of stay differ?",
+  "reference": "The trainee invited by the Ministry of National Defense applies at the embassy and is granted a stay of up to 1 year initially. The intern at a foreign investment firm applies through Confirmation of Visa Issuance and is granted a stay of up to 6 months. Both get a single-entry visa valid for 3 months.",
+  "answer": "A trainee invited by the Ministry of National Defense uses the Embassy visa application route [1]. An intern at a foreign investment firm uses the Visa Issuance Confirmation (CCVI) application route [1]. The period of stay for the Embassy visa application is granted initially for up to 1 year, while the period of stay for the CCVI application is granted for up to 6 months [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-4-2 General Trainee (Others)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "c5ad0586d0bb",
+  "type": "paraphrase",
+  "question": "im ethnic korean living in china and got picked in the work and visit visa lottery. for the H-2-5 visa itself, what proof of winning do i bring to the consulate, and how long is the visa good for?",
+  "reference": "Bring the receipt of application or a printout of the Winner's Card for the lottery. The H-2-5 visa is multiple-entry and valid for 3 years, and the first period of stay is granted for up to 1 year.",
+  "answer": "You must bring a Receipt of application (or a printout of Winner's Card for Lottery) [1]. You can apply for a multiple-entry visa valid for 3 years [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: H-2-5 Work and Visit (By lottery)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "71a785960739",
+  "type": "lookup",
+  "question": "What consequences does the E-2 applicant's health statement warn of for wilfully giving incorrect answers?",
+  "reference": "Consequences such as visa denial, visa cancellation and/or deportation.",
+  "answer": "The E-2 applicant's health statement warns that wilfully filling in blanks with incorrect information may result in visa denial, visa cancellation, and/or deportation [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Self Health Assessment Report(For E-2 Applicants)",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "ada5aa3a0353",
+  "type": "no_answer",
+  "question": "Is there a maximum age for a child applying for a D-4-3 elementary, middle or high school student visa?",
+  "reference": "Not in the corpus. The D-4-3 page covers students at schools at high-school level or below but sets no age limit.",
+  "answer": "The provided passage does not state a maximum age limit for children applying for a D-4-3 student visa. The eligibility criteria focus on being an international student invited to study on a full scholarship or having a designated guardian, along with acceptance to an eligible educational organization [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-4-3 Student (Elementary, Middle, High School)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "fdaadcfb1c53",
+  "type": "table",
+  "question": "What documents are required for an F-5-5 big investor visa at an embassy?",
+  "reference": "The visa application form (Form No. 17), passport, a standard photo and the fee; a copy of the Certificate of FDI Company Registration; a letter of guarantee; a copy of the Business Registration Certificate or a certified copy of the unabridged Corporate Register; and Receipts for Earned Income Tax Withholding for at least 5 Korean employees or a Certificate of Income Amount, issued by a Tax Office.",
+  "answer": "The required documents are: ① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee [1] ② A copy of Certificate of FDI Company Registration [1] ③ A letter of guarantee [1] ④ A copy of Business Registration Certificate or a certified copy of unabridged Corporate Register [1] ⑤ Receipts for Earned Income Tax Withholding (issued by a Tax Office) of at least 5 Korean employees or Certificate of Income Amount (issued by a Tax Office) [1] The head of Korean diplomatic missions abroad may request for additional documents depending on the condition of the country of residence/jurisdiction if it is deemed necessary for visa evaluation [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-5-5 Big Investor",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "7b6b8eb34ebc",
+  "type": "no_answer",
+  "question": "What fine does a D-10 job seeker pay if caught working illegally while looking for a job?",
+  "reference": "Not in the corpus. The Plan for Seeking Employment form only says that people who work illegally while seeking jobs will be punished, without stating a fine.",
+  "answer": "The passages state that persons who have violated applicable laws and regulations by illegally working while seeking jobs are supposed to be punished [1], but they do not specify the fine amount. The figure in won is not stated.",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Plans for Seeking Employment",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "ba09041a33e5",
+  "type": "no_answer",
+  "question": "I had hepatitis A a few years ago. Will that get my E-2 visa refused?",
+  "reference": "Not in the corpus. The E-2 applicant's health statement asks whether you have had infectious diseases such as viral hepatitis A, but does not say how a past infection affects the visa decision.",
+  "answer": "Passage [1] states that applicants must truthfully fill in blanks regarding infectious diseases such as Viral hepatitis A on the Self Health Assessment Report for E-2 applicants, and willful incorrect information can lead to visa denial, cancellation, or deportation [1]. However, passage [1] does not specify whether a past history of Hepatitis A automatically results in refusal if reported truthfully.",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Self Health Assessment Report(For E-2 Applicants)",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "df1c3a682e20",
+  "type": "lookup",
+  "question": "A Chinese national entered Korea on March 10, 2016 with a long-term visa that was granted in February 2016. At what point do they have to submit the TB certificate?",
+  "reference": "When applying for alien registration.",
+  "answer": "The individual must submit the TB certificate when applying for alien registration [1]. This is because they entered Korea on March 2, 2016 or after and hold a long-term visa granted on March 1, 2016 or before [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Requirement for Tuberculosis (TB) Test Certificate Submission",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "ce0075c72865",
+  "type": "multi_hop",
+  "question": "At an embassy, what initial period of stay does an F-3-1 dependent get if the principal is a D-8 investor in a Free Economic Zone, compared with the dependent of an ordinary D-1 to E-7 visa holder?",
+  "reference": "Dependents of a D-8 investor in a Free Economic Zone (Case 2) get an initial stay of up to 2 years; dependents of other D-1 to E-7 holders (Case 1) get an initial stay of up to 1 year.",
+  "answer": "An F-3-1 dependent of a D-8 investor in a Free Economic Zone is granted an initial period of stay for up to 2 years [1]. In comparison, the dependent of an ordinary D-1 to E-7 visa holder is granted an initial period of stay for up to 1 year [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-3-1 Dependent Family",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "ab6944a3ed41",
+  "type": "no_answer",
+  "question": "I had hepatitis A a few years ago. Will that get my E-2 visa refused?",
+  "reference": "Not in the corpus. The E-2 applicant's health statement asks whether you have had infectious diseases such as viral hepatitis A, but does not say how a past infection affects the visa decision.",
+  "answer": "If you willfully fill in the blanks with incorrect information on the E-2 Applicant's Health Statement, you will face consequences such as visa denial, visa cancellation, and/or deportation [1]. The form includes a section to disclose if you have ever had any infectious diseases that threatened the Public health, such as Cholera, Viral hepatitis A, Tuberculosis, AIDS, etc [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Self Health Assessment Report(For E-2 Applicants)",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "c294eab54ffa",
+  "type": "table",
+  "question": "Which Asia-Pacific countries or regions were still eligible for visa-free entry to Korea after April 13, 2020?",
+  "reference": "Guam, New Caledonia and Palau.",
+  "answer": "The Asia-Pacific countries and regions still eligible for visa-free entry to Korea after April 13, 2020 are Guam, New Caledonia, Palau, United States, Guyana, Monaco, Vatican City State, San Marino, Andorra, Albania, and Slovenia [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Announcement on Temporary Suspension of Visa-waiver and Visa-free entry programs",
+    "page": 2
+   }
+  ]
+ },
+ {
+  "gid": "0b451d604013",
+  "type": "lookup",
+  "question": "For an E-3 researcher applying through Confirmation of Visa Issuance, what kind of visa is issued and what is the maximum period of stay?",
+  "reference": "A multiple-entry visa valid for the period of stay, and the stay is granted for up to 5 years.",
+  "answer": "You can apply for a multiple-entry visa valid for your period of stay [1]. Periods of stay will be granted for up to 5 years [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-3 Researcher",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "f5871a46e494",
+  "type": "table",
+  "question": "On the visa application form, who counts as a family member when you list family staying in Korea or travelling with you?",
+  "reference": "The applicant's spouse, children, parents and siblings.",
+  "answer": "On the visa application form, family members staying in Korea or travelling with the applicant are defined as the spouse, children, parents, and siblings of the applicant [1]. This scope applies to both the section asking if there are any family members staying in Korea [1] and the section asking if the applicant is travelling with any family members [1]. The same definition of family members is used for both questions across all provided passages [2][3][4][5].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korean Immigration Visa Application Form Instructions and Template",
+    "page": 3
+   },
+   {
+    "n": 2,
+    "title": "(NEW) APPLICATION FOR CERTIFICATE OF VISA ELIGIBILITY",
+    "page": 3
+   },
+   {
+    "n": 3,
+    "title": "KOREA VISA PORTAL",
+    "page": 3
+   },
+   {
+    "n": 4,
+    "title": "(NEW) VISA APPLICATION FORM(Dec 10, 2020)",
+    "page": 3
+   },
+   {
+    "n": 5,
+    "title": "KOREA VISA PORTAL",
+    "page": 3
+   }
+  ]
+ },
+ {
+  "gid": "aad03185d139",
+  "type": "lookup",
+  "question": "What must be attached to an Application for Pre-investigation of Foreign Investor (real estate)?",
+  "reference": "One copy of an ID card.",
+  "answer": "To an Application for Pre-investigation of Foreign Investor (real estate), one copy of the applicant's ID card must be attached [1]. One copy of the applicant's ID card must be attached [2].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korean Immigration Official Documents: Letter of Attorney and Pre-Investigation Form",
+    "page": 9
+   },
+   {
+    "n": 2,
+    "title": "Korean Immigration Official Documents: Letter of Attorney and Pre-Investigation Form",
+    "page": 9
+   }
+  ]
+ },
+ {
+  "gid": "8ce631462822",
+  "type": "lookup",
+  "question": "Under the declaration of accommodation scheme, what must registered accommodation businesses do with a short-term foreign guest's information?",
+  "reference": "They must relay the foreign guest's information (e.g. passport information) via an information network designated by the Ministry of Justice.",
+  "answer": "Accommodation facilities registered as a lodging business in line with Public Health Control Act or tourist accommodation business, city home-stay services for foreign tourists or Hanok experience business in line with Tourism Promotion Act should relay information of foreign guest (e.g. passport information) via an information network designated by the Ministry of Justice [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Introducing declaration of accommodation by short-term foreign residents",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "3dd2cc1e2c7d",
+  "type": "lookup",
+  "question": "How much does an apostille cost in Australia?",
+  "reference": "60 Australian dollars for a single-sided page document and 80 Australian dollars for a binding (documents of two or more pages).",
+  "answer": "The cost is $60 Australian dollars for a single-sided page document and $80 Australian dollars for a binding (documents of two or more pages) [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korean Immigration Apostille Convention Competent Authorities List",
+    "page": 2
+   }
+  ]
+ },
+ {
+  "gid": "9a9ea64f91ae",
+  "type": "lookup",
+  "question": "In which currency do you enter your expected travel expenses on the Korea Visa Portal e-form?",
+  "reference": "US dollars (USD).",
+  "answer": "You enter your expected travel expenses in US dollars on the Korea Visa Portal e-form [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "User Manual for Electronic Form (for Visal Portal Users)",
+    "page": 14
+   }
+  ]
+ },
+ {
+  "gid": "b7abb06d8693",
+  "type": "lookup",
+  "question": "Does a domestic designated travel agency have to check and confirm group e-visa applications filed by agencies from countries other than China?",
+  "reference": "No. The domestic designated travel agency's check and confirmation on the Visa Portal does not apply when an application agency from a country other than China applies for a group e-visa.",
+  "answer": "No. A domestic designated travel agency shall check and confirm the visa application information that a group e-Visa application agency has entered, provided that this shall not apply where an application agency of countries except for China applies for a group e-Visa [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 6
+   }
+  ]
+ },
+ {
+  "gid": "fd4a516500d7",
+  "type": "table",
+  "question": "Which documents does the H-2-1 guide list for Embassy Case 6, a person who has made a remarkable contribution to Korea?",
+  "reference": "The visa application form (Form No. 17), passport, a standard photo and the fee; an official document of the country of citizenship verifying that the applicant is an overseas Korean with foreign nationality; and a certificate of medal or commendation, or an award certificate, awarded by a Minister of the central government.",
+  "answer": "The required documents for Embassy visa application — Case 6 are: ① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee [1] ② Official document of the country of citizenship verifying you are overseas Koreans with foreign nationality [1] ③ Certificate of medal/commendation or award certificate awarded by the Minister of the central government [1]",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: H-2-1 Work and Visit Family Connection",
+    "page": 0
+   }
+  ]
+ }
+]

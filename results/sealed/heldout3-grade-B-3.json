@@ -1,0 +1,492 @@
+[
+ {
+  "gid": "ba3c977b556d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "E-1.md, CCVI Case 2: \"You can apply for a multiple-entry visa valid for your period of stay. Periods of stay will be granted for up to 5 years.\""
+ },
+ {
+  "gid": "00182d43a4c8",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Eligibility and the same-as-principal rule are right, but the answer never says how many entries (single-entry, from the E-1 e-visa); the \"up to 1 year\" is taken from the F-3-1 embassy section and labelled as e-visa.",
+  "evidence": "F-3-1.md e-visa: \"A spouse or minor child of a Professor (E-1) ... visa applicants\"; \"same number of entries and the length of stay as a principal applicant\"; E-1.md e-visa: \"single-entry visa valid for 3 months. Periods of stay will be granted for up to 1 year.\""
+ },
+ {
+  "gid": "9bce4b575f48",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Unanswerable: the corpus gives no amount, but the answer does not say so and instead presents the \"standard amount ... for at least 1 month\" requirement as the answer.",
+  "evidence": "F-1-13.md: \"a Balance Statement proving that the standard amount of money has been deposited for at least 1 month\" (no figure given)"
+ },
+ {
+  "gid": "11c38f4eb08c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 1f9dd47d0d65 p2: \"validity extension of single-entry visas ... (from March 1 to June 30, 2015) from the current three months to six months\""
+ },
+ {
+  "gid": "5f45d3281c40",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Main answer (yes, Certificate of Health with TB result from a mission-designated hospital, valid one year) is right, but the last sentence says the E-9-5 holder must attach it \"when applying for the e-visa\"; the applicant is applying at the embassy and the e-visa note belongs to a different route.",
+  "evidence": "DOC 336de610abfb p2: \"A Certificate of Health including TB test result (Attachment 1, valid for one year) issued by a hospital designated by Korean diplomatic missions\"; p3: \"The same applies to visa applicants with Visa Issuance Confirmation; e-visa applicants attach the certificate as a supporting document\""
+ },
+ {
+  "gid": "68abf0f45b24",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-2-6.md: \"Documents proving that you have completed at least one semester (Proof of enrollment from a university)\""
+ },
+ {
+  "gid": "8731a540e4a2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "H-2-7.md embassy: \"② Official document of the country of citizenship verifying you are overseas Koreans with foreign nationality ③ Criminal record certificate ④ Physical Condition Sheet\""
+ },
+ {
+  "gid": "ce4ee4d814b2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 1ebf85caa52b p1: \"Official and Ordinary Passports (2 countries) Jordan, Turkmenistan\""
+ },
+ {
+  "gid": "fa1813d31b5e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 80df70fc488a p1: \"Have you visited or stayed in Hubei or Wuhan, China within 14 days prior to application?\""
+ },
+ {
+  "gid": "86d628c93332",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 00a9469f00fc p2: \"you must enter the Republic of Korea before its expiry date ... even if you have the e-Visa, you may be denied entry to the ROK during immigration clearance\""
+ },
+ {
+  "gid": "3a005de43657",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 1f9dd47d0d65 p2: \"from the current three months to six months - Persons subject to the extension are allowed to enter ... even after the visa expiration date\""
+ },
+ {
+  "gid": "b69971fd839a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 1ebf85caa52b p1: \"Official and Ordinary Passports (2 countries) Jordan, Turkmenistan\""
+ },
+ {
+  "gid": "709091590e62",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 45ad877e4898 p13: \"planned number of visits ... fees are calculated based on\"; \"different visa application fees are incurred between more than 90 days and 90 days or less\""
+ },
+ {
+  "gid": "ecd9952c9a5a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b48153dede7c p2: \"Visa-free Countries 34 ... Australia\"; B-2-1.md: \"Australia(90days)\""
+ },
+ {
+  "gid": "cd109c739a56",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "B-2-1.md/B-2-2.md/B-1.md: \"United Nations (LAISSEZ-PASSER) passport, you are allowed to enter Korea without a visa and stay ... up to 30 days\" (the nationality remark is read as a caveat about which page was shown)"
+ },
+ {
+  "gid": "61065fd4a73b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-2.md: \"The visa holder is not permitted to extend or change his/her visa.\""
+ },
+ {
+  "gid": "6065bf79920b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "E-7-2.md Case 1: Form No. 17 etc.; \"Official documents from a foreign diplomatic mission in Korea requesting for cooperation\"; \"An employment contract\"; \"Documents proving the level of your education and career\""
+ },
+ {
+  "gid": "80f008cf2c1e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "E-10-1.md: only \"seafarer labor contract of 6 months or more ... coast-wide passenger ... cargo transport service\"; no tonnage"
+ },
+ {
+  "gid": "34f505fcbcf9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC dceb1a06e238 p12: \"free to work, study, and involve in economic activities, however, you must not engage in any speculative behavior ...\""
+ },
+ {
+  "gid": "52136a22c824",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Main answer (most recent visit) is right, but the claim that the same requirement is on the general visa application form (re visits in the last 5 years) is unsupported; that form only asks whether you travelled to Korea in the last 5 years.",
+  "evidence": "DOC ebb358d8436f p3: \"If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.\"; DOC 78db7641ce7e 8.6: \"Has the applicant travelled to Korea in the last 5 years ? ... please provide details of any visits to Korea ( ) times\" (no most-recent rule)"
+ },
+ {
+  "gid": "e3dfca2357f6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bb553b933f21 p1: \"went into force as of 10 December 2020\""
+ },
+ {
+  "gid": "508de2643525",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "E-7-1.md e-visa: \"Visa Application Form (Form No. 21), a copy of passport, a photo ..., fee\"; \"recommendation letter of employment (or gold card) ... (KOTRA)\"; \"multiple-entry visa valid for 3 years. Periods of stay ... up to 3 years.\""
+ },
+ {
+  "gid": "d19adcdb28eb",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Main answer (application may be denied) is right, but the claim that this rule \"applies specifically when the applicant is under 17\" is wrong; the under-17 line is a separate note about a guardian signature.",
+  "evidence": "DOC 78db7641ce7e p5: \"※ Failure to provide name and signature may result in your application being denied.\" / separate: \"Signature of Parent or Legal Guardian is required for a person under 17 years of age\""
+ },
+ {
+  "gid": "c8b37c4b0fba",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC ebb358d8436f p1: \"If you are unable to provide proper documentation, submit a statement stating the reason.\""
+ },
+ {
+  "gid": "aa2b65996030",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-4.md e-visa: \"invited by the local company(inviter) for commercial purpose, with history of entering Korea for more than 3 times as short-term visitor(C-3) visa since Jan. 1st, 2012. ※ ... must not have any history of illegal stay or criminal case\""
+ },
+ {
+  "gid": "06c051e2afa5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p5: \"have new passport issued thereafter in lieu of lost/damaged passport, you must notify the concerned visa office of changes in your passport information.\""
+ },
+ {
+  "gid": "93376157da9b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 06a10683e48f p1: \"You must be registered as a foreigner ... within 90 days after arriving in Korea\" (no fine stated anywhere; the only fines in the corpus are for accommodation declaration, DOC bb553b933f21)"
+ },
+ {
+  "gid": "0aa56c84e035",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC dceb1a06e238 p7: \"CHANGE OF STATUS OF SOJOURN / EXTENSION OF SOJOURN PERIOD / APPLICATION FOR CONFIRMATION OF VISA ISSUANCE / PRE-INVESTIGATION\""
+ },
+ {
+  "gid": "961ccf910602",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Main answer (visit the immigration office in person) is right for CCVI, but it adds the diplomatic-office route, which is the rule for embassy visa applications, not for a CCVI refusal.",
+  "evidence": "DOC b7359bf7bf77 p5: \"To receive the disapproval notice in written form, visa applicants must visit the immigration office and apply in person.\"; DOC 78db7641ce7e p5: \"...must visit the diplomatic office and apply in person.\""
+ },
+ {
+  "gid": "8ae556daf799",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bf96aac2845d p1: \"1st month ... 6th month\"; \"Financing Plan for Living Costs: Cash, Deposit, Credit card, Remittance\""
+ },
+ {
+  "gid": "39bb5d6dc325",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-6.md: \"invited by a company or an organization designated by the Minister of Justice of ROK as a preferential company\" (no criteria)"
+ },
+ {
+  "gid": "894fb3dbc8cc",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 02997dfa266b p1: \"expand the eligibility for multiple entry visas starting from December 3, 2018\""
+ },
+ {
+  "gid": "4c6a708e344e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a0ab242b1eec p1: \"The Re-Entry Permit Exemption which has been suspended since June 1, 2020 will be reimplemented as of April 1, 2022\""
+ },
+ {
+  "gid": "ca211fb11876",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "A-2.md Case 1: \"Administrative, technical or service staff of a foreign diplomatic mission\"; \"single-entry or multiple-entry visa, and you will be allowed to stay in Korea until the end of your assignment.\""
+ },
+ {
+  "gid": "1f0a0e492b5f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Second sentence cites the E-9/E-10/H-2 form, but the same 90-day registration rule is on the E-2 form, so it is true for E-2.",
+  "evidence": "DOC d624741b2dc8 p1: \"within 90 days after your arrival ... You MUST submit your Health Certificate obtained from the hospital which has been designated by the Korean Government.\""
+ },
+ {
+  "gid": "ecbec4c47092",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-9-4.md: \"A person signing up for hiring Korean workers is eligible ... investment of 200 million KRW or more.\""
+ },
+ {
+  "gid": "ab96fdb21e42",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-10.md: \"It only allows you to transfer to a connecting flight. You cannot go through immigration with the visa to enter the Republic of Korea.\""
+ },
+ {
+  "gid": "61acab01ddb7",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 00a9469f00fc p2: \"you will not have to apply for a visa at a Korean diplomatic mission\"; \"If you do not bring the document with you, you will need to explain your reason(s) to the immigration officer.\""
+ },
+ {
+  "gid": "38b5ee32df9e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a0ab242b1eec p3: \"Fee reduction : 20% discount for using e-Application service on HiKorea\""
+ },
+ {
+  "gid": "7793b4ab87c0",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "B-1.md: \"APEC Business Travel Card holders entering Korea are granted Short-Term Business (C-3-4) status and allowed to stay in Korea for up to 90 days.\""
+ },
+ {
+  "gid": "6dfb3d95454d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 6bc97a64a6e3 p1: \"Application for Medical Examination Exemption Certificate for Re-entry Permit is no longer available.\""
+ },
+ {
+  "gid": "04411cb5c6aa",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Lists the three requirements but states the TOPIK requirement as absolute, leaving out its exclusion (bachelor's degree or higher in Korea, or training at a company pledging 5+ hours/month Korean education and a translator per 100 trainees).",
+  "evidence": "D-3-12.md: \"3. Acquiring second-level or higher, or score of 50 out of 200 on TOPIK (excluding those who have a bachelor's degree or higher in Korea, or who plans to receive training at the corporation ...)\""
+ },
+ {
+  "gid": "6b7f69d63bee",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The income figures are right, but the first sentence puts the income requirement on \"the parent\"; the page puts it on the D-7 holder (the inviter), so the opening is misleading.",
+  "evidence": "F-1-15.md: \"Intra-Company Transferee (D-7) ... visa holder whose annual income is twice per capita GNI of the previous year or more ... lowered to per capita GNI of the previous year\""
+ },
+ {
+  "gid": "f642c42af8bf",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-4-3.md Case 2: \"A written statement of Guardianship must be submitted even if the guardian of a student is a parent, or a family member closer than second degree\""
+ },
+ {
+  "gid": "bd52e1a928ec",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "H-2-7.md embassy: \"③ Criminal record certificate ④ Physical Condition Sheet\"; \"The head of Korean diplomatic missions abroad may request for additional documents\""
+ },
+ {
+  "gid": "4ba65b7ed618",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p21: \"Japan - Competent Authority ... The Ministry of Foreign Affairs in Tokyo ... Price: No charge.\""
+ },
+ {
+  "gid": "d20ba052f7a1",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "E-10-1.md: \"signed a seafarer labor contract of 6 months or more with an employer engaging in ... coast-wide passenger transport service\" (no tonnage; E-10-2.md \"20 tons or heavier\", E-10-3.md \"2,000 tons or heavier\")"
+ },
+ {
+  "gid": "d6c75bfc8661",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "H-2-7.md embassy: \"① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee ... ④ Physical Condition Sheet\""
+ },
+ {
+  "gid": "493325b025f3",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 45ad877e4898 p13: \"your visa application fees are calculated based on the number of planned visits\"; \"different visa application fees are incurred between more than 90 days and 90 days or less\""
+ },
+ {
+  "gid": "e5e771037199",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "A-2.md Case 1: \"single-entry or multiple-entry visa ... until the end of your assignment.\""
+ },
+ {
+  "gid": "a88cd22cf8de",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-3-11.md: \"1. A healthy person aged between 18 and 40 2. More than 3 months of working experience at the Korean subsidiary 3. ... TOPIK (excluding those who have a bachelor's degree or higher in Korea, or plan to receive training at the corporation ...)\""
+ },
+ {
+  "gid": "081cbc8b9cee",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p5: \"To receive the disapproval notice in written form, visa applicants must visit the diplomatic office and apply in person.\""
+ },
+ {
+  "gid": "cac9a572b6c9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p5: \"Visa applicants must check online on the Korea Visa Portal ... To receive the disapproval notice in written form, visa applicants must visit the diplomatic office and apply in person.\""
+ },
+ {
+  "gid": "06c380b9c146",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Refuses, although the TB notice lists 18 high TB-burden countries (Nepal, East Timor, Russia, Malaysia, Mongolia, Myanmar, Bangladesh, Vietnam, Sri Lanka, Uzbekistan, India, Indonesia, China, Cambodia, Kyrgyzstan, Thailand, Pakistan, Philippines).",
+  "evidence": "DOC 336de610abfb p2: \"(High TB-burden countries) ① Nepal ② East Timor ③ Russia ... ⑰ Pakistan ⑱ Philippines\""
+ },
+ {
+  "gid": "7f7a39e5e0f7",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC ebb358d8436f p3: \"provide details about the most recent visit.\""
+ },
+ {
+  "gid": "74c5713d65a4",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b48153dede7c p1: \"Entry restrictions have been implemented for Japan as of March 9, 2020\""
+ },
+ {
+  "gid": "2b3ef6210f0a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-2-6.md: \"(Proof of enrollment from a university)\""
+ },
+ {
+  "gid": "99df1be44def",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 0648afd6fef6 p3: \"provide details about the most recent visit.\""
+ },
+ {
+  "gid": "35e09e405496",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-5.md: \"A copy of permit to the establishment of a Korean branch or liaison office, or a document demonstrating foreign capitals flowing into a Korean branch office\" (the US remark is read as a caveat about which page was shown)"
+ },
+ {
+  "gid": "125d3ac1ad65",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-9.md: \"Visits on a Medical Tourism visa are acknowledged only when the total medical fees ... exceed 2 million KRW during the recent 1 year\""
+ },
+ {
+  "gid": "394b574528e6",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Eligibility and the same-as-principal rule are right, but the answer never gives the number of entries or the length of stay asked (single-entry, up to 1 year from the E-1 e-visa).",
+  "evidence": "F-3-1.md e-visa: \"A dependent family member will be granted the same number of entries and the length of stay as a principal applicant.\"; E-1.md e-visa: \"single-entry visa ... up to 1 year\""
+ },
+ {
+  "gid": "a2682622362f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-10-1.md: \"Case ③ : Proof of education and Transcript, plan for seeking employment * If a proof of education in Korea can be verified via our system (International student Information System), you are exempt from submitting these documents.\""
+ },
+ {
+  "gid": "d6f889712882",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "G-1-10.md CCVI: \"※ If a medical travel facilitator vouches for a patient, he/she does not have to submit this document.\""
+ },
+ {
+  "gid": "85cf4d1e5385",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "F-1-23.md: \"The employer's income should be three times more than gross national income (GNI) of the previous year\" (no won figure); answer declines on the figure"
+ },
+ {
+  "gid": "55edf9cd5742",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC d624741b2dc8 p1: \"You MUST submit your Health Certificate obtained from the hospital which has been designated by the Korean Government.\""
+ },
+ {
+  "gid": "a995731121a8",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "B-2-2.md: \"granted Short-Term Business (C-3-4) status and allowed to stay in Korea for up to 90 days.\""
+ },
+ {
+  "gid": "0d805ae9b3c6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 707f31dc69f0 p1: \"3.5 Change of Passport(within recent 3 months)\""
+ },
+ {
+  "gid": "37bf01625805",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-2-3.md: \"① Visa Application Form (Form No. 17), passport, a photo ..., fee ② An Invitation Letter issued by the Ministry of National Defense\""
+ },
+ {
+  "gid": "4d900fd36242",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-4-1.md: \"bank statement is only accepted when it is issued within the past 30 days\""
+ },
+ {
+  "gid": "31e5380c7c0d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "E-7-2.md Case 1: \"② Official documents from a foreign diplomatic mission in Korea requesting for cooperation ③ An employment contract ④ Documents proving the level of your education and career\""
+ }
+]

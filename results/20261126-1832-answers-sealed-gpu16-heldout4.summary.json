@@ -1,0 +1,18 @@
+{
+  "generator": "gemma4:12b",
+  "questions": 58,
+  "answered_when_answerable": 1.0,
+  "refused_when_unanswerable": 0.75,
+  "refused_or_said_not_stated_when_unanswerable": 0.75,
+  "unanswerable_answered_with_claims": [
+    "SA29",
+    "SA30"
+  ],
+  "answers_citing_a_gold_page": 0.74,
+  "citation_precision_gold_page": 1.0,
+  "invalid_citation_flags": 0,
+  "latency_p50_s": 11.43,
+  "latency_p95_s": 16.67,
+  "generation_p50_s": 1.38,
+  "mean_prompt_tokens": 2466
+}

@@ -1,0 +1,401 @@
+[
+ {
+  "gid": "df9339487e63",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 80df70fc488a p1: \"(If none of the symptoms apply, please mark the \\\"No Symptoms\\\" box.)\""
+ },
+ {
+  "gid": "fa123bc81b2f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-1.md CCVI Case 2 ⑤: \"For Retired immigrant investors(over age 55), documents demonstrating their financial assets worth at least 300 million KRW (i.e. deposits, assets such as real estate)\""
+ },
+ {
+  "gid": "185fa429b196",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-6.md CCVI ⑦: \"A receipt of full payment of tuition or admission\""
+ },
+ {
+  "gid": "2a001374257e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p2 (Australia): \"$60 Australian dollars for a single-sided page document $80 Australian dollars for a binding (documents of two or more pages)\""
+ },
+ {
+  "gid": "b2807a364afe",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-3.md CCVI Cases 1-4: \"You can apply for a multiple-entry visa valid for your period of stay. Periods of stay will be granted for up to 5 years.\""
+ },
+ {
+  "gid": "318c7db83409",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-8.md has only the overview (\"overseas Korean with a foreign nationality and below the age of 60\"); no period of stay anywhere in corpus"
+ },
+ {
+  "gid": "19acaded6934",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-2-2.md Embassy Case 2 ③: \"Documents proving a biological relation such as the DNA test results or Birth Certificates\""
+ },
+ {
+  "gid": "871cd98c5da9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-7-1.md E-visa: \"gold card) for high-tech science technology field\" ... \"multiple-entry visa valid for 3 years. Periods of stay will be granted for up to 3 years.\""
+ },
+ {
+  "gid": "2d8b202fc108",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Main answer (alien registration) is right, but the stated conditions are looser than the source: it says the visa was \"granted before that date\" (i.e. before March 10) and entry \"after March 2, 2016\"; the rule is entry on or after March 2, 2016 with a long-term visa granted on or before March 1, 2016.",
+  "evidence": "DOC 336de610abfb p1: \"If you entered Korea on March 2, 2016 or after ... Long-term visa (granted on March 1, 2016 or before) holders: when applying for alien registration\"; China is on the high TB-burden list (p2)"
+ },
+ {
+  "gid": "608790f25330",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Omits the business license; the regulation lists both the certificate of permission for travel agency operation and a business license for China.",
+  "evidence": "DOC 8b0fb6d60b72 p3: \"Relevant Document: For China, certificate of permission for travel agency operation ,business license (Equivalent documents for Southeast Asian region)\""
+ },
+ {
+  "gid": "8298d6aebb27",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-24.md Embassy ⑧: \"A document proving you have child under the age 13, or you need a household assistant because your spouse has a medical issues or is employed.\""
+ },
+ {
+  "gid": "e2a02b7fbe8c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC d624741b2dc8 p1: \"if you willfully fill in the blanks with incorrect information, you will face consequences such as visa denial, visa cancellation, and/or deportation, etc.\""
+ },
+ {
+  "gid": "d8ac615edb9e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-23.md Embassy eligibility: \"invested $100,000 or more in high tech information business and acquired a status of stay of ... (D-8), ... (F-2), or ... (F-5)\"; \"must be a CEO or an executive of a high tech company with at least three Korean full-time workers\""
+ },
+ {
+  "gid": "77b373805ca2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 06a10683e48f p1: \"consequences such as denial of visa application, cancellation of visa approval, and/or deportation if the details on the statement are not true or missed out\""
+ },
+ {
+  "gid": "e88aa9c56469",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-10.md: \"It only allows you to transfer to a connecting flight.\" No hours stated anywhere in corpus"
+ },
+ {
+  "gid": "bd1cbcc13225",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The member list on the form has seven columns: No., Nationality, English Name, Gender, Date of Birth, Passport No. and Remarks; the answer omits No. and Remarks.",
+  "evidence": "DOC 22749c38337f / 00a9469f00fc p1: \"4. LIST OF GROUP MEMBERS ... No. 연번 Nationality 국적 English Name 영문성명 Gender 성별 Date Of Birth 생년월일 Passport No. 여권번호 Remarks 비고\""
+ },
+ {
+  "gid": "05845c007ac5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p7 ⑥: \"it shall be immediately corrected or a request shall be made to the head of Seoul Immigration Office to correct it: Provided, That the changed group leader shall hold a valid visa of the Republic of Korea.\""
+ },
+ {
+  "gid": "96a513093cda",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-6-1.md: \"An employment recommendation letter for an advertising/fashion model from the Minister of Culture, Sports, and Tourism of ROK\""
+ },
+ {
+  "gid": "963614571543",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "\"No\" is right, but the stated reason is wrong: the exemption that applies is \"Short-term status holders who apply for extension of stay period\", not the exemption for those who already submitted the certificate at alien registration on/after March 2, 2016.",
+  "evidence": "DOC 336de610abfb p2: \"Exceptions (the following persons are exempt from submission) ... - Short-term status holders who apply for extension of stay period\""
+ },
+ {
+  "gid": "0f5e9384b43c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Repetition only.",
+  "evidence": "DOC 78db7641ce7e p1: \"The applicant must write in block letters either in English or Korean.\""
+ },
+ {
+  "gid": "6b062b437427",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-5-5.md Embassy ①-⑤ match the answer, plus \"※ The head of Korean diplomatic missions abroad may request for additional documents\""
+ },
+ {
+  "gid": "52785f4feb16",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Question asks only what must have been imported; answer gives it correctly.",
+  "evidence": "pages/D-3-13.md: \"a foreign company that has imported industrial facilities or plants worth of US$500,000 or more\""
+ },
+ {
+  "gid": "4690cf6cb5cb",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-2-2.md Embassy Case 1 ⑤: \"Original copy of document proving your financial ability to support yourself (one-year tuition fee and the living expenses for a year)\"; no won amount in corpus"
+ },
+ {
+  "gid": "68b8151c03d9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Both listed examples and the master's-degree condition are correct; it does not mention that the document must be an original or that a parent's bank statement needs a family relation certificate, which go beyond the documents asked for.",
+  "evidence": "pages/D-2-5.md Embassy ④ \"(for those who earned master's degree or higher)\"; ⑤ \"Original copy of document proving your financial ability ... (i.e. bank statement, a receipt of research allowance) - When submitting a parent's bank statement, family relation certificate is required to submit.\""
+ },
+ {
+  "gid": "956784cd8047",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-6-2.md: \"(i.e. a pop musician, instrument player, circus artists or magician)\"; \"multiple-entry visa valid for 1 year. Periods of stay will be granted for up to 1 year.\""
+ },
+ {
+  "gid": "21d9d63f3409",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC dceb1a06e238 p12 (Investment Guide for Investors for the Real Estate Immigrant Investor Scheme): \"Korea Investment Immigration Center (☏ 032-740-7888, 7788)\""
+ },
+ {
+  "gid": "7fbe4b2862b0",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC ebb358d8436f p4 (Personal Details Form for a Marriage Migrant Visa): \"could be grounds for deportation in accordance with the Article 46 of the immigration Act.\""
+ },
+ {
+  "gid": "70a70d216f46",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-4-16.md only: \"who is a CEO, board member, or a manager of a company\"; no length of service in corpus"
+ },
+ {
+  "gid": "2339c8471fd4",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Question asks only what must have been imported; answer gives it correctly.",
+  "evidence": "pages/D-3-13.md: \"a foreign company that has imported industrial facilities or plants worth of US$500,000 or more\""
+ },
+ {
+  "gid": "22c9f1460e01",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p5: \"you must notify the concerned visa office of changes in your passport information\" (Korean: 정확한 개인정보를 반영할 수 있도록)"
+ },
+ {
+  "gid": "f083b7261d71",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-9-2.md Embassy ①-⑤: Form 17 etc.; Equipment Introduction Contract...; Dispatch order; Business Registration Certificate/Corporate Register of the inviting company; Certificate of annual tax payment"
+ },
+ {
+  "gid": "b550fa5038f7",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p7 ④: \"Provided, That this shall not apply where an application agency of countries except for China applies for a group e-Visa.\""
+ },
+ {
+  "gid": "0dabcec212b5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-9-4.md: \"* For a salt farm leaseholder, you must submit a lease contract and a confirmation of sea salt farming issued by the mayor or the head of a local village\""
+ },
+ {
+  "gid": "50e89062a72e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC dceb1a06e238 p9 (Application for Pre-investigation of Foreign Investor): \"첨부 : 신분증사본 1부. (1 copy of ID card)\""
+ },
+ {
+  "gid": "07852f6b47b2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-3.md eligibility (full scholarship / designated guardian, school level) sets no age limit; nothing in PDFs"
+ },
+ {
+  "gid": "5f39f440fb46",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC dceb1a06e238 p12: \"Korea Investment Immigration Center (☏ 032-740-7888, 7788)\""
+ },
+ {
+  "gid": "a89b9faaf4b6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-9-3.md Embassy ①-⑤: Form 17 etc.; copy of trade contract; Dispatch order; BRC/Corporate Register of inviting company; Certificate of annual tax payment"
+ },
+ {
+  "gid": "da1f40243538",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-9-3.md Embassy ①-⑤ as listed"
+ },
+ {
+  "gid": "950ad6232861",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-2.md Embassy: \"consigned trainees invited by the Ministry of National Defense\" ... \"initially for up to 1 year\"; CCVI: \"intern at a foreign investment firm\" ... \"granted for up to 6 months\""
+ },
+ {
+  "gid": "c5ad0586d0bb",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/H-2-5.md ⑤ \"Receipt of application (or a printout of Winner's Card for Lottery)\"; \"multiple-entry visa valid for 3 years\""
+ },
+ {
+  "gid": "71a785960739",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC d624741b2dc8 p1: \"consequences such as visa denial, visa cancellation, and/or deportation, etc.\""
+ },
+ {
+  "gid": "ada5aa3a0353",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines; nearby eligibility facts are true and not presented as the answer.",
+  "evidence": "pages/D-4-3.md Case 1 \"full scholarship\"; Case 2 \"having a designated guardian\"; no age limit"
+ },
+ {
+  "gid": "fdaadcfb1c53",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-5-5.md Embassy ①-⑤ and the ※ note match"
+ },
+ {
+  "gid": "7b6b8eb34ebc",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines the amount; nearby fact is true.",
+  "evidence": "DOC bf96aac2845d p1: \"Persons who have violated applicable laws and regulations by illegally working while seeking jobs are supposed to be punished.\""
+ },
+ {
+  "gid": "ba09041a33e5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Says the document does not specify; nearby facts true.",
+  "evidence": "DOC d624741b2dc8 p1: \"Yes □ (Infectious Disease name: Cholera, Viral hepatitis A, Tuberculosis, AIDS, etc)\"; no rule on effect of past infection"
+ },
+ {
+  "gid": "df1c3a682e20",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb p1: \"If you entered Korea on March 2, 2016 or after ... Long-term visa (granted on March 1, 2016 or before) holders: when applying for alien registration\""
+ },
+ {
+  "gid": "ce0075c72865",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-3-1.md Embassy Case 2 (D-8 in Free Economic Zone): \"initially for up to 2 year\"; Case 1 (D-1...E-7): \"initially for up to 1 year\""
+ },
+ {
+  "gid": "ab6944a3ed41",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Unanswerable question: the answer never says the documents do not cover it; it offers the false-information penalties (visa denial, cancellation, deportation) and the hepatitis A checkbox as the answer, which reads as an answer about refusal.",
+  "evidence": "DOC d624741b2dc8 p1 only asks \"Have you ever had any infectious diseases ... Viral hepatitis A\"; no rule on how a past infection affects the decision"
+ },
+ {
+  "gid": "c294eab54ffa",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Guam, New Caledonia and Palau are correct, but 8 of the 11 listed are not Asia-Pacific: the answer also lists United States, Guyana (Americas) and Monaco, Vatican City State, San Marino, Andorra, Albania, Slovenia (Europe) as Asia-Pacific.",
+  "evidence": "DOC b48153dede7c p2: \"<11 Visa-free Countries/Regions> Asia-Pacific (3) Guam, New Caledonia, Palau Americas (2) United States, Guyana Europe (6) Monaco, ...\""
+ },
+ {
+  "gid": "0b451d604013",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-3.md CCVI: \"multiple-entry visa valid for your period of stay. Periods of stay will be granted for up to 5 years.\""
+ },
+ {
+  "gid": "f5871a46e494",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p4: \"Note: Scope of family members - Spouse, children, parents, siblings of the applicant\" (appears under both questions)"
+ },
+ {
+  "gid": "aad03185d139",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Repetition only.",
+  "evidence": "DOC dceb1a06e238 p9: \"첨부 : 신분증사본 1부. (1 copy of ID card)\""
+ },
+ {
+  "gid": "8ce631462822",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bb553b933f21 p1: \"should relay information of foreign guest (e.g. passport information) via an information network designated by the Ministry of Justice.\""
+ },
+ {
+  "gid": "3dd2cc1e2c7d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p2 (Australia): \"$60 Australian dollars for a single-sided page document $80 Australian dollars for a binding (documents of two or more pages)\""
+ },
+ {
+  "gid": "9a9ea64f91ae",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 45ad877e4898 p14: \"1) Enter your expected travel expenses in Korea (USD).\""
+ },
+ {
+  "gid": "b7abb06d8693",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Opening \"No\" is correct; the proviso is quoted accurately.",
+  "evidence": "DOC 8b0fb6d60b72 p7 ④: \"Provided, That this shall not apply where an application agency of countries except for China applies for a group e-Visa.\""
+ },
+ {
+  "gid": "fd4a516500d7",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/H-2-1.md Embassy Case 6 ①-③: Form 17 etc.; \"Official document of the country of citizenship verifying you are overseas Koreans with foreign nationality\"; \"Certificate of medal/commendation or award certificate awarded by the Minister of the central government\""
+ }
+]

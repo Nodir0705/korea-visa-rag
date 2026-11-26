@@ -1,0 +1,492 @@
+[
+ {
+  "gid": "21d69ee2bdd9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a5e253b34643 p2 / 0648afd6fef6 p2: \"If not living, write 'DECEASED' in the 'Date of birth' column below.\""
+ },
+ {
+  "gid": "84529b2720d5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 378ca86d6953 p1: \"The Korean Embassies in the United States of America, Japan and 24 European Countries* no longer issue visa labels, as of 24th February, 2020\" + 24-country list; \"All Korean Embassies will stop issuing visa labels from 1st July, 2020.\""
+ },
+ {
+  "gid": "05a96a124db7",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bb553b933f21 p1: \"went into force as of 10 December 2020\""
+ },
+ {
+  "gid": "258dbbda9aba",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-5-5.md: Embassy section has only Eligibility and Required documents; no visa validity / period of stay given"
+ },
+ {
+  "gid": "afb06067216b",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Main answer (most recent visit) is correct, but the claim that the same rule is on the general Korea Visa Portal application form and its instructions is wrong: that form only asks how many trips in the last 5 years and the purpose of the most recent visit.",
+  "evidence": "DOC a5e253b34643 p3: \"If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.\"; DOC 99cee8cbaa53 p3 (general form 7.6): \"please provide details of any trips to Korea ( ) times, Purpose of Recent Visit ( )\""
+ },
+ {
+  "gid": "d1f9525a8496",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC ad0a425b80f0 p7 / dceb1a06e238 p7: \"(1 copy of ID cards of a Mandator and a Trustee)\"; \"(1 certificate of employment of a Trustee)\""
+ },
+ {
+  "gid": "2923592511c0",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a0ab242b1eec p3: \"(Fees) 50,000 KRW ... Fee reduction : 20% discount for using e-Application service on HiKorea\""
+ },
+ {
+  "gid": "5fe68476179c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p5: \"Signature of Parent or Legal Guardian is required for a person under 17 years of age\"; \"Failure to provide name and signature may result in your application being denied.\""
+ },
+ {
+  "gid": "21eb1e639dae",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-1.md CCVI Case 2: \"You can apply for a multiple-entry visa valid for your period of stay. Periods of stay will be granted for up to 5 years.\""
+ },
+ {
+  "gid": "fee9710ec298",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-7-91.md contains only: \"Transferee of a corporation under FTA\""
+ },
+ {
+  "gid": "28e86b87a974",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 1f9dd47d0d65 p2: \"validity extension of single-entry visas ... (from March 1 to June 30, 2015) from the current three months to six months\"; \"allowed to enter ... even after the visa expiration date\""
+ },
+ {
+  "gid": "6a662e658aa2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-1.md: \"(bank statement is only accepted when it is issued within the past 30 days)\""
+ },
+ {
+  "gid": "7474680ce7ca",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p13: \"Rate of Illegal Stay = (Number of illegal stayers of previous month) / (Average number of visa issued persons in the last 3 months) - When the average number of tourists was 300 people or more ... calculated; when less than 300, number of illegal stayers will be counted\""
+ },
+ {
+  "gid": "e3d9f88efb72",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a5f053a8415e p1: \"(1) I shall ensure that the applicant abides by competent laws and regulations of Korea.\"; \"(2) I shall shoulder the travel expenses\"; \"(3) I shall shoulder the expenses arising from\""
+ },
+ {
+  "gid": "550e115e1097",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC fa7181cf50ef p1: \"When you have an investor visa, you are free to work, study, and involve in economic activities, however, you must not engage in any speculative behavior ...\""
+ },
+ {
+  "gid": "f71568cf64c3",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "The count is wrong: the answer says 20 countries, but the notice lists 18 (numbered 1 to 18). The country names it gives are correct, but its first and main figure is wrong and contradicts its own list.",
+  "evidence": "DOC 336de610abfb p2: \"(High TB-burden countries) ① Nepal ② East Timor ③ Russia ... ⑰ Pakistan ⑱ Philippines\""
+ },
+ {
+  "gid": "9305ef895067",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/B-1.md: \"APEC Business Travel Card holders entering Korea are granted Short-Term Business (C-3-4) status and allowed to stay in Korea for up to 90 days.\""
+ },
+ {
+  "gid": "4a9130330603",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC ad0a425b80f0 p7: \"CHANGE OF STATUS OF SOJOURN EXTENSION OF SOJOURN PERIOD [ ] 사증발급인정서 [ ] 사전심사안내 APPLICATION FOR CONFIRMATION OF VISA ISSUANCE PRE-INVESTIGATION\""
+ },
+ {
+  "gid": "986a1cdc9952",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p7: \"After the input procedure referred to in paragraph (2) is complete, visa fees and electronic payment service fees shall be paid through the Electronic Payment System.\""
+ },
+ {
+  "gid": "261a8adf19a7",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-6.md: \"A person invited by preference companies or organizations selected by Ministry of Justice.\" (no selection criteria anywhere)"
+ },
+ {
+  "gid": "549b795be231",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 02997dfa266b p1: \"expand the eligibility for multiple entry visas starting from December 3, 2018 to revitalize people to people exchanges and to attract inbound tourists from the countries of New Southern Policy\"; \"nationals of Vietnam, Philippines, Indonesia, etc.\""
+ },
+ {
+  "gid": "973cc9a07652",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The period of stay (up to 5 years) is right, but the source does not give the visa a fixed validity of 'up to 5 years'. It says the visa is a multiple-entry visa valid for the period of stay granted. The answer replaces that rule with a looser number.",
+  "evidence": "pages/E-1.md CCVI Case 2: \"You can apply for a multiple-entry visa valid for your period of stay. Periods of stay will be granted for up to 5 years.\""
+ },
+ {
+  "gid": "0f56e6a50828",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Wrong sanction. In Table 1 each row reads sanction, then number of illegal stayers, then rate, so 7 to 8 illegal stayers (rate 1.5 to less than 2.0%) means Suspension (3 months). Suspension (2 months) is for 5 to 6 illegal stayers (1.0 to less than 1.5%). The answer's rate band is right; its sanction label is wrong.",
+  "evidence": "DOC 8b0fb6d60b72 p12: \"Suspension (6 months) 9 ~ 10 ... 2.0 ~ less than 3.0% Suspension (3 months) 7 ~ 8 1.5 ~ less than 2.0% Suspension (2 months) 5 ~ 6\""
+ },
+ {
+  "gid": "731294a1f981",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-3-12.md: \"Documents proving the number of Korean full-time employees of the host company in order to determine the permitted number of trainees\" (no ratio given)"
+ },
+ {
+  "gid": "3b22190afdad",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Correct group and insurance period, but it leaves out the condition that graduates-to-be are excluded, so the answer wrongly implies every elementary, middle or high school student must submit.",
+  "evidence": "pages/D-4-7.md CCVI: \"(only for an elementary, middle/junior high, high school student) * A graduate-to-be is excluded. ** The period of insurance policy must be longer than the length of stay in ROK\""
+ },
+ {
+  "gid": "61ffdc2b2b79",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-5-11.md: \"[Sports] ... Soccer players and the coaches finished in the Top 16 at the World Cup Game while being recommended by the Minister of Culture, Sports and Tourism\"; Required docs: \"Culture and Sports Area: A recommendation letter from the Minister of Culture, Sports and Tourism for those in culture and sports industry\""
+ },
+ {
+  "gid": "d54ec8d22edc",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-9-4.md: \"A person signing up for hiring Korean workers is eligible for applying for this visa in the case of making an investment of 200 million KRW or more.\""
+ },
+ {
+  "gid": "2d24e5f79c86",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 45ad877e4898 p13: \"Select the planned number of visits to Korea (your visa application fees are calculated based on ...)\"; \"Select the expected duration of stay (different visa application fees ...)\""
+ },
+ {
+  "gid": "7d84d66ab2e8",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-9-4.md: \"... in the case of making an investment of 200 million KRW or more.\""
+ },
+ {
+  "gid": "097c15cce063",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The health certificate answer is correct, but the extra claim that E-2 holders must complete the basic law-and-order training programme comes from the E-9/E-10/H-2 Health & Mentality Statement, not the E-2 form.",
+  "evidence": "DOC d624741b2dc8 p1 (E-2): \"At the time of registration, You MUST submit your Health Certificate obtained from the hospital which has been designated by the Korean Government.\"; DOC 06a10683e48f p1 (E-9/E-10/H-2): \"Besides, you must complete the basic training program on law and order\""
+ },
+ {
+  "gid": "2a56a3e3fab4",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Refuses although the D-4-2 CCVI page answers it: a bank statement showing more than $3,000, or a wire-transfer or currency-exchange record, or a cost-payment confirmation if the training facility pays living expenses.",
+  "evidence": "pages/D-4-2.md CCVI: \"A bank statement of more than $3,000 on the account, a record of wire-transfer to ROK or currency exchange\""
+ },
+ {
+  "gid": "63efee42747b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC ebb358d8436f p2: \"For a decea sed family member, specify\" ... \"DECEASED\" ... \"Date of birth\" column below.\""
+ },
+ {
+  "gid": "2b6af896aea5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 9682b7cb7978 p1: the form only lists agencies, e-Visa Application Number, Expected Date of Entry, Reasons, list of applicants; no deadline in it or in DOC 8b0fb6d60b72"
+ },
+ {
+  "gid": "0b53a13eaccb",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Wrong case: it gives the Embassy Case 1 documents (a purpose-of-entry document or invitation). An unaccompanied parent of a diplomat stationed in Korea is under Case 6, which needs an official letter from her country's Minister of Foreign Affairs and family-relation proof (e.g. hukou).",
+  "evidence": "pages/C-3-1.md Embassy Case 6: \"② An official letter written by the Minister of Foreign Affairs of your country asking for cooperation ③ Certificate of family relation and any documents proving family relationship - household register booklet or hukou etc.\""
+ },
+ {
+  "gid": "f7ae51cf38d2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-10-3.md: \"signed a seafarer labor contract of 6 months or more with an employer engaging in a cruise service (operating cruise ship of 2,000 tons or heavier)\""
+ },
+ {
+  "gid": "7494c61163e3",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 6bc97a64a6e3 p1: \"Application for 'Medical Examination Exemption Certificate' for Re-entry Permit is no longer available.\""
+ },
+ {
+  "gid": "519ea309fd95",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a5e253b34643 p3: \"Duration of visit / Purpose of visit / Place you visited ... (* If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.)\"; same on 0648afd6fef6 p3, 4cb01ef31423 p9, ebb358d8436f p3"
+ },
+ {
+  "gid": "c4ec45ed0882",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-1.md: \"You can apply for a multiple-entry visa valid for 5 years. Periods of stay for this visa will be granted for up to 90 days.\""
+ },
+ {
+  "gid": "ff901233045b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/A-1.md Embassy Case 3: \"an eligible applicant is limited to Director of the International Vaccine Institute, Secretary General of Green Climate Fund and secretariat worker whose position is equivalent to P-5 or higher ...\""
+ },
+ {
+  "gid": "6282c45dc99f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-8-4.md: only \"Any documents proving points earned through the Points-Based System\"; no pass mark"
+ },
+ {
+  "gid": "cc4fc1159400",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb p2: \"Non-professional (E-9) ... who already submitted the certificate including TB test result when applying for alien registration on March 2, 2016 or after\" are exempt"
+ },
+ {
+  "gid": "40abfd8a6368",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-6-2.md: \"If you only have visitation rights to your child, you are not eligible for this visa.\""
+ },
+ {
+  "gid": "b9be4dc06921",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Wrong office for a CCVI refusal: the answer says to visit the diplomatic office, which is the rule for embassy visa applications. For Confirmation of Visa Issuance you apply in person at the immigration office.",
+  "evidence": "DOC b7359bf7bf77 p5 (CCVI form): \"To receive the disapproval notice in written form, visa applicants must visit the immigration office and apply in person.\"; DOC 78db7641ce7e p5 (visa form): \"must visit the diplomatic office\""
+ },
+ {
+  "gid": "4c5fe7acbf98",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-4-12.md: \"You can apply for a multiple-entry visa valid for 5 years. Periods of stay for this visa will be granted initially for up to 2 years.\""
+ },
+ {
+  "gid": "702ab43bc1c1",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a5e253b34643 p2: \"If not living, write 'DECEASED' in the 'Date of birth' column below.\""
+ },
+ {
+  "gid": "a1294c4e66fa",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/B-1.md: \"granted Short-Term Business (C-3-4) status and allowed to stay in Korea for up to 90 days.\""
+ },
+ {
+  "gid": "66dfea0544de",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-4-12.md: \"multiple-entry visa valid for 5 years ... granted initially for up to 2 years\" (entry type not asked)"
+ },
+ {
+  "gid": "eab296abebbf",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 02997dfa266b p1: \"expand the eligibility for multiple entry visas starting from December 3, 2018\""
+ },
+ {
+  "gid": "22ef393db919",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p19 (Ireland): \"€ 20 for each Apostille. There is a special fee of 50 for a series of Apostilles in € relation to the adoption of a child.\""
+ },
+ {
+  "gid": "e2563ea7d7f0",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 22749c38337f p2: \"If you receive an e-Visa, you must enter the Republic of Korea before its expiry date. Please note, however, even if you have the e-Visa, you may be denied entry ...\""
+ },
+ {
+  "gid": "6355180c30db",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The crop-farmer alternative is correct, but the answer gives only one of the two farm-size documents. It leaves out the copy of the Agriculture/Fishery Entity Registration Certificate from the National Agricultural Products Quality Management Service.",
+  "evidence": "pages/E-9-3.md: \"⑤ A certificate demonstrating the size of farm issued by the head of relevant agricultural technology center ..., or a copy of Agriculture/Fishery Entity Registration Certificate ... * If you are a crop farmer, you can submit a certified copy of resident registration, instead.\""
+ },
+ {
+  "gid": "428a7c7b78ac",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 06a10683e48f p1: \"You must be registered as a foreigner ... within 90 days\"; no fine stated. Answer declines; the false-statement consequences are a true nearby fact not given as the answer"
+ },
+ {
+  "gid": "726c7c471561",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-8-4.md: \"A certificate for completion or graduation of the OASIS program issued by the head of the Global Investment Center designated by the Minister of Justice of ROK\""
+ },
+ {
+  "gid": "a1cb02f86156",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC ebb358d8436f p1: \"If you are unable to provide proper documentation, submit a statement stating the reason.\""
+ },
+ {
+  "gid": "2291a9b4ac7f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p21 (Japan): \"The Ministry of Foreign Affairs in Tokyo ... Price: No charge.\""
+ },
+ {
+  "gid": "5c53b4e051cf",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 06a10683e48f p1: 90-day registration duty stated, no fine; answer declines"
+ },
+ {
+  "gid": "3b1ea3ca980d",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Wrong sanction: in Table 1 (rows read sanction, then number, then rate), 7 to 8 illegal stayers is the Suspension (3 months) row. Suspension (2 months) is for 5 to 6 illegal stayers.",
+  "evidence": "DOC 8b0fb6d60b72 p12: \"2.0 ~ less than 3.0% Suspension (3 months) 7 ~ 8 1.5 ~ less than 2.0% Suspension (2 months) 5 ~ 6\""
+ },
+ {
+  "gid": "092a3e5811ed",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p7: \"visa fees and electronic payment service fees shall be paid through the Electronic Payment System.\""
+ },
+ {
+  "gid": "74209f545a6b",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Validity and stay (multiple-entry, 3 years; up to 3 years) are right, but the document list leaves out the fee, which is part of item 1 (form, passport copy, photo, fee).",
+  "evidence": "pages/E-7-1.md E-visa: \"① Visa Application Form (Form No. 21), a copy of passport, a photo in a standard format, fee ② A recommendation letter of employment (or gold card) ...\"; \"multiple-entry visa valid for 3 years. Periods of stay will be granted for up to 3 years.\""
+ },
+ {
+  "gid": "a8c9ba56c849",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "The answer misses the asked item. The form for holders of a visa issuance confirmation asks whether the passport was changed within the recent 3 months (item 3.5). The answer instead repeats a notice from other forms about reporting a new passport issued after a lost or damaged one.",
+  "evidence": "DOC 707f31dc69f0 p1 (APPLICATION FOR VISA For those in possession of visa issuance confirmation): \"3.5 Change of Passport(within recent 3 months) No [ ] Yes [ ]\""
+ },
+ {
+  "gid": "f849c0248c6b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/A-2.md Embassy Case 1 (administrative staff of a foreign diplomatic mission in Korea): \"You can apply for a single-entry or multiple-entry visa, and you will be allowed to stay in Korea until the end of your assignment.\""
+ },
+ {
+  "gid": "bff52f81bad6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 22749c38337f p2: \"you must enter the Republic of Korea before its expiry date ... even if you have the e-Visa, you may be denied entry to the ROK during immigration clearance\""
+ },
+ {
+  "gid": "966f008a9425",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-4.md Embassy Case 4: \"If the lecturer or speaker is not compensated other than flight and accommodation, he/she is eligible for a Short-term General (C-3-1) visa.\"; \"② An employment contract (on providing lectures·public speeches) or an invitation card that indicates lecture fees\""
+ },
+ {
+  "gid": "6a49b98d4e1d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-10-2.md: \"seafarer labor contract of 6 months or more with an employer ... (operating fishing vessel of 20 tons or heavier)\""
+ },
+ {
+  "gid": "1e55dfd56efa",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC ebb358d8436f p1: \"If you are unable to provide proper documentation, submit a statement stating the reason.\"; Korean text: \"요건을 갖추지 못하였거나 요건을 입증하는 서류가 없는 경우에는 그 사유를 기재한 사유서를 제출\" (supports the 'conditions not met or documents missing' sentence)"
+ },
+ {
+  "gid": "7969be06a8f5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-8-4.md: \"issued by the head of the Global Investment Center designated by the Minister of Justice of ROK\" (second sentence is redundant repetition)"
+ },
+ {
+  "gid": "01a684adab2d",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Wrong case. It includes the Case 3 overseas-Korean document, which does not apply, and leaves out the official letter from her country's Minister of Foreign Affairs required under Case 6 (unaccompanied family of diplomats). Only the form and the family-relation proof are right.",
+  "evidence": "pages/C-3-1.md Embassy Case 6: \"② An official letter written by the Minister of Foreign Affairs of your country asking for cooperation ③ Certificate of family relation ... household register booklet or hukou etc.\""
+ },
+ {
+  "gid": "04534985dca2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-2-6.md: \"⑦ Documents proving that you have completed at least one semester (Proof of enrollment from a university)\""
+ },
+ {
+  "gid": "3d1567e502c7",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-13.md: \"a Balance Statement proving that the standard amount of money has been deposited for at least 1 month\" (no amount)"
+ },
+ {
+  "gid": "b7a75a6b5a95",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Wrong: the page says both the religious denomination and the unit must submit the Registration Number Certificate, not 'the applicant's organization'.",
+  "evidence": "pages/D-6.md CCVI: \"⑤ A copy of Registration Number Certificate - If you are invited by a religious group, both religious denomination and unit are required to submit\""
+ }
+]

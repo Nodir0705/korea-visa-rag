@@ -1,0 +1,18 @@
+{
+ "summary": {
+  "gpu8": {
+   "n": 58,
+   "fully_both": 49,
+   "core_both": 56,
+   "fully_either": 52
+  },
+  "gpu16": {
+   "n": 58,
+   "fully_both": 54,
+   "core_both": 57,
+   "fully_either": 54
+  }
+ },
+ "dropped": [],
+ "agreement": 0.9646017699115044
+}

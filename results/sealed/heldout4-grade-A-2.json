@@ -1,0 +1,394 @@
+[
+ {
+  "gid": "07789adf9976",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-2-2.md Embassy Case 2: 'Documents proving a biological relation such as the DNA test results or Birth Certificates'"
+ },
+ {
+  "gid": "2efcad130c5d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a0ab242b1eec p2: '(Overseas Korean, F-4) For re-entry within authorized period of stay'; '(Holders of Refugee Travel Document) For re-entry within validity period of the document'"
+ },
+ {
+  "gid": "ebb975be2c4f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb p2: exempt: 'Short-term status holders who apply for extension of stay period'; Mongol listed as high TB-burden"
+ },
+ {
+  "gid": "3f8ab2c4245b",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Proof item on the page is 'Receipt of application (or a printout of Winner's Card for Lottery)'; the answer says you must bring the Winner's Card printout and omits the receipt-of-application option. 3-year validity is correct.",
+  "evidence": "pages/H-2-5.md: '⑤ Receipt of application (or a printout of Winner's Card for Lottery)'; 'multiple-entry visa valid for 3 years'"
+ },
+ {
+  "gid": "135a59bcbb54",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-6.md CCVI: '⑦ A receipt of full payment of tuition or admission'"
+ },
+ {
+  "gid": "489bb9f12568",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Correctly declines; corpus gives no fee for Korea.",
+  "evidence": "DOC b133ad72454c p21: Korea entry names MOFAT, MOJ, National Court Administration; no price"
+ },
+ {
+  "gid": "b2edc299cb75",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines; the other-country fees it mentions are present on the cited pages and not presented as the answer.",
+  "evidence": "DOC b133ad72454c p21: Korea entry has no price; p44 'average cost ... SEK 250'; p28 'NZD $40.00 per Apostille'"
+ },
+ {
+  "gid": "17970e5068f1",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/B-2-2.md: '(45 countries as of 2022.10.01)'; 'stay in the country for up to 30 days'"
+ },
+ {
+  "gid": "988241d9b1ea",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p5 (same text in KOREA VISA PORTAL forms): 'have new passport issued thereafter in lieu of lost/damaged passport, you must notify the concerned visa office of changes in your passport information'"
+ },
+ {
+  "gid": "55678394af3c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Gives both financial-ability examples and the master's-or-higher condition; the parent-statement family relation certificate note is not itself a financial-ability document.",
+  "evidence": "pages/D-2-5.md Embassy: '④ Original copy of document indicating the final level of education (for those who earned master's degree or higher) ⑤ ... (i.e. bank statement, a receipt of research allowance)'"
+ },
+ {
+  "gid": "9ac378fc7d66",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Unanswerable: the C-3-8 page gives no period of stay, but the answer states 'less than 90 days' as the answer, taken from a generic application-form checkbox.",
+  "evidence": "pages/C-3-8.md contains only the overview: 'overseas Korean with a foreign nationality and below the age of 60'"
+ },
+ {
+  "gid": "0f96607c4ceb",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pdf_pages DOC ebb358d8436f p4: 'proving false or misleading information on this form could be grounds for deportation in accordance with the Article 46 of the immigration Act'"
+ },
+ {
+  "gid": "d1ecb15cfe04",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-6-1.md: 'An employment recommendation letter for an advertising/fashion model from the Minister of Culture, Sports, and Tourism of ROK'"
+ },
+ {
+  "gid": "f0a4f3224454",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-5.md: '⑥ A recommendation letter from the Agriculture and Fisheries ＆ Food Trade Corporation of ROK (aT)'"
+ },
+ {
+  "gid": "38693957a635",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Documents named correctly, but the answer says the travel agency itself attaches the information and documents to its request; per the regulation the head of the overseas diplomatic mission requests designation, entering the information in IVIS with the documents attached. It also omits that equivalent documents are used for Southeast Asia (not asked).",
+  "evidence": "DOC 8b0fb6d60b72 p3 Art.3①: 'the head of an overseas diplomatic mission shall request for the designation ... by entering the relevant information1) ... with the related documents2) attached'; '2) ... For China, certificate of permission for travel agency operation ,business license'"
+ },
+ {
+  "gid": "d667bafa42a0",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bb553b933f21 p1: 'should relay information of foreign guest (e.g. passport information) via an information network designated by the Ministry of Justice. A breach of this requirement will result in a fine up to KRW 500,000.'"
+ },
+ {
+  "gid": "3073e1a3fc2d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-2-2.md Embassy Case 1: '⑤ Original copy of document proving your financial ability to support yourself (one-year tuition fee and the living expenses for a year)'"
+ },
+ {
+  "gid": "893e9cd1d47e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-6-2.md: '(i.e. a pop musician, instrument player, circus artists or magician)'; 'multiple-entry visa valid for 1 year. Periods of stay will be granted for up to 1 year.'"
+ },
+ {
+  "gid": "3fb95880524b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 45ad877e4898 p14: '1) Enter your expected travel expenses in Korea (USD).'"
+ },
+ {
+  "gid": "c7808577ba13",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC dceb1a06e238 p12: 'D. (Extending the Period of Stay) You must come to Korea and get an extension from an immigration office BEFORE your visa expires, otherwise, your alien registration will be cancelled.'"
+ },
+ {
+  "gid": "757e67c64665",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb p2: 'includes at least one of the following tests result: chest X-ray, sputum test, tuberculin skin test, blood test, etc.'"
+ },
+ {
+  "gid": "d73b382b129a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 06a10683e48f p1: 'consequences such as denial of visa application, cancellation of visa approval, and/or deportation if the details on the statement are not true or missed out'"
+ },
+ {
+  "gid": "23d53497cf77",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p1 (and other visa application forms): 'The applicant must write in block letters either in English or Korean.'"
+ },
+ {
+  "gid": "668ded869086",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b7359bf7bf77 p4: \"If 'Disagree', the INVITING PERSON has to submit all required documents IN PERSON.\""
+ },
+ {
+  "gid": "85382ca1eb84",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Main answer correct, but 'they will not be able to continue their stay in Korea' is taken from section A (failing investment requirements), not from section D on extension, which says only that alien registration will be cancelled.",
+  "evidence": "DOC dceb1a06e238 p12: 'D. ... BEFORE your visa expires, otherwise, your alien registration will be cancelled.' vs A: '...your alien registration will be cancelled, and you will not be able to continue your stay in Korea.'"
+ },
+ {
+  "gid": "f5b843ebb8c3",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Answer words the employer's condition as 'the applicant has a child'; the guide itself is addressed in the second person ('you have child under the age 13') and the substance (child under 13, or spouse ill or employed) is exact, so judged yes. Unlike 38693957a635, no procedural actor is misstated.",
+  "evidence": "pages/F-1-24.md Embassy: '⑧ A document proving you have child under the age 13, or you need a household assistant because your spouse has a medical issues or is employed.'"
+ },
+ {
+  "gid": "b2a9121006f9",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The member list on the form also has the serial 'No.' column and a 'Remarks' column; the answer omits both.",
+  "evidence": "DOC 00a9469f00fc p1: '4. LIST OF GROUP MEMBERS ... No. 연번 Nationality English Name Gender Date Of Birth Passport No. ... Remarks 비고'"
+ },
+ {
+  "gid": "3ce61724b230",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bf96aac2845d p1: 'They must start to work after having their stay visa changed by Immigration office when they make an official working contract.'"
+ },
+ {
+  "gid": "2965a16e5702",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-9-2.md Embassy: items ①-⑤ match exactly"
+ },
+ {
+  "gid": "88f8c4cdbad8",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-8-3.md Embassy: 'A person whose name is registered as a co-founder of a company run by Korean(individual) after investing in the company in accordance with the Foreign Investment Promotion Act'"
+ },
+ {
+  "gid": "d8ab2672deef",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bf96aac2845d p1: 'They must start to work after having their stay visa changed by Immigration office when they make an official working contract.'"
+ },
+ {
+  "gid": "91f302c1ef27",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-7-2.md: '③ A certified copy of unabridged Corporate Register of the headquarter (you may be exempt ... if your company is a public corporation)'; '⑧ A dispatch order(It should indicate the period of the overseas assignment.)'"
+ },
+ {
+  "gid": "7a138db9b875",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Correctly declines; no processing time is given for Japan.",
+  "evidence": "DOC b133ad72454c p21: 'Japan - Competent Authority (Art. 6) ... The Ministry of Foreign Affairs in Tokyo Contact details: Practical Information: ... Price: No charge.' (no processing time stated anywhere)"
+ },
+ {
+  "gid": "770194db727b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-8-3.md Embassy eligibility: 'registered as a co-founder of a company run by Korean(individual) after investing ...'"
+ },
+ {
+  "gid": "7b4049bed7b2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 80df70fc488a p1: '해당 증상이 없는 경우에는 우측 \"증상 없음\"란에 ... (If none of the symptoms apply, please mark the \"No Symptoms\" box.)'"
+ },
+ {
+  "gid": "beca31908cbf",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b7359bf7bf77 p4: \"If 'Disagree', the INVITING PERSON has to submit all required documents IN PERSON.\""
+ },
+ {
+  "gid": "1090e6e0ef50",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-2-1.md: 'If you have a history of submitting a criminal record authenticated by a public authority, staying and leaving ROK, and re-apply within 3 months from the last departure from ROK, you are exempt'"
+ },
+ {
+  "gid": "2b1f73d6e32a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p4: 'Note: Scope of family members - Spouse, children, parents, siblings of the applicant'"
+ },
+ {
+  "gid": "c73ced90d67f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/H-2-1.md Embassy Case 6: items ①-③ match"
+ },
+ {
+  "gid": "493022df3537",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-2-3.md Embassy Case 1: '⑦ Credit Reports of a sponsor - It shall be issued by the Korean Foundation of Banks'"
+ },
+ {
+  "gid": "6aa65066ec20",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines on the fine amount; the punishment statement is a true nearby fact.",
+  "evidence": "DOC bf96aac2845d p1: 'Persons who have violated applicable laws ... by illegally working while seeking jobs are supposed to be punished.'"
+ },
+ {
+  "gid": "e54d78111e06",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-23.md Embassy: 'invested $100,000 or more in high tech information business and acquired ... (D-8), ... (F-2), or ... (F-5)'; 'CEO or an executive of a high tech company with at least three Korean full-time workers'"
+ },
+ {
+  "gid": "3b37c49b4e13",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-3-1.md: Case 1 'granted initially for up to 1 year'; Case 2 (D-8 Free Economic Zone) 'granted initially for up to 2 year'"
+ },
+ {
+  "gid": "ec152023943a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-7-1.md E-visa (gold card): 'multiple-entry visa valid for 3 years. Periods of stay will be granted for up to 3 years.'"
+ },
+ {
+  "gid": "493cb25b11ff",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-2.md: Embassy (Ministry of National Defense) 'initially for up to 1 year'; CCVI (intern at a foreign investment firm) 'up to 6 months'"
+ },
+ {
+  "gid": "dd0a5d89b2a6",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Guam, New Caledonia and Palau are correct, but the answer also lists the United States and Guyana as Asia-Pacific; the notice lists those under Americas.",
+  "evidence": "DOC b48153dede7c p2: '<11 Visa-free Countries/Regions> Asia-Pacific (3) Guam, New Caledonia, Palau Americas (2) United States, Guyana'"
+ },
+ {
+  "gid": "a3e09360f7c2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-5.md: '⑥ A recommendation letter from the Agriculture and Fisheries ＆ Food Trade Corporation of ROK (aT)'"
+ },
+ {
+  "gid": "7dcbfd6011b2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-2-3.md Embassy Case 1: 'It shall be issued by the Korean Foundation of Banks'"
+ },
+ {
+  "gid": "d42f542f6329",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-1.md CCVI Case 2: '⑤ For Retired immigrant investors(over age 55), documents demonstrating their financial assets worth at least 300 million KRW (i.e. deposits, assets such as real estate)'"
+ },
+ {
+  "gid": "def018750532",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb p2: 'at least one of the following tests result: chest X-ray, sputum test, tuberculin skin test, blood test, etc.'"
+ },
+ {
+  "gid": "3b0fd4f0025f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Requirement of the HQ register is conveyed by the exemption sentence (required unless a public corporation).",
+  "evidence": "pages/D-7-2.md: '③ A certified copy of unabridged Corporate Register of the headquarter (you may be exempt ... public corporation)'; '⑧ A dispatch order(It should indicate the period of the overseas assignment.)'"
+ },
+ {
+  "gid": "e2e53fbb2dde",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a0ab242b1eec p2: F-4 'within authorized period of stay'; refugee travel document 'within validity period of the document'"
+ },
+ {
+  "gid": "17b7056ccaab",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-2-1.md: 're-apply within 3 months from the last departure from ROK, you are exempt from submitting the document'"
+ },
+ {
+  "gid": "6fa22897afa6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p7 ⑥: 'it shall be immediately corrected or a request shall be made to the head of Seoul Immigration Office to correct it: Provided, That the changed group leader shall hold a valid visa of the Republic of Korea.'"
+ },
+ {
+  "gid": "6ceb4ea9b9f5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-9-4.md: '* For a salt farm leaseholder, you must submit a lease contract and a confirmation of sea salt farming issued by the mayor or the head of a local village'"
+ },
+ {
+  "gid": "7dd3d31ace70",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/B-2-2.md: '(45 countries as of 2022.10.01)'; 'stay in the country for up to 30 days'"
+ }
+]

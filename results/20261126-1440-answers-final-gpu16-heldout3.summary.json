@@ -1,0 +1,17 @@
+{
+  "generator": "gemma4:12b",
+  "questions": 99,
+  "answered_when_answerable": 0.989,
+  "refused_when_unanswerable": 0.75,
+  "refused_or_said_not_stated_when_unanswerable": 0.917,
+  "unanswerable_answered_with_claims": [
+    "TA48"
+  ],
+  "answers_citing_a_gold_page": 0.744,
+  "citation_precision_gold_page": 1.0,
+  "invalid_citation_flags": 0,
+  "latency_p50_s": 1.31,
+  "latency_p95_s": 2.2,
+  "generation_p50_s": 1.16,
+  "mean_prompt_tokens": 2165
+}

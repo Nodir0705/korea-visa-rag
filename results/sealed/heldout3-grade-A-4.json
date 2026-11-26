@@ -1,0 +1,471 @@
+[
+ {
+  "gid": "dd083751f065",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-3-12.md: 'A healthy person aged between 18 and 40' / 'More than 3 months of working experience at a local subsidiary' / TOPIK level 2 or 50/200 with exemptions"
+ },
+ {
+  "gid": "9924e2c26bba",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "B-1.md/B-2-1.md: 'APEC Business Travel Card holders entering Korea are granted Short-Term Business (C-3-4) status and allowed to stay in Korea for up to 90 days.'"
+ },
+ {
+  "gid": "3fc839090f3f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a5e253b34643 p2 (F-2-3): 'If not living, write 'DECEASED' in the 'Date of birth' column below.'"
+ },
+ {
+  "gid": "0f5e98d792d9",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Gives the correct Case 3 limitation (IVI Director, GCF Secretary General, P-5+ secretariat) but also lists diplomatic/consular members and persons with equal privileges, which is Case 1 eligibility, not Case 3.",
+  "evidence": "A-1.md Embassy Case 3: 'an eligible applicant is limited to Director of the International Vaccine Institute, Secretary General of Green Climate Fund and secretariat worker ... P-5 or higher'; 'A member of diplomatic delegation or consulate' is under Case 1"
+ },
+ {
+  "gid": "93f77ccff334",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "F-1-22.md: embassy 'granted for up to 1 year'; CCVI 'Periods of stay will be granted for up to 90 days.'"
+ },
+ {
+  "gid": "f0d90b97cbc0",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 80df70fc488a p1: '최근 14일 이내에 후베이(湖北) 전역 또는 우한(武漢)에 방문' (Hubei or Wuhan within 14 days prior to application)"
+ },
+ {
+  "gid": "928ebe33069d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-6.md CCVI: if invited by a religious group, both religious denomination and unit submit a copy of the Registration Number Certificate"
+ },
+ {
+  "gid": "6589021a8ae9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "Apostille list p21: 'designate the Ministry of Foreign Affairs and Trade, the Ministry of Justice, and the National Court Administration'"
+ },
+ {
+  "gid": "4346e0b8a1c5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72: 'Rate of Illegal Stay = (Number of illegal stayers of previous month) / (Average number of visa issued persons in the last 3 months)'; '300 people or more ... rate ... when less than 300, number of illegal stayers will be counted'"
+ },
+ {
+  "gid": "8f7a5de73acb",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Correct students and insurance period, but omits the condition that a graduate-to-be is excluded from the requirement (question asks who must submit).",
+  "evidence": "D-4-7.md: '(only for an elementary, middle/junior high, high school student) * A graduate-to-be is excluded. ** The period of insurance policy must be longer than the length of stay in ROK'"
+ },
+ {
+  "gid": "fb8e6e25ce1d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a5f053a8415e p1: '(1) ... abides by competent laws and regulations of Korea. (2) ... travel expenses for the applicant's return ... (3) ... expenses arising from the applicant's stay or detention'"
+ },
+ {
+  "gid": "64670ae991b9",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Age, experience and TOPIK correct, but the exemption is cut short: the pledge must cover Korean education of 5+ hours a month and a full-time translator per 100 trainees; the answer just says 'a pledge for Korean language education'.",
+  "evidence": "D-3-11.md: 'pledge to implement Korean language education of 5 hours or more a month as well as dispatches a full-time translator for every 100 trainees'"
+ },
+ {
+  "gid": "5079331513c9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "B-1.md: 'granted Short-Term Business (C-3-4) status and allowed to stay in Korea for up to 90 days.'"
+ },
+ {
+  "gid": "4c605c8e4ce3",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Odd remark that the rule applies to applicants from China reads as a page-nationality caveat; the core answer is right.",
+  "evidence": "B-1.md/B-2-1.md: 'official capacity with a United Nations (LAISSEZ-PASSER) passport, you are allowed to enter Korea without a visa and stay ... up to 30 days.'"
+ },
+ {
+  "gid": "484399e1b683",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Merges the last two options into one ('Application for Confirmation of Visa Issuance Pre-investigation'); the form has four separate tick boxes, so the list shows three.",
+  "evidence": "DOC dceb1a06e238 p7: '[ ] 체류자격변경 [ ] 체류기간연장 ... [ ] 사증발급인정서 [ ] 사전심사안내 APPLICATION FOR CONFIRMATION OF VISA ISSUANCE PRE-INVESTIGATION'"
+ },
+ {
+  "gid": "c8d8a4d18e20",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-1.md E-visa: '1. Payment of at least a third of the total fees to the agency 2. Remittance or deposit of investment money of at least KRW 50 million in Korea'"
+ },
+ {
+  "gid": "f66d8d23a378",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-10-2.md: 'single-entry visa valid for 3 months. Periods of stay ... granted initially for up to 6 months.'"
+ },
+ {
+  "gid": "d30b5f605f5d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D1-00.md embassy: 'invited by Korea Foundation or Arts Council Korea'; 'single-entry visa valid for 3 months. Periods of stay ... up to 1 year.'"
+ },
+ {
+  "gid": "8ef91e0ca00a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "E-9-2.md: 'a construction company at a construction site of power plant, steelwork, or petrochemical plant, and has a construction license for an Industrial and Environmental Facility Construction, is excluded.'"
+ },
+ {
+  "gid": "9672d12ade97",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "G-1-10.md CCVI: '※ If a medical travel facilitator vouches for a patient, he/she does not have to submit this document.'"
+ },
+ {
+  "gid": "d1a276e305f6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-2-3.md: '① Visa Application Form (Form No. 17), passport, a photo in a standard format, fee ② An Invitation Letter issued by the Ministry of National Defense'"
+ },
+ {
+  "gid": "48bc9ee49a86",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72: 'Rate of Illegal Stay = (Number of illegal stayers of previous month) / (Average number of visa issued persons in the last 3 months)'"
+ },
+ {
+  "gid": "aa3550527fd5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 9682b7cb7978 p1: form fields only (agencies, e-Visa Application Number, Expected Date of Entry, reasons, list); no deadline in the form or regulation"
+ },
+ {
+  "gid": "615393361890",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-6.md CCVI: both religious denomination and unit submit a copy of the Registration Number Certificate"
+ },
+ {
+  "gid": "78dfbdcad75e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a0ab242b1eec p3: '(Fees) 50,000 KRW ... ※ Fee reduction : 20% discount for using e-Application service on HiKorea'"
+ },
+ {
+  "gid": "95be1d039f72",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "F-1-15.md: 'annual income is twice per capita GNI of the previous year or more ... if you change your status ... after earning a bachelor's degree or higher in Korea, the minimum ... lowered to per capita GNI'"
+ },
+ {
+  "gid": "6bbcc7ccdfd5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p5: 'have new passport issued thereafter in lieu of lost/damaged passport, you must notify the concerned visa office of changes in your passport information.'"
+ },
+ {
+  "gid": "0c58a755d545",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-10.md: 'It only allows you to transfer to a connecting flight. You cannot go through immigration with the visa to enter the Republic of Korea.'"
+ },
+ {
+  "gid": "063e44d9ea21",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The 'No' is right, but the second sentence says that if you forget the confirmation you must present it to the officer, which is self-contradictory; only the next sentence gives the actual rule (explain your reasons).",
+  "evidence": "DOC 00a9469f00fc p2: '1. If you receive an e-Visa, you will not have to apply for a visa at a Korean diplomatic mission. 2. ... If you do not bring the document with you, you will need to explain your reason(s) to the immigration officer.'"
+ },
+ {
+  "gid": "33976dfb69ea",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-6.md: 'invited by a company or an organization designated by the Minister of Justice of ROK as a preferential company' (no criteria given)"
+ },
+ {
+  "gid": "48dba6f88672",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 80df70fc488a p1: '최근 14일 이내에 후베이(湖北) 전역 또는 우한(武漢)에 방문 또는 체류'"
+ },
+ {
+  "gid": "afe2c75370c5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "F-5-11.md [Sports]: 'won a bronze medal or above at an international athletic competition equivalent to the Olympic, the World Championship, the Asian Game ... Soccer players and the coaches finished in the Top 16 at the World Cup Game while being recommended by the Minister of Culture, Sports and Tourism'"
+ },
+ {
+  "gid": "8be6c02c109e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "F-1-13.md: 'a Balance Statement proving that the standard amount of money has been deposited for at least 1 month' (no amount stated)"
+ },
+ {
+  "gid": "20909667d529",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-9.md: 'Visits on a Medical Tourism visa are acknowledged only when the total medical fees ... exceed 2 million KRW during the recent 1 year'"
+ },
+ {
+  "gid": "04a363589819",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC fa7181cf50ef p1: 'free to work, study, and involve in economic activities, however, you must not engage in any speculative behavior or sell or work in an industry that hinders public good and custom.'"
+ },
+ {
+  "gid": "9616d6f4bb2a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D1-00.md embassy: 'invited by Korea Foundation or Arts Council Korea'; 'Periods of stay for this visa will be granted for up to 1 year.'"
+ },
+ {
+  "gid": "6798a2bba4fb",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Uses Case 2 documents (proof of education + plan) and leaves out the transcript; a Korean community-college graduate falls under Case 3: proof of education AND transcript plus plan. The ISIS exemption is right.",
+  "evidence": "D-10-1.md: 'Case ③ : Proof of education and Transcript, plan for seeking employment * If a proof of education in Korea can be verified via our system (International student Information System), you are exempt'"
+ },
+ {
+  "gid": "b1b88338b5f6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "F-6-2.md: '※ If you only have visitation rights to your child, you are not eligible for this visa.'"
+ },
+ {
+  "gid": "6d65f577f974",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-3.md: only the overview ('A patient who plans to enter Korea for medical treatment ... or a caregiver'); no document list"
+ },
+ {
+  "gid": "32ba675572ae",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b7359bf7bf77 p3 (<개정 2023. 12. 14.>): 'If ‘Work’, provide 2-digit occupation and industry code'"
+ },
+ {
+  "gid": "3061af35d804",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a5e253b34643 p3 (F-2-3): 'If you visited the Republic of Korea more than 3 times, provide details about the most recent visit.' (same note on DOC 0648afd6fef6 and ebb358d8436f)"
+ },
+ {
+  "gid": "d40351db0cd8",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "B-1.md: 'United Nations (LAISSEZ-PASSER) passport ... enter Korea without a visa and stay in the country for up to 30 days.'"
+ },
+ {
+  "gid": "b2139369b964",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-4-3.md CCVI: '* A written statement of Guardianship must be submitted even if the guardian of a student is a parent, or a family member closer than second degree'"
+ },
+ {
+  "gid": "7145d787fa98",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Twice per capita GNI is right, but it wrongly says changing to F-2/F-5 lowers the minimum (that note only extends coverage) and says the Korean bachelor's-degree case stays at twice GNI, when the page lowers it to 1x GNI.",
+  "evidence": "F-1-15.md: '- Including a person who has changed his/her status of stay to F-2, F-5 ...'; '- However, if you change your status ... after earning a bachelor's degree or higher in Korea, the minimum annual income requirement is lowered to per capita GNI'"
+ },
+ {
+  "gid": "09f8925e57d8",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b48153dede7c p1: '※ Entry restrictions have been implemented for Japan as of March 9, 2020'"
+ },
+ {
+  "gid": "6c5b558f2805",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-4.md: '※ If the lecturer or speaker is not compensated other than flight and accommodation, he/she is eligible for a Short-term General (C-3-1) visa.'; '② An employment contract ... or an invitation card that indicates lecture fees'"
+ },
+ {
+  "gid": "2865bdfe6896",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p6: 'visa fees and electronic payment service fees shall be paid through the Electronic Payment System.'"
+ },
+ {
+  "gid": "72cb78695236",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Says it cannot find the answer, but the form states it: the 2-digit occupation and industry code, with codes on the Korea Visa Portal.",
+  "evidence": "DOC b7359bf7bf77 p3: '‘취업활동’ 선택 시 직종/업종코드 2자리 기재 If ‘Work’, provide 2-digit occupation and industry code'"
+ },
+ {
+  "gid": "fb90022910f1",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Eligibility right, but it never says how many entries or how long a stay: it stops at 'same as principal' and skips the E-1 e-visa terms (single-entry, stay up to 1 year).",
+  "evidence": "F-3-1.md E-visa: 'same number of entries and the length of stay as a principal applicant'; E-1.md E-visa: 'single-entry visa valid for 3 months. Periods of stay will be granted for up to 1 year.'"
+ },
+ {
+  "gid": "93057540680d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-2.md: 'The visa holder is not permitted to extend or change his/her visa.'"
+ },
+ {
+  "gid": "ae2907fd72ca",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "A-1.md Embassy Case 3: 'limited to Director of the International Vaccine Institute, Secretary General of Green Climate Fund and secretariat worker ... P-5 or higher'"
+ },
+ {
+  "gid": "d025fbe95736",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-7-91.md: only 'Transferee of a corporation under FTA'; no document list in corpus"
+ },
+ {
+  "gid": "8bb7b8018600",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-4-7.md: '(only for an elementary, middle/junior high, high school student) * A graduate-to-be is excluded. ** The period of insurance policy must be longer than the length of stay in ROK'"
+ },
+ {
+  "gid": "97d391493944",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "F-1-21.md CCVI: 'nationality is different from a member of a diplomatic mission'; 'single-entry visa valid for 3 months. Periods of stay ... up to 90 days.'"
+ },
+ {
+  "gid": "4547df686e85",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "F-1-22.md: embassy 'up to 1 year'; CCVI 'up to 90 days'"
+ },
+ {
+  "gid": "b303a3e06af3",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb p1-3: high TB-burden nationals living there applying for a long-term visa (91 days+) at a mission; 'Certificate of Health including TB test result (Attachment 1, valid for one year) issued by a hospital designated by Korean diplomatic missions'; Vietnam listed; E-9-5.md stay up to 1 year"
+ },
+ {
+  "gid": "82081ccc6b05",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 378ca86d6953 p1: 'United States of America, Japan and 24 European Countries ... Greece, Netherlands, ... Finland, Hungary'"
+ },
+ {
+  "gid": "25a0d7f348d0",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "F-5-11.md [Sports]: bronze medal or above at Olympic/World Championship/Asian Game equivalents; soccer Top 16 at World Cup, recommended by Minister of Culture, Sports and Tourism"
+ },
+ {
+  "gid": "b998f92d2e9b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-3-10.md: 'It only allows you to transfer to a connecting flight. You cannot go through immigration with the visa to enter the Republic of Korea.'"
+ },
+ {
+  "gid": "536a2757edfc",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-10-2.md: 'single-entry visa valid for 3 months. Periods of stay ... granted initially for up to 6 months.'"
+ },
+ {
+  "gid": "3339d22a56f2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "E-9-3.md: '⑤ A certificate demonstrating the size of farm ... or a copy of Agriculture/Fishery Entity Registration Certificate ... * If you are a crop farmer, you can submit a certified copy of resident registration, instead.'"
+ },
+ {
+  "gid": "9891e582710c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-5.md embassy: '③ A copy of permit to the establishment of a Korean branch or liaison office, or a document demonstrating foreign capitals flowing into a Korean branch office'"
+ },
+ {
+  "gid": "bb631d554731",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "C-4.md: C-3-1 if not compensated other than flight and accommodation; '② An employment contract (on providing lectures·public speeches) or an invitation card that indicates lecture fees and others'"
+ },
+ {
+  "gid": "6bd141b88f5f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bf96aac2845d p1: '1st month ... 6th month'; 'Financing Plan for Living Costs 现金 Cash 存款 Deposit 信用卡 Credit card 汇款 Remittance'"
+ },
+ {
+  "gid": "6d742fe18d78",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "E-10-3.md: 'seafarer labor contract of 6 months or more with an employer engaging in a cruise service (operating cruise ship of 2,000 tons or heavier)'"
+ },
+ {
+  "gid": "522a73597010",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Wrong item: gives the lost/damaged-passport notification notice. The form for visa-issuance-confirmation holders asks whether the passport was changed within the recent 3 months (item 3.5).",
+  "evidence": "DOC 707f31dc69f0 p1 (APPLICATION FOR VISA For those in possession of visa issuance confirmation): '3.5 여권 변경 여부(최근 3개월 이내) Change of Passport(within recent 3 months)'"
+ },
+ {
+  "gid": "b4e9df6eb527",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "D-4-1.md: '(bank statement is only accepted when it is issued within the past 30 days)'"
+ }
+]

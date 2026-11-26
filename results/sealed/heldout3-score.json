@@ -1,0 +1,24 @@
+{
+ "summary": {
+  "baseline": {
+   "n": 99,
+   "fully_both": 78,
+   "core_both": 91,
+   "fully_either": 80
+  },
+  "gpu8": {
+   "n": 99,
+   "fully_both": 81,
+   "core_both": 90,
+   "fully_either": 81
+  },
+  "gpu16": {
+   "n": 99,
+   "fully_both": 92,
+   "core_both": 95,
+   "fully_either": 92
+  }
+ },
+ "dropped": [],
+ "agreement": 0.9891696750902527
+}
