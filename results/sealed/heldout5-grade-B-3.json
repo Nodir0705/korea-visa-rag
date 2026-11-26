@@ -1,0 +1,338 @@
+[
+ {
+  "gid": "f4d210fa61b9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 0648afd6fef6 p3: 'ASSISTANCE WITH THIS FORM 성명 Name 주소 Address 연락처 Phone number 신청인과의 관계 Relation to you'"
+ },
+ {
+  "gid": "c1e5e5fab890",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-7-1.md CCVI Case 2: 'Certificate of Foreign Legal Consultant Office Registration (issued by the Korean Bar Association)'; 'A declaration form of the establishment of a branch (issued by the Foreign Exchange Bank)'"
+ },
+ {
+  "gid": "23ab2f6ce261",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-5-11.md: page has eligibility by field and required documents only; no 'Visa validity and period of stay' section"
+ },
+ {
+  "gid": "794fdd22f609",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 06a10683e48f p1: '7) Have you taken any banned substances(drugs) or been addicted to alcohol in the last 5 years?' / '9) Have you had any serious diseases or injuries in the last 5 years?'"
+ },
+ {
+  "gid": "fe3c5677d9c2",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Main answer correct, but the added claim that on the visa application form a 'Yes' to dual nationality requires Family Name and Given Name is wrong: the form asks only for the countries for dual nationality (Family/Given Name applies to other names used).",
+  "evidence": "DOC 45ad877e4898 p8: '10) If you use a different name from what you have on your passport, please enter it. 11) If you have multiple nationalities, please enter the other country's name.'; DOC 707f31dc69f0 p1: '1.9 ... If'Yes'please write the countries ( )'"
+ },
+ {
+  "gid": "c1507a962c29",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Number of trips and purpose of recent visit are right, but 'period of stay' is not asked for Korea trips; that field belongs to 7.7 (travel to other countries).",
+  "evidence": "DOC b7359bf7bf77 p3: '7.6 ... If 'Yes', please provide details of any trips to Korea ( ) 회 times, 최근 방문목적 Purpose of Recent Visit ( )'"
+ },
+ {
+  "gid": "db525127fcfa",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Gives the recommended-doctor case and its three institution types, but omits the second eligible doctor case (graduate of a Korean medical/dental school doing an internship/residency at a university-affiliated or MOHW-designated hospital) and the foreign-licence precondition.",
+  "evidence": "pages/E-5.md CCVI: 'A person who obtains a foreign license acknowledged by Korean laws...'; '2. A person who plans to take an internship or a residency program at a university-affiliated hospital...after the graduation from a medical or dental school in ROK'"
+ },
+ {
+  "gid": "b3f86f5de441",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 80df70fc488a p1: 'If you marked any of the above symptoms, please mark all of the following that apply. [ ] (Medication taken for symptoms) [ ] (Undergone diagnosis or medical care)'"
+ },
+ {
+  "gid": "7c54475ff80a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p71 (Kazakhstan entry): 'stipulates the apostille of 9 x 9 cm in size.It is expedient to have a stamp of the apostille, which size is 13 x 13 cm.'"
+ },
+ {
+  "gid": "6b2cc110866f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p2, 6.1: 'Master's /Doctoral Degree [ ] Bachelor's Degree [ ] High School Diploma [ ] Other [ ]'"
+ },
+ {
+  "gid": "4750d9f6353d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-5-11.md [Business Management]: 'A full-time director at a company with capitals worth more than 8 billion KRW...'; 'A multinational manager or an executive who has worked for 1 year or more at a company listed on the 500 companies...'"
+ },
+ {
+  "gid": "0bb93e97cfec",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Gives the close-review consequence correctly; it does not mention the additional documents required of investors under 300 million KRW, which the question (whether it causes a problem) does not explicitly ask for.",
+  "evidence": "pages/D-8-3.md: '※ Private investors who have invested less than 300 million KRW and have no entrepreneurial experiences will be closely reviewed.'"
+ },
+ {
+  "gid": "b5d8531e6086",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb p5: 'II. 治療结果(2) (Treatment Outcomes) - For person who has TB history 1. (Under treatment) 2. (Cured) 3. (Completed Treatment) 4. (Failed) 5. (Defaulted)'"
+ },
+ {
+  "gid": "e00a565ed002",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-4.md Embassy Case 3: '※ If the document is issued from a country that is not a signatory country of the Apostille Convention, the document can be confirmed by a consulate of a respective country's diplomatic mission in ROK.'"
+ },
+ {
+  "gid": "9f641c8d408a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b7359bf7bf77 p4: 'in accordance with Article 17 (2) of the Enforcement Regulations of the Immigration Act' ; 'SIGNATURE(SEAL) OF APPLICANT(INVITING PERSON) ... Signature of Parent or Legal Guardian for a Person under 17 years of age'"
+ },
+ {
+  "gid": "305d8843dc56",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Says the regular form's procedure is not in the passages, but the regular visa application form prints it (all steps at the diplomatic mission); it also wrongly says the Immigration Office handles all CVI steps, when visa application and issuance is at the diplomatic mission.",
+  "evidence": "DOC b7359bf7bf77 p5: 'Reception è Assessment è Notification è Visa Application and Issuance ... Immigration Office ... (재외공관) Diplomatic Mission'; DOC 78db7641ce7e p5: '처리절차 / Procedure 신청서 작성 Application è 접 수 Reception è 심 사 Review è 결 재 Approval è 사증 발급 Issuance 신청인 Applicant 처 리 기 관 (재외공관)'"
+ },
+ {
+  "gid": "91e0ae151219",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/G-1-10.md E-visa: '※ If an inviting organization guarantees a personal identity of an applicant, you are not required to submit this document.'; '※ If an institute is registered at Visa Portal, you are not required to submit this document.'"
+ },
+ {
+  "gid": "1aaf12514843",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p5 Belgium: 'Ministère des Affaires étrangères, du Commerce extérieur et de la Coopération au Développement' ; 'rue des Petits Carmes 27 1000 BRUSSELS Belgium'"
+ },
+ {
+  "gid": "13cf8af910b5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bb553b933f21 p1: 'a crisis alert* of the \"caution\" level of higher in line with \"Act On Counter-terrorism For The Protection Of Citizens And Public Security\"'"
+ },
+ {
+  "gid": "7b346ed19e08",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 1ebf85caa52b p1: 'permission for extension of sojourn areas (62 countries) - Will only apply to those who entered the Republic of Korea before this announcement went into effect ... (35 countries) ... (2 countries) ... (25 countries)'"
+ },
+ {
+  "gid": "49c511393f8a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b48153dede7c p1: 'Middle East (4) Morocco, UAE, Israel, Tunisia'; p2: 'Middle East (5) Bahrain, Oman, Saudi Arabia, Qatar, Kuwait'"
+ },
+ {
+  "gid": "280b3dfb8419",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 06a10683e48f p1: questions 7) and 9) 'in the last 5 years'"
+ },
+ {
+  "gid": "11d8fef12665",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 22749c38337f p1 / DOC a9293b83531f p1: 'approved in accordance with article 7(2) of the Korean Immigration Act'"
+ },
+ {
+  "gid": "fcb06d1725d4",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-6.md: '(account balance must be issued within the past 30 days)'; 'Periods of stay will be granted for up to 6 months.'"
+ },
+ {
+  "gid": "91bcd9df1e60",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p44 Sweden: 'designated all notaries public as Competent Authorities'; 'The average cost for issuance of the Apostille is SEK 250 (approx. 27) €'"
+ },
+ {
+  "gid": "7f48a782e9ef",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-7-92.md: only overview 'An employee affiliated with a company of in an FTA contract and is dispatched to ROK for providing or supporting contract services'"
+ },
+ {
+  "gid": "aafac166f4b9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-1.md: '② An international press card or a document demonstrating an applicant's current employment status or overseas assignment'"
+ },
+ {
+  "gid": "fd53731f987f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bb553b933f21 p1: requires relaying guest info 'via an information network designated by the Ministry of Justice'; no time limit stated"
+ },
+ {
+  "gid": "fd38fed86772",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-23.md: '※ The employer's income should be three times more than gross national income (GNI)'; no salary amount for the assistant"
+ },
+ {
+  "gid": "1d6411f6a60b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 0648afd6fef6 p2: 'Do you have children from your previous marriages? ... Name of child, Date of birth, Nationality, Person charged with custody of child'"
+ },
+ {
+  "gid": "11eb83a514ab",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb p1: '1. Legal Basis Article 11, 46 (1) and 89 (1) of the Immigration Control Act, Article 9-2 of the Enforcement Rule of the Act, etc.'"
+ },
+ {
+  "gid": "a5178bc2c1f6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a0ab242b1eec p1: 'should visit a Korean diplomatic mission abroad to extend the re-entry permit period in case entering the ROK within the relevant period is difficult due to COVID-19.'"
+ },
+ {
+  "gid": "20b3c881af32",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 45ad877e4898 p7: '7) Nationality: when you click the icon, a pop-up window will appear... 7-1) ... click the \"Search\" button ... national code and official name ... 7-2) When you click the \"Close\" button, the pop-up window will close.'"
+ },
+ {
+  "gid": "a4350bfd20c3",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/H-1.md: no weekly hour limit stated"
+ },
+ {
+  "gid": "a5a3f9a02dbb",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 45ad877e4898 p7: '4) Your name in Chinese characters (④): only when you have them'"
+ },
+ {
+  "gid": "d6e5ba453c14",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Conditions and the >3 family-member rule are right, but it says 'You are eligible to apply for the F-1-15 visa as a student'; the F-1-15 is for the parent, the student is only the inviter, so the opening misstates who applies and never says the parents can come.",
+  "evidence": "pages/F-1-15.md: 'A parent of a person satisfying the following requirements ... ③ (student) a foreign student enrolled in a master's/doctoral program of Korea who has stayed in the country for 6 months or more'"
+ },
+ {
+  "gid": "c269b95ecdae",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "D-5 status change is right, but it says the D-5 period of stay is not stated; the D-5 guide grants stays of up to 1 year (embassy and CCVI), which is the asked final fact.",
+  "evidence": "pages/C-1.md: 'allowed to change your status of stay to the Long- Term News Coverage ( D-5 ) visa'; pages/D-5.md: 'Periods of stay for this visa will be granted initially for up to 1 year.' / 'Periods of stay will be granted for up to 1 year.'"
+ },
+ {
+  "gid": "8f7c93e87197",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-2-1.md: '- If you have a degree from a university in ROK, an un-authenticated copy of a degree will also be accepted.'"
+ },
+ {
+  "gid": "5c7bfc69852a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-2-4.md Embassy Case 1: '* For scholarship students invited by the National Institute for International Education, an invitation letter issued by the director can be a replacement'"
+ },
+ {
+  "gid": "34ab7d93a9bc",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p3, 8.7: 'travelled outside his/her country of residence, excluding to Korea, in the last 5 years? ... Name of Country (in English) Purpose of Visit Period of Stay'"
+ },
+ {
+  "gid": "1bdfbf183631",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Refuses the comparison, saying the regular form's procedure is not given, but the regular visa application form prints it (Application by applicant; Reception, Review, Approval, Issuance at the diplomatic mission); it also labels the last CVI step 'Immigration Office (Diplomatic Mission)'.",
+  "evidence": "DOC 78db7641ce7e p5: '처리절차 / Procedure 신청서 작성 Application è 접 수 Reception è 심 사 Review è 결 재 Approval è 사증 발급 Issuance 신청인 Applicant 처 리 기 관 (재외공관)'"
+ },
+ {
+  "gid": "114dca3f2025",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb: 'issued by a hospital designated by Korean diplomatic missions'; no hospital names listed"
+ },
+ {
+  "gid": "c5d2b114ddea",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Gives the F-6-1 spouse visa (5-year multiple entry), which is for the foreign spouse, not her parent. The corpus case is C-3-1 embassy Case 2: parents of a foreign spouse married over a year with registration in both countries get a 3-year multiple-entry visa, up to 90 days per stay.",
+  "evidence": "pages/C-3-1.md Case 2: '2) Child under age of 20 or parents of a foreign spouse who maintains his/her marriage with Korean national for more than a year after the marriage registration in both countries' ; 'multiple-entry visa valid for 3 years. Periods of stay ... up to 90 days.'"
+ },
+ {
+  "gid": "e25341ab5f8e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC d624741b2dc8 p1: '7) ... Narcotic (Drug) or ... addicted to alcohol in the last 5 years?' '9) ... serious Diseases or Injuries for the last 5 years?'"
+ },
+ {
+  "gid": "998e4a2c4aa1",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p2, 6.1: 'Master's /Doctoral Degree [ ] Bachelor's Degree [ ] High School Diploma [ ] Other [ ]'"
+ },
+ {
+  "gid": "c1eb0ee202d9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a0ab242b1eec p2: 'Re-Entry Permit Exemption Ineligibility ❍ Persons banned from entering Korea and persons to whom visa issuance is prohibited will need additional review procedures and re-entry permit can be restricted → Please inquire at immigration offices'"
+ },
+ {
+  "gid": "ee20eac752dd",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Representative details are right, but the added 'guide information' belongs to the other group confirmation (the version with a 'Guide' section instead of 'Details of Representative'); the document asked about has no guide section.",
+  "evidence": "DOC 22749c38337f p1: '2. DETAILS OF REPRESENTATIVE PHOTO Full Name Date of Birth Gender Nationality Passport No. Passport Expiration Date'; DOC 00a9469f00fc p1: '2. Guide Nationality English Name Gender Date Of Birth Passport No.'"
+ },
+ {
+  "gid": "16f068f15df8",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 0648afd6fef6 p3: '[ ] 예 (아래에 관련 일시, 사유 등을 상세히 기재하시오) / Yes (please provide details)' (same on DOC ebb358d8436f p3)"
+ }
+]

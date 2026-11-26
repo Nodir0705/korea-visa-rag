@@ -1,0 +1,338 @@
+[
+ {
+  "gid": "5902bfad8fe6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-2-3.md Embassy Case 1: \"Criminal Records of both parties that are married, which are issued by a responsible organization of respective country\"; \"Health check-up results of a married couple - ... equivalent to a hospital as set forth in the Medical Service Act or the Local Health Act. However, if you are a foreign spouse, you can submit similar documents issued from your country instead.\""
+ },
+ {
+  "gid": "46bbde5929e9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p4: \"shall not apply for a group visa with an overseas diplomatic mission: Provided, That the foregoing shall not apply where the Minister of Justice has approved on the condition of a specified period of time, or where group e-visas cannot be issued on unavoidable circumstances such as computer network problems\""
+ },
+ {
+  "gid": "962953ca56ed",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb p4: \"Treatment Outcomes - For person who has TB history 1. Under treatment 2. Cured 3. Completed Treatment 4. Failed 5. Defaulted\""
+ },
+ {
+  "gid": "e06996b12cb3",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-8-2.md Embassy item 4: \"A copy of Patent Registration Certificate, Utility Model Registration Certificate, Design Registration Certificate, Trade Mark Registration Certificate ... Copyrights Registration Certificate ...\"; \"An assessment result proving an excellent technical performance from Korea Technology Finance Corporation or Small and Medium Business Corporation\""
+ },
+ {
+  "gid": "24e6fb66a013",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The past-record condition omits 'forcibly evicted': the source lists denied entry, fined more than 5 million KRW, forcibly evicted, or deportation order in the past 3 years; the answer lists only three of the four.",
+  "evidence": "pages/B-2-1.md Tourists in transit, Condition of Permission: \"had not been fined more than 5 million KRW or not have been forcibly evicted or received a deportation order for violation of law in the past 3 years\""
+ },
+ {
+  "gid": "a637e3359811",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Answer's aside that the internship/residency category is for Korean medical-school graduates rather than foreign-licence holders is an interpretation of the page layout, but the eligible groups and institutions are correct and complete.",
+  "evidence": "pages/E-5.md CCVI Eligibility: \"1. A doctor recommended by the Minister of Health and Welfare ... medical institution run by Government or Local government / A medical corporation / ... non-profit corporation or a government invested corporation 2. A person who plans to take an internship or a residency program ...\""
+ },
+ {
+  "gid": "957260eb57ab",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 1f9dd47d0d65 p2: \"About 1.09 million foreigners were granted a single-entry visa from March to June 2015.\""
+ },
+ {
+  "gid": "0394095ed9f4",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-8-1.md Case B. Investment in Kind: \"A copy of Confirmation of Completion of In-Kind Investment issued by the head of Korean Customs Service\"; \"A copy of Customs Import Declaration Certificate\""
+ },
+ {
+  "gid": "d7827e963f9f",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Refuses although the corpus answers it: C-3-1 Embassy Case 2 covers parents of a foreign spouse married to a Korean for more than a year after registration in both countries, with a 3-year multiple-entry visa and stays up to 90 days.",
+  "evidence": "pages/C-3-1.md Embassy Case 2: \"parents of a foreign spouse who maintains his/her marriage with Korean national for more than a year after the marriage registration in both countries\"; \"multiple-entry visa valid for 3 years. Periods of stay ... up to 90 days.\""
+ },
+ {
+  "gid": "760055f0f123",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Adds 'the period of stay', which the CVE form does not ask for Korea trips (it asks only number of times and purpose of recent visit); period of stay belongs to the visa application form or the other-countries question.",
+  "evidence": "DOC b7359bf7bf77 p3 item 7.6: \"If 'Yes', please provide details of any trips to Korea ( ) times, Purpose of Recent Visit ( )\""
+ },
+ {
+  "gid": "d0dfe9f7a08d",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The question asks whose criminal records and health check-ups are required; the answer never says both spouses / the married couple (nor that criminal records come from each country's authority).",
+  "evidence": "pages/F-2-3.md Embassy Case 1: \"Criminal Records of both parties that are married\"; \"Health check-up results of a married couple\""
+ },
+ {
+  "gid": "039f1f1764d1",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-3-11.md item 5: \"Foreign Direct Investment Declaration (an original document or a copy stamped by a public official)\"; \"when making investment in kind, a confirmation of an export permit issued by the customs\""
+ },
+ {
+  "gid": "72c5a2373717",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p3 item 8.7: \"Has the applicant travelled outside his/her country of residence, excluding to Korea, in the last 5 years? ... Name of Country (in English) Purpose of Visit Period of Stay (yyyy/mm/dd)~(yyyy/mm/dd)\""
+ },
+ {
+  "gid": "6efbfef31201",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-24.md: \"The employer's income should be three times more than gross national income (GNI) of the previous year announced by the Bank of Korea\""
+ },
+ {
+  "gid": "553c14c7fecc",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a9293b83531f p1: \"approved in accordance with article 7(2) of the Korean Immigration Act\""
+ },
+ {
+  "gid": "c196d7067a8f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Period of stay (up to 1 year) is not mentioned, but the question asks only what visa is issued.",
+  "evidence": "pages/H-2-1.md CCVI Case 1: \"a Korean kin between third degree and eighth degree relationship, or a Korean relative between third and fourth degree relationship\"; \"multiple-entry visa valid for 3 years\""
+ },
+ {
+  "gid": "1f6f8607afe5",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-3-13.md item 6: \"Documents proving the number of full time employees ... to determine the permitted number of accepting trainees - ... statement of insurance qualification printed out from the website of the Ministry of Employment and Labor (Employment Insurance website)\""
+ },
+ {
+  "gid": "c3bf0b06dc1c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Correct. Note: the corpus doc titled 'CONFIRMATION OF E-VISA ISSUANCE' (22749c38337f) actually holds the group form text; the individual form is DOC a9293b83531f, which lacks Intended Date of Arrival.",
+  "evidence": "DOC 00a9469f00fc p1: \"VISA DETAILS Status of Stay Period of Stay Number of Entries Date of Issue Expiry Date Intended Date of Arrival\"; DOC a9293b83531f p1: \"VISA DETAILS Status of Stay Period of Stay Number of Entries Date of Issue Expiry Date Remarks\""
+ },
+ {
+  "gid": "f074bc5ef77b",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Main answer is wrong: Mexico is listed among the 10 visa-waiver countries still eligible for visa-free entry after April 13, 2020, so no visa was needed.",
+  "evidence": "DOC b48153dede7c p2: \"The countries still eligible for visa-free entry after April 13, 2020 are as follows. <10 Visa-waiver Countries> Americas (7) Nicaragua, Commonwealth of Dominica, Mexico, ...\""
+ },
+ {
+  "gid": "721902d07834",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-7-92.md contains only the overview: \"An employee affiliated with a company of in an FTA contract and is dispatched to ROK for providing or supporting contract services\"; no documents or stay period."
+ },
+ {
+  "gid": "227a6829af8f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-4.md Embassy Case 1: \"single-entry visa valid for 3 months or a double-entry visa valid for 6 months. Periods of stay will be granted for up to 90 days for a single-entry visa, and 30 days for a double-entry visa.\""
+ },
+ {
+  "gid": "4609ccf458d9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-4.md Case 3: \"If the document is issued from a country that is not a signatory country of the Apostille Convention, the document can be confirmed by a consulate of a respective country's diplomatic mission in ROK.\""
+ },
+ {
+  "gid": "23a42d8127ac",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-9.md Embassy: \"multiple-entry visa valid for 1 year. Periods of stay for this visa will be granted initially for up to 90 days.\""
+ },
+ {
+  "gid": "c2c3c2380ef0",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC ebb358d8436f p2 item 2.4: \"Do you have children from your previous relationship? Yes (Please provide details about child) ... Name of child Date of birth Nationality Person charged with custody of child\""
+ },
+ {
+  "gid": "854b98a2ee9a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC ebb358d8436f p2 item 2.4: \"Yes (Please provide details about child) ... Name of child Date of birth Nationality Person charged with custody of child\""
+ },
+ {
+  "gid": "c337fed45e7c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/B-1.md ABTC: \"ABTC member countries (there are currently 19 countries) South Korea, Australia, New Zealand, Japan, China, Hong Kong, Taiwan, Vietnam, Singapore, Thailand, Malaysia, Indonesia, Brunei, Papua New Guinea, the Philippines, Peru, Chile, Mexico, Russia\""
+ },
+ {
+  "gid": "a72c35f62c79",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-1.md: \"② An international press card or a document demonstrating an applicant's current employment status or overseas assignment\""
+ },
+ {
+  "gid": "61d02a193d1d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-6-1.md: \"multiple-entry visa valid for 5 years. Periods of stay for this visa will be granted for up to 90 days.\""
+ },
+ {
+  "gid": "ea141c79cd4b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 02997dfa266b p2: \"annual per capita average income of Vietnam stands at $ 2,300 as of 2017, the income level rises to $ 5,538 in Ho Chi Minh City and $ 3,500 in Hanoi\""
+ },
+ {
+  "gid": "8b4e7b8edcae",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p10 Art. 8(1): \"1. Attraction of group tourists 2. Actual condition of work handling, including group-visa application matters 3. Management of personal information 4. Compliance with other provisions under this regulation\""
+ },
+ {
+  "gid": "74073727213c",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Sanction (6-month suspension) is correct, but the answer adds that 'the number of illegal stayers is between 9 and 10', which is not given and not used: with a 3-month average of 300 or more only the rate of illegal stay is applied.",
+  "evidence": "DOC 8b0fb6d60b72 p12 Table 1: \"Suspension (6 months) 9 ~ 10 ... 2.0 ~ less than 3.0%\"; p13: \"When the average number of tourists was 300 people or more in the last 3 months, the rate of illegal stay will be calculated; when less than 300, number of illegal stayers will be counted\""
+ },
+ {
+  "gid": "3343e397831b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-24.md: \"The employer's income should be three times more than gross national income (GNI) of the previous year announced by the Bank of Korea\""
+ },
+ {
+  "gid": "c59c898d6a7b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC fa7181cf50ef p1: \"all agents who sell their real estate properties to others must check the lease status, mortgage, sale or foreclosure of their individual buyers and report to the Immigration Office every May and November\""
+ },
+ {
+  "gid": "b79060b6b32e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-9.md Embassy: \"multiple-entry visa valid for 1 year. Periods of stay for this visa will be granted initially for up to 90 days.\""
+ },
+ {
+  "gid": "211a03592dd3",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Correctly describes the completion certificate, but never names the case-specific documents the question asks for (Education Certificate, Completion Certificate, plan for seeking employment); it only says 'documents for Case 4'.",
+  "evidence": "pages/D-10-1.md: \"Case ④ : Education Certificate, Completion Certificate*, plan for seeking employment * A certificate indicating research topic, research period, completion results, which is issued by the head of research institution\""
+ },
+ {
+  "gid": "5af35957856e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/A-1.md Embassy Case 1: \"3. Immediate family members of the above applicants - Parents, spouse, child residing in ROK together with the above applicants\""
+ },
+ {
+  "gid": "92a0acac66c6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bf96aac2845d p1: \"2. Desired Employment Detail Occupational Category Name of company Salary\""
+ },
+ {
+  "gid": "89d23a026825",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-10-2.md: \"A person having a bachelor's degree or above(including a prospective graduate) preparing for business establishment with intellectual property right or equivalent skills\"; \"single-entry visa valid for 3 months ... initially for up to 6 months\""
+ },
+ {
+  "gid": "a951758a8546",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Status and 72-hour stay and the 'Condition of Permission' are right, but it leaves out the conditions defining a general transfer passenger: transferring through Incheon Airport and taking part in the Transit Tourism Program, with citizens of the 24 Jeju-visa countries excluded.",
+  "evidence": "pages/B-1.md Visa Free Entry for foreign transfer passengers: \"those transferring through the Incheon Airport and taking part in the Transit Tourism Program ... However, citizens of the 24 countries that need visas to enter Jeju island are not included\"; \"Possessing a transfer ticket and staying in the Seoul Capital Area for up to 72 hours\"; \"Tourist/Transit (B-2), 72 hours\""
+ },
+ {
+  "gid": "e1fa75680152",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "All industries named; the 'for company located onshore' qualifier on cold storage is omitted but the overview also lists cold storage unqualified.",
+  "evidence": "pages/E-9-5.md: \"construction waste processing, cold-storage (for company located onshore), collecting or selling reusable material industry, books, magazines, and other printed matter publishing industry, or music and other audio publishing industry\""
+ },
+ {
+  "gid": "50c0e039ec3f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-6-1.md: \"multiple-entry visa valid for 5 years. Periods of stay for this visa will be granted for up to 90 days.\""
+ },
+ {
+  "gid": "c1c1c01ae17f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-9-1.md: \"a manufacturer with less than 300 full-time workers or capital worth less than 8 billion KRW\""
+ },
+ {
+  "gid": "8e429972e09e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines correctly; the 3-days-before-departure fact is correctly attributed to re-entry permits, not presented as the answer.",
+  "evidence": "DOC 80df70fc488a p1 asks only \"Expected Date of Entry\", cities within 30 days and Hubei/Wuhan within 14 days; no submission deadline."
+ },
+ {
+  "gid": "024e58d70bb4",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 45ad877e4898 p8: \"10) If you use a different name from what you have on your passport, please enter it. 11) If you have multiple nationalities, please enter the other country's name.\""
+ },
+ {
+  "gid": "cc22a39b832c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 336de610abfb p1: \"Legal Basis Article 11, 46 (1) and 89 (1) of the Immigration Control Act, Article 9-2 of the Enforcement Rule of the Act, etc.\""
+ },
+ {
+  "gid": "cb387a84f998",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Opens with the general 1-year rule as context, then states the specific rule asked: until the validity of stay.",
+  "evidence": "DOC a0ab242b1eec p2: \"Re-entry will be allowed until the validity of stay for persons with period of stay of less than l year\""
+ },
+ {
+  "gid": "6142af2c870b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-6-1.md: \"④ A performance recommendation letter from the Korea Media Rating Board (If an applicant's performance is not recommended, then you will be exempt from submitting this document) ⑤ An outline of performance\""
+ },
+ {
+  "gid": "bb9e1ca3bccd",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bb553b933f21 p1: \"in the issuance of a crisis alert* of the \\\"caution\\\" level of higher in line with \\\"Act On Counter-terrorism For The Protection Of Citizens And Public Security\\\"\""
+ }
+]

@@ -1,0 +1,338 @@
+[
+ {
+  "gid": "a4802a1d0663",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 80df70fc488a p1 (Health Condition Report Form): \"Making false statements concerning your health or failing to fill out the form may result in a denial of visa, entry into or permission of stay in the ROK in accordance with the Immigration Act\""
+ },
+ {
+  "gid": "da503798cb8a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 99cee8cbaa53 p4: \"in accordance with Article 17(2) of the Enforcement Regulations of the Immigration Act\" ... \"SIGNATURE(SEAL) OF APPLICANT(INVITING PERSON)\" ... \"(신청인이 17세 미만자의 경우 부모 또는 법정후견인의 서명) Signature of Parent or Legal Guardian for a Person under 17 years of age\""
+ },
+ {
+  "gid": "5e398433d23f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines correctly; nearby facts (designated hospitals, Vietnam on high-TB list) are true and not presented as the answer.",
+  "evidence": "DOC 336de610abfb p2: \"A \\\"Certificate of Health\\\" including TB test result ... issued by a hospital designated by Korean diplomatic missions\"; list includes \"⑧ Vietnam\"; no hospital names anywhere in corpus"
+ },
+ {
+  "gid": "e20233eefb10",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines; corpus gives no submission deadline for the form.",
+  "evidence": "DOC 80df70fc488a p1: form asks for symptoms/travel history and gives consequences of false statements; no submission deadline stated"
+ },
+ {
+  "gid": "b1b92f093c6d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-4-12.md: \"you can submit any documents such as certificate of birth, discharge, and death for proving Overseas Koreans with foreign citizenship or family relations\""
+ },
+ {
+  "gid": "dfc80de55cf0",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-4-12.md: \"you can submit any documents such as certificate of birth, discharge, and death for proving Overseas Koreans with foreign citizenship or family relations\""
+ },
+ {
+  "gid": "b53012167390",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-8.md: \"overseas Korean with a foreign nationality and below the age of 60\"; pages/F-4-25.md: \"Overseas Korean with a foreign nationality of a country notified by the Minister of Justice of ROK, who is 60 years or older\""
+ },
+ {
+  "gid": "813ea9601892",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p2 (Visa Application Form Dec 10, 2020) 4.5 Emergency Contact Information: \"a) Full Name in English b) Country of Residence c) Telephone No. d) Relationship to the applicant\""
+ },
+ {
+  "gid": "a40db691ccfe",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-7.md (CCVI): \"account balance must be issued within the past 30 days\" ; \"When submitting a parent's bank statement, family relation certificate is required to submit\""
+ },
+ {
+  "gid": "6871f152f205",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines correctly; the group-visa definition is quoted as context, not as the answer.",
+  "evidence": "DOC 8b0fb6d60b72 p2 Art.2: \"whose members exceed the number prescribed by the Minister of Justice\"; no number anywhere in corpus"
+ },
+ {
+  "gid": "6b901c2179fc",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-5.md: \"When inviting family members other than parents, additional documents are required: a document proving both parents' inability to enter Korea, and a document showing the immediate family members of the invitee.\""
+ },
+ {
+  "gid": "bc3f8645803a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-8-2.md (Embassy): \"A copy of Patent Registration Certificate, Utility Model ..., Design ..., Trade Mark Registration Certificate issued by Korean Intellectual Property Office, a copy of Copyrights Registration Certificate issued by Korea Copyright Commission and others\"; \"An assessment result proving an excellent technical performance from Korea Technology Finance Corporation or Small and Medium Business Corporation\""
+ },
+ {
+  "gid": "7de99cd2620a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC d624741b2dc8 p1 (Self Health Assessment Report, E-2): \"7) Have you taken any Narcotic (Drug) or have you ever been addicted to alcohol in the last 5 years?\" \"9) Have you had any serious Diseases or Injuries for the last 5 years?\""
+ },
+ {
+  "gid": "0c57ee480752",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "No explicit \"Yes\" opening, but the first sentence states the rule that directly answers the case; 72-hour validity is from the same notice.",
+  "evidence": "DOC 6bc97a64a6e3 p1: \"Foreigners with a Re-entry Permit (including those exempted from medical examination) issued before January 8 (Fri.), 2021 are also required to submit a negative COVID-19 PCR test certificate if entering the nation after 00:00 January 8\"; \"valid only when issued within 72 hours prior to departure\""
+ },
+ {
+  "gid": "5a1c6496fdca",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Says the salary figure is not stated; the 3x GNI employer-income rule is a true nearby fact, not presented as the assistant's salary.",
+  "evidence": "pages/F-1-23.md: \"The employer's income should be three times more than gross national income (GNI) of the previous year announced by the Bank of Korea\"; no salary for the assistant"
+ },
+ {
+  "gid": "f84cc0c50c5f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-9-2.md (CCVI): \"A list of foreign employees working at a construction site prepared by a construction company (prime contractor) responsible for the construction site\"; \"Periods of stay will be granted for up to 3 years.\""
+ },
+ {
+  "gid": "b599724a63b2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-9-2.md (CCVI): \"prepared by a construction company (prime contractor) responsible for the construction site\"; \"Periods of stay will be granted for up to 3 years.\""
+ },
+ {
+  "gid": "6721f7402638",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines correctly (minor slip: says \"hours before check-in\" instead of \"within hours of check-in\"); the relay-via-network fact is true.",
+  "evidence": "DOC bb553b933f21 p1: \"should relay information of foreign guest (e.g. passport information) via an information network designated by the Ministry of Justice\"; no deadline given"
+ },
+ {
+  "gid": "6c3d7c83daca",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-6-1.md (CCVI, Performance Act case): \"④ A performance recommendation letter from the Korea Media Rating Board (If an applicant's performance is not recommended, then you will be exempt ...) ⑤ An outline of performance\""
+ },
+ {
+  "gid": "22394dbae22f",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Omits the Foreign Direct Investment Declaration, which is required in every case; the answer lists only the customs export-permit confirmation.",
+  "evidence": "pages/D-3-11.md: \"5. Documents proving the host company is a permitted corporation recognized as Foreign Direct Investment Business - Foreign Direct Investment Declaration (an original document or a copy stamped by a public official) ... - when making investment in kind, a confirmation of an export permit issued by the customs\""
+ },
+ {
+  "gid": "93c1b5c01e86",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Does not say \"No\" in words, but states the 30-day rule that rules out a 2-month-old statement and the family-relation-certificate requirement.",
+  "evidence": "pages/D-4-7.md: \"account balance must be issued within the past 30 days\"; \"When submitting a parent's bank statement, family relation certificate is required\""
+ },
+ {
+  "gid": "bba9e6097e5d",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines; D-2-7 page has only an overview, no document list.",
+  "evidence": "pages/D-2-7.md: only \"## Overview\" section (\"Person who plans to enroll in a master's degree course ...\")"
+ },
+ {
+  "gid": "aa6539cb4e26",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/G-1-10.md (E-visa section): \"If an inviting organization guarantees a personal identity of an applicant, you are not required to submit this document.\" ; \"If an institute is registered at Visa Portal, you are not required to submit this document.\""
+ },
+ {
+  "gid": "6410bf0dbf39",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines; F-5-11 page has no validity/period-of-stay section.",
+  "evidence": "pages/F-5-11.md: sections are Overview, Embassy Eligibility, Required documents only"
+ },
+ {
+  "gid": "37ba894bc5a9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-9-5.md: \"construction waste processing, cold-storage (for company located onshore), collecting or selling reusable material industry, books, magazines, and other printed matter publishing industry, or music and other audio publishing industry\""
+ },
+ {
+  "gid": "156a0fb13330",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-2-2.md Case 1: \"④ A letter of guarantee of a Korean father or mother who has custodianship (If your father or mother has another spouse or partner, you also need to submit the letter of guarantee of the spouse or partner.)\""
+ },
+ {
+  "gid": "5f32ecc3066a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-2-4.md Case 1: \"For scholarship students invited by the National Institute for International Education, an invitation letter issued by the director can be a replacement\""
+ },
+ {
+  "gid": "a53571311a26",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Main answer wrong: gives the 72-hour / 15-day transfer-passenger rules (a different, suspended scheme) instead of the Jeju visa-free rule of 30 days, Jeju only, arriving by direct international flight or ship; also misses the Feb 4, 2020 notice suspending Jeju visa-free entry for all foreign nationals.",
+  "evidence": "pages/B-2-2.md \"Visa Free Entry to the Jeju Area\": \"Period of Stay/ Permitted Areas ...: 30 days / Jeju\"; \"You must use a direct international flight or ship to Jeju Island\"; DOC 1ebf85caa52b p1: \"Visa-free entry to Jeju ... will be temporary suspended to all foreign nationals.\""
+ },
+ {
+  "gid": "6fdc251e049c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-3-13.md: \"6. Documents proving the number of full time employees of the host company in order to determine the permitted number of accepting trainees - ... a statement of insurance qualification printed out from the website of the Ministry of Employment and Labor (Employment Insurance website)\""
+ },
+ {
+  "gid": "028838a7bfff",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Main answer wrong: says re-entry within two years from departure; the notice says those with a period of stay under 1 year may re-enter until the validity of stay (2 years applies only to F-5).",
+  "evidence": "DOC a0ab242b1eec p2: \"※ Re-entry will be allowed until the validity of stay for persons with period of stay of less than l year ❍ (Permanent Resident, F-5) For re-entry within 2 years from the date of departure\""
+ },
+ {
+  "gid": "58ab59d6be60",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-7-1.md Case 2: \"② A copy of Certificate of Foreign Legal Consultant Office Registration (issued by the Korean Bar Association) ③ A declaration form of the establishment of a branch (issued by the Foreign Exchange Bank)\""
+ },
+ {
+  "gid": "fda2bac5920e",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "Declines; e-form manual gives no validity period.",
+  "evidence": "DOC 45ad877e4898 p3: \"fill out an e-form, and submit it through Korea Visa Portal before visiting a diplomatic mission\"; no validity period or deadline in the manual"
+ },
+ {
+  "gid": "f382f4640a87",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 9682b7cb7978 p1: \"(No.) Nationality English Names Gender Date Of Birth Passport No. Remarks\" ... \"To. Chief, Seoul Immigration Office\""
+ },
+ {
+  "gid": "5237ee5f9cee",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Unanswerable question: the answer never says the documents omit the number; it presents the definition (members exceed the number prescribed by the Minister of Justice) as the answer, which the rubric treats as answering instead of declining.",
+  "evidence": "DOC 8b0fb6d60b72 p2 Art.2: \"whose members exceed the number prescribed by the Minister of Justice\"; no number anywhere in corpus"
+ },
+ {
+  "gid": "8b798529be04",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 22749c38337f p1 (CONFIRMATION OF E-VISA ISSUANCE): \"2. DETAILS OF REPRESENTATIVE PHOTO Full Name Date of Birth Gender Nationality Passport No. Passport Expiration Date\""
+ },
+ {
+  "gid": "2474003ca1de",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-4.md Case 2 (3-year): \"assets including real estate, financial assets, or business ownership worth more than 5,000,000 yuan\"; pages/C-3-9.md Case 3 (5-year): \"assets ... worth more than 2 million yuan\""
+ },
+ {
+  "gid": "e5069793e4d8",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC fa7181cf50ef p1 (Investment Guide for Investors for the Real Estate): \"all agents who sell their real estate properties to others must check the lease status, mortgage, sale or foreclosure of their individual buyers and report to the Immigration Office every May and November\" (same in DOC dceb1a06e238 p12)"
+ },
+ {
+  "gid": "f3f4da752e7a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-2-2.md Case 1: \"A letter of guarantee of a Korean father or mother who has custodianship (If your father or mother has another spouse or partner, you also need to submit the letter of guarantee of the spouse or partner.)\""
+ },
+ {
+  "gid": "634fee72d8b6",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "\"Stay restricted\" matches the Korean text of the form (체류가 제한될 수 있습니다); the English line says \"denial of ... permission of stay\". Kept yes: supported by the corpus.",
+  "evidence": "DOC 80df70fc488a p1: \"may result in a denial of visa, entry into or permission of stay in the ROK in accordance with the Immigration Act\"; Korean line: \"사증 발급 또는 입국이 거부되거나 체류가 제한될 수 있습니다\" (stay may be restricted)"
+ },
+ {
+  "gid": "927f981649a2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p4 10.2: \"a) Name of Person/Organization (Company) b) Relationship ... c) Type of Support d) Contact No.\"; DOC 45ad877e4898 p14 1.11 steps 2-5 match"
+ },
+ {
+  "gid": "64c06337d49c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC a0ab242b1eec p1: \"Registered foreigners who have departed before April 1, 2022 with a Re-entry Permit should enter the ROK within the granted re-entry permit period (within l year), and should visit a Korean diplomatic mission abroad to extend the re-entry permit period in case entering the ROK within the relevant period is difficult due to COVID-19\""
+ },
+ {
+  "gid": "862a7aac2db1",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "All asked items correct (B-2, 72 hours, Incheon + Transit Tourism Program, transfer ticket, Seoul Capital Area, 24-country exclusion); the COVID suspension is not mentioned but was not asked.",
+  "evidence": "pages/B-2-1.md: \"General Transfer Passengers: Possessing a transfer ticket and staying in the Seoul Capital Area for up to 72 hours\"; \"General Transfer Passengers: Tourist/Transit (B-2), 72 hours\""
+ },
+ {
+  "gid": "f34bd9a0a24f",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "No explicit \"Yes\", but quotes the eligibility that expressly includes prospective graduates with IP rights, which answers the case.",
+  "evidence": "pages/D-10-2.md: \"A person having a bachelor's degree or above(including a prospective graduate) preparing for business establishment with intellectual property right or equivalent skills.\""
+ },
+ {
+  "gid": "751352b82078",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p5 (apostille competent authorities): \"Belgium - Competent Authority (Art. 6) Designated Competent Authority(ies): Ministère des Affaires étrangères, du Commerce extérieur et de la Coopération au Développement\""
+ },
+ {
+  "gid": "284c764249e2",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p10 Art.8: \"1. Attraction of group tourists 2. Actual condition of work handling, including group-visa application matters 3. Management of personal information 4. Compliance with other provisions under this regulation\""
+ },
+ {
+  "gid": "256325fdc3d9",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D1-00.md (CCVI): \"when planning to learn from an expert, a certificate of employment history of the expert is required\"; \"single-entry visa valid for 3 months. Periods of stay will be granted for up to 1 year.\""
+ },
+ {
+  "gid": "b58ff03ec220",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Lists all four documents and the 5-year/90-day visa, but omits the condition that the card-qualification document (bank book / balance certificate) does not apply to holders of a \"preferential card without financial function\".",
+  "evidence": "pages/C-3-9.md Case 2: \"③ Document proving applicant's qualification for a preferential visit card (bank book or certificate of bank account balance ) ※ not applicable for holders of \\\"preferential card without financial function\\\"\""
+ },
+ {
+  "gid": "c8ecb9ec2395",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Gives the icon/pop-up and search steps but omits the manual's final step of clicking \"Close\" to close the pop-up.",
+  "evidence": "DOC 45ad877e4898 p7: \"7-1) When you enter your country's name and click the \\\"Search\\\" button, you can see your country's national code and official name below. 7-2) When you click the \\\"Close\\\" button, the pop-up window will close.\""
+ }
+]

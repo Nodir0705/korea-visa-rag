@@ -1,0 +1,345 @@
+[
+ {
+  "gid": "44dd9d013a74",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-2-1.md: \"If you have a degree from a university in ROK, an un-authenticated copy of a degree will also be accepted.\""
+ },
+ {
+  "gid": "f86aac9fa19b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e p4 (NEW VISA APPLICATION FORM Dec 10, 2020) 10.2: \"a) Name of Person/Organization (Company) b) Relationship to the applicant c) Type of Support d) Contact No.\""
+ },
+ {
+  "gid": "d9ffee85d4c3",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/H-2-1.md CCVI Case 1: \"A person who has a Korean kin between third degree and eighth degree relationship, or a Korean relative between third and fourth degree relationship\" ... \"multiple-entry visa valid for 3 years. Periods of stay will be granted for up to 1 year.\""
+ },
+ {
+  "gid": "f127b308a604",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-9-1.md: \"a manufacturer with less than 300 full-time workers or capital worth less than 8 billion KRW.\""
+ },
+ {
+  "gid": "0bb80ac77398",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-4.md Case 2 item 7: \"assets ... worth more than 5,000,000 yuan\"; pages/C-3-9.md Case 3 item 6: \"assets including real estate, financial assets, business ownership, etc. worth more than 2 million yuan\""
+ },
+ {
+  "gid": "ff307a9cd497",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Lists all four documents and the 5-year/90-day visa correctly, but presents the bank-book/balance certificate as required for every card holder, leaving out the condition attached to it on the page: not applicable to holders of a \"preferential card without financial function\".",
+  "evidence": "pages/C-3-9.md Case 2: \"③ Document proving applicant's qualification for a preferential visit card (bank book or certificate of bank account balance) ※ not applicable for holders of \\\"preferential card without financial function\\\"\""
+ },
+ {
+  "gid": "a0cf2f05e79e",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Ends with the correct 6-month suspension, but the opening sentence says a 3-month suspension applies to the 2.0-<3.0% band, which is wrong (in Table 1 the 3-month row is 1.5-<2.0%); a reader stopping there gets the wrong sanction.",
+  "evidence": "DOC 8b0fb6d60b72 p12 Table 1: \"3% or more Suspension (6 months) 9 ~ 10 ... 2.0 ~ less than 3.0% Suspension (3 months) 7 ~ 8 1.5 ~ less than 2.0%\" (row pattern: 6 months = 9-10 stayers / 2.0-<3.0%); p13: \"When the average number of tourists was 300 people or more in the last 3 months, the rate of illegal stay will be calculated\""
+ },
+ {
+  "gid": "e0afffbbff1a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p71 (Kazakhstan): \"stipulates the apostille of 9 x 9 cm in size. It is expedient to have a stamp of the apostille, which size is 13 x 13 cm. A script of the text can be enlarged for the comfort of its representation and reading\"; p72: \"not allowed to change (translate) a language document, text and its order of placing on the stamp\""
+ },
+ {
+  "gid": "f23b6f289153",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 45ad877e4898 p7 (User Manual for Electronic Form): \"4) Your name in Chinese characters (④): only when you have them\""
+ },
+ {
+  "gid": "a5a6ea1a2d01",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-6.md CCVI: \"① Application form for Confirmation of Visa Issuance (Form No. 21), a copy of passport, a photo ... ② Proof of Employment ③ An invitation letter issued by selected corporations or associations ... multiple-entry visa valid for 1 year ... up to 90 days\""
+ },
+ {
+  "gid": "45e166959702",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-10-1.md: \"Case ④ : Education Certificate, Completion Certificate*, plan for seeking employment * A certificate indicating research topic, research period, completion results, which is issued by the head of research institution\""
+ },
+ {
+  "gid": "5b6f15134499",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Gives only the four Middle East visa-waiver countries; omits the five Middle East visa-free countries (Bahrain, Oman, Saudi Arabia, Qatar, Kuwait) also suspended.",
+  "evidence": "DOC b48153dede7c p1: \"Middle East (4) Morocco, UAE, Israel, Tunisia\"; p2 Visa-free Countries: \"Middle East (5) Bahrain, Oman, Saudi Arabia, Qatar, Kuwait\""
+ },
+ {
+  "gid": "ab2d3eda1692",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "D-5 is correct, but the period of stay asked for is wrong: 90 days is the C-1 figure; the D-5 page grants up to 1 year.",
+  "evidence": "pages/C-1.md: \"allowed to change your status of stay to the Long- Term News Coverage ( D-5 ) visa\" / \"Periods of stay for this visa will be granted for up to 90 days\" (C-1); pages/D-5.md: \"Periods of stay will be granted initially for up to 1 year.\" and CCVI \"up to 1 year\""
+ },
+ {
+  "gid": "88aebed81ee9",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Main answer wrong: Mexico was not suspended; it is listed among the 10 visa-waiver countries still eligible for visa-free entry after April 13, 2020.",
+  "evidence": "DOC b48153dede7c p2: \"The countries still eligible for visa-free entry after April 13, 2020 ... <10 Visa-waiver Countries> Americas (7) Nicaragua, Commonwealth of Dominica, Mexico, ...\""
+ },
+ {
+  "gid": "e35a74293f1b",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D1-00.md CCVI: \"when planning to learn from an expert, a certificate of employment history of the expert is required\" ... \"single-entry visa valid for 3 months. Periods of stay will be granted for up to 1 year.\""
+ },
+ {
+  "gid": "dff30e2ad018",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Gives only the single-entry option; Case 1 also allows a double-entry visa valid for 6 months with stays of up to 30 days.",
+  "evidence": "pages/C-3-4.md Case 1: \"You can apply for a single-entry visa valid for 3 months or a double-entry visa valid for 6 months. Periods of stay will be granted for up to 90 days for a single-entry visa, and 30 days for a double-entry visa.\""
+ },
+ {
+  "gid": "fff2a95f8182",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 8b0fb6d60b72 p4 Art.4(1)5: \"shall not apply for a group visa with an overseas diplomatic mission: Provided, That the foregoing shall not apply where the Minister of Justice has approved on the condition of a specified period of time, or where group e-visas cannot be issued on unavoidable circumstances such as computer network problems\""
+ },
+ {
+  "gid": "c2a41575f8f4",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 6bc97a64a6e3 p1 (Announcement on Changes in Re-entry Permit System, posted 2021-01-08): \"Foreigners with a Re-entry Permit (including those exempted from medical examination) issued before January 8 (Fri.), 2021 are also required to submit a negative COVID-19 PCR test certificate if entering the nation after 00:00 January 8\"; \"valid only when issued within 72 hours prior to departure\""
+ },
+ {
+  "gid": "3bb45295bc3a",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Says the documents do not state it, but the December 2018 notice gives the figures: $2,300 (Vietnam, 2017), $5,538 (Ho Chi Minh City), $3,500 (Hanoi).",
+  "evidence": "DOC 02997dfa266b p2 (Expansion of multiple entry visa issuance, posted 2018-12-11): \"the annual per capita average income of Vietnam stands at $ 2,300 as of 2017, the income level rises to $ 5,538 in Ho Chi Minh City and $ 3,500 in Hanoi\""
+ },
+ {
+  "gid": "5b93e995419a",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/C-3-8.md: \"overseas Korean with a foreign nationality and below the age of 60\"; pages/F-4-25.md: \"Overseas Korean with a foreign nationality of a country notified by the Minister of Justice of ROK, who is 60 years or older\"; pages/F-4-13.md: history of staying >6 months as D-1...E-7 holder"
+ },
+ {
+  "gid": "0a54a0785b26",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-15.md: \"③ (student) a foreign student enrolled in a master's/doctoral program of Korea who has stayed in the country for 6 months or more - However, if the accompanying family members including invitees are more than three, they should prove that they have at least 50％ of per capita GNI...\"; \"single-entry visa valid for 3 months ... up to 90 days\""
+ },
+ {
+  "gid": "68b26886da7c",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Wrong item: \"Guide\" is a separate section (2), not part of the visa details section. The visa-details item only on the group form is \"Intended Date of Arrival\". (DOC 22749c38337f is titled as the individual form but its text is a group form, which may explain the confusion; the real individual form is DOC a9293b83531f.)",
+  "evidence": "DOC 00a9469f00fc p1 (group): \"3. VISA DETAILS Status of Stay Period of Stay Number of Entries Date of Issue Expiry Date Intended Date of Arrival\"; DOC a9293b83531f p1 (individual): \"2. VISA DETAILS Status of Stay Period of Stay Number of Entries Date of Issue Expiry Date Remarks\""
+ },
+ {
+  "gid": "b0f0a5426ebc",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 0648afd6fef6 p3 (Marriage Statement / Personal Details Form for F-2-3): \"3.2 ... refused entry, banned, forcibly expelled, deported ... [ ] 예 (아래에 관련 일시, 사유 등을 상세히 기재하시오) / Yes (please provide details)\" (Korean: give the related date, reason, etc.)"
+ },
+ {
+  "gid": "c2a5d351bfe4",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Unanswerable question (no vaccination certificate is required anywhere in the corpus), but the answer presents the TB-test Certificate of Health as the answer and applies it to all E-9/E-10/H-2 applicants, whereas the notice covers nationals of listed high-TB countries applying for long-term visas.",
+  "evidence": "grep \"vaccin\" finds no vaccination requirement in the corpus; DOC 336de610abfb p1 (Requirement for Tuberculosis (TB) Test Certificate Submission, Feb 2016): \"When the nationals of the high TB-burden countries live in one of the countries and apply for a long-term visa (stay period of 91 days or longer) at a diplomatic mission\" (a TB test, not a vaccination)"
+ },
+ {
+  "gid": "3894378d0bbd",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Unanswerable question (no vaccination certificate is required in the corpus), but the answer states medical-exam and TB-certificate facts as what these applicants must submit instead of saying the documents do not cover vaccination certificates.",
+  "evidence": "grep \"vaccin\" finds no vaccination requirement; Health & Mentality Statement (E-9, E-10, H-2) asks only about past diseases, drugs/alcohol, mental disorders, serious illness"
+ },
+ {
+  "gid": "abdda4ff72fe",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC b133ad72454c p44: \"Sweden has decentralised the issuance of Apostilles and designated all notaries public as Competent Authorities\"; \"The average cost for issuance of the Apostille is SEK 250 (approx. 27) €\""
+ },
+ {
+  "gid": "e877644de1a3",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Names the right two items, but says you must mark \"all items\" from the list; the form says to mark all of them \"that apply\".",
+  "evidence": "DOC 80df70fc488a p1 (Health Condition Report Form, posted 2020-02-24): \"If you marked any of the above symptoms, please mark all of the following that apply. [ ] (Medication taken for symptoms) [ ] (Undergone diagnosis or medical care)\""
+ },
+ {
+  "gid": "527e78c003c1",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/B-1.md: \"2. ABTC member countries (there are currently 19 countries) South Korea, Australia, New Zealand, Japan, China, Hong Kong, Taiwan, Vietnam, Singapore, Thailand, Malaysia, Indonesia, Brunei, Papua New Guinea, the Philippines, Peru, Chile, Mexico, Russia\""
+ },
+ {
+  "gid": "0da6e9db1c67",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e: \"8.6 Has the applicant travelled to Korea in the last 5 years?\" / \"8.7 Has the applicant travelled outside his/her country of residence, excluding to Korea, in the last 5 years?\""
+ },
+ {
+  "gid": "d8583c708b5d",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Does not give the Jeju visa-free terms asked (30 days, Jeju only, direct international flight or ship to Jeju) or the February 4, 2020 suspension; it answers instead with transfer-passenger programmes (72 hours, 5/10 days, travel regions) that are a different case.",
+  "evidence": "pages/B-2-2.md Visa Free Entry to the Jeju Area: \"Period of Stay/ Permitted Areas of Travel ...: 30 days / Jeju\"; \"You must use a direct international flight or ship to Jeju Island\"; DOC 1ebf85caa52b: \"Visa-free entry to Jeju ... will be temporary suspended to all foreign nationals ... Date of Enforcement : February 4, 2020\""
+ },
+ {
+  "gid": "759e0207edb6",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "Says only to tick Yes and give \"details about the assistance\"; it gives none of the details the form asks for about the helper: name, address, phone number and relation to you.",
+  "evidence": "DOC 0648afd6fef6 p3: \"4. ASSISTANCE WITH THIS FORM 성명 Name 주소 Address 연락처 Phone number 신청인과의 관계 Relation to you ... 4.1 Did you receive assistance in completing this form? [ ] Yes (Provide details below)\""
+ },
+ {
+  "gid": "fb7db79c2e08",
+  "ans_ok": "no",
+  "q_valid": "yes",
+  "note": "The issuer is correct, but the \"when\" part is answered wrongly: the answer says the fishery license and fishing-boat certificate are submitted as standard documents, while the page says only first-time applicants or those changing registration information submit them.",
+  "evidence": "pages/E-10-2.md: \"④ A Certificate of Report on Foreign Crew Employment issued by the head of local Maritime Affairs ＆ Port Administration ... ⑥ A fishery license and a certificate of fishing boat, a copy of coastal fishing license ... Please submit the document only if you are a first time applier or wish to change the registration information.\""
+ },
+ {
+  "gid": "7dd772595051",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 0648afd6fef6 p2: \"2.4 Do you have children from your previous marriages? Yes (Please provide details about child)\": \"Name of child, Date of birth, Nationality, Person charged with custody of child\""
+ },
+ {
+  "gid": "05f2cf87e845",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-4-6.md: \"(account balance must be issued within the past 30 days)\"; \"Periods of stay will be granted for up to 6 months.\""
+ },
+ {
+  "gid": "fa3335b1d696",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/E-10-2.md: \"issued by the head of local Maritime Affairs ＆ Port Administration\"; \"Please submit the document only if you are a first time applier or wish to change the registration information.\""
+ },
+ {
+  "gid": "46efe64e3fdf",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The question asks what applies to these persons under the exemption. The answer repeats the bullet (additional review; permit can be restricted) but never says the key point: they fall under \"Re-Entry Permit Exemption Ineligibility\", i.e. the exemption does not apply to them. It also omits \"Please inquire at immigration offices\".",
+  "evidence": "DOC a0ab242b1eec p2: \"▢ Re-Entry Permit Exemption Ineligibility ❍ Persons banned from entering Korea and persons to whom visa issuance is prohibited will need additional review procedures and re-entry permit can be restricted → Please inquire at immigration offices\""
+ },
+ {
+  "gid": "023df8055597",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 78db7641ce7e: \"Has the applicant travelled to Korea in the last 5 years?\" / \"...outside his/her country of residence, excluding to Korea, in the last 5 years?\""
+ },
+ {
+  "gid": "26f3ac137cfe",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/B-2-2.md Tourists in transit, Condition of Permission: \"confirmed onward flight ticket for departure within 30 days ... not been denied entry into Korea, or ... fined more than 5 million KRW ... in the past 3 years ... stayed no more than 3 days in the country of transit or stopover. (But, Not applicable when the person is returning to the immediate previous point of departure\""
+ },
+ {
+  "gid": "6a9f37b5c5bb",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 1ebf85caa52b p1: \"2. Citizens of nations required to obtain permission for extension of sojourn areas (62 countries) - Will only apply to those who entered the Republic of Korea before this announcement went into effect\""
+ },
+ {
+  "gid": "21731b1492df",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/A-1.md Case 1: \"3. Immediate family members of the above applicants - Parents, spouse, child residing in ROK together with the above applicants\""
+ },
+ {
+  "gid": "64ea953b9902",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Gives the close-review point, but leaves out that investors under 300 million KRW must submit additional documents (proof of initial capital, proof the business exists, proof of work/entrepreneurial experience); the answer replaces this with the generic \"may request additional documents\" note.",
+  "evidence": "pages/D-8-3.md: \"⑥ Additional documents for private investors who has invested less than 300 million KRW - Documents demonstrating an initial capital ... - Documents verifying the existence of business ... - Documents proving work or entrepreneurial experiences ... ※ Private investors who have invested less than 300 million KRW and have no entrepreneurial experiences will be closely reviewed.\""
+ },
+ {
+  "gid": "4b8daafe0110",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC 1f9dd47d0d65 p2 (posted 2015-07-01): \"About 1.09 million foreigners were granted a single-entry visa from March to June 2015.\""
+ },
+ {
+  "gid": "079d5ea8045a",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "Route, documents and 90-day stay are correct, but it says validity \"can be up to 1 year\", which is looser than the source: a multiple-entry visa valid for 1 year.",
+  "evidence": "pages/C-3-6.md: \"You can apply for a multiple-entry visa valid for 1 year. Periods of stay for this visa will be granted for up to 90 days.\""
+ },
+ {
+  "gid": "c5ae51834f5a",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The emergency-contact fields are correct, but the added claim that the form asks for the same details when the applicant holds another valid passport is wrong; that item asks for passport type, number, issuing country and expiry date.",
+  "evidence": "DOC 78db7641ce7e p2: \"4.5 Emergency Contact Information a) Full Name in English b) Country of Residence c) Telephone No. d) Relationship to the applicant\"; \"3.7 ... other valid passports? ... a) Passport Type ... b) Passport No. c) Country of Passport d) Date of Expiry\""
+ },
+ {
+  "gid": "1290fb54eb14",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-1-5.md: \"※ When inviting family members other than parents, additional documents are required: a document proving both parents' inability to enter Korea, and a document showing the immediate family members of the invitee.\""
+ },
+ {
+  "gid": "16c6eb99f5be",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "DOC bf96aac2845d p1 (Plans for Seeking Employment): \"2. Desired Employment Detail ... Occupational Category ... Name of company ... Salary\""
+ },
+ {
+  "gid": "a2c52d75fccd",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/F-5-11.md [Business Management]: both the full-time director (8 billion KRW capital, 300+ employees, recommended by KCCI/KOTRA/FKI) and the multinational manager/executive (1+ year at a top-500 company, executive at a Korean branch) criteria"
+ },
+ {
+  "gid": "1bffb090f021",
+  "ans_ok": "partly",
+  "q_valid": "yes",
+  "note": "The addressee is correct, but the per-applicant list leaves out the Remarks column.",
+  "evidence": "DOC 9682b7cb7978 p1 (Form no.4): \"List of applicants for visa invalidation (No.) Nationality English Names Gender Date Of Birth Passport No. Remarks ... To. Chief, Seoul Immigration Office\""
+ },
+ {
+  "gid": "1f1fac58166c",
+  "ans_ok": "yes",
+  "q_valid": "yes",
+  "note": "",
+  "evidence": "pages/D-8-1.md Case B. Investment in Kind: \"- A copy of Confirmation of Completion of In-Kind Investment issued by the head of Korean Customs Service - A copy of Customs Import Declaration Certificate\""
+ }
+]

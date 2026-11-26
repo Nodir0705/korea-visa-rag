@@ -1,0 +1,674 @@
+[
+ {
+  "gid": "a4802a1d0663",
+  "type": "lookup",
+  "question": "On the 2020 coronavirus Health Condition Report Form, what can happen if an applicant makes false statements about their health or fails to fill out the form?",
+  "reference": "Under the Immigration Act, they may be denied a visa, entry into Korea, or permission of stay in Korea.",
+  "answer": "Making false statements concerning your health or failing to fill out the form may result in a denial of visa, entry into or permission of stay in the ROK in accordance with the Immigration Act of the Republic of Korea [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Health Condition Report Form",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "da503798cb8a",
+  "type": "lookup",
+  "question": "According to the Application for Certificate of Visa Eligibility form, under which provision is the certificate applied for, and who signs the application?",
+  "reference": "Article 17(2) of the Enforcement Regulations of the Immigration Act. The applicant, who is the inviting person, signs it; the form also has a line for the signature of a parent or legal guardian for a person under 17.",
+  "answer": "According to Article 17(2) of the Enforcement Regulations of the Immigration Act, the Certificate of Visa Eligibility is applied for [1]. The application is signed by the applicant (inviting person) [1], and if the applicant is under 17 years of age, it must be signed by a parent or legal guardian [1][3].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "(NEW) APPLICATION FOR CERTIFICATE OF VISA ELIGIBILITY",
+    "page": 4
+   },
+   {
+    "n": 3,
+    "title": "(NEW) VISA APPLICATION FORM(Dec 10, 2020)",
+    "page": 5
+   }
+  ]
+ },
+ {
+  "gid": "5e398433d23f",
+  "type": "no_answer",
+  "question": "Which hospitals in Vietnam are designated to issue the TB Certificate of Health for a Korean long-term visa?",
+  "reference": "Not in the corpus. The TB notice only says the Certificate of Health must be issued by a hospital designated by the Korean diplomatic mission.",
+  "answer": "The passages state that TB test certificates must be issued by hospitals designated by Korean diplomatic missions for nationals of high TB-burden countries applying for long-term visas [1][2]. Vietnam is listed as a high TB-burden country requiring such a certificate [1]. However, the passages do not name specific hospitals in Vietnam or provide a list of designated hospitals there [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Requirement for Tuberculosis (TB) Test Certificate Submission",
+    "page": 2
+   },
+   {
+    "n": 2,
+    "title": "Requirement for Tuberculosis (TB) Test Certificate Submission",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "e20233eefb10",
+  "type": "no_answer",
+  "question": "How many days before my expected date of entry do I have to submit the coronavirus Health Condition Report Form?",
+  "reference": "Not in the corpus. The 2020 form only asks for the expected date of entry, the cities stayed in within 30 days and any visit to Hubei or Wuhan within 14 days before applying; it sets no submission deadline.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "b1b92f093c6d",
+  "type": "lookup",
+  "question": "For an F-4-12 descendant of an overseas Korean, what can be submitted if the applicant cannot submit the family relations certificate, Certificate of Removal from Family Registry or closed register?",
+  "reference": "Other documents such as a certificate of birth, discharge or death that prove the overseas Korean with foreign citizenship or the family relationship.",
+  "answer": "If the applicant cannot submit the Certificate of Family Registry, Certificate of Removal from Family Registry, or closed Register, they may submit any documents such as a certificate of birth, discharge, and death to prove Overseas Koreans with foreign citizenship or family relations [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-4-12 Descendant of Overseas Korean",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "dfc80de55cf0",
+  "type": "lookup",
+  "question": "For an F-4-12 descendant of an overseas Korean, what can be submitted if the applicant cannot submit the family relations certificate, Certificate of Removal from Family Registry or closed register?",
+  "reference": "Other documents such as a certificate of birth, discharge or death that prove the overseas Korean with foreign citizenship or the family relationship.",
+  "answer": "If you cannot submit a certification of the family relations record, Certificate of Removal from Family Registry or closed Register, you can submit any documents such as certificate of birth, discharge, and death for proving Overseas Koreans with foreign citizenship or family relations [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-4-12 Descendant of Overseas Korean",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "b53012167390",
+  "type": "multi_hop",
+  "question": "An overseas Korean with foreign nationality is 62 years old. Can they get a C-3-8 short-term visa for overseas Koreans, and which F-4 category covers someone of their age?",
+  "reference": "No. The C-3-8 is for overseas Koreans with foreign nationality below the age of 60. The F-4-25 (Person of Age 60 or older) covers overseas Koreans aged 60 or older with the nationality of a country notified by the Minister of Justice.",
+  "answer": "A person who is an overseas Korean with a foreign nationality and 62 years old is not eligible for a C-3-8 Short term Visitor (Overseas Korean) visa because that visa is for those below the age of 60 [1]. The F-4-25 Person of Age 60 or older category covers an overseas Korean with a foreign nationality of a country notified by the Minister of Justice of ROK who is 60 years or older [2].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: C-3-8 Short term Visitor (Overseas Korean)",
+    "page": 0
+   },
+   {
+    "n": 2,
+    "title": "Visa guide: F-4-25 Person of Age 60 or older",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "813ea9601892",
+  "type": "table",
+  "question": "On the Korean Visa Application Form (Form No. 17, December 2020 version), what details must be given for the emergency contact?",
+  "reference": "The contact's full name in English, country of residence, telephone number, and relationship to the applicant.",
+  "answer": "The following details must be provided for the emergency contact: - Full Name in English [1, 2, 3, 4, 5, 6] - Country of Residence [1, 2, 3, 4, 5, 6] - Telephone No. [1, 2, 3, 4, 5, 6] - Relationship to the applicant [1, 2, 3, 4, 5, 6]",
+  "cited_passages": []
+ },
+ {
+  "gid": "a40db691ccfe",
+  "type": "paraphrase",
+  "question": "my mom is paying for my foreign language course in korea (D-4-7 visa). can i use her bank statement from 2 months ago?",
+  "reference": "No. For the D-4-7 Confirmation of Visa Issuance, the account balance document must have been issued within the past 30 days. If you submit a parent's bank statement, you must also submit a family relation certificate.",
+  "answer": "You cannot use your mother's bank statement from two months ago because the balance must be issued within the past 30 days [1]. When submitting a parent's bank statement, a family relation certificate is also required [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-4-7 Foreign Language Trainee",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "6871f152f205",
+  "type": "no_answer",
+  "question": "What is the minimum number of tourists a group must have to apply for a group e-visa?",
+  "reference": "Not in the corpus. The group e-visa regulation only defines a group visa as one for groups whose members exceed the number prescribed by the Minister of Justice, without stating that number.",
+  "answer": "The passages define a \"Group Visa\" as one issued to groups whose members exceed the number prescribed by the Minister of Justice, but they do not state what that specific number is [3]. The minimum number of tourists required for a group e-visa application is not stated in the provided passages.",
+  "cited_passages": [
+   {
+    "n": 3,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 2
+   }
+  ]
+ },
+ {
+  "gid": "6b901c2179fc",
+  "type": "table",
+  "question": "When an F-1-5 marriage immigrant invites a family member other than a parent, which additional documents are required?",
+  "reference": "A document proving that both parents are unable to enter Korea, and a document showing the immediate family members of the invitee.",
+  "answer": "When inviting family members other than parents, the additional documents required are a document proving both parents' inability to enter Korea, and a document showing the immediate family members of the invitee [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-1-5 결혼이민자본국가족",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "bc3f8645803a",
+  "type": "table",
+  "question": "For a D-8-2 business venture visa at an embassy, which documents can show that the applicant has intellectual property rights or equivalent skills?",
+  "reference": "Copies of a Patent Registration Certificate, Utility Model Registration Certificate, Design Registration Certificate or Trade Mark Registration Certificate issued by the Korean Intellectual Property Office; a copy of a Copyrights Registration Certificate issued by the Korea Copyright Commission and others; or an assessment result proving excellent technical performance from the Korea Technology Finance Corporation or the Small and Medium Business Corporation.",
+  "answer": "For a D-8-2 business venture visa at an embassy, documents showing intellectual property rights or equivalent skills include: - A copy of Patent Registration Certificate, Utility Model Registration Certificate, Design Registration Certificate, Trade Mark Registration Certificate issued by Korean Intellectual Property Office [1]. - A copy of Copyrights Registration Certificate issued by Korea Copyright Commission [1]. - Others [1]. - An assessment result proving an excellent technical performance from Korea Technology Finance Corporation or Small and Medium Business Corporation [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-8-2 Business Venture",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "7de99cd2620a",
+  "type": "lookup",
+  "question": "The E-2 applicant's health statement asks about narcotics, alcohol addiction and serious diseases or injuries. Over what period of time?",
+  "reference": "The last 5 years, for both the narcotics or alcohol addiction question and the serious diseases or injuries question.",
+  "answer": "The E-2 applicant's health statement asks if the applicant has taken any Narcotic (Drug) or has been addicted to alcohol in the last 5 years [1]. It also asks if the applicant has had any serious Diseases or Injuries for the last 5 years [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Self Health Assessment Report(For E-2 Applicants)",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "0c57ee480752",
+  "type": "paraphrase",
+  "question": "i got my re-entry permit in december 2020 and was exempted from the medical exam. im flying back to korea on january 15 2021. do i still need a covid PCR test?",
+  "reference": "Yes. Foreigners whose re-entry permit was issued before January 8, 2021, including those exempted from medical examination, must also submit a negative COVID-19 PCR test certificate if entering after 00:00 January 8, 2021.",
+  "answer": "Foreigners with a Re-entry Permit (including those exempted from medical examination) issued before January 8 (Fri.), 2021 are required to submit a negative COVID-19 PCR test certificate if entering the nation after 00:00 January 8 (Fri.), 2021 [1]. A negative COVID-19 PCR test certificate is deemed valid only when issued within 72 hours prior to departure [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Announcement on Changes in Re-entry Permit System",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "5a1c6496fdca",
+  "type": "no_answer",
+  "question": "What is the minimum monthly salary that an employer must pay a household assistant on an F-1-23 visa?",
+  "reference": "Not in the corpus. The F-1-23 guide requires the employer's income to be three times more than the previous year's gross national income (GNI) and asks for the household assistant's employment contract, but states no salary for the assistant.",
+  "answer": "The passages state that the employer's income should be three times more than the gross national income (GNI) of the previous year announced by the Bank of Korea [1]. The specific monthly salary amount is not stated in the provided text, so the figure in won is not stated.",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-1-23 Household assistant of high-tech investor",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "f84cc0c50c5f",
+  "type": "lookup",
+  "question": "For an E-9-2 construction worker's Confirmation of Visa Issuance, who prepares the required list of foreign employees at the construction site, and how long a period of stay is granted?",
+  "reference": "The construction company (prime contractor) responsible for the construction site prepares the list. The period of stay is granted for up to 3 years.",
+  "answer": "For an E-9-2 construction worker's Confirmation of Visa Issuance, the prime contractor (construction company) responsible for the construction site prepares the list of foreign employees working at the construction site [1]. The period of stay granted is up to 3 years [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-9-2 Construction",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "b599724a63b2",
+  "type": "lookup",
+  "question": "For an E-9-2 construction worker's Confirmation of Visa Issuance, who prepares the required list of foreign employees at the construction site, and how long a period of stay is granted?",
+  "reference": "The construction company (prime contractor) responsible for the construction site prepares the list. The period of stay is granted for up to 3 years.",
+  "answer": "The list of foreign employees working at a construction site is prepared by a construction company (prime contractor) responsible for the construction site [1]. Periods of stay will be granted for up to 3 years [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-9-2 Construction",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "6721f7402638",
+  "type": "no_answer",
+  "question": "Under the declaration of accommodation scheme, within how many hours of check-in must a hotel report a short-term foreign guest's passport details?",
+  "reference": "Not in the corpus. The notice only says registered accommodation businesses must relay the guest's information through a network designated by the Ministry of Justice, with a fine of up to KRW 500,000 for breaches; no deadline is given.",
+  "answer": "The provided passages do not state how many hours before check-in a hotel must report a short-term foreign guest's passport details; they only specify that facilities must relay information via a designated network [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Introducing declaration of accommodation by short-term foreign residents",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "6c3d7c83daca",
+  "type": "lookup",
+  "question": "For an E-6-1 artist who will perform under the Performance Act, which performance-specific documents are required for Confirmation of Visa Issuance?",
+  "reference": "A performance recommendation letter from the Korea Media Rating Board and an outline of the performance. (The guide adds that if the performance is not recommended, the applicant is exempt from submitting the letter.)",
+  "answer": "The required performance-specific documents are a performance recommendation letter from the Korea Media Rating Board and an outline of performance [1]. An applicant is exempt from submitting the performance recommendation letter if their performance is not recommended [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-6-1 Artist",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "22394dbae22f",
+  "type": "lookup",
+  "question": "For a D-3-11 industrial trainee (FDI) Confirmation of Visa Issuance, the host company made its overseas investment in kind rather than in cash. Which documents prove that the host company is a foreign direct investment business?",
+  "reference": "The Foreign Direct Investment Declaration (an original or a copy stamped by a public official) and a confirmation of an export permit issued by customs.",
+  "answer": "For a D-3-11 industrial trainee (FDI) Confirmation of Visa Issuance where the host company made its overseas investment in kind, the documents proving it is a permitted corporation are: - A confirmation of an export permit issued by the customs [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-3-11 Industrial Trainee (FDI)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "93c1b5c01e86",
+  "type": "paraphrase",
+  "question": "my mom is paying for my foreign language course in korea (D-4-7 visa). can i use her bank statement from 2 months ago?",
+  "reference": "No. For the D-4-7 Confirmation of Visa Issuance, the account balance document must have been issued within the past 30 days. If you submit a parent's bank statement, you must also submit a family relation certificate.",
+  "answer": "Documents proving an applicant's financial abilities must be reviewed through original copies, and the account balance must be issued within the past 30 days [1]. When submitting a parent's bank statement, a family relation certificate is required to be submitted [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-4-7 Foreign Language Trainee",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "bba9e6097e5d",
+  "type": "no_answer",
+  "question": "What documents are required for the D-2-7 work-study linked master's degree visa?",
+  "reference": "Not in the corpus. The D-2-7 guide page only has an overview (a person enrolling in a master's degree course at a college or academic institution).",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "aa6539cb4e26",
+  "type": "lookup",
+  "question": "For a G-1-10 treatment and recuperation e-visa, when does the applicant not have to submit proof of ability to pay for treatment and living costs, and when can the business registration certificate and medical travel facilitator registration certificate be left out?",
+  "reference": "Proof of financial ability is not required if the inviting organisation guarantees the applicant's personal identity. The business registration certificate and the certificate of medical travel facilitator registration are not required if the institute is registered at the Visa Portal.",
+  "answer": "For a G-1-10 e-visa applicant, proof of financial ability is not required if an inviting organization guarantees the applicant's personal identity [1]. The Business Registration Certificate and Certificate of Medical Travel Facilitator Registration can be omitted if the medical institute is registered at the Visa Portal [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: G-1-10 Treatment and Recuperation",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "6410bf0dbf39",
+  "type": "no_answer",
+  "question": "How long is the F-5-11 special talent visa valid when it is issued at an embassy, and how long can the holder stay?",
+  "reference": "Not in the corpus. The F-5-11 guide lists eligibility by field and the required documents but gives no visa validity or period of stay.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "37ba894bc5a9",
+  "type": "table",
+  "question": "Which industries does the E-9-5 service-sector worker visa cover?",
+  "reference": "Construction waste processing; cold storage (for companies located onshore); collecting or selling reusable materials; publishing of books, magazines and other printed matter; and music and other audio publishing.",
+  "answer": "The visa covers construction waste processing, cold storage (for company located onshore), collecting or selling reusable material industry, books, magazines, and other printed matter publishing industry, or music and other audio publishing industry [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: E-9-5 Service",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "156a0fb13330",
+  "type": "paraphrase",
+  "question": "my mom is korean and she remarried. im her foreign minor kid applying for F-2-2 at the embassy under case 1. whose letters of guarantee do we need?",
+  "reference": "A letter of guarantee from the Korean parent who has custody, and also one from that parent's other spouse or partner.",
+  "answer": "You need to submit the letter of guarantee of your Korean mother who has custodianship [1]. If your mother has another spouse or partner, you also need to submit the letter of guarantee of that spouse or partner [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-2-2 Underage children of Korean National",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "5f32ecc3066a",
+  "type": "lookup",
+  "question": "For the D-2-4 doctoral degree visa at an embassy (Case 1), what can a scholarship student invited by the National Institute for International Education submit in place of the Standard Acceptance Letter?",
+  "reference": "An invitation letter issued by the director (of the National Institute for International Education).",
+  "answer": "For a scholarship student invited by the National Institute for International Education applying under D-2-4 Case 1 at an embassy, they may submit an invitation letter issued by the director in place of the Standard Acceptance Letter [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-2-4 Doctoral Degree",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "a53571311a26",
+  "type": "multi_hop",
+  "question": "The B-2-2 Tourist/Transit (Jeju) guide says foreigners can enter Jeju without a visa. How long can they stay, where may they go, how must they arrive, and does anything else in the corpus change this?",
+  "reference": "The guide allows a stay of 30 days, limited to Jeju, and requires arriving by a direct international flight or ship to Jeju; citizens of the listed restricted countries are excluded. However, a notice that took effect on February 4, 2020 temporarily suspended visa-free entry to Jeju for all foreign nationals.",
+  "answer": "Foreigners can enter Jeju without a visa unless they are citizens of 24 countries that require visas to enter Jeju island [1]. The duration of stay depends on the type of transfer passenger: General Transfer Passengers may stay for up to 72 hours, while Jeju Group Transfer Passengers may stay for up to 15 days (or 10 days if entering through Yangyang Airport) [1]. General Transfer Passengers must possess a transfer ticket and stay in the Seoul Capital Area, whereas Jeju Group Transfer Passengers must have a domestic flight/ship ticket to Jeju scheduled to depart within 5 days (or 10 days for Yangyang entrants) [1]. Eligible applicants for visa-free entry include foreign nationals entering ports and airports in Jeju for tourism/transit, as well as specific transfer passengers meeting the conditions above [1]. The list of countries requiring visas to enter Jeju includes Syria, Sudan, Iran, Macedonia, Cuba, Republic Of Kosovo, Palestine, Afghanistan, Iraq, Nigeria, Ghana, Yemen, Gambia, Senegal, Bangladesh, Kyrgyzstan, Pakistan, Somalia, Uzbekistan, Nepal, Cameroon, Sri Lanka, Myanmar, and Egypt [1]. Even if a foreigner has a valid visa or is subject to visa-free entry, they may be denied entry if found inadmissible by an immigration officer at the port of entry [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: B-2-2 Tourist / Transit (Jeju)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "6fdc251e049c",
+  "type": "lookup",
+  "question": "For a D-3-13 industrial trainee (plant) application, what document shows how many full-time employees the host company has, and what is it used for?",
+  "reference": "A statement of insurance qualification printed from the Ministry of Employment and Labor's Employment Insurance website. It is used to determine how many trainees the host company is permitted to accept.",
+  "answer": "The document required is a statement of insurance qualification printed out from the website of the Ministry of Employment and Labor (Employment Insurance website) [1]. This document is used to determine the permitted number of accepting trainees based on the number of full-time employees of the host company [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-3-13 Industrial Trainee (Plant)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "028838a7bfff",
+  "type": "lookup",
+  "question": "Under the April 2022 re-entry permit exemption, until when may a registered foreigner whose period of stay is less than 1 year re-enter Korea without a re-entry permit?",
+  "reference": "Until the end of the validity of their stay (their authorised period of stay).",
+  "answer": "Under the April 2022 re-entry permit exemption, a registered foreigner whose period of stay is less than one year may re-enter Korea within two years from the date of departure [1]. This applies to Permanent Residents (F-5) who are allowed re-entry for up to two years from the date of departure [2].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Announcement Regarding Re-Entry Permit(Reimplementation of Re-Entry Permit Exemption as of April 1, 2022 after suspension due to COVID-19)",
+    "page": 1
+   },
+   {
+    "n": 2,
+    "title": "Announcement Regarding Re-Entry Permit(Reimplementation of Re-Entry Permit Exemption as of April 1, 2022 after suspension due to COVID-19)",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "58ab59d6be60",
+  "type": "lookup",
+  "question": "For a D-7-1 intra-company transferee dispatched to a foreign legal consultant office (CCVI Case 2), who issues the Certificate of Foreign Legal Consultant Office Registration, and who issues the declaration form of the establishment of a branch?",
+  "reference": "The Certificate of Foreign Legal Consultant Office Registration is issued by the Korean Bar Association; the branch establishment declaration form is issued by the Foreign Exchange Bank.",
+  "answer": "The Certificate of Foreign Legal Consultant Office Registration is issued by the Korean Bar Association [1]. The declaration form of the establishment of a branch is issued by the Foreign Exchange Bank [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-7-1 Intra-Company Transferee (Foreign Company)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "fda2bac5920e",
+  "type": "no_answer",
+  "question": "After I submit my visa e-form on the Korea Visa Portal, how many days do I have to take it to the embassy before it expires?",
+  "reference": "Not in the corpus. The e-form user manual only says you fill out and submit the e-form through the Korea Visa Portal before visiting a diplomatic mission; it gives no validity period or deadline.",
+  "answer": "I could not find this in the visa.go.kr documents I have. Please check the Korea Visa Portal or ask the Korean embassy or consulate that handles your application.",
+  "cited_passages": []
+ },
+ {
+  "gid": "f382f4640a87",
+  "type": "table",
+  "question": "On the Application for Invalidation of Group e-Visa form, to whom is the application addressed, and what details are listed for each applicant whose visa is to be invalidated?",
+  "reference": "It is addressed to the Chief of the Seoul Immigration Office. For each applicant it lists nationality, English name, gender, date of birth, passport number and remarks.",
+  "answer": "The application is addressed to the Chief, Seoul Immigration Office [1]. The details listed for each applicant are (No.), Nationality, English Names, Gender, Date Of Birth, Passport No., and Remarks [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Application for Invalidation of Group e-Visa",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "5237ee5f9cee",
+  "type": "no_answer",
+  "question": "What is the minimum number of tourists a group must have to apply for a group e-visa?",
+  "reference": "Not in the corpus. The group e-visa regulation only defines a group visa as one for groups whose members exceed the number prescribed by the Minister of Justice, without stating that number.",
+  "answer": "The number of members must exceed the number prescribed by the Minister of Justice [3].",
+  "cited_passages": [
+   {
+    "n": 3,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 2
+   }
+  ]
+ },
+ {
+  "gid": "8b798529be04",
+  "type": "table",
+  "question": "On the group e-visa issuance confirmation that has a 'Details of Representative' section, which details of the representative are shown?",
+  "reference": "A photo, full name, date of birth, gender, nationality, passport number and passport expiration date.",
+  "answer": "The details of the representative shown are PHOTO, Full Name, Date of Birth, Gender, Nationality, Passport No., and Passport Expiration Date [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "CONFIRMATION OF E-VISA ISSUANCE",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "2474003ca1de",
+  "type": "multi_hop",
+  "question": "For Chinese applicants, what amount of assets qualifies someone for the 3-year multiple-entry C-3-4 business visitor visa (embassy Case 2), and what amount qualifies them for the 5-year multiple-entry C-3-9 ordinary tourist visa (embassy Case 3)?",
+  "reference": "For the 3-year C-3-4 visa, proven assets (real estate, financial assets, business ownership and so on) worth more than 5,000,000 yuan. For the 5-year C-3-9 visa, proven assets worth more than 2 million yuan.",
+  "answer": "For the 3-year multiple-entry C-3-4 business visitor visa (embassy Case 2), a person must have proved assets including real estate, financial assets, or business ownership worth more than 5,000,000 yuan [2]. For the 5-year multiple-entry C-3-9 ordinary tourist visa (embassy Case 3), a person must have proved assets including real estate, financial assets, business ownership, etc. worth more than 2 million yuan [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: C-3-9 Ordinary Tourist",
+    "page": 0
+   },
+   {
+    "n": 2,
+    "title": "Visa guide: C-3-4 Business Visitor (General)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "e5069793e4d8",
+  "type": "lookup",
+  "question": "According to the investment guide for the real estate immigrant investor scheme, how often must the agents who sold the property check and report the investor's lease, mortgage, sale or foreclosure status to the Immigration Office?",
+  "reference": "Every May and November.",
+  "answer": "Agents who sell real estate properties to others must check the lease status, mortgage, sale, or foreclosure of their individual buyers and report this information to the Immigration Office every May and November [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korea Investment Immigration Center Real Estate Investor Scheme Guide",
+    "page": 3
+   }
+  ]
+ },
+ {
+  "gid": "f3f4da752e7a",
+  "type": "paraphrase",
+  "question": "my mom is korean and she remarried. im her foreign minor kid applying for F-2-2 at the embassy under case 1. whose letters of guarantee do we need?",
+  "reference": "A letter of guarantee from the Korean parent who has custody, and also one from that parent's other spouse or partner.",
+  "answer": "You need to submit a letter of guarantee of a Korean father or mother who has custodianship [1]. If your mother has another spouse or partner, you also need to submit the letter of guarantee of the spouse or partner [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: F-2-2 Underage children of Korean National",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "634fee72d8b6",
+  "type": "lookup",
+  "question": "On the 2020 coronavirus Health Condition Report Form, what can happen if an applicant makes false statements about their health or fails to fill out the form?",
+  "reference": "Under the Immigration Act, they may be denied a visa, entry into Korea, or permission of stay in Korea.",
+  "answer": "If an applicant makes false statements concerning their health or fails to fill out the form, they may have their visa denied, entry into the Republic of Korea refused, or their stay restricted in accordance with the Immigration Act of the Republic of Korea [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Health Condition Report Form",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "927f981649a2",
+  "type": "table",
+  "question": "On the Korean visa application form, what details must you give about the person or organisation who will pay your travel-related expenses?",
+  "reference": "The name of the person or organisation (company), its relationship to the applicant, the type of support, and a contact number.",
+  "answer": "You must provide the following details for the person or organization who will pay for the applicant's travel-related expenses: - Name of Person/Organization (Company) [1, 2, 4, 5] - Relationship to the applicant [1, 2, 4, 5] - Type of Support [1, 2, 4, 5] - Contact No. [1, 2, 4, 5] Additionally, the User Manual for Electronic Form specifies entering the name of the person/company that pays the expenses, the relationship with the payer, what is financially supported by the payer, and the contact information of the payer [3].",
+  "cited_passages": [
+   {
+    "n": 3,
+    "title": "User Manual for Electronic Form (for Visal Portal Users)",
+    "page": 14
+   }
+  ]
+ },
+ {
+  "gid": "64c06337d49c",
+  "type": "paraphrase",
+  "question": "i left korea in february 2022 with a re-entry permit and because of covid i cant get back before it runs out. what am i supposed to do?",
+  "reference": "Registered foreigners who left before April 1, 2022 with a re-entry permit should enter within the granted re-entry permit period (within 1 year). If entering within that period is difficult because of COVID-19, they should visit a Korean diplomatic mission abroad to extend the re-entry permit period.",
+  "answer": "You should visit a Korean diplomatic mission abroad to extend your re-entry permit period because entering Korea within the relevant period is difficult due to COVID-19 [1]. Registered foreigners who departed before April 1, 2022 with a Re-entry Permit must enter the ROK within the granted re-entry permit period (within 1 year) and should visit a Korean diplomatic mission abroad to extend the re-entry permit period in case entering the ROK within the relevant period is difficult due to COVID-19 [3].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Announcement Regarding Re-Entry Permit(Reimplementation of Re-Entry Permit Exemption as of April 1, 2022 after suspension due to COVID-19)",
+    "page": 1
+   },
+   {
+    "n": 3,
+    "title": "Announcement Regarding Re-Entry Permit(Reimplementation of Re-Entry Permit Exemption as of April 1, 2022 after suspension due to COVID-19)",
+    "page": 1
+   }
+  ]
+ },
+ {
+  "gid": "862a7aac2db1",
+  "type": "lookup",
+  "question": "Under the visa-free entry scheme for foreign transfer passengers in the visa-free entry guide, what status and length of stay does a general transfer passenger get, and what conditions apply?",
+  "reference": "Tourist/Transit (B-2) status for 72 hours. The passenger must be transferring through Incheon Airport and taking part in the Transit Tourism Program on the way to a third country or their home country, hold a transfer ticket, and stay in the Seoul Capital Area. Citizens of the countries that need visas to enter Jeju are excluded, and the guide marks this scheme as temporarily suspended due to COVID-19.",
+  "answer": "Under the visa-free entry scheme for foreign transfer passengers, a general transfer passenger receives Tourist/Transit (B-2) status and is allowed to stay for up to 72 hours [1]. To qualify as a general transfer passenger, one must be transferring through Incheon Airport and participating in the Transit Tourism Program on their way to a third country or their country of nationality [1]. Additionally, the passenger must possess a transfer ticket and stay in the Seoul Capital Area for up to 72 hours [1]. Citizens of the 24 countries listed (Syria, Sudan, Iran, Macedonia, Cuba, Republic Of Kosovo, Palestine, Afghanistan, Iraq, Nigeria, Ghana, Yemen, Gambia, Senegal, Bangladesh, Kyrgyzstan, Pakistan, Somalia, Uzbekistan, Nepal, Cameron, Sri Lanka, Myanmar, Egypt) are excluded from this eligibility [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: B-2-1 Tourist / Transit (General)",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "f34bd9a0a24f",
+  "type": "paraphrase",
+  "question": "im finishing my bachelors next semester and i have a patent for my startup idea. can i apply for the D-10-2 startup visa before i graduate?",
+  "reference": "Yes. The D-10-2 is open to a person with a bachelor's degree or above, including a prospective graduate, who is preparing to set up a business with an intellectual property right or equivalent skills.",
+  "answer": "You are eligible to apply for this visa if you are a person having a bachelor's degree or above (including a prospective graduate) preparing for business establishment with intellectual property right or equivalent skills [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D-10-2 Business Startup",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "751352b82078",
+  "type": "lookup",
+  "question": "Which authority issues apostilles in Belgium?",
+  "reference": "The Ministère des Affaires étrangères, du Commerce extérieur et de la Coopération au Développement (Belgium's foreign affairs ministry).",
+  "answer": "The designated competent authority is the Ministère des Affaires étrangères, du Commerce extérieur et de la Coopération au Développement [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Korean Immigration Apostille Convention Competent Authorities List",
+    "page": 5
+   }
+  ]
+ },
+ {
+  "gid": "284c764249e2",
+  "type": "table",
+  "question": "Under the Regulation on Management of Group e-Visa Application Agency, what may the head of Seoul Immigration Office or of an overseas diplomatic mission investigate about an agency's actual condition?",
+  "reference": "Its attraction of group tourists; the actual handling of its work, including group-visa applications; its management of personal information; and its compliance with the other provisions of the regulation. They may also ask the agency to submit related documents for the investigation.",
+  "answer": "Under the Regulation on Management of Group e-Visa Application Agency, the head of Seoul Immigration Office or the head of an overseas diplomatic mission may investigate the following actual conditions: attraction of group tourists; actual condition of work handling, including group-visa application matters; management of personal information; and compliance with other provisions under this regulation [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Regulation on Management of Group e-Visa Application Agency",
+    "page": 10
+   }
+  ]
+ },
+ {
+  "gid": "256325fdc3d9",
+  "type": "lookup",
+  "question": "A foreigner plans to learn traditional Korean arts from a Korean expert and applies for the D-1 Korean arts and culture visa through Confirmation of Visa Issuance. What document about the expert is needed, and what visa and stay are granted?",
+  "reference": "A certificate of employment history of the expert. The visa is single-entry, valid for 3 months, with stays of up to 1 year.",
+  "answer": "A certificate of employment history of the expert is required [1]. You can apply for a single-entry visa valid for 3 months, and periods of stay will be granted for up to 1 year [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: D1-00 Korean Arts and Culture",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "b58ff03ec220",
+  "type": "table",
+  "question": "A Chinese holder of a preferential visit card applies at the embassy for C-3-9 tourist visas for herself and her husband (Case 2). Which documents are required, and what visa do they get?",
+  "reference": "The application form (Form No. 17), passport, photo and fee; a copy of the preferential visit card; a document proving qualification for the card (a bank book or certificate of bank account balance), which does not apply to holders of a 'preferential card without financial function'; and a document proving the family relationship, such as a marriage certificate, certificate of family relation records or birth certificate. They get a multiple-entry visa valid for 5 years, with stays of up to 90 days.",
+  "answer": "The required documents are a Visa Application Form (Form No. 17), passport, a photo in a standard format, fee, a copy of preferential visit card, a document proving applicant's qualification for a preferential visit card (bank book or certificate of bank account balance), and a document proving family relations (Marriage Certificate, Certificate of Family Relation Records, Birth Certificate and others) [1]. They will receive a multiple-entry visa valid for 5 years with a period of stay granted for up to 90 days [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "Visa guide: C-3-9 Ordinary Tourist",
+    "page": 0
+   }
+  ]
+ },
+ {
+  "gid": "c8ecb9ec2395",
+  "type": "lookup",
+  "question": "In the visa e-form, how do you choose your nationality according to the Korea Visa Portal user manual?",
+  "reference": "Click the icon to open a pop-up window, enter your country's name and click \"Search\" to see its national code and official name, then click \"Close\" to close the window.",
+  "answer": "When you click the icon ( ), a pop-up window will appear on the screen to select your nationality [1]. When you enter your country’s name and click the “Search” button, you can see your country’s national code and official name [1].",
+  "cited_passages": [
+   {
+    "n": 1,
+    "title": "User Manual for Electronic Form (for Visal Portal Users)",
+    "page": 7
+   }
+  ]
+ }
+]

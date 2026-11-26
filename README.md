@@ -23,14 +23,16 @@ Stack: Python 3.12, uv, Docling, LanceDB, sentence-transformers, Ollama, FastAPI
 
 ## Results
 
-Measured on 58 held-out questions. They were written from the documents and committed before the system was run on them. Two independent LLM graders checked every answer against the source text. *Main point* means the core answer is right. *Fully right* also means no wrong extra detail and nothing missing.
+Measured on held-out questions that were written from the documents and committed before the system was run on them. Two independent LLM graders checked every answer against the source text. *Main point* means the core answer is right. *Fully right* also means no wrong extra detail and nothing missing.
 
-| Profile | Model | Main point | Fully right | Generation (p50) |
-|---|---|---:|---:|---:|
-| 16 GB GPU | gemma4:12b | 98.3% | 93.1% | 1.4 s |
-| 8 GB GPU | qwen3.5:4b | 96.6% | 84.5% | 0.7 s |
+| Question set | Model (GPU) | Main point | Fully right |
+|---|---|---:|---:|
+| Set 5: 98 questions, more multi-part and cross-document | gemma4:12b (16 GB) | 91.8% | 82.7% |
+| | qwen3.5:4b (8 GB) | 89.8% | 72.4% |
+| Set 4: 58 questions | gemma4:12b (16 GB) | 98.3% | 93.1% |
+| | qwen3.5:4b (8 GB) | 96.6% | 84.5% |
 
-The answers, the grades and the scoring script are in [`results/`](results/README.md).
+Generation takes about 1.4 s (16 GB) or 0.8 s (8 GB) at the median. Most misses are incomplete lists, questions that need facts from two documents, and questions the documents can't answer where the model answers with related facts instead of saying so. The answers, the grades and the scoring script are in [`results/`](results/README.md).
 
 The questions and the grading were both done by LLMs, not by people. The guide pages show requirements as displayed for one nationality (mostly US), and answers say so.
 
