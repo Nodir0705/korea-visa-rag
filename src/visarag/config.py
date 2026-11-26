@@ -62,6 +62,11 @@ class Settings(BaseSettings):
     context_max_chars: int = 16000  # cap on all passages together (num_ctx is 6144 tokens)
     expand_guide_pages: bool = True  # small-to-big for guide pages: overview + the whole route
     guide_expand_max_chars: int = 8000  # guide pages up to this size are given whole
+    guide_route_max_chars: int = 8000  # a named route's section up to this size is given whole
+    guide_best_cases: int = 2  # for a longer page, also give the cases the reranker rates closest
+    named_pages: bool = True  # always include the guide page of a visa code the question names
+    table_rows: bool = True  # append PDF tables row by row from Docling's cell grid
+    table_rows_max_chars: int = 6000  # longer tables (directories) are left to the page text
     scope_filter: bool = True  # drop guide passages for other visa codes / routes than the question names
     think: bool = False  # let the generator reason before answering (slower)
     verify: bool = False  # second pass that drops unsupported sentences; measured worse (56/61 vs 58/61), so off

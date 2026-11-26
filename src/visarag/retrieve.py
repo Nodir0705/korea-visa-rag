@@ -114,6 +114,20 @@ class Retriever:
             h.score = float(s)
         return sorted(hits, key=lambda h: h.score, reverse=True)
 
+    def score_texts(self, q: str, texts: list[str]) -> list[float]:
+        """Cross-encoder relevance of each text to ``q`` (used to pick sub-sections of a guide page)."""
+        if not texts:
+            return []
+        model = _reranker(self.reranker_name, settings.reranker_device)
+        return [float(s) for s in model.predict([(q, t) for t in texts], batch_size=16, show_progress_bar=False)]
+
+    def page_hit(self, code: str) -> Hit | None:
+        """A chunk of the visa guide page for ``code``, or None if there is no such page."""
+        if not re.fullmatch(r"[A-H]-\d{1,2}(-\d{1,2})?", code):
+            return None
+        rows = self.table.search().where(f"doc_id = 'page-{code}'").limit(1).to_list()
+        return _to_hit(rows[0]) if rows else None
+
     def search(self, q: str, k: int | None = None, mode: str = "hybrid+rerank") -> list[Hit]:
         if mode not in MODES:
             raise ValueError(f"mode must be one of {MODES}")

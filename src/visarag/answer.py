@@ -45,6 +45,14 @@ Rules:
   passage lists for the case asked, in the passage's wording. Never give a selection of the items.
 - When the question asks who is eligible, include every condition the passage states (status,
   nationality, age, relationship, period).
+- When the question asks who must or who may do something, also give the exemptions or exclusions
+  the passage states for that same rule.
+- If a passage says a value is the same as for another person or visa (for example "the same as the
+  principal applicant") and another passage states that value for that visa and route, give the value
+  and cite both passages.
+- If the question asks for a figure in a particular form (for example an amount in won) and the
+  passages state it only in another form, give what they state and say that the figure in the form
+  asked is not stated.
 - Otherwise be brief: 1-4 sentences. Answer only what was asked: do not add related rules,
   exceptions, conditions or background the question did not ask about.
 - End every sentence that states a fact with the number of the passage that states it, like [2].
@@ -56,6 +64,9 @@ Rules:
   A fee, deadline or rule written for something else (for example a re-entry permit) is not the answer
   to a question about a visa. If no passage is about the thing asked, reply NOT_FOUND.
 - A visa guide passage is about exactly one visa code, given in its title. Do not apply it to a different code.
+- When the question names an application route (embassy or diplomatic mission, Visa Issuance
+  Confirmation (CCVI), or e-visa), answer for that route only. A rule written for visa applications
+  filed at a diplomatic mission does not apply to a CCVI application, and the other way round.
 - If the passages answer only part of the question, answer that part and say in one short sentence
   what is not covered.
 - If the passages do not contain the answer, reply with exactly: NOT_FOUND
@@ -94,6 +105,8 @@ NOT_STATED = re.compile(
     r"|no (specific|minimum|explicit|exact) .{0,80}?\b(is|are) (listed|stated|specified|given|mentioned))\b",
     re.IGNORECASE,
 )
+CIRCLED = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳"
+HOW_MANY = re.compile(r"\b(how many|number of)\b", re.IGNORECASE)
 OLD_SOURCE_BEFORE = "2023-11-24"  # sources older than ~3 years are flagged for the reader
 MARKER = re.compile(r"\[(\d+)\]")
 SENTENCE = re.compile(r"(?<=[.!?])\s+(?=[A-Z(\-•*])|\n+")
@@ -117,6 +130,10 @@ def _code_fits(page_code: str, asked: set[str]) -> bool:
     return any(page_code == q or page_code.startswith(q + "-") or q.startswith(page_code + "-") for q in asked)
 
 
+def _has_route(h: Hit, route: str) -> bool:
+    return any(route in head for head, _ in _guide_sections(h.doc_id.removeprefix("page-")))
+
+
 def scope_filter(question: str, hits: list[Hit]) -> tuple[list[Hit], list[str]]:
     """Keep the generator on the visa and application route the question names.
 
@@ -138,7 +155,10 @@ def scope_filter(question: str, hits: list[Hit]) -> tuple[list[Hit], list[str]]:
         other = [heading for _, heading in ROUTES.values() if heading != named[0]]
         on_route = [h for h in hits if h.source == "page" and named[0] in h.headings]
         if on_route:
-            kept = [h for h in hits if not (h.source == "page" and any(o in h.headings for o in other))]
+            # A chunk from another route of a page that also has the named route stays: the guide
+            # expansion turns it into that page's overview plus the named route.
+            kept = [h for h in hits if not (h.source == "page" and any(o in h.headings for o in other)
+                                            and not _has_route(h, named[0]))]
             if len(kept) < len(hits):
                 flags.append("scoped_to_route")
             hits = kept
@@ -220,6 +240,18 @@ def _about_code(h: Hit, codes: set[str], amount: str) -> bool:
     return any(amount in line and _codes(line) & codes for line in h.body.splitlines())
 
 
+def _is_count(n: str, question: str, sources: str) -> bool:
+    """A count the model made by counting a numbered list ("18 countries" for a list that ends at
+    ⑱) is not written as a number in the passages, but it is grounded: accept it when the question
+    asks how many and a passage has a list item with that number."""
+    if not HOW_MANY.search(question) or not n.isdigit() or not 1 <= int(n) <= 99:
+        return False
+    i = int(n)
+    return (i <= len(CIRCLED) and CIRCLED[i - 1] in sources) or bool(
+        re.search(rf"(?m)^\s*\(?{i}[.)]\s", sources)
+    )
+
+
 def amount_guard(question: str, text: str, hits: list[Hit]) -> tuple[str, list[str]]:
     """Drop money amounts that a cited passage gives for a different subject than the question's visa.
 
@@ -251,7 +283,8 @@ def amount_guard(question: str, text: str, hits: list[Hit]) -> tuple[str, list[s
             bare = MARKER.sub(" ", VISA_CODE.sub(" ", s))
             # Numbers repeated from the question, or from a passage's title or date, are not new claims.
             sources = " ".join([question, *(f"{h.body}\n{h.text}\n{h.title} {h.post_date}" for h in cited)])
-            if any(n.rstrip(".,") not in sources for n in NUMBER.findall(bare)):
+            if any(n.rstrip(".,") not in sources and not _is_count(n.rstrip(".,"), question, sources)
+                   for n in NUMBER.findall(bare)):
                 problem = "number_not_in_sources"
         if problem:
             flags.append(problem)
@@ -321,6 +354,83 @@ def expand_to_pages(hits: list[Hit]) -> list[Hit]:
     return out
 
 
+@functools.lru_cache(maxsize=64)
+def _doc_tables(doc_id: str) -> dict[int, tuple[str, ...]]:
+    """Docling's table grids for one PDF, written out row by row ("header: value; ...").
+
+    The page text reads a table in layout order, which can put a row's label next to the
+    neighbouring row's values (a sanctions table read "Suspension (6 months) 9 ~ 10 ...
+    Suspension (3 months) 7 ~ 8"). Docling's cell grid keeps the rows straight, and a
+    header-per-value line is a form small models read reliably.
+    """
+    path = settings.parsed_dir / f"{doc_id}.json"
+    if not path.exists():
+        return {}
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    out: dict[int, list[str]] = {}
+    for t in doc.get("tables", []):
+        data, prov = t.get("data") or {}, t.get("prov") or []
+        nr, nc = data.get("num_rows", 0), data.get("num_cols", 0)
+        if not prov or nr < 2 or nc < 2:
+            continue
+        grid = [[""] * nc for _ in range(nr)]
+        header_rows: set[int] = set()
+        for c in data.get("table_cells", []):
+            for r in range(c["start_row_offset_idx"], min(c["end_row_offset_idx"], nr)):
+                for k in range(c["start_col_offset_idx"], min(c["end_col_offset_idx"], nc)):
+                    grid[r][k] = " ".join(c.get("text", "").split())
+            if c.get("column_header"):
+                header_rows.add(c["start_row_offset_idx"])
+        n_head = max(header_rows) + 1 if header_rows and max(header_rows) < nr - 1 else 1
+        heads = [" / ".join(dict.fromkeys(grid[r][k] for r in range(n_head) if grid[r][k])) or f"column {k + 1}"
+                 for k in range(nc)]
+        rows = []
+        for r in range(n_head, nr):
+            cells = [f"{heads[k]}: {grid[r][k]}" for k in range(nc) if grid[r][k] and (k == 0 or grid[r][k] != grid[r][k - 1])]
+            if cells:
+                rows.append("- " + "; ".join(cells))
+        text = "Table on this page, row by row:\n" + "\n".join(rows)
+        if rows and len(text) <= settings.table_rows_max_chars and not _not_english(text):
+            out.setdefault(int(prov[0]["page_no"]), []).append(text)
+    return {p: tuple(v) for p, v in out.items()}
+
+
+def add_table_rows(hits: list[Hit]) -> list[Hit]:
+    """Append the row-by-row form of the tables on each PDF passage's pages (once per page)."""
+    seen: set[tuple[str, int]] = set()
+    out = []
+    for h in hits:
+        extra = []
+        if h.source == "pdf":
+            for p in h.pages or [h.page]:
+                if (h.doc_id, p) not in seen:
+                    seen.add((h.doc_id, p))
+                    extra += _doc_tables(h.doc_id).get(p, ())
+        out.append(dataclasses.replace(h, body=h.body + "\n\n" + "\n\n".join(extra), ranks=dict(h.ranks)) if extra else h)
+    return out
+
+
+def add_named_pages(question: str, hits: list[Hit], retriever: Retriever) -> tuple[list[Hit], list[str]]:
+    """Make sure the guide page of every visa code the question names is in the context.
+
+    Retrieval can miss a short page the question names outright (a D-4-2 question with
+    typos retrieved four other visas' pages), and a two-visa question (a dependent's F-3-1
+    and the principal's E-1) needs both pages. The page goes in second, after the top hit.
+    """
+    have = {h.doc_id for h in hits}
+    added = []
+    for code in sorted(_codes(question))[:3]:
+        if f"page-{code}" in have:
+            continue
+        h = retriever.page_hit(code)
+        if h is not None:
+            h.score = round(settings.min_rerank_score, 4)
+            added.append(h)
+    if not added:
+        return hits, []
+    return hits[:1] + added + hits[1:], ["added_named_visa_page"]
+
+
 def cap_context(hits: list[Hit]) -> list[Hit]:
     """Keep the passages inside the context budget; hits are in rank order."""
     total, kept = 0, []
@@ -349,25 +459,33 @@ def _guide_sections(code: str) -> tuple[tuple[str, str], ...]:
     return tuple(sections)
 
 
-def _overview_and_case(sections: tuple[tuple[str, str], ...], h: Hit) -> list[str]:
-    """The overview's own text (without its sub-sections) plus the sub-section the hit came from."""
-    out: list[str] = []
-    found = False
+def _overview_and_case(sections: tuple[tuple[str, str], ...], h: Hit, question: str = "",
+                       score=None, route: str = "") -> list[str]:
+    """The overview's own text (without its sub-sections) plus the sub-section the hit came from,
+    and, when a scorer is given, the ``guide_best_cases`` sub-sections (of the named route, if
+    any) that the cross-encoder rates closest to the question. The retrieved chunk is often a
+    sibling of the right case (Case 1 "event or training" for a diplomat's parent, Case 6)."""
+    overview = ""
+    subs_all: list[tuple[str, str, str]] = []  # (section head, sub title, text)
     for head, text in sections:
         subs = re.split(r"\n(?=### )", text)
         if head.startswith("Overview"):
-            out.insert(0, subs[0].strip())
+            overview = subs[0].strip()
         for sub in subs[1:]:
-            title = sub.split("\n", 1)[0].lstrip("# ").strip()
-            if title and title in h.headings:
-                out.append(f"## {head}\n{sub.strip()}")
-                found = True
-    if not found:  # the hit's own section is not a sub-section: fall back to the hit itself
+            subs_all.append((head, sub.split("\n", 1)[0].lstrip("# ").strip(), sub.strip()))
+    picked = {i for i, (_, title, _) in enumerate(subs_all) if title and title in h.headings}
+    pool = [i for i, (head, _, _) in enumerate(subs_all) if not head.startswith("Overview") and (not route or route in head)]
+    if score is not None and question and pool and settings.guide_best_cases > 0:
+        scores = score(question, [subs_all[i][2] for i in pool])
+        picked |= {i for _, i in sorted(zip(scores, pool), reverse=True)[: settings.guide_best_cases]}
+    out = [overview] if overview else []
+    out += [f"## {subs_all[i][0]}\n{subs_all[i][2]}" for i in sorted(picked)]
+    if len(out) == (1 if overview else 0):  # nothing matched: fall back to the hit itself
         out.append(h.body)
     return out
 
 
-def expand_guide_pages(question: str, hits: list[Hit]) -> list[Hit]:
+def expand_guide_pages(question: str, hits: list[Hit], score=None) -> list[Hit]:
     """Small-to-big for visa guide pages: a retrieved section becomes its page's overview plus
     the whole application route (every case) the question names or the hit came from, or the
     whole page when it is short. Eligibility conditions often sit in the overview and the
@@ -388,19 +506,22 @@ def expand_guide_pages(question: str, hits: list[Hit]) -> list[Hit]:
             out.append(h)
             continue
         whole = "\n\n".join(t for _, t in sections)
-        if len(named) == 1 and any(named[0] in head for head, _ in sections):
-            keep = [t for head, t in sections if head.startswith("Overview") or named[0] in head]
+        route = named[0] if len(named) == 1 and any(named[0] in head for head, _ in sections) else ""
+        limit = settings.guide_expand_max_chars
+        if route:
+            keep = [t for head, t in sections if head.startswith("Overview") or route in head]
+            limit = max(limit, settings.guide_route_max_chars)
         elif len(whole) <= settings.guide_expand_max_chars:
             keep = [whole]
         else:
             keep = [t for head, t in sections if head.startswith("Overview") or head.split(" — ")[0] in h.headings]
             if len(keep) <= 1:  # the hit's route is not a top-level section of this page
-                keep = _overview_and_case(sections, h)
+                keep = _overview_and_case(sections, h, question, score)
         body = "\n\n".join(keep) or h.body
-        if len(body) > settings.guide_expand_max_chars:
+        if len(body) > limit:
             # A long route (B-2-1 lists a dozen visa-free schemes) would crowd out the other
-            # passages: keep the overview and only the case the hit came from.
-            body = "\n\n".join(_overview_and_case(sections, h)) or h.body
+            # passages: keep the overview, the case the hit came from and the closest cases.
+            body = "\n\n".join(_overview_and_case(sections, h, question, score, route)) or h.body
         seen[h.doc_id] = dataclasses.replace(h, body=body, headings="", ranks=dict(h.ranks))
         out.append(seen[h.doc_id])
     return out
@@ -457,11 +578,16 @@ class Answerer:
         hits = self.retriever.search(question, mode=mode)
         if settings.expand_pages and hits:
             hits = expand_to_pages(hits)
+        if settings.table_rows and hits:
+            hits = add_table_rows(hits)
         scope_flags: list[str] = []
+        if settings.named_pages and hits:
+            hits, scope_flags = add_named_pages(question, hits, self.retriever)
         if settings.scope_filter and hits:
-            hits, scope_flags = scope_filter(question, hits)
+            hits, more = scope_filter(question, hits)
+            scope_flags += more
         if settings.expand_guide_pages and hits:
-            hits = expand_guide_pages(question, hits)
+            hits = expand_guide_pages(question, hits, self.retriever.score_texts)
         hits = cap_context(hits)
         timings = {k: round(v, 3) for k, v in self.retriever.timings.items()}
         passages = [_citation(i, h) for i, h in enumerate(hits, 1)]

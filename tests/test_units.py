@@ -200,8 +200,13 @@ def _page(code: str, headings: str = "") -> Hit:
                post_date="", source="page")
 
 
-def test_scope_filter_drops_other_visa_codes_and_routes_but_keeps_pdfs():
+def test_scope_filter_drops_other_visa_codes_and_routes_but_keeps_pdfs(tmp_path, monkeypatch):
+    from visarag import answer
     from visarag.answer import scope_filter
+    from visarag.config import settings
+
+    monkeypatch.setattr(settings, "data_dir", tmp_path)  # no page files: route chunks are judged by heading only
+    answer._guide_sections.cache_clear()
 
     hits = [_page("D-8-1", "Embassy visa application — Case 1 > Required documents"),
             _page("D-8-3", "Embassy visa application — Case 1 > Required documents"),
@@ -214,6 +219,13 @@ def test_scope_filter_drops_other_visa_codes_and_routes_but_keeps_pdfs():
             _page("E-3", "Overview (eligible applicants / activities)")]
     kept, flags = scope_filter("What does a researcher submit for an E-3 visa at an embassy?", hits)
     assert [h.headings.split()[0] for h in kept] == ["Embassy", "Overview"] and flags == ["scoped_to_route"]
+    # A CCVI chunk of a page that also has an embassy route stays; the guide expansion swaps in that route.
+    (tmp_path / "pages" / "en").mkdir(parents=True)
+    (tmp_path / "pages" / "en" / "E-3.md").write_text("## Embassy visa application\nx\n", encoding="utf-8")
+    answer._guide_sections.cache_clear()
+    kept, _ = scope_filter("What does a researcher submit for an E-3 visa at an embassy?", hits)
+    assert len(kept) == 3
+    answer._guide_sections.cache_clear()
 
 
 def test_scope_filter_keeps_everything_without_a_match_and_accepts_sub_types():
@@ -274,3 +286,76 @@ def test_expand_guide_pages_keeps_only_the_case_for_long_pages(tmp_path, monkeyp
     body = answer.expand_guide_pages("Can ABTC holders enter without a visa?", [hit])[0].body
     assert "Tourists." in body and "ABTC rule." in body and filler not in body
     answer._guide_sections.cache_clear()
+
+
+def test_long_page_also_gets_the_cases_closest_to_the_question(tmp_path, monkeypatch):
+    from visarag import answer
+    from visarag.config import settings
+
+    (tmp_path / "pages" / "en").mkdir(parents=True)
+    filler = "x" * 5000
+    (tmp_path / "pages" / "en" / "C-3-1.md").write_text(
+        "# C-3-1\n\n## Overview (eligible applicants / activities)\nShort visits.\n\n## Embassy visa application\n"
+        f"### Embassy visa application — Case 1\nEvent or training. {filler}\n\n"
+        f"### Embassy visa application — Case 6\nParent of a diplomat. Foreign Minister letter.\n\n"
+        f"## Visa Issuance Confirmation (CCVI) application\n### Visa Issuance Confirmation (CCVI) application — Case 1\n{filler}\n",
+        encoding="utf-8")
+    monkeypatch.setattr(settings, "data_dir", tmp_path)
+    answer._guide_sections.cache_clear()
+    hit = _page("C-3-1", "Embassy visa application — Case 1 > Required documents")
+
+    def score(q, texts):
+        return [1.0 if "diplomat" in t else 0.0 for t in texts]
+
+    body = answer.expand_guide_pages("A diplomat's mother applies at the embassy; documents?", [hit], score)[0].body
+    assert "Short visits." in body and "Foreign Minister letter" in body and "Event or training" in body
+    assert body.count(filler) == 1  # the CCVI route is left out
+    answer._guide_sections.cache_clear()
+
+
+def test_named_visa_page_is_added_second():
+    from visarag.answer import add_named_pages
+
+    class FakeRetriever:
+        def page_hit(self, code):
+            return _page(code) if code in ("D-4-2", "E-1") else None
+
+    hits = [_page("F-1-23"), _page("D-8-1")]
+    out, flags = add_named_pages("d-4-2 internship, bank acount? D-4-2 and E-1 and Z-9", hits, FakeRetriever())
+    assert [h.doc_id for h in out] == ["page-F-1-23", "page-D-4-2", "page-E-1", "page-D-8-1"]
+    assert flags == ["added_named_visa_page"]
+    assert add_named_pages("no code here", hits, FakeRetriever()) == (hits, [])
+
+
+def test_table_rows_from_docling_grid(tmp_path, monkeypatch):
+    import json
+
+    from visarag import answer
+    from visarag.config import settings
+
+    cells = [(0, 0, "Type", True), (0, 1, "Illegal stayers", True),
+             (1, 0, "Suspension (6 months)", False), (1, 1, "9 ~ 10", False),
+             (2, 0, "Suspension (3 months)", False), (2, 1, "7 ~ 8", False)]
+    doc = {"tables": [{"prov": [{"page_no": 12}], "data": {"num_rows": 3, "num_cols": 2, "table_cells": [
+        {"start_row_offset_idx": r, "end_row_offset_idx": r + 1, "start_col_offset_idx": c,
+         "end_col_offset_idx": c + 1, "text": t, "column_header": h} for r, c, t, h in cells]}}]}
+    monkeypatch.setattr(settings, "data_dir", tmp_path)
+    settings.parsed_dir.mkdir(parents=True)
+    (settings.parsed_dir / "abc.json").write_text(json.dumps(doc), encoding="utf-8")
+    answer._doc_tables.cache_clear()
+    hit = Hit("c", "abc", "Regulation", "f.pdf", 12, [12], "", "page text", "page text", "", "", "")
+    out = answer.add_table_rows([hit, hit])
+    assert "- Type: Suspension (3 months); Illegal stayers: 7 ~ 8" in out[0].body
+    assert out[1].body == "page text"  # once per page
+    answer._doc_tables.cache_clear()
+
+
+def test_count_of_a_numbered_list_is_grounded():
+    from visarag.answer import amount_guard
+
+    hit = Hit("c", "tb", "TB notice", "f.pdf", 2, [2], "", "(High TB-burden countries) ① Nepal ② Russia ③ China",
+              "", "", "", "")
+    text, flags = amount_guard("How many countries are on the list?", "There are 3 countries [1].", [hit])
+    assert flags == [] and text.startswith("There are 3")
+    text, flags = amount_guard("Which countries are on the list?", "There are 3 countries [1].", [hit])
+    assert flags == ["number_not_in_sources"]
