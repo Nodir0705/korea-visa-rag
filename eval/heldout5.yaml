@@ -1,0 +1,1014 @@
+# Sealed set heldout5, written 2026-11-26 from the corpus only by two agents that never saw the system
+# (scopes X and Y), each half checked by a second independent agent; fixes applied, UA43 and UA49 dropped.
+# Committed before the system was run on it. Not shown to the system before scoring.
+questions:
+- id: UA01
+  type: lookup
+  question: For an A-1 diplomat visa applied for at an embassy under Case 1, which family members count as the immediate
+    family who can also get the visa?
+  answer: The parents, spouse and child who reside in Korea together with the eligible diplomat, consular officer
+    or other person with equivalent privileges.
+  gold:
+  - doc: page-A-1
+- id: UA02
+  type: lookup
+  question: Under the visa-free entry scheme for foreign transfer passengers in the visa-free entry guide, what
+    status and length of stay does a general transfer passenger get, and what conditions apply?
+  answer: Tourist/Transit (B-2) status for 72 hours. The passenger must be transferring through Incheon Airport
+    and taking part in the Transit Tourism Program on the way to a third country or their home country, hold a transfer
+    ticket, and stay in the Seoul Capital Area. Citizens of the countries that need visas to enter Jeju are excluded,
+    and the guide marks this scheme as temporarily suspended due to COVID-19.
+  gold:
+  - doc: page-B-1
+  - doc: page-B-2-1
+  - doc: page-B-2-2
+- id: UA03
+  type: multi_hop
+  question: The B-2-2 Tourist/Transit (Jeju) guide says foreigners can enter Jeju without a visa. How long can they
+    stay, where may they go, how must they arrive, and does anything else in the corpus change this?
+  answer: The guide allows a stay of 30 days, limited to Jeju, and requires arriving by a direct international flight
+    or ship to Jeju; citizens of the listed restricted countries are excluded. However, a notice that took effect
+    on February 4, 2020 temporarily suspended visa-free entry to Jeju for all foreign nationals.
+  gold:
+  - doc: page-B-2-2
+  - doc: page-B-1
+  - doc: page-B-2-1
+  - doc: 1ebf85caa52b
+    pages:
+    - 1
+- id: UA04
+  type: paraphrase
+  question: im chinese and my daughter (also chinese) married a korean guy 2 years ago, marriage is registered in
+    both countries. can i get a multiple entry visa to visit her? how long is it good for and how long can i stay
+    each time
+  answer: Yes. Under C-3-1 (Short-Term General) embassy Case 2, a parent of a foreign spouse who has kept the marriage
+    with a Korean national for more than a year after registering it in both countries can get a multiple-entry
+    visa valid for 3 years, with stays of up to 90 days each time.
+  gold:
+  - doc: page-C-3-1
+- id: UA05
+  type: lookup
+  question: A Chinese national is going to Korea briefly for market research and to sign a contract, and applies
+    at the embassy for a C-3-4 business visitor visa under Case 1. What visa can they get and how long can they
+    stay?
+  answer: Either a single-entry visa valid for 3 months, with stays of up to 90 days, or a double-entry visa valid
+    for 6 months, with stays of up to 30 days.
+  gold:
+  - doc: page-C-3-4
+- id: UA06
+  type: multi_hop
+  question: For Chinese applicants, what amount of assets qualifies someone for the 3-year multiple-entry C-3-4
+    business visitor visa (embassy Case 2), and what amount qualifies them for the 5-year multiple-entry C-3-9 ordinary
+    tourist visa (embassy Case 3)?
+  answer: For the 3-year C-3-4 visa, proven assets (real estate, financial assets, business ownership and so on)
+    worth more than 5,000,000 yuan. For the 5-year C-3-9 visa, proven assets worth more than 2 million yuan.
+  gold:
+  - doc: page-C-3-4
+  - doc: page-C-3-9
+- id: UA07
+  type: lookup
+  question: A Chinese businessperson is invited by a company that the Ministry of Justice selected as a preferential
+    company. How do they apply for the C-3-6 visa, what do they submit, and what visa validity and stay do they
+    get?
+  answer: They apply through Confirmation of Visa Issuance, submitting the CCVI application form (Form No. 21),
+    a copy of the passport and a photo, proof of employment, and an invitation letter issued by the selected corporation
+    or association. If a representative applies, they also submit a power of attorney, their employment certificate
+    and a copy of their ID card. The visa is multiple-entry, valid for 1 year, with stays of up to 90 days.
+  gold:
+  - doc: page-C-3-6
+- id: UA08
+  type: table
+  question: A Chinese holder of a preferential visit card applies at the embassy for C-3-9 tourist visas for herself
+    and her husband (Case 2). Which documents are required, and what visa do they get?
+  answer: The application form (Form No. 17), passport, photo and fee; a copy of the preferential visit card; a
+    document proving qualification for the card (a bank book or certificate of bank account balance), which does
+    not apply to holders of a 'preferential card without financial function'; and a document proving the family
+    relationship, such as a marriage certificate, certificate of family relation records or birth certificate. They
+    get a multiple-entry visa valid for 5 years, with stays of up to 90 days.
+  gold:
+  - doc: page-C-3-9
+- id: UA09
+  type: lookup
+  question: Someone with a bachelor's degree who completed a research program at a Korean research institution within
+    the last 3 years applies for a D-10-1 job seeker visa at an embassy. Which case-specific documents do they submit,
+    and what must the completion certificate show?
+  answer: An education certificate, a completion certificate and a plan for seeking employment. The completion certificate
+    is issued by the head of the research institution and states the research topic, research period and completion
+    results.
+  gold:
+  - doc: page-D-10-1
+- id: UA10
+  type: lookup
+  question: For a D-3-11 industrial trainee (FDI) Confirmation of Visa Issuance, the host company made its overseas
+    investment in kind rather than in cash. Which documents prove that the host company is a foreign direct investment
+    business?
+  answer: The Foreign Direct Investment Declaration (an original or a copy stamped by a public official) and a confirmation
+    of an export permit issued by customs.
+  gold:
+  - doc: page-D-3-11
+- id: UA11
+  type: lookup
+  question: For a D-3-13 industrial trainee (plant) application, what document shows how many full-time employees
+    the host company has, and what is it used for?
+  answer: A statement of insurance qualification printed from the Ministry of Employment and Labor's Employment
+    Insurance website. It is used to determine how many trainees the host company is permitted to accept.
+  gold:
+  - doc: page-D-3-13
+- id: UA12
+  type: paraphrase
+  question: my mom is paying for my foreign language course in korea (D-4-7 visa). can i use her bank statement
+    from 2 months ago?
+  answer: No. For the D-4-7 Confirmation of Visa Issuance, the account balance document must have been issued within
+    the past 30 days. If you submit a parent's bank statement, you must also submit a family relation certificate.
+  gold:
+  - doc: page-D-4-7
+- id: UA13
+  type: table
+  question: For a D-8-2 business venture visa at an embassy, which documents can show that the applicant has intellectual
+    property rights or equivalent skills?
+  answer: Copies of a Patent Registration Certificate, Utility Model Registration Certificate, Design Registration
+    Certificate or Trade Mark Registration Certificate issued by the Korean Intellectual Property Office; a copy
+    of a Copyrights Registration Certificate issued by the Korea Copyright Commission and others; or an assessment
+    result proving excellent technical performance from the Korea Technology Finance Corporation or the Small and
+    Medium Business Corporation.
+  gold:
+  - doc: page-D-8-2
+- id: UA14
+  type: lookup
+  question: A foreigner plans to learn traditional Korean arts from a Korean expert and applies for the D-1 Korean
+    arts and culture visa through Confirmation of Visa Issuance. What document about the expert is needed, and what
+    visa and stay are granted?
+  answer: A certificate of employment history of the expert. The visa is single-entry, valid for 3 months, with
+    stays of up to 1 year.
+  gold:
+  - doc: page-D1-00
+- id: UA15
+  type: table
+  question: Which foreign doctors are eligible for an E-5 professional visa through Confirmation of Visa Issuance,
+    and at which kinds of institutions may they work?
+  answer: A doctor holding a foreign licence acknowledged by Korean law, recommended by the Minister of Health and
+    Welfare, with advanced knowledge of the latest medical technology, who will work at a medical institution run
+    by the government or a local government, a medical corporation, or a medical institution run by a non-profit
+    corporation or a government-invested corporation. A graduate of a Korean medical or dental school who will do
+    an internship or residency at a university-affiliated hospital or a hospital designated by the Minister of Health
+    and Welfare is also eligible.
+  gold:
+  - doc: page-E-5
+- id: UA16
+  type: table
+  question: Which industries does the E-9-5 service-sector worker visa cover?
+  answer: Construction waste processing; cold storage (for companies located onshore); collecting or selling reusable
+    materials; publishing of books, magazines and other printed matter; and music and other audio publishing.
+  gold:
+  - doc: page-E-9-5
+- id: UA17
+  type: paraphrase
+  question: my husband has an F-4 overseas korean visa. if i apply at the embassy for the F-1-9 visa is it single
+    or multi entry, how long is it valid and how long can i stay at first?
+  answer: It is a multiple-entry visa valid for 1 year, and the initial period of stay is up to 90 days.
+  gold:
+  - doc: page-F-1-9
+- id: UA18
+  type: lookup
+  question: For an F-2-3 spouse of a permanent resident visa at an embassy (Case 1), whose criminal records and
+    health check-up results are required, and who must issue the health check-up?
+  answer: Criminal records of both spouses, issued by the responsible authority of each country, and health check-up
+    results for the married couple. The health check-up must be issued by a medical institution equivalent to a
+    hospital under the Medical Service Act or the Local Health Act; a foreign spouse may instead submit similar
+    documents issued in their own country.
+  gold:
+  - doc: page-F-2-3
+- id: UA19
+  type: lookup
+  question: If I apply for an F-6-1 spouse of a Korean national visa at a Korean embassy, what kind of visa is issued
+    and what period of stay is granted?
+  answer: A multiple-entry visa valid for 5 years, with a period of stay of up to 90 days.
+  gold:
+  - doc: page-F-6-1
+- id: UA20
+  type: lookup
+  question: For a G-1-10 treatment and recuperation e-visa, when does the applicant not have to submit proof of
+    ability to pay for treatment and living costs, and when can the business registration certificate and medical
+    travel facilitator registration certificate be left out?
+  answer: Proof of financial ability is not required if the inviting organisation guarantees the applicant's personal
+    identity. The business registration certificate and the certificate of medical travel facilitator registration
+    are not required if the institute is registered at the Visa Portal.
+  gold:
+  - doc: page-G-1-10
+- id: UA21
+  type: lookup
+  question: For a Chinese overseas Korean, what relationship to a Korean qualifies them for the H-2-1 work and visit
+    visa through Confirmation of Visa Issuance (Case 1), and what visa is issued?
+  answer: Having a Korean kin between the third and eighth degree, or a Korean relative between the third and fourth
+    degree. A multiple-entry visa valid for 3 years is issued, with stays of up to 1 year.
+  gold:
+  - doc: page-H-2-1
+- id: UA22
+  type: table
+  question: Who qualifies for the F-5-11 special talent visa in the business management field?
+  answer: (1) A full-time director of a company with capital of more than 8 billion KRW and more than 300 full-time
+    employees, who is recommended by the head of the Korea Chamber of Commerce and Industry, the Korea Trade-Investment
+    Promotion Agency or the Korean Federation of Industries; and (2) a multinational manager or executive who has
+    worked for 1 year or more at a company listed among the 500 companies in the past 3 years selected by UNCTAD,
+    FORTUNE, FORBES, BUSINESS WEEK (US) or ECONOMIST (UK), and who is working as an executive at a Korean branch.
+  gold:
+  - doc: page-F-5-11
+- id: UA23
+  type: table
+  question: Under the Regulation on Management of Group e-Visa Application Agency, what may the head of Seoul Immigration
+    Office or of an overseas diplomatic mission investigate about an agency's actual condition?
+  answer: Its attraction of group tourists; the actual handling of its work, including group-visa applications;
+    its management of personal information; and its compliance with the other provisions of the regulation. They
+    may also ask the agency to submit related documents for the investigation.
+  gold:
+  - doc: 8b0fb6d60b72
+    pages:
+    - 10
+    - 11
+- id: UA24
+  type: multi_hop
+  question: A group e-visa application agency had an average of 400 tourists over the last 3 months, received no
+    sanctions in the last 3 months, and has a rate of illegal stay of 2.5%. Which administrative sanction applies
+    under Table 1 of the regulation?
+  answer: Because the 3-month average is 300 or more, the rate of illegal stay is used instead of the number of
+    illegal stayers. A rate of 2.0 to less than 3.0% corresponds to a 6-month suspension of agency operation.
+  gold:
+  - doc: 8b0fb6d60b72
+    pages:
+    - 12
+    - 13
+- id: UA25
+  type: lookup
+  question: May a group e-visa application agency apply for a group visa at an overseas Korean diplomatic mission
+    instead of through the Visa Portal?
+  answer: In principle no; it must apply through the Visa Portal. The exceptions are where the Minister of Justice
+    has approved it on the condition of a specified period of time, or where group e-visas cannot be issued because
+    of unavoidable circumstances such as computer network problems.
+  gold:
+  - doc: 8b0fb6d60b72
+    pages:
+    - 4
+- id: UA26
+  type: paraphrase
+  question: i need an apostille on a swedish document for my korean visa. who in sweden issues it and what does
+    it usually cost?
+  answer: Sweden has designated all notaries public as competent authorities (about 250, appointed by the County
+    Administrative Boards); the Ministry for Foreign Affairs has not issued apostilles since 1 January 2005. The
+    average cost is SEK 250 (about 27 euros).
+  gold:
+  - doc: b133ad72454c
+    pages:
+    - 44
+- id: UA27
+  type: lookup
+  question: Which authority issues apostilles in Belgium?
+  answer: The Ministère des Affaires étrangères, du Commerce extérieur et de la Coopération au Développement (Belgium's
+    foreign affairs ministry).
+  gold:
+  - doc: b133ad72454c
+    pages:
+    - 5
+- id: UA28
+  type: lookup
+  question: I am getting a Kazakh document apostilled for my Korean visa. According to the Kazakhstan entry in the
+    list of apostille authorities, how big is the apostille supposed to be, and what stamp size is recommended?
+  answer: The Convention stipulates an apostille of 9 x 9 cm; it is expedient to have an apostille stamp of 13 x
+    13 cm.
+  gold:
+  - doc: b133ad72454c
+    pages:
+    - 71
+- id: UA29
+  type: lookup
+  question: What legal basis does the February 2016 notice give for requiring the tuberculosis test certificate?
+  answer: Articles 11, 46(1) and 89(1) of the Immigration Control Act and Article 9-2 of its Enforcement Rule, among
+    others.
+  gold:
+  - doc: 336de610abfb
+    pages:
+    - 1
+  - doc: 3f6797125076
+    pages:
+    - 1
+- id: UA30
+  type: table
+  question: On the Certificate of Health attached to the 2016 TB notice, which treatment outcomes can be ticked
+    for a person with a TB history?
+  answer: Under treatment, Cured, Completed Treatment, Failed, and Defaulted.
+  gold:
+  - doc: 336de610abfb
+    pages:
+    - 4
+  - doc: 3f6797125076
+    pages:
+    - 4
+- id: UA31
+  type: lookup
+  question: On the personal details form (marriage statement) for an F-2-3 visa, what must you give if someone helped
+    you fill it in?
+  answer: The helper's name, address, phone number and relation to you.
+  gold:
+  - doc: 0648afd6fef6
+    pages:
+    - 3
+  - doc: a5e253b34643
+    pages:
+    - 3
+  - doc: 4cb01ef31423
+    pages:
+    - 9
+  - doc: ebb358d8436f
+    pages:
+    - 3
+- id: UA32
+  type: paraphrase
+  question: i have a son from my first marriage. on the personal details form for a marriage migrant visa, what
+    do i have to write about him?
+  answer: Answer 'Yes' to having children from a previous relationship and give the child's name, date of birth,
+    nationality, and the person currently charged with custody of the child.
+  gold:
+  - doc: ebb358d8436f
+    pages:
+    - 2
+  - doc: 0648afd6fef6
+    pages:
+    - 2
+  - doc: a5e253b34643
+    pages:
+    - 2
+  - doc: 4cb01ef31423
+    pages:
+    - 8
+- id: UA33
+  type: lookup
+  question: What does the Korean visa application form ask about trips to countries other than Korea?
+  answer: Whether the applicant has travelled outside their country of residence, excluding to Korea, in the last
+    5 years, and if so the name of each country (in English), the purpose of the visit and the period of stay.
+  gold:
+  - doc: 5a8fdb852846
+    pages:
+    - 3
+  - doc: 78db7641ce7e
+    pages:
+    - 3
+  - doc: ca5d41233806
+    pages:
+    - 3
+  - doc: e9f46990f50d
+    pages:
+    - 3
+- id: UA34
+  type: table
+  question: On the Korean visa application form, what details must you give about the person or organisation who
+    will pay your travel-related expenses?
+  answer: The name of the person or organisation (company), its relationship to the applicant, the type of support,
+    and a contact number.
+  gold:
+  - doc: 5a8fdb852846
+    pages:
+    - 4
+  - doc: 78db7641ce7e
+    pages:
+    - 4
+  - doc: ca5d41233806
+    pages:
+    - 4
+  - doc: e9f46990f50d
+    pages:
+    - 4
+- id: UA35
+  type: lookup
+  question: According to the Application for Certificate of Visa Eligibility form, under which provision is the
+    certificate applied for, and who signs the application?
+  answer: Article 17(2) of the Enforcement Regulations of the Immigration Act. The applicant, who is the inviting
+    person, signs it; the form also has a line for the signature of a parent or legal guardian for a person under
+    17.
+  gold:
+  - doc: 99cee8cbaa53
+    pages:
+    - 4
+  - doc: b7359bf7bf77
+    pages:
+    - 4
+- id: UA36
+  type: multi_hop
+  question: Compare the processing procedure printed on the Application for Certificate of Visa Eligibility with
+    the one on the regular visa application form. Which offices handle the steps in each?
+  answer: 'Certificate of Visa Eligibility: the applicant or inviting person fills in the application, the Immigration
+    Office handles reception, assessment and notification of the result, and the visa application and issuance then
+    take place at a diplomatic mission. Regular visa application: after the applicant applies, the diplomatic mission
+    handles every step (reception, review, approval and issuance).'
+  gold:
+  - doc: 99cee8cbaa53
+    pages:
+    - 5
+  - doc: b7359bf7bf77
+    pages:
+    - 5
+  - doc: 5a8fdb852846
+    pages:
+    - 5
+  - doc: 78db7641ce7e
+    pages:
+    - 5
+  - doc: ca5d41233806
+    pages:
+    - 5
+  - doc: e9f46990f50d
+    pages:
+    - 5
+- id: UA37
+  type: lookup
+  question: On the Application for Certificate of Visa Eligibility, what must you state if you have travelled to
+    Korea in the last 5 years?
+  answer: The number of trips to Korea and the purpose of the most recent visit.
+  gold:
+  - doc: 99cee8cbaa53
+    pages:
+    - 3
+  - doc: b7359bf7bf77
+    pages:
+    - 3
+- id: UA38
+  type: table
+  question: On the group e-visa issuance confirmation that has a 'Details of Representative' section, which details
+    of the representative are shown?
+  answer: A photo, full name, date of birth, gender, nationality, passport number and passport expiration date.
+  gold:
+  - doc: 22749c38337f
+    pages:
+    - 1
+- id: UA39
+  type: lookup
+  question: Under which provision does the Confirmation of e-Visa Issuance state that the e-visa application was
+    approved?
+  answer: Article 7(2) of the Korean Immigration Act (the Korean text cites Article 7-2 of the Enforcement Decree
+    of the Immigration Act, on online visa applications).
+  gold:
+  - doc: a9293b83531f
+    pages:
+    - 1
+  - doc: 00a9469f00fc
+    pages:
+    - 1
+  - doc: 22749c38337f
+    pages:
+    - 1
+- id: UA40
+  type: multi_hop
+  question: Which item in the visa details section appears on the Confirmation of e-Visa Issuance for a group but
+    not on the individual Confirmation of e-Visa Issuance?
+  answer: The intended date of arrival. Both forms list the status of stay, period of stay, number of entries, date
+    of issue and expiry date; only the group form adds the intended date of arrival.
+  gold:
+  - doc: a9293b83531f
+    pages:
+    - 1
+  - doc: 00a9469f00fc
+    pages:
+    - 1
+  - doc: 22749c38337f
+    pages:
+    - 1
+- id: UA41
+  type: lookup
+  question: On the Plan for Seeking Employment form, what details of the desired employment must you fill in?
+  answer: The occupational category, the name of the company and the salary.
+  gold:
+  - doc: bf96aac2845d
+    pages:
+    - 1
+- id: UA42
+  type: lookup
+  question: The E-2 applicant's health statement asks about narcotics, alcohol addiction and serious diseases or
+    injuries. Over what period of time?
+  answer: The last 5 years, for both the narcotics or alcohol addiction question and the serious diseases or injuries
+    question.
+  gold:
+  - doc: d624741b2dc8
+    pages:
+    - 1
+- id: UA44
+  type: lookup
+  question: In the February 2020 notice on Jeju visa-free entry, citizens of how many countries were required to
+    obtain permission to extend their sojourn areas, and to whom did that apply?
+  answer: 62 countries. It applied only to those who entered Korea before the announcement went into effect (date
+    of enforcement February 4, 2020).
+  gold:
+  - doc: 1ebf85caa52b
+    pages:
+    - 1
+- id: UA45
+  type: no_answer
+  question: What documents does a contractual service supplier need for a D-7-92 visa under an FTA, and how long
+    can they stay?
+  answer: 'Not in the corpus. The D-7-92 guide page only gives the overview: an employee of a company in an FTA
+    contract who is dispatched to Korea to provide or support contract services.'
+- id: UA46
+  type: no_answer
+  question: How long is the F-5-11 special talent visa valid when it is issued at an embassy, and how long can the
+    holder stay?
+  answer: Not in the corpus. The F-5-11 guide lists eligibility by field and the required documents but gives no
+    visa validity or period of stay.
+- id: UA47
+  type: no_answer
+  question: What is the minimum monthly salary that an employer must pay a household assistant on an F-1-23 visa?
+  answer: Not in the corpus. The F-1-23 guide requires the employer's income to be three times more than the previous
+    year's gross national income (GNI) and asks for the household assistant's employment contract, but states no
+    salary for the assistant.
+- id: UA48
+  type: no_answer
+  question: Which hospitals in Vietnam are designated to issue the TB Certificate of Health for a Korean long-term
+    visa?
+  answer: Not in the corpus. The TB notice only says the Certificate of Health must be issued by a hospital designated
+    by the Korean diplomatic mission.
+- id: UA50
+  type: no_answer
+  question: What documents are required for the D-2-7 work-study linked master's degree visa?
+  answer: Not in the corpus. The D-2-7 guide page only has an overview (a person enrolling in a master's degree
+    course at a college or academic institution).
+- id: UB01
+  type: lookup
+  question: Besides the application form, passport, photo and fee, what document does a C-1 short-term news coverage
+    applicant submit at a Korean embassy?
+  answer: An international press card, or a document showing the applicant's current employment status or overseas
+    assignment.
+  gold:
+  - doc: page-C-1
+- id: UB02
+  type: table
+  question: On the Korean Visa Application Form (Form No. 17, December 2020 version), what details must be given
+    for the emergency contact?
+  answer: The contact's full name in English, country of residence, telephone number, and relationship to the applicant.
+  gold:
+  - doc: 78db7641ce7e
+    pages:
+    - 2
+  - doc: e9f46990f50d
+    pages:
+    - 2
+  - doc: ca5d41233806
+    pages:
+    - 2
+  - doc: 5a8fdb852846
+    pages:
+    - 2
+- id: UB03
+  type: table
+  question: Under the (temporarily suspended) visa-free entry programme for tourists in transit to third countries,
+    what conditions must a traveller meet regarding their onward ticket, past record in Korea, and stopover?
+  answer: They need a confirmed onward flight ticket departing within 30 days of entering Korea and no criminal
+    record such as overstay in the countries concerned. In the 3 years before entry they must not have been denied
+    entry to Korea, fined more than 5 million KRW, or forcibly evicted or given a deportation order. They must not
+    have stayed more than 3 days in the transit or stopover country, unless they are returning to the immediately
+    previous point of departure.
+  gold:
+  - doc: page-B-2-1
+  - doc: page-B-1
+  - doc: page-B-2-2
+- id: UB04
+  type: lookup
+  question: On the Korean Visa Application Form, how far back does it ask about the applicant's past trips to Korea
+    and to other countries?
+  answer: The last 5 years, both for visits to Korea and for travel outside the country of residence (excluding
+    Korea).
+  gold:
+  - doc: 78db7641ce7e
+    pages:
+    - 3
+  - doc: e9f46990f50d
+    pages:
+    - 3
+  - doc: ca5d41233806
+    pages:
+    - 3
+  - doc: 5a8fdb852846
+    pages:
+    - 3
+- id: UB05
+  type: multi_hop
+  question: A representative of a foreign media outlet enters Korea on a C-1 visa to set up the outlet's Korean
+    branch. If they stay on after the branch is established, which status can they change to, and for how long is
+    a period of stay granted on that visa?
+  answer: They can change to the Long-Term News Coverage (D-5) visa. The D-5 period of stay is granted for up to
+    1 year (both at an embassy and through Confirmation of Visa Issuance).
+  gold:
+  - doc: page-C-1
+  - doc: page-D-5
+- id: UB06
+  type: lookup
+  question: For the D-2-4 doctoral degree visa at an embassy (Case 1), what can a scholarship student invited by
+    the National Institute for International Education submit in place of the Standard Acceptance Letter?
+  answer: An invitation letter issued by the director (of the National Institute for International Education).
+  gold:
+  - doc: page-D-2-4
+- id: UB07
+  type: lookup
+  question: On the visa e-form described in the Korea Visa Portal user manual, when do you fill in your name in
+    Chinese characters?
+  answer: Only when you have a name in Chinese characters.
+  gold:
+  - doc: 45ad877e4898
+    pages:
+    - 7
+- id: UB08
+  type: paraphrase
+  question: im finishing my bachelors next semester and i have a patent for my startup idea. can i apply for the
+    D-10-2 startup visa before i graduate?
+  answer: Yes. The D-10-2 is open to a person with a bachelor's degree or above, including a prospective graduate,
+    who is preparing to set up a business with an intellectual property right or equivalent skills.
+  gold:
+  - doc: page-D-10-2
+- id: UB09
+  type: table
+  question: Under the April 2020 suspension of visa-waiver and visa-free entry, which Middle Eastern countries were
+    affected?
+  answer: 'Visa-waiver countries: Morocco, UAE, Israel and Tunisia. Visa-free countries: Bahrain, Oman, Saudi Arabia,
+    Qatar and Kuwait.'
+  gold:
+  - doc: b48153dede7c
+    pages:
+    - 1
+    - 2
+- id: UB10
+  type: table
+  question: According to the visa-free entry guide, how many countries are members of the APEC Business Travel Card
+    scheme, and which are they?
+  answer: '19 countries: South Korea, Australia, New Zealand, Japan, China, Hong Kong, Taiwan, Vietnam, Singapore,
+    Thailand, Malaysia, Indonesia, Brunei, Papua New Guinea, the Philippines, Peru, Chile, Mexico and Russia.'
+  gold:
+  - doc: page-B-2-1
+  - doc: page-B-1
+  - doc: page-B-2-2
+- id: UB11
+  type: lookup
+  question: On the 2020 coronavirus Health Condition Report Form, if you mark any of the listed symptoms, what else
+    must you mark?
+  answer: 'Mark all that apply of: medication taken for the symptoms, and undergone diagnosis or medical care.'
+  gold:
+  - doc: 80df70fc488a
+    pages:
+    - 1
+- id: UB12
+  type: lookup
+  question: For a D-4-6 private institute trainee applying through Confirmation of Visa Issuance, how recent must
+    the account balance be, and how long a stay is granted?
+  answer: The account balance must have been issued within the past 30 days. The period of stay is granted for up
+    to 6 months.
+  gold:
+  - doc: page-D-4-6
+- id: UB13
+  type: lookup
+  question: For a D-7-1 intra-company transferee dispatched to a foreign legal consultant office (CCVI Case 2),
+    who issues the Certificate of Foreign Legal Consultant Office Registration, and who issues the declaration form
+    of the establishment of a branch?
+  answer: The Certificate of Foreign Legal Consultant Office Registration is issued by the Korean Bar Association;
+    the branch establishment declaration form is issued by the Foreign Exchange Bank.
+  gold:
+  - doc: page-D-7-1
+- id: UB14
+  type: paraphrase
+  question: i left korea in february 2022 with a re-entry permit and because of covid i cant get back before it
+    runs out. what am i supposed to do?
+  answer: Registered foreigners who left before April 1, 2022 with a re-entry permit should enter within the granted
+    re-entry permit period (within 1 year). If entering within that period is difficult because of COVID-19, they
+    should visit a Korean diplomatic mission abroad to extend the re-entry permit period.
+  gold:
+  - doc: a0ab242b1eec
+    pages:
+    - 1
+- id: UB15
+  type: table
+  question: For a D-8-1 visa where the investment was made in kind rather than in cash, which documents show the
+    transfer of the investment capital?
+  answer: A copy of the Confirmation of Completion of In-Kind Investment issued by the head of the Korean Customs
+    Service, and a copy of the Customs Import Declaration Certificate.
+  gold:
+  - doc: page-D-8-1
+- id: UB16
+  type: lookup
+  question: Under the April 2022 re-entry permit exemption, until when may a registered foreigner whose period of
+    stay is less than 1 year re-enter Korea without a re-entry permit?
+  answer: Until the end of the validity of their stay (their authorised period of stay).
+  gold:
+  - doc: a0ab242b1eec
+    pages:
+    - 2
+- id: UB17
+  type: paraphrase
+  question: im putting about 200 million won into a business with a korean co-founder and ive never run a business
+    before. does that cause any problem for the D-8-3 visa?
+  answer: Investors of less than 300 million KRW must submit additional documents (proof of initial capital such
+    as receipts and bank statements, proof that the business exists such as an office lease and photos, and proof
+    of work or entrepreneurial experience in their own country). Private investors of less than 300 million KRW
+    with no entrepreneurial experience will be closely reviewed.
+  gold:
+  - doc: page-D-8-3
+- id: UB18
+  type: lookup
+  question: In the declaration of accommodation scheme for short-term foreign residents, from what crisis alert
+    level under the Act on Counter-terrorism for the Protection of Citizens and Public Security is declaration required?
+  answer: From the "caution" level or higher.
+  gold:
+  - doc: bb553b933f21
+    pages:
+    - 1
+- id: UB19
+  type: multi_hop
+  question: An overseas Korean with foreign nationality is 62 years old. Can they get a C-3-8 short-term visa for
+    overseas Koreans, and which F-4 category covers someone of their age?
+  answer: No. The C-3-8 is for overseas Koreans with foreign nationality below the age of 60. The F-4-25 (Person
+    of Age 60 or older) covers overseas Koreans aged 60 or older with the nationality of a country notified by the
+    Minister of Justice.
+  gold:
+  - doc: page-C-3-8
+  - doc: page-F-4-25
+- id: UB20
+  type: lookup
+  question: For an E-10-2 fishing ship crew Confirmation of Visa Issuance, who issues the Certificate of Report
+    on Foreign Crew Employment, and when must the fishery license and fishing boat certificate be submitted?
+  answer: The certificate is issued by the head of the local Maritime Affairs & Port Administration. The fishery
+    license, fishing boat certificate and coastal fishing license copy are submitted only by first-time applicants
+    or when the registration information is changing.
+  gold:
+  - doc: page-E-10-2
+- id: UB21
+  type: paraphrase
+  question: im mexican and i was planning to visit korea in may 2020. did the april 2020 suspension mean i needed
+    a visa?
+  answer: No. Mexico was one of the 10 visa-waiver countries still eligible for visa-free entry after April 13,
+    2020.
+  gold:
+  - doc: b48153dede7c
+    pages:
+    - 2
+- id: UB22
+  type: lookup
+  question: For an E-6-1 artist who will perform under the Performance Act, which performance-specific documents
+    are required for Confirmation of Visa Issuance?
+  answer: A performance recommendation letter from the Korea Media Rating Board and an outline of the performance.
+    (The guide adds that if the performance is not recommended, the applicant is exempt from submitting the letter.)
+  gold:
+  - doc: page-E-6-1
+- id: UB23
+  type: no_answer
+  question: Under the declaration of accommodation scheme, within how many hours of check-in must a hotel report
+    a short-term foreign guest's passport details?
+  answer: Not in the corpus. The notice only says registered accommodation businesses must relay the guest's information
+    through a network designated by the Ministry of Justice, with a fine of up to KRW 500,000 for breaches; no deadline
+    is given.
+- id: UB24
+  type: lookup
+  question: What size of manufacturer can hire a worker on the E-9-1 manufacturing visa?
+  answer: A manufacturer with fewer than 300 full-time workers or capital of less than 8 billion KRW.
+  gold:
+  - doc: page-E-9-1
+- id: UB25
+  type: lookup
+  question: On the 2020 coronavirus Health Condition Report Form, what can happen if an applicant makes false statements
+    about their health or fails to fill out the form?
+  answer: Under the Immigration Act, they may be denied a visa, entry into Korea, or permission of stay in Korea.
+  gold:
+  - doc: 80df70fc488a
+    pages:
+    - 1
+- id: UB26
+  type: lookup
+  question: For an E-9-2 construction worker's Confirmation of Visa Issuance, who prepares the required list of
+    foreign employees at the construction site, and how long a period of stay is granted?
+  answer: The construction company (prime contractor) responsible for the construction site prepares the list. The
+    period of stay is granted for up to 3 years.
+  gold:
+  - doc: page-E-9-2
+- id: UB27
+  type: paraphrase
+  question: i got my degree from a korean university. for the E-2-1 english teacher visa do i still need to get
+    my degree copy apostilled?
+  answer: No. If the degree is from a university in Korea, an un-authenticated copy of the degree is accepted.
+  gold:
+  - doc: page-E-2-1
+- id: UB28
+  type: lookup
+  question: On the Health & Mentality Statement for E-9, E-10 and H-2 applicants, which questions ask about the
+    last 5 years?
+  answer: Whether the applicant has taken banned substances (drugs) or been addicted to alcohol in the last 5 years,
+    and whether they have had any serious diseases or injuries in the last 5 years.
+  gold:
+  - doc: 06a10683e48f
+    pages:
+    - 1
+- id: UB29
+  type: paraphrase
+  question: im doing a phd in korea and have been here 8 months. can my parents come on the F-1-15 visa, and is
+    there anything extra if more than three family members would be with me?
+  answer: Yes. Parents of a foreign student enrolled in a master's or doctoral programme in Korea who has stayed
+    6 months or more are eligible. If the accompanying family members, including the invitees, are more than three,
+    the student must prove at least 50% of the previous year's per capita GNI for annual living expenses, in addition
+    to tuition.
+  gold:
+  - doc: page-F-1-15
+- id: UB30
+  type: no_answer
+  question: What is the minimum number of tourists a group must have to apply for a group e-visa?
+  answer: Not in the corpus. The group e-visa regulation only defines a group visa as one for groups whose members
+    exceed the number prescribed by the Minister of Justice, without stating that number.
+- id: UB31
+  type: lookup
+  question: For an F-1-24 household assistant of a professional, how high must the employer's income be?
+  answer: More than three times the previous year's gross national income (GNI) as announced by the Bank of Korea.
+  gold:
+  - doc: page-F-1-24
+- id: UB32
+  type: table
+  question: On the Application for Invalidation of Group e-Visa form, to whom is the application addressed, and
+    what details are listed for each applicant whose visa is to be invalidated?
+  answer: It is addressed to the Chief of the Seoul Immigration Office. For each applicant it lists nationality,
+    English name, gender, date of birth, passport number and remarks.
+  gold:
+  - doc: 9682b7cb7978
+    pages:
+    - 1
+- id: UB33
+  type: paraphrase
+  question: my mom is korean and she remarried. im her foreign minor kid applying for F-2-2 at the embassy under
+    case 1. whose letters of guarantee do we need?
+  answer: A letter of guarantee from the Korean parent who has custody, and also one from that parent's other spouse
+    or partner.
+  gold:
+  - doc: page-F-2-2
+- id: UB34
+  type: lookup
+  question: According to the Ministry of Justice's December 2018 notice on multiple-entry visas, what were the per
+    capita income figures for Vietnam, Ho Chi Minh City and Hanoi?
+  answer: Vietnam's annual per capita average income was $2,300 as of 2017, rising to $5,538 in Ho Chi Minh City
+    and $3,500 in Hanoi.
+  gold:
+  - doc: 02997dfa266b
+    pages:
+    - 2
+- id: UB35
+  type: lookup
+  question: For an F-4-12 descendant of an overseas Korean, what can be submitted if the applicant cannot submit
+    the family relations certificate, Certificate of Removal from Family Registry or closed register?
+  answer: Other documents such as a certificate of birth, discharge or death that prove the overseas Korean with
+    foreign citizenship or the family relationship.
+  gold:
+  - doc: page-F-4-12
+- id: UB36
+  type: lookup
+  question: According to the Ministry of Justice's July 2015 press release, about how many foreigners had been granted
+    a single-entry visa from March to June 2015?
+  answer: About 1.09 million.
+  gold:
+  - doc: 1f9dd47d0d65
+    pages:
+    - 2
+- id: UB37
+  type: no_answer
+  question: How many hours per week am I allowed to work on an H-1 working holiday visa?
+  answer: Not in the corpus. The H-1 guide only says the holder may take a short-term job to cover travel expenses;
+    it gives no weekly hour limit.
+- id: UB38
+  type: lookup
+  question: For a C-4 English camp language instructor (Embassy Case 3), how can the degree document be confirmed
+    if it was issued in a country that has not signed the Apostille Convention?
+  answer: It can be confirmed by a consulate of that country's diplomatic mission in Korea. (The degree documents
+    are also listed as authenticated by the Apostille Convention or by the consul of a Korean diplomatic mission
+    abroad, so naming consular authentication by a Korean mission abroad is also acceptable.)
+  gold:
+  - doc: page-C-4
+- id: UB39
+  type: lookup
+  question: According to the investment guide for the real estate immigrant investor scheme, how often must the
+    agents who sold the property check and report the investor's lease, mortgage, sale or foreclosure status to
+    the Immigration Office?
+  answer: Every May and November.
+  gold:
+  - doc: fa7181cf50ef
+    pages:
+    - 1
+  - doc: 2a10808b261b
+    pages:
+    - 3
+  - doc: dceb1a06e238
+    pages:
+    - 12
+  - doc: ad0a425b80f0
+    pages:
+    - 12
+- id: UB40
+  type: table
+  question: When an F-1-5 marriage immigrant invites a family member other than a parent, which additional documents
+    are required?
+  answer: A document proving that both parents are unable to enter Korea, and a document showing the immediate family
+    members of the invitee.
+  gold:
+  - doc: page-F-1-5
+- id: UB41
+  type: paraphrase
+  question: i got my re-entry permit in december 2020 and was exempted from the medical exam. im flying back to
+    korea on january 15 2021. do i still need a covid PCR test?
+  answer: Yes. Foreigners whose re-entry permit was issued before January 8, 2021, including those exempted from
+    medical examination, must also submit a negative COVID-19 PCR test certificate if entering after 00:00 January
+    8, 2021.
+  gold:
+  - doc: 6bc97a64a6e3
+    pages:
+    - 1
+- id: UB42
+  type: no_answer
+  question: After I submit my visa e-form on the Korea Visa Portal, how many days do I have to take it to the embassy
+    before it expires?
+  answer: Not in the corpus. The e-form user manual only says you fill out and submit the e-form through the Korea
+    Visa Portal before visiting a diplomatic mission; it gives no validity period or deadline.
+- id: UB43
+  type: table
+  question: On the Personal Details Form for an F-2-3 visa, what information must be given about children from previous
+    marriages?
+  answer: The child's name, date of birth, nationality, and the person currently in charge of the child's custody.
+  gold:
+  - doc: 4cb01ef31423
+    pages:
+    - 8
+  - doc: 0648afd6fef6
+    pages:
+    - 2
+  - doc: a5e253b34643
+    pages:
+    - 2
+- id: UB44
+  type: lookup
+  question: In the visa e-form, how do you choose your nationality according to the Korea Visa Portal user manual?
+  answer: Click the icon to open a pop-up window, enter your country's name and click "Search" to see its national
+    code and official name, then click "Close" to close the window.
+  gold:
+  - doc: 45ad877e4898
+    pages:
+    - 7
+- id: UB45
+  type: lookup
+  question: Under the April 2022 reimplementation of the re-entry permit exemption, what applies to persons banned
+    from entering Korea or to whom visa issuance is prohibited?
+  answer: They are not eligible for the exemption. They need additional review procedures, their re-entry permit
+    can be restricted, and they should inquire at an immigration office.
+  gold:
+  - doc: a0ab242b1eec
+    pages:
+    - 2
+- id: UB46
+  type: no_answer
+  question: How many days before my expected date of entry do I have to submit the coronavirus Health Condition
+    Report Form?
+  answer: Not in the corpus. The 2020 form only asks for the expected date of entry, the cities stayed in within
+    30 days and any visit to Hubei or Wuhan within 14 days before applying; it sets no submission deadline.
+- id: UB47
+  type: lookup
+  question: On the Personal Details Form for an F-2-3 visa, what must the applicant do if they have ever been refused
+    entry, banned, deported or otherwise required to leave Korea?
+  answer: Tick "Yes" and provide details.
+  gold:
+  - doc: 4cb01ef31423
+    pages:
+    - 9
+  - doc: 0648afd6fef6
+    pages:
+    - 3
+  - doc: a5e253b34643
+    pages:
+    - 3
+- id: UB48
+  type: table
+  question: Which levels of education can be ticked as the highest completed level on the Korean Visa Application
+    Form?
+  answer: Master's/Doctoral Degree, Bachelor's Degree, High School Diploma, or Other (with details).
+  gold:
+  - doc: 78db7641ce7e
+    pages:
+    - 2
+  - doc: e9f46990f50d
+    pages:
+    - 2
+  - doc: ca5d41233806
+    pages:
+    - 2
+  - doc: 5a8fdb852846
+    pages:
+    - 2
+- id: UB49
+  type: no_answer
+  question: Which vaccination certificates must E-9, E-10 or H-2 visa applicants submit?
+  answer: 'Not in the corpus. No vaccination certificate is required anywhere. The Health & Mentality Statement
+    only asks about past infectious diseases (syphilis, viral hepatitis B, tuberculosis), drugs or alcohol, mental
+    disorders and serious illnesses. The closest requirement is a February 2016 notice: nationals of listed high
+    TB-burden countries who live in one of those countries and apply at a Korean mission for a long-term visa (91
+    days or longer) must submit a TB test certificate (a ''Certificate of Health'' from a designated hospital).
+    That is a TB test, not a vaccination.'
+- id: UB50
+  type: lookup
+  question: In the visa e-form, what should you enter if you use a name different from the one in your passport,
+    or if you have more than one nationality?
+  answer: Enter the different name you use, and for multiple nationalities enter the other country's name.
+  gold:
+  - doc: 45ad877e4898
+    pages:
+    - 8
