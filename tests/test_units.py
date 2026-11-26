@@ -333,10 +333,11 @@ def test_table_rows_from_docling_grid(tmp_path, monkeypatch):
     from visarag import answer
     from visarag.config import settings
 
-    cells = [(0, 0, "Type", True), (0, 1, "Illegal stayers", True),
-             (1, 0, "Suspension (6 months)", False), (1, 1, "9 ~ 10", False),
-             (2, 0, "Suspension (3 months)", False), (2, 1, "7 ~ 8", False)]
-    doc = {"tables": [{"prov": [{"page_no": 12}], "data": {"num_rows": 3, "num_cols": 2, "table_cells": [
+    cells = [(0, 0, "Type", True), (0, 1, "Illegal stayers", True), (0, 2, "Rate", True),
+             (1, 0, "Suspension (6 months)", False), (1, 1, "9 ~ 10", False), (1, 2, "2.0%", False),
+             (2, 0, "Suspension (3 months)", False), (2, 1, "7 ~ 8", False), (2, 2, "1.5%", False),
+             (3, 0, "Warning", False), (3, 1, "1 ~ 2", False), (3, 2, "0.2%", False)]
+    doc = {"tables": [{"prov": [{"page_no": 12}], "data": {"num_rows": 4, "num_cols": 3, "table_cells": [
         {"start_row_offset_idx": r, "end_row_offset_idx": r + 1, "start_col_offset_idx": c,
          "end_col_offset_idx": c + 1, "text": t, "column_header": h} for r, c, t, h in cells]}}]}
     monkeypatch.setattr(settings, "data_dir", tmp_path)
@@ -345,7 +346,7 @@ def test_table_rows_from_docling_grid(tmp_path, monkeypatch):
     answer._doc_tables.cache_clear()
     hit = Hit("c", "abc", "Regulation", "f.pdf", 12, [12], "", "page text", "page text", "", "", "")
     out = answer.add_table_rows([hit, hit])
-    assert "- Type: Suspension (3 months); Illegal stayers: 7 ~ 8" in out[0].body
+    assert "- Type: Suspension (3 months); Illegal stayers: 7 ~ 8; Rate: 1.5%" in out[0].body
     assert out[1].body == "page text"  # once per page
     answer._doc_tables.cache_clear()
 
@@ -359,3 +360,24 @@ def test_count_of_a_numbered_list_is_grounded():
     assert flags == [] and text.startswith("There are 3")
     text, flags = amount_guard("Which countries are on the list?", "There are 3 countries [1].", [hit])
     assert flags == ["number_not_in_sources"]
+
+
+def test_table_rows_skip_tables_whose_header_is_a_data_row(tmp_path, monkeypatch):
+    import json
+
+    from visarag import answer
+    from visarag.config import settings
+
+    long = "Nauru, Marshall Islands, Micronesia, Kiribati, Australia, Solomon Islands, Tuvalu, Fiji"
+    cells = [(0, 0, "Asia-Pacific (14)", True), (0, 1, long, True),
+             (1, 0, "Americas (5)", False), (1, 1, "Argentina, Canada", False),
+             (2, 0, "Europe (5)", False), (2, 1, "Cyprus, Serbia", False)]
+    doc = {"tables": [{"prov": [{"page_no": 2}], "data": {"num_rows": 3, "num_cols": 2, "table_cells": [
+        {"start_row_offset_idx": r, "end_row_offset_idx": r + 1, "start_col_offset_idx": c,
+         "end_col_offset_idx": c + 1, "text": t, "column_header": h} for r, c, t, h in cells]}}]}
+    monkeypatch.setattr(settings, "data_dir", tmp_path)
+    settings.parsed_dir.mkdir(parents=True)
+    (settings.parsed_dir / "vf.json").write_text(json.dumps(doc), encoding="utf-8")
+    answer._doc_tables.cache_clear()
+    assert answer._doc_tables("vf") == {}
+    answer._doc_tables.cache_clear()

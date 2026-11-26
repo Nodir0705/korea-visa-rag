@@ -354,6 +354,9 @@ def expand_to_pages(hits: list[Hit]) -> list[Hit]:
     return out
 
 
+_HANGUL = re.compile(r"[\uac00-\ud7a3]")
+
+
 @functools.lru_cache(maxsize=64)
 def _doc_tables(doc_id: str) -> dict[int, tuple[str, ...]]:
     """Docling's table grids for one PDF, written out row by row ("header: value; ...").
@@ -384,6 +387,14 @@ def _doc_tables(doc_id: str) -> dict[int, tuple[str, ...]]:
         n_head = max(header_rows) + 1 if header_rows and max(header_rows) < nr - 1 else 1
         heads = [" / ".join(dict.fromkeys(grid[r][k] for r in range(n_head) if grid[r][k])) or f"column {k + 1}"
                  for k in range(nc)]
+        # Only a real data table has a header row of short, distinct column names. Forms (a title
+        # cell spanning the row) and two-column lists (a region next to its countries) come out of
+        # Docling with a data row taken as the header, and "header: value" lines would then pair
+        # values with the wrong labels. Those are left to the page text.
+        if (nc < 3 or nr - n_head < 3 or len(set(heads)) < nc
+                or any(len(h) > 60 or h.endswith(":") or h.startswith("column ") or _HANGUL.search(h) for h in heads)
+                or any(grid[r][k] == heads[k] for r in range(n_head, nr) for k in range(nc))):
+            continue
         rows = []
         for r in range(n_head, nr):
             cells = [f"{heads[k]}: {grid[r][k]}" for k in range(nc) if grid[r][k] and (k == 0 or grid[r][k] != grid[r][k - 1])]
